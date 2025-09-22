@@ -64,7 +64,7 @@ Description: "Composition für den eNotfallpass von Hans Meier"
 * section[5].entry = Reference(UC2-Practitioner-DrKardiologe)
 
 * section[6].title = "Impfungen"
-* section[6].code = $loinc#11369-6 "History of Immunization Narrative"
+* section[6].code = $loinc#11369-6 "History of Immunization note"
 * section[6].text.status = #generated
 * section[6].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Aktueller Impfschutz:</strong></p><ul><li>Influenza: 15.10.2024</li><li>COVID-19: 12.09.2024</li></ul></div>"
 * section[6].entry[0] = Reference(Immunization/UC2-Immunization-Influenza)

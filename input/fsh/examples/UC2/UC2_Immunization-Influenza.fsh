@@ -5,7 +5,7 @@ Title: "Grippeimpfung 2024"
 Description: "Jährliche Influenza-Schutzimpfung für Herzrisikopatient"
 
 * status = #completed
-* vaccineCode = urn:oid:2.16.756.5.30.1.147.1.3.1#66427 "VaxigripTetra"
+* vaccineCode = uhttp://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs#66427 "VaxigripTetra"
 * patient = Reference(Patient/UC2-Patient-HansMeier)
 * occurrenceDateTime = "2024-10-15T09:30:00+02:00"
 

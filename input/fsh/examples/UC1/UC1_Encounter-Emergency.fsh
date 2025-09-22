@@ -4,9 +4,6 @@ Usage: #example
 Title: "Notfall-Kontakt"
 Description: "Notfall-Behandlung bei Hypoglykämie"
 
-* identifier.system = "http://www.rettungsdienst-zuerich.ch/encounter-id"
-* identifier.value = "RD-20250910-14:30-001"
-
 * status = #finished
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#EMER "emergency"
 

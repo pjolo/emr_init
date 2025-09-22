@@ -4,9 +4,6 @@ Usage: #example
 Title: "Sturz beim Wandern"
 Description: "Notfall-Behandlung nach Sturz mit Verdacht auf Schenkelhalsfraktur"
 
-* identifier.system = "http://www.kantonsspital-bern.ch/encounter-id"
-* identifier.value = "KB-20250910-001"
-
 * status = #in-progress
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#EMER "emergency"
 
