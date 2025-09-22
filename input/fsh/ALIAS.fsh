@@ -22,7 +22,7 @@ Alias: $ChCoreImmunization =            http://fhir.ch/ig/ch-core/StructureDefin
 // Swiss specific OIDs  
 Alias: $oid-ahvn13 = urn:oid:2.16.756.5.32
 Alias: $oid-gln = urn:oid:2.51.1.3
-Alias: $oid-zsr = urn:oid:2.16.756.5.30.1.123.100.2.1.1
+//Alias: $oid-zsr = urn:oid:2.16.756.5.30.1.123.100.2.1.1
 
 // CH IPS Profiles
 Alias: $CHIPSPatient = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-patient
