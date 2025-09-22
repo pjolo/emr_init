@@ -5,7 +5,7 @@ Title: "Tetanus-Auffrischungsimpfung 2022"
 Description: "Tetanus-Diphtherie-Pertussis Auffrischung für Sturz-Prophylaxe"
 
 * status = #completed
-* vaccineCode = http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs#68317 "Adacel 0.5 ml"
+* vaccineCode = $chVac#68317 "Adacel 0.5 ml"
 * patient = Reference(Patient/UC2-Patient-HansMeier)
 * occurrenceDateTime = "2022-03-18T10:45:00+01:00"
 * primarySource = true

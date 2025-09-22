@@ -5,7 +5,7 @@ Title: "COVID-19 Auffrischungsimpfung 2024"
 Description: "Aktuelle COVID-19 XBB.1.5 Auffrischung mit Spikevax"
 
 * status = #completed
-* vaccineCode = http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs#69465 "Spikevax XBB.1.5 0.10 mg/ml"
+* vaccineCode = $chVac#69465 "Spikevax XBB.1.5 0.10 mg/ml"
 * patient = Reference(Patient/UC2-Patient-HansMeier)
 * occurrenceDateTime = "2024-09-12T14:15:00+02:00"
 
