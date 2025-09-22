@@ -4,6 +4,7 @@ Title: "eNotfallpass Allergen Code"
 Description: "Codes für Allergene und Unverträglichkeiten (SNOMED CT)"
 * ^version = "1.0.0"
 * ^status = #active
+* ^experimental = true
 * ^date = "2025-09-09"
 * ^publisher = "HL7 Switzerland"
 * ^contact.telecom.system = #url

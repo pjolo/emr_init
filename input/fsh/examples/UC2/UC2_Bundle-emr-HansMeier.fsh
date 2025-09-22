@@ -44,3 +44,12 @@ Description: "Vollständiges eNotfallpass Bundle für Hans Meier"
 // Organization
 * entry[7].fullUrl = "http://fhir.ch/ig/emr/Organization/UC2-Organization-Kardiologie-Bern"
 * entry[7].resource = UC2-Organization-Kardiologie-Bern
+
+* entry[8].fullUrl = "http://fhir.ch/ig/emr/Immunization/UC2-Immunization-Tetanus"
+* entry[8].resource = UC2-Immunization-Tetanus
+
+* entry[9].fullUrl = "http://fhir.ch/ig/emr/Immunization/UC2-Immunization-Influenza"
+* entry[9].resource = UC2-Immunization-Influenza
+
+* entry[10].fullUrl = "http://fhir.ch/ig/emr/Immunization/UC2-Immunization-COVID19"  
+* entry[10].resource = UC2-Immunization-COVID19

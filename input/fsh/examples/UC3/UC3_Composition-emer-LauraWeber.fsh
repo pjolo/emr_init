@@ -56,3 +56,10 @@ Description: "Composition für den eNotfallpass von Laura Weber"
 * section[4].text.status = #generated
 * section[4].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Behandelnde Ärzte:</p><ul><li>Dr. med. Sarah Huber - Gynäkologin (GLN: 7601000567890)</li></ul></div>"
 * section[4].entry = Reference(UC3-Practitioner-DrGynaekologin)
+
+//Encounter
+* section[5].title = "Aktuelle Behandlung"
+* section[5].code = $loinc#46240-8 "History of encounters"
+* section[5].text.status = #generated
+* section[5].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Notfallbehandlung nach Verkehrsunfall</p></div>"
+* section[5].entry = Reference(Encounter/UC3-Encounter-Verkehrsunfall)

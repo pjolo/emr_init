@@ -4,6 +4,7 @@ Title: "eNotfallpass Condition Code"
 Description: "Codes für Probleme und Diagnosen im eNotfallpass (ICD-10, SNOMED CT)"
 * ^version = "1.0.0"
 * ^status = #active
+* ^experimental = true
 * ^date = "2025-09-09"
 * ^publisher = "HL7 Switzerland"
 * ^contact.telecom.system = #url

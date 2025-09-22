@@ -24,6 +24,3 @@ Description: "Unfallchirurg in der Notaufnahme"
 * address.postalCode = "3010"
 * address.country = "CH"
 
-* qualification[0].code = $sct#394801008 "Trauma and orthopedic surgery"
-* qualification[0].period.start = "2010-01-01"
-* qualification[0].issuer.display = "Schweizerische Gesellschaft für Orthopädie"
