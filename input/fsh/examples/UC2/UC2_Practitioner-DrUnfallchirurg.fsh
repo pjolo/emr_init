@@ -6,7 +6,7 @@ Description: "Unfallchirurg in der Notaufnahme"
 
 * language = #de-CH
 * identifier[GLN].system = "urn:oid:2.51.1.3"
-* identifier[GLN].value = "7601007922000"
+* identifier[GLN].value = "7610000050719"
 
 * name.use = #official
 * name.family = "Weber"
