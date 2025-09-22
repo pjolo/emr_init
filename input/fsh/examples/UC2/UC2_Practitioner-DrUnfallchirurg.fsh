@@ -4,10 +4,9 @@ Usage: #example
 Title: "Dr. med. Michael Weber"
 Description: "Unfallchirurg in der Notaufnahme"
 
-
 * language = #de-CH
 * identifier[GLN].system = "urn:oid:2.51.1.3"
-* identifier[GLN].value = "7601000345678"
+* identifier[GLN].value = "7601007922000"
 
 * name.use = #official
 * name.family = "Weber"

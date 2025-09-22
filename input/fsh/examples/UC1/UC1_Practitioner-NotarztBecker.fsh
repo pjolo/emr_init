@@ -6,7 +6,7 @@ Description: "Notarzt im Rettungsdienst"
 
 * language = #de-CH
 * identifier[GLN].system = "urn:oid:2.51.1.3"
-* identifier[GLN].value = "7601000987654"
+* identifier[GLN].value = "7601007922000"
 
 * name.use = #official
 * name.family = "Becker"
