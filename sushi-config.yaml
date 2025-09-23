@@ -26,7 +26,7 @@ dependencies:
     version: 6.5.0 
   ch.fhir.ig.ch-core: current
   ch.fhir.ig.ch-ips: 1.0.0
-  hl7.fhir.extensions.r5: 4.0.1
+  hl7.fhir.extensions.r5: current
 
 pages:
   index.md:
@@ -49,9 +49,9 @@ pages:
 menu:
   Home: index.html
   Document: document.html
-  UseUse Case: 
-    German: usecase-german.html
-    French: usecase-french.html
+  Use Case: 
+   German: usecase-german.html
+   French: usecase-french.html
   Profiles: profiles.html
   Extensions: extensions.html
   Terminology: terminology.html
