@@ -1,15 +1,19 @@
+# input/ignoreWarnings.txt
 == Suppressed Messages ==
 
-# Caused through underlying structure (snapshot)
-The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|%
-The extension http://hl7.org/fhir/StructureDefinition/regex|%
-The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
-
-# Parent profile CH IPS has additional bindings without keys
+# ==========================================
+# CH IPS Parent Profile Issues (not our code)
+# ==========================================
 Additional Bindings SHOULD have a key to allow a binding to be constrained
-
-# Invalid OID in CH IPS parent profiles - not our code
 No definition could be found for URL value 'urn:oid:2.16.756.5.30.1.123.100.1.1.1'
 
-# Version pinning information messages
+# ==========================================  
+# Version Pinning Information Messages
+# ==========================================
 Pinned the version of
+There are multiple different potential matches for the url
+
+# ==========================================
+# Implementation Guide Standard Messages  
+# ==========================================
+The Implementation Guide contains no examples for this profile
