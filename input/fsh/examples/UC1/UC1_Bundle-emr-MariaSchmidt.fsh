@@ -29,20 +29,24 @@ Description: "Vollständiges eNotfallpass Bundle für Maria Schmidt"
 * entry[4].resource = UC1-Condition-Diabetes
 
 // Metformin Medication
-* entry[5].fullUrl = "http://fhir.ch/ig/emr/MedicationStatement/UC1-MedicationStatement-Metformin"
-* entry[5].resource = UC1-MedicationStatement-Metformin
+
+* entry[5].fullUrl = "http://fhir.ch/ig/emr/Medication/Metformin"
+* entry[5].resource = Metformin
+
+* entry[6].fullUrl = "http://fhir.ch/ig/emr/MedicationStatement/UC1-MedicationStatement-Metformin"
+* entry[6].resource = UC1-MedicationStatement-Metformin
 
 // Penicillin Allergie
-* entry[6].fullUrl = "http://fhir.ch/ig/emr/AllergyIntolerance/UC1-AllergyIntolerance-Penicillin"
-* entry[6].resource = UC1-AllergyIntolerance-Penicillin
+* entry[7].fullUrl = "http://fhir.ch/ig/emr/AllergyIntolerance/UC1-AllergyIntolerance-Penicillin"
+* entry[7].resource = UC1-AllergyIntolerance-Penicillin
 
 // HbA1c Observation
-* entry[7].fullUrl = "http://fhir.ch/ig/emr/Observation/UC1-Observation-HbA1c"
-* entry[7].resource = UC1-Observation-HbA1c
+* entry[8].fullUrl = "http://fhir.ch/ig/emr/Observation/UC1-Observation-HbA1c"
+* entry[8].resource = UC1-Observation-HbA1c
 
 // RelatedPersons
-* entry[8].fullUrl = "http://fhir.ch/ig/emr/RelatedPerson/UC1-RelatedPerson-PeterSchmidt"
-* entry[8].resource = UC1-RelatedPerson-PeterSchmidt
+* entry[9].fullUrl = "http://fhir.ch/ig/emr/RelatedPerson/UC1-RelatedPerson-PeterSchmidt"
+* entry[9].resource = UC1-RelatedPerson-PeterSchmidt
 
-* entry[9].fullUrl = "http://fhir.ch/ig/emr/RelatedPerson/UC1-RelatedPerson-AnnaMueller"
-* entry[9].resource = UC1-RelatedPerson-AnnaMueller
+* entry[10].fullUrl = "http://fhir.ch/ig/emr/RelatedPerson/UC1-RelatedPerson-AnnaMueller"
+* entry[10].resource = UC1-RelatedPerson-AnnaMueller
