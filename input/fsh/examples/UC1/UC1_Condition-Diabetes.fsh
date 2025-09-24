@@ -8,7 +8,7 @@ Description: "Beispiel einer Diabetes-Diagnose bei Maria Schmidt"
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
 * category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
 * severity = $sct#255604002 "Mild"
-* code = $icd10#E11.9 "Type 2 diabetes mellitus : Without complications"
+* code = $sct#44054006  "Type 2 diabetes mellitus"
 * subject = Reference(UC1-Patient-MariaSchmidt)
 * onsetDateTime = "2015-06-15"
 * recordedDate = "2015-06-15"

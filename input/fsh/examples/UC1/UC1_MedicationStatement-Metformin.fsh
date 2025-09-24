@@ -5,22 +5,24 @@ Title: "Metformin Therapie"
 Description: "Beispiel einer Metformin-Therapie bei Maria Schmidt"
 
 * status = #active
-* medicationCodeableConcept = $atc#A10BA02 "Metformin"
-* subject = Reference(UC1-Patient-MariaSchmidt)
-* effectiveDateTime = "2015-06-15"
-* dateAsserted = "2025-09-01"
-* informationSource = Reference(UC1-Practitioner-DrMueller)
+* medicationReference = Reference(Metformin)
+* subject = Reference(MonikaWegmueller)
+* effectivePeriod.start = "2020-03-03"
+* reasonCode.text = "Diabetes"
+* dosage[0].patientInstruction = "Unzerkaut während oder nach den Mahlzeiten mit ausreichend Flüssigkeit einnehmen"
+* dosage[=].timing.repeat.boundsPeriod.start = "2020-03-03"
+* dosage[=].timing.repeat.when[0] = #MORN
+* dosage[=].timing.repeat.when[+] = #EVE
+* dosage[=].route = urn:oid:0.4.0.127.0.16.1.1.2.1#20053000 "Oral use"
+* dosage[=].route.text = "zum Einnehmen"
+* dosage[=].doseAndRate.doseQuantity = 1 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
 
-* dosage.text = "1000 mg zweimal täglich zu den Mahlzeiten"
-* dosage.timing.repeat.frequency = 2
-* dosage.timing.repeat.period = 1
-* dosage.timing.repeat.periodUnit = #d
-* dosage.timing.repeat.when[0] = #CM
-* dosage.timing.repeat.when[1] = #CV
-* dosage.route = $sct#26643006 "Oral route"
-* dosage.doseAndRate.doseQuantity.value = 1000
-* dosage.doseAndRate.doseQuantity.unit = "mg"
-* dosage.doseAndRate.doseQuantity.system = $ucum
-* dosage.doseAndRate.doseQuantity.code = #mg
-
-* note.text = "Gut vertragen, keine Nebenwirkungen. Regelmäßige HbA1c-Kontrollen."
+Instance: Metformin
+InstanceOf: ChEmrMedication
+Usage: #inline
+* code = urn:oid:2.51.1.1#7680590990115 "METFORMIN Axapharm Filmtabl 500 mg (Blister 50 Stk)"
+* code.text = "METFORMIN Axapharm Filmtabl 500 mg"
+* form = urn:oid:0.4.0.127.0.16.1.1.2.1#10219000 "Tablet"
+* form.text = "Tablette"
+* amount.numerator = 50 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
+* amount.denominator = 1 http://snomed.info/sct#1681000175101 "Package - unit of product usage (qualifier value)"
