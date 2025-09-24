@@ -11,7 +11,7 @@ Alias: $chVac = http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs
 Alias: $loinc =                         http://loinc.org
 Alias: $sct =                           http://snomed.info/sct
 Alias: $sct-ch =                        http://snomed.info/sct|http://snomed.info/sct/2011000195101
-
+Alias: $edqm =                          http://standardterms.edqm.eu
 // Profiles
 //Alias: $ChCorePractitioner =            http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner
 //Alias: $ChCorePatient =                 http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient
