@@ -5,7 +5,7 @@ Title: "Patientin Maria Schmidt"
 Description: "Beispiel einer Patientin für den eNotfallpass"
 
 * identifier[LocalPid].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR
-* identifier[LocalPid].system = "http://fhir.ch/ig/emr/identifier/local"
+* identifier[LocalPid].system = "urn:oid:2.16.756.5.32.3.1.123456"
 * identifier[LocalPid].value = "7562295883070"
 
 * name.family = "Schmidt"
