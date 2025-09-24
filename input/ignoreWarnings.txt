@@ -1,19 +1,14 @@
-# input/ignoreWarnings.txt
 == Suppressed Messages ==
 
-# ==========================================
-# CH IPS Parent Profile Issues (not our code)
-# ==========================================
-Additional Bindings SHOULD have a key to allow a binding to be constrained
+# Grund für Suppression – z.B. "Parent Profil hat ungültige OID (bekannter Issue)"
 No definition could be found for URL value 'urn:oid:2.16.756.5.30.1.123.100.1.1.1'
 
-# ==========================================  
-# Version Pinning Information Messages
-# ==========================================
-Pinned the version of
-There are multiple different potential matches for the url
+# Version Pinning Information
+Pinned the version of http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient
 
-# ==========================================
-# Implementation Guide Standard Messages  
-# ==========================================
-The Implementation Guide contains no examples for this profile
+# Weitere Warnung
+Additional Bindings SHOULD have a key to allow a binding to be constrained
+
+# Auch Teilstrings sind erlaubt, z.B.:
+%There are multiple different potential matches for the url%
+
