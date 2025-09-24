@@ -4,8 +4,10 @@ Usage: #example
 Title: "Patientin Maria Schmidt"
 Description: "Beispiel einer Patientin für den eNotfallpass"
 
-* identifier[0].system = $oid-ahvn13
-* identifier[0].value = "7562295883070"
+* language = #de-CH
+* identifier[internalPid].type = $v2-0203#PI "Patient internal identifier" // https://hl7.org/fhir/R4/v2/0203/index.html
+* identifier[internalPid].system = "http://example.com/identifiers/child"
+* identifier[internalPid].value = "A"
 
 * name.family = "Schmidt"
 * name.given[0] = "Maria"

@@ -12,3 +12,6 @@ Additional Bindings SHOULD have a key to allow a binding to be constrained
 # Auch Teilstrings sind erlaubt, z.B.:
 %There are multiple different potential matches for the url%
 
+# Display values in different languages
+%is the default display; the code system%
+Wrong Display Name%
