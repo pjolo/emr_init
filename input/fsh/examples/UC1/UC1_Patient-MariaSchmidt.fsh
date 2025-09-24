@@ -4,8 +4,9 @@ Usage: #example
 Title: "Patientin Maria Schmidt"
 Description: "Beispiel einer Patientin für den eNotfallpass"
 
-* identifier[EPR-SPID].system = "urn:oid:2.16.756.5.30.1.127.3.10.3"
-* identifier[EPR-SPID].value = "761337615317835750"
+* identifier[LocalPid].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR
+* identifier[LocalPid].system = "http://fhir.ch/ig/emr/identifier/local"
+* identifier[LocalPid].value = "7562295883070"
 
 * name.family = "Schmidt"
 * name.given[0] = "Maria"
