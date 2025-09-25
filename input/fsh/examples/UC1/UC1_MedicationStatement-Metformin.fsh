@@ -6,7 +6,7 @@ Description: "Beispiel einer Metformin-Therapie bei Maria Schmidt"
 
 
 * status = #active
-* medicationReference = Reference(#Metformin)
+* medicationReference = Reference(Metformin)
 * subject = Reference(UC1-Patient-MariaSchmidt)
 * effectivePeriod.start = "2020-03-03"
 * reasonCode.text = "Diabetes"
