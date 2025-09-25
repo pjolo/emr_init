@@ -29,7 +29,6 @@ Description: "Vollständiges eNotfallpass Bundle für Maria Schmidt"
 * entry[4].resource = UC1-Condition-Diabetes
 
 // Metformin Medication
-
 * entry[5].fullUrl = "http://fhir.ch/ig/emr/Medication/Metformin"
 * entry[5].resource = Metformin
 
