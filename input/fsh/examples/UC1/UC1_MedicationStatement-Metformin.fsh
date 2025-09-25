@@ -3,8 +3,6 @@ InstanceOf: ChEmrMedicationStatement
 Usage: #example
 Title: "Metformin Therapie"
 Description: "Beispiel einer Metformin-Therapie bei Maria Schmidt"
-
-
 * status = #active
 * medicationReference = Reference(Metformin)
 * subject = Reference(UC1-Patient-MariaSchmidt)
@@ -17,8 +15,6 @@ Description: "Beispiel einer Metformin-Therapie bei Maria Schmidt"
 * dosage[=].route = urn:oid:0.4.0.127.0.16.1.1.2.1#20053000 "Oral use"
 * dosage[=].route.text = "zum Einnehmen"
 * dosage[=].doseAndRate.doseQuantity = 1 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
-
-
 
 Instance: Metformin
 InstanceOf: ChEmrMedication
