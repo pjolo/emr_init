@@ -40,7 +40,7 @@ Die Patientin hat eine bekannte [Allergie gegen Kontrastmittel](https://pjolo.gi
 
 Der [Gynäkologe](Practitioner-UC3-Practitioner-DrGynaekologin.html) kann anhand der Schwangerschaftsdaten sofort eine [fetale Überwachung](https://pjolo.github.io/emr/Observation-UC3-Observation-FetalHeartRate.html) einleiten. Die Patientin stabilisiert sich, und sowohl Mutter als auch Kind sind nach der Behandlung wohlauf. Der behandelnde [Notarzt](https://pjolo.github.io/emr/Practitioner-UC3-Practitioner-DrNotarzt.html) koordiniert die Versorgung unter Berücksichtigung der besonderen Umstände.
 
-Das vollständige [eNotfallpass Bundle für Laura Weber](https://pjolo.github.io/emr/Bundle-UC3-Bundle-eNotfallpass-LauraWeber.html) enthält alle schwangerschaftsspezifischen Informationen für die optimale Notfallversorgung.
+Das vollständige [eNotfallpass Bundle für Laura Weber](https://pjolo.github.io/emr/Bundle-UC3-Bundle-emr-LauraWeber.html) enthält alle schwangerschaftsspezifischen Informationen für die optimale Notfallversorgung.
 
 
 ### Use Case 4: Multimorbider Patient mit komplexer Medikation
