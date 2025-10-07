@@ -58,12 +58,12 @@ Description: "Composition für den eNotfallpass von Hans Meier"
 * section[5].title = "Vaccinations"
 * section[5].code = $loinc#11369-6 "History of Immunization note"
 * section[5].text.status = #generated
-* section[5].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Aktueller Impfschutz:</strong></p><ul><li>Influenza: 15.10.2024</li><li>COVID-19: 12.09.2024</li></ul></div>"
+* section[5].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Aktueller Impfschutz:</strong></p><ul><li>Influenza: 15.10.2024</li><li>COVID-19: 12.09.2024</li><li>Tetanus: 18.03.2022</li></ul></div>"
 * section[5].entry[0] = Reference(Immunization/UC2-Immunization-Influenza)
 * section[5].entry[1] = Reference(Immunization/UC2-Immunization-COVID19)
 * section[5].entry[2] = Reference(Immunization/UC2-Immunization-Tetanus)
 
-// Allergies Section (falls keine Allergien)
+// Allergies Section
 * section[6].title = "Allergies and intolerances"
 * section[6].code = $loinc#48765-2 "Allergies and adverse reactions Document"
 * section[6].text.status = #generated
