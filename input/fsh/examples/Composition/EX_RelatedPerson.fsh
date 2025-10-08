@@ -5,7 +5,7 @@ Title: "Peter Schmidt - Ehemann"
 Description: "Ehemann von Maria Schmidt als Notfallkontakt"
 
 * active = true
-* patient = Reference(EX_Patient)
+* patient = Reference(EX-Patient)
 * relationship = $v3-RoleCode#HUSB "husband"
 
 * name.use = #official

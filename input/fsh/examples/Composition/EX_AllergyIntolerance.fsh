@@ -10,11 +10,11 @@ Description: "Allergie gegen jodhaltige Kontrastmittel"
 * category = #medication
 * criticality = #high
 * code = $sct#293637006 "Allergy to contrast media (finding)"
-* patient = Reference(EX_Patient)
+* patient = Reference(EX-Patient)
 * onsetDateTime = "2018-05-20"
 * recordedDate = "2025-01-15"
-* recorder = Reference(EX_Practitioner)
-* asserter = Reference(EX_Patient)
+* recorder = Reference(EX-Practitioner)
+* asserter = Reference(EX-Patient)
 
 * note.text = "Allergie gegen jodhaltige Kontrastmittel seit 2018. Aufgetreten bei CT-Untersuchung nach Unfall. WICHTIG: Keine jodhaltigen Kontrastmittel verwenden!"
 

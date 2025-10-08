@@ -6,7 +6,7 @@ Description: "Aktuelle COVID-19 XBB.1.5 Auffrischung mit Spikevax"
 
 * status = #completed
 * vaccineCode = $chVac#69465 "Spikevax XBB.1.5 0.10 mg/ml"
-* patient = Reference(Patient/EX_Patient)
+* patient = Reference(Patient/EX-Patient)
 * occurrenceDateTime = "2024-09-12T14:15:00+02:00"
 
 * performer.actor = Reference(Practitioner/UC2-Practitioner-DrKardiologe)

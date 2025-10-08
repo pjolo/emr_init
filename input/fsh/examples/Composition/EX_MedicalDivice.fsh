@@ -19,6 +19,6 @@ Description: "Beispiel eines MRT-sicheren Herzschrittmachers"
 
 * modelNumber = "L331"
 * serialNumber = "PM987654321"
-* patient = Reference(EX_Patient)
+* patient = Reference(EX-Patient)
 
 * note.text = "Implantiert am 15.03.2020 im Kantonsspital Bern. Letzte Kontrolle am 01.09.2025 - Funktion einwandfrei, Batterielebensdauer noch 8 Jahre. MRT-sicher bis 3 Tesla."
