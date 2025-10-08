@@ -1,4 +1,4 @@
-Instance: EX_Practitioner
+Instance: EX-Practitioner
 InstanceOf: ChEmrPractitioner
 Usage: #example
 Title: "Dr. med. Sarah Huber"

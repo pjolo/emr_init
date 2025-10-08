@@ -1,4 +1,4 @@
-Instance: EX_DocumentReferences
+Instance: EX-DocumentReferences
 InstanceOf: ChEmrDocumentReference
 Usage: #example
 Title: "Organspende"

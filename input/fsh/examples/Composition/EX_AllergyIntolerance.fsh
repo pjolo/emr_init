@@ -1,4 +1,4 @@
-Instance: EX_AllergyIntolerance
+Instance: EX-AllergyIntolerance
 InstanceOf: ChEmrAllergyIntolerance
 Usage: #example
 Title: "Kontrastmittel-Allergie"

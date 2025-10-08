@@ -1,4 +1,4 @@
-Instance: ExampleDisability
+Instance: EX-Disability
 InstanceOf: ChEmrObservation
 Usage: #example
 * status = #final

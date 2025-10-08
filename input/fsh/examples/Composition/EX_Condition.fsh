@@ -1,4 +1,4 @@
-Instance: EX_Condition
+Instance: EX-Condition
 InstanceOf: ChEmrCondition
 Usage: #example
 Title: "Diabetes mellitus Typ 2"

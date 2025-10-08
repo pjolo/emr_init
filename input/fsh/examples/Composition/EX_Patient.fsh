@@ -1,4 +1,4 @@
-Instance: EX_Patient
+Instance: EX-Patient
 InstanceOf: ChEmrPatient
 Usage: #example
 Title: "Patientin Anna Schmidt"

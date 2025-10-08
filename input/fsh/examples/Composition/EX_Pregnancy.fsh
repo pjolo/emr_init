@@ -1,4 +1,4 @@
-Instance: EX_Pregnancy
+Instance: EX-Pregnancy
 InstanceOf: ChEmrObservation
 Usage: #example
 Title: "Schwangerschaftsstatus"
@@ -11,7 +11,6 @@ Description: "Aktuelle Schwangerschaft in der 32. Woche"
 * effectiveDateTime = "2025-09-10T10:00:00+02:00"
 * performer = Reference(EX_Practitioner)
 
-* valueCodeableConcept = $sct#77386006 "Pregnant"
 * valueBoolean = false 
 
 * component[0].code = $loinc#18185-9 "Gestational age"

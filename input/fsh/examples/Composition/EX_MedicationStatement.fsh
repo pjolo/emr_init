@@ -1,4 +1,4 @@
-Instance: EX_MediationStatement
+Instance: EX-MediationStatement
 InstanceOf: ChEmrMedicationStatement
 Usage: #example
 Title: "Metformin Therapie"
@@ -16,7 +16,7 @@ Description: "Beispiel einer Metformin-Therapie"
 * dosage[=].route.text = "zum Einnehmen"
 * dosage[=].doseAndRate.doseQuantity = 1 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
 
-Instance: Metformin
+Instance: EX-Metformin
 InstanceOf: ChEmrMedication
 Usage: #example
 * code = urn:oid:2.51.1.1#7680590990115 "METFORMIN Axapharm Filmtabl 500 mg (Blister 50 Stk)"

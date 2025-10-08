@@ -1,4 +1,4 @@
-Instance: EX_Immunization
+Instance: EX-Immunization
 InstanceOf: ChEmrImmunization
 Usage: #example
 Title: "COVID-19 Auffrischungsimpfung 2024"

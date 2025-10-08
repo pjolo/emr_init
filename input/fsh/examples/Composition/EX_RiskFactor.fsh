@@ -1,4 +1,4 @@
-Instance: EX_RiskFactor
+Instance: EX-RiskFactor
 InstanceOf: ChEmrObservation
 Usage: #example
 * status = #final

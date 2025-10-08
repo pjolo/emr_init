@@ -1,4 +1,4 @@
-Instance: EX_RelatedPerson
+Instance: EX-RelatedPerson
 InstanceOf: ChEmrRelatedPerson
 Usage: #example
 Title: "Peter Schmidt - Ehemann"
