@@ -1,4 +1,4 @@
-Instance: UC3-AllergyIntolerance-Contrast
+Instance: EX_AllergyIntolerance
 InstanceOf: ChEmrAllergyIntolerance
 Usage: #example
 Title: "Kontrastmittel-Allergie"

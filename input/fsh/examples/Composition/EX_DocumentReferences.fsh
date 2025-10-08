@@ -1,4 +1,4 @@
-Instance: Example-DocumentReference-Patientenverfuegung
+Instance: EX_DocumentReferences
 InstanceOf: ChEmrDocumentReference
 Usage: #example
 Title: "Organspende"

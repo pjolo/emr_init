@@ -1,4 +1,4 @@
-Instance: UC2-Immunization-COVID19
+Instance: EX_Immunization
 InstanceOf: ChEmrImmunization
 Usage: #example
 Title: "COVID-19 Auffrischungsimpfung 2024"

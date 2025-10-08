@@ -1,4 +1,4 @@
-Instance: UC1-Composition-emr-MariaSchmidt
+Instance: EX_Composition
 InstanceOf: ChEmrComposition
 Usage: #example
 Title: "eNotfallpass Composition - Maria Schmidt"
