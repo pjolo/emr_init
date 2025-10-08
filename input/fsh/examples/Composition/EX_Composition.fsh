@@ -48,7 +48,7 @@ Description: "Composition für den eNotfallpass von Maria Schmidt"
 * section[3].title = "Reanimation"
 * section[3].code = $loinc#81346-2 "Advance directives"
 * section[3].text.status = #generated
-* section[3].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Reanimationsstatus: Ja</p></li></ul></div>"
+* section[3].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Reanimationsstatus: Ja</p></div>"
 * section[3].entry = Reference(EX-Practitioner)
 
 // Medication Section
