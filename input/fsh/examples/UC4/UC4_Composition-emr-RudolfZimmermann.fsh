@@ -70,31 +70,31 @@ Description: "Composition für den eNotfallpass von Rudolf Zimmermann"
 * section[4].entry[3] = Reference(UC4-Condition-DiabetesRudolf)
 
 //Living will and emergency medical directive section
-* section[7].title = "Verfügungen und Vollmachten"
-* section[7].code = $loinc#42348-3 "Advance healthcare directives"
-* section[7].text.status = #generated
-* section[7].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Medizinische Vollmacht:</strong></p><p>Elisabeth Zimmermann (Tochter) ist bevollmächtigt, alle medizinischen Entscheidungen zu treffen.</p><p>Tel: +41 61 789 45 23</p></div>"
-* section[7].entry = Reference(UC4-Consent-MedicalPowerOfAttorney)
+* section[5].title = "Verfügungen und Vollmachten"
+* section[5].code = $loinc#42348-3 "Advance healthcare directives"
+* section[5].text.status = #generated
+* section[5].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Medizinische Vollmacht:</strong></p><p>Elisabeth Zimmermann (Tochter) ist bevollmächtigt, alle medizinischen Entscheidungen zu treffen.</p><p>Tel: +41 61 789 45 23</p></div>"
+* section[5].entry = Reference(UC4-Consent-MedicalPowerOfAttorney)
 
 //DocumentReferences section
 
 // Medical Devices Section
-* section[5].title = "Medizinische Geräte"
-* section[5].code = $loinc#46264-8 "History of medical device use"
-* section[5].text.status = #generated
-* section[5].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Implantate:</p><ul><li>Hüftgelenk-Totalendoprothese links (2018)</li><li>Hersteller: Zimmer Biomet Taperloc</li><li>MRT: bedingt möglich (Metallartefakte)</li></ul></div>"
-* section[5].entry = Reference(UC4-Device-HipProsthesis)
+* section[6].title = "Medizinische Geräte"
+* section[6].code = $loinc#46264-8 "History of medical device use"
+* section[6].text.status = #generated
+* section[6].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Implantate:</p><ul><li>Hüftgelenk-Totalendoprothese links (2018)</li><li>Hersteller: Zimmer Biomet Taperloc</li><li>MRT: bedingt möglich (Metallartefakte)</li></ul></div>"
+* section[6].entry = Reference(UC4-Device-HipProsthesis)
 
 //Pregnancy section
 
 //Disability section
 
 // Laboratory Results Section Löschen
-* section[6].title = "Kritische Laborwerte"
-* section[6].code = $loinc#30954-2 "Relevant diagnostic tests/laboratory data note"
-* section[6].text.status = #generated
-* section[6].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>KRITISCH:</strong></p><ul><li>Kreatinin: 2.8 mg/dl (10.09.2025) - STARK ERHÖHT!</li><li>eGFR: ca. 20 ml/min/1.73m² - Stadium 4 Niereninsuffizienz</li></ul><p><strong>Sofortmaßnahmen:</strong> Metformin stoppen, Diuretika-Dosis reduzieren</p></div>"
-* section[6].entry = Reference(UC4-Observation-CreatinineLevel)
+* section[7].title = "Kritische Laborwerte"
+* section[7].code = $loinc#30954-2 "Relevant diagnostic tests/laboratory data note"
+* section[7].text.status = #generated
+* section[7].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>KRITISCH:</strong></p><ul><li>Kreatinin: 2.8 mg/dl (10.09.2025) - STARK ERHÖHT!</li><li>eGFR: ca. 20 ml/min/1.73m² - Stadium 4 Niereninsuffizienz</li></ul><p><strong>Sofortmaßnahmen:</strong> Metformin stoppen, Diuretika-Dosis reduzieren</p></div>"
+* section[7].entry = Reference(UC4-Observation-CreatinineLevel)
 
 
 

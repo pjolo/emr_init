@@ -28,27 +28,27 @@ Description: "Composition für den eNotfallpass von Maria Schmidt"
 * section[0].entry[0] = Reference(UC1-Patient-MariaSchmidt)
 
 //RelatedPerson Section
-* section[2].title = "Notfallkontakte"
-* section[2].code = $loinc#56864-2 "Emergency contact Relationship to patient"
-* section[2].text.status = #generated
-* section[2].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Notfallkontakt: Elisabeth Meier (Ehefrau) +41 31 456 78 90</p></div>"
-* section[2].entry = Reference(UC2-RelatedPerson-ElisabethMeier)
-* section[2].entry[0] = Reference(UC1-RelatedPerson-PeterSchmidt)
-* section[2].entry[1] = Reference(UC1-RelatedPerson-AnnaMueller)
+* section[1].title = "Notfallkontakte"
+* section[1].code = $loinc#56864-2 "Emergency contact Relationship to patient"
+* section[1].text.status = #generated
+* section[1].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Notfallkontakt: Elisabeth Meier (Ehefrau) +41 31 456 78 90</p></div>"
+* section[1].entry = Reference(UC2-RelatedPerson-ElisabethMeier)
+* section[1].entry[0] = Reference(UC1-RelatedPerson-PeterSchmidt)
+* section[1].entry[1] = Reference(UC1-RelatedPerson-AnnaMueller)
 
 // Care Team Section
-* section[3].title = "Behandlungsteam"
-* section[3].code = $loinc#85847-2 "Patient Care team information"
-* section[3].text.status = #generated
-* section[3].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Behandelnde Ärzte:</p><ul><li>Dr. med. Hans Müller - Hausarzt (GLN: 7601000234567)</li></ul></div>"
-* section[3].entry = Reference(UC1-Practitioner-DrMueller)
+* section[2].title = "Behandlungsteam"
+* section[2].code = $loinc#85847-2 "Patient Care team information"
+* section[2].text.status = #generated
+* section[2].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Behandelnde Ärzte:</p><ul><li>Dr. med. Hans Müller - Hausarzt (GLN: 7601000234567)</li></ul></div>"
+* section[2].entry = Reference(UC1-Practitioner-DrMueller)
 
 // Problem List Section
-* section[1].title = "Probleme und Diagnosen"
-* section[1].code = $loinc#11450-4 "Problem list - Reported"
-* section[1].text.status = #generated
-* section[1].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktive Probleme:</p><ul><li>Diabetes mellitus Typ 2 (seit 2015-06-15) - gut kontrolliert</li></ul></div>"
-* section[1].entry = Reference(UC1-Condition-Diabetes)
+* section[3].title = "Probleme und Diagnosen"
+* section[3].code = $loinc#11450-4 "Problem list - Reported"
+* section[3].text.status = #generated
+* section[3].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktive Probleme:</p><ul><li>Diabetes mellitus Typ 2 (seit 2015-06-15) - gut kontrolliert</li></ul></div>"
+* section[3].entry = Reference(UC1-Condition-Diabetes)
 
 //Resuscitation status
 
