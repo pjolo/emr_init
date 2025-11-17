@@ -27,13 +27,6 @@ Description: "Composition für den eNotfallpass von Maria Schmidt"
 * section[0].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Maria Anna Schmidt, geb. 15.03.1978, weiblich</p><p>Wohnhaft: Musterstrasse 123, 8001 Zürich</p><p>Notfallkontakt: Peter Schmidt (Ehemann) +41 44 321 65 87</p></div>"
 * section[0].entry[0] = Reference(UC1-Patient-MariaSchmidt)
 
-// Problem List Section
-* section[1].title = "Probleme und Diagnosen"
-* section[1].code = $loinc#11450-4 "Problem list - Reported"
-* section[1].text.status = #generated
-* section[1].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktive Probleme:</p><ul><li>Diabetes mellitus Typ 2 (seit 2015-06-15) - gut kontrolliert</li></ul></div>"
-* section[1].entry = Reference(UC1-Condition-Diabetes)
-
 //RelatedPerson Section
 * section[2].title = "Notfallkontakte"
 * section[2].code = $loinc#56864-2 "Emergency contact Relationship to patient"
@@ -49,6 +42,13 @@ Description: "Composition für den eNotfallpass von Maria Schmidt"
 * section[3].text.status = #generated
 * section[3].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Behandelnde Ärzte:</p><ul><li>Dr. med. Hans Müller - Hausarzt (GLN: 7601000234567)</li></ul></div>"
 * section[3].entry = Reference(UC1-Practitioner-DrMueller)
+
+// Problem List Section
+* section[1].title = "Probleme und Diagnosen"
+* section[1].code = $loinc#11450-4 "Problem list - Reported"
+* section[1].text.status = #generated
+* section[1].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktive Probleme:</p><ul><li>Diabetes mellitus Typ 2 (seit 2015-06-15) - gut kontrolliert</li></ul></div>"
+* section[1].entry = Reference(UC1-Condition-Diabetes)
 
 //Resuscitation status
 
@@ -83,18 +83,20 @@ Description: "Composition für den eNotfallpass von Maria Schmidt"
 
 //DocumentReferences section
 
-//Pregnancy section
-
 // Medical Devices Section
 
-// Laboratory Results Section
+//Pregnancy section
+
+//Disability section
+
+// Laboratory Results Section Löschen
 * section[7].title = "Laborwerte"
 * section[7].code = $loinc#30954-2 "Relevant diagnostic tests/laboratory data note"
 * section[7].text.status = #generated
 * section[7].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktuelle Laborwerte:</p><ul><li>HbA1c: 6.8% (15.08.2025) - Zielwert erreicht</li></ul></div>"
 * section[7].entry = Reference(UC1-Observation-HbA1c)
 
-// Social History Section
+// Social History Section Löschen
 * section[8].title = "Sozialanamnese"
 * section[8].code = $loinc#29762-2 "Social history note"
 * section[8].text.status = #generated

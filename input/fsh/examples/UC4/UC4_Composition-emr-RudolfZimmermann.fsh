@@ -20,7 +20,7 @@ Description: "Composition für den eNotfallpass von Rudolf Zimmermann"
 * confidentiality = #N
 * custodian = Reference(UC4-Organization-Hausarztpraxis-DrWeber)
 
-// Patient Summary Section
+//Patient Summary Section
 * section[0].title = "Patientendaten"
 * section[0].code = $loinc#60591-5 "Patient summary Document"
 * section[0].text.status = #generated
@@ -34,7 +34,7 @@ Description: "Composition für den eNotfallpass von Rudolf Zimmermann"
 * section[1].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Notfallkontakt: Elisabeth Meier (Ehefrau) +41 31 456 78 90</p></div>"
 * section[1].entry = Reference(UC4-RelatedPerson-ElisabethZimmermann)
 
-// Care Team Section
+//Care Team Section
 * section[2].title = "Behandlungsteam"
 * section[2].code = $loinc#85847-2 "Patient Care team information"
 * section[2].text.status = #generated
@@ -43,7 +43,7 @@ Description: "Composition für den eNotfallpass von Rudolf Zimmermann"
 
 //Resuscitation status
 
-// Medication Section
+//Medication Section
 * section[3].title = "Aktuelle Medikation"
 * section[3].code = $loinc#10160-0 "History of Medication use Narrative"
 * section[3].text.status = #generated
@@ -55,11 +55,11 @@ Description: "Composition für den eNotfallpass von Rudolf Zimmermann"
 
 //Immunization Section
 
-// Allergies Section
+//Allergies Section
 
 //Riskfactor
 
-// Problem List Section
+//Problem List Section
 * section[4].title = "Probleme und Diagnosen"
 * section[4].code = $loinc#11450-4 "Problem list - Reported"
 * section[4].text.status = #generated
@@ -70,10 +70,13 @@ Description: "Composition für den eNotfallpass von Rudolf Zimmermann"
 * section[4].entry[3] = Reference(UC4-Condition-DiabetesRudolf)
 
 //Living will and emergency medical directive section
+* section[7].title = "Verfügungen und Vollmachten"
+* section[7].code = $loinc#42348-3 "Advance healthcare directives"
+* section[7].text.status = #generated
+* section[7].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Medizinische Vollmacht:</strong></p><p>Elisabeth Zimmermann (Tochter) ist bevollmächtigt, alle medizinischen Entscheidungen zu treffen.</p><p>Tel: +41 61 789 45 23</p></div>"
+* section[7].entry = Reference(UC4-Consent-MedicalPowerOfAttorney)
 
 //DocumentReferences section
-
-//Pregnancy section
 
 // Medical Devices Section
 * section[5].title = "Medizinische Geräte"
@@ -82,20 +85,18 @@ Description: "Composition für den eNotfallpass von Rudolf Zimmermann"
 * section[5].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Implantate:</p><ul><li>Hüftgelenk-Totalendoprothese links (2018)</li><li>Hersteller: Zimmer Biomet Taperloc</li><li>MRT: bedingt möglich (Metallartefakte)</li></ul></div>"
 * section[5].entry = Reference(UC4-Device-HipProsthesis)
 
+//Pregnancy section
+
 //Disability section
 
-// Laboratory Results Section
+// Laboratory Results Section Löschen
 * section[6].title = "Kritische Laborwerte"
 * section[6].code = $loinc#30954-2 "Relevant diagnostic tests/laboratory data note"
 * section[6].text.status = #generated
 * section[6].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>KRITISCH:</strong></p><ul><li>Kreatinin: 2.8 mg/dl (10.09.2025) - STARK ERHÖHT!</li><li>eGFR: ca. 20 ml/min/1.73m² - Stadium 4 Niereninsuffizienz</li></ul><p><strong>Sofortmaßnahmen:</strong> Metformin stoppen, Diuretika-Dosis reduzieren</p></div>"
 * section[6].entry = Reference(UC4-Observation-CreatinineLevel)
 
-// Advance Directives Section
-* section[7].title = "Verfügungen und Vollmachten"
-* section[7].code = $loinc#42348-3 "Advance healthcare directives"
-* section[7].text.status = #generated
-* section[7].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Medizinische Vollmacht:</strong></p><p>Elisabeth Zimmermann (Tochter) ist bevollmächtigt, alle medizinischen Entscheidungen zu treffen.</p><p>Tel: +41 61 789 45 23</p></div>"
-* section[7].entry = Reference(UC4-Consent-MedicalPowerOfAttorney)
+
+
 
 

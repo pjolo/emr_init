@@ -20,7 +20,7 @@ Description: "Composition für den eNotfallpass von Laura Weber"
 * confidentiality = #N
 * custodian = Reference(UC3-Organization-Gynpraxis-Basel)
 
-// Patient Summary Section
+//Patient Summary Section
 * section[0].title = "Patientendaten"
 * section[0].code = $loinc#60591-5 "Patient summary Document"
 * section[0].text.status = #generated
@@ -34,7 +34,7 @@ Description: "Composition für den eNotfallpass von Laura Weber"
 * section[1].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Notfallkontakt: Elisabeth Meier (Ehefrau) +41 31 456 78 90</p></div>"
 * section[1].entry = Reference(UC3-RelatedPerson-MichaelWeber)
 
-// Care Team Section
+//Care Team Section
 * section[2].title = "Behandlungsteam"
 * section[2].code = $loinc#85847-2 "Patient Care team information"
 * section[2].text.status = #generated
@@ -47,7 +47,7 @@ Description: "Composition für den eNotfallpass von Laura Weber"
 
 //Immunization
 
-// Allergies Section
+//Allergies Section
 * section[3].title = "Allergien und Unverträglichkeiten"
 * section[3].code = $loinc#48765-2 "Allergies and adverse reactions Document"
 * section[3].text.status = #generated
@@ -59,10 +59,17 @@ Description: "Composition für den eNotfallpass von Laura Weber"
 //Problem List Section
 
 //Living will and emergency medical directive section
+* section[5].title = "Patientenverfügung"
+* section[5].code = $loinc#42348-3 "Advance healthcare directives"
+* section[5].text.status = #generated
+* section[5].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>WICHTIGE PATIENTENVERFÜGUNG:</strong></p><p>Bei lebensbedrohlichen Komplikationen während der Schwangerschaft soll eine Reanimation nur dann durchgeführt werden, wenn dadurch das ungeborene Kind gerettet werden kann.</p><p>Das Wohl des Kindes ist prioritär zu berücksichtigen.</p></div>"
+* section[5].entry = Reference(UC3-Consent-Resuscitation)
 
 //DocumentReferences section
 
-// Pregnancy Status Section
+// Medical Devices Section
+
+//Pregnancy Status Section
 * section[4].title = "Schwangerschaftsstatus"
 * section[4].code = $loinc#90767-5 "Pregnancy summary Document"
 * section[4].text.status = #generated
@@ -70,18 +77,9 @@ Description: "Composition für den eNotfallpass von Laura Weber"
 * section[4].entry[0] = Reference(UC3-Observation-Pregnancy)
 * section[4].entry[1] = Reference(UC3-Observation-FetalHeartRate)
 
-// Medical Devices Section
-
 //Disability section
 
-// Advance Directives Section
-* section[5].title = "Patientenverfügung"
-* section[5].code = $loinc#42348-3 "Advance healthcare directives"
-* section[5].text.status = #generated
-* section[5].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>WICHTIGE PATIENTENVERFÜGUNG:</strong></p><p>Bei lebensbedrohlichen Komplikationen während der Schwangerschaft soll eine Reanimation nur dann durchgeführt werden, wenn dadurch das ungeborene Kind gerettet werden kann.</p><p>Das Wohl des Kindes ist prioritär zu berücksichtigen.</p></div>"
-* section[5].entry = Reference(UC3-Consent-Resuscitation)
-
-//Encounter
+//Encounter Löschen
 * section[6].title = "Aktuelle Behandlung"
 * section[6].code = $loinc#46240-8 "History of Hospitalizations+Outpatient visits Narrative"
 * section[6].text.status = #generated

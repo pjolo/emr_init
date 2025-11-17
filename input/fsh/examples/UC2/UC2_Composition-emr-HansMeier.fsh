@@ -20,7 +20,7 @@ Description: "Composition für den eNotfallpass von Hans Meier"
 * confidentiality = #N
 * custodian = Reference(UC2-Organization-Kardiologie-Bern)
 
-// Patient Summary Section
+//Patient Summary Section
 * section[0].title = "Patientendaten"
 * section[0].code = $loinc#60591-5 "Patient summary Document"
 * section[0].text.status = #generated
@@ -34,7 +34,7 @@ Description: "Composition für den eNotfallpass von Hans Meier"
 * section[1].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Notfallkontakt: Elisabeth Meier (Ehefrau) +41 31 456 78 90</p></div>"
 * section[1].entry = Reference(UC2-RelatedPerson-ElisabethMeier)
 
-// Care Team Section
+//Care Team Section
 * section[2].title = "Behandelnde Gesundheitsfachperson"
 * section[2].code = $loinc#85847-2 "Patient Care team information"
 * section[2].text.status = #generated
@@ -48,7 +48,7 @@ Description: "Composition für den eNotfallpass von Hans Meier"
 * section[3].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Behandelnde Ärzte:</p><ul><li>Dr. med. Andrea Zimmermann - Kardiologin (GLN: 7601000456789)</li></ul></div>"
 * section[3].entry = Reference(UC2-Practitioner-DrKardiologe)
 
-// Medication Section
+//Medication Section
 * section[4].title = "Medikation"
 * section[4].code = $loinc#10160-0 "History of Medication use Narrative"
 * section[4].text.status = #generated
@@ -64,7 +64,7 @@ Description: "Composition für den eNotfallpass von Hans Meier"
 * section[5].entry[1] = Reference(Immunization/UC2-Immunization-COVID19)
 * section[5].entry[2] = Reference(Immunization/UC2-Immunization-Tetanus)
 
-// Allergies Section
+//Allergies Section
 * section[6].title = "Allergien oder Unverträglichkeiten"
 * section[6].code = $loinc#48765-2 "Allergies and adverse reactions Document"
 * section[6].text.status = #generated
@@ -84,14 +84,14 @@ Description: "Composition für den eNotfallpass von Hans Meier"
 
 //DocumentReferences section
 
-//Pregnancy section
-
 // Medical Devices Section
 * section[8].title = "Implantate"
 * section[8].code = $loinc#46264-8 "History of medical device use"
 * section[8].text.status = #generated
 * section[8].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Implantate:</p><ul><li><strong>MRT-SICHER:</strong> Herzschrittmacher Boston Scientific Accolade MRI (Modell L331)</li><li>Seriennummer: PM987654321</li><li>Implantiert: 15.03.2020</li><li>Letzte Kontrolle: 01.09.2025</li></ul></div>"
 * section[8].entry = Reference(UC2-Device-Herzschrittmacher)
+
+//Pregnancy section
 
 //Disability section
 
