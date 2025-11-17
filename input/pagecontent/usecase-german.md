@@ -4,7 +4,7 @@ Diese Seite beschreibt realistische medizinische Szenarien für die Verwendung d
 
 [Maria Schmidt](https://pjolo.github.io/emr/Patient-UC1-Patient-MariaSchmidt.html), 47 Jahre alt, wird bewusstlos in ihrer Wohnung an der Musterstrasse 123 in 8001 Zürich aufgefunden. Ihr Ehemann [Peter Schmidt](https://pjolo.github.io/emr/RelatedPerson-UC1-RelatedPerson-PeterSchmidt.html) alarmiert den Rettungsdienst um 14:30 Uhr.
 
-Bei Ankunft des [Notarztes](https://pjolo.github.io/emr/Practitioner-UC1-Practitioner-NotarztBecker.html) ist die Patientin ansprechbar, aber verwirrt. Die klinische Untersuchung zeigt Symptome einer schweren Hypoglykämie mit kaltem Schweiss, Zittern und Verwirrtheit. Aus dem eNotfallpass ist ersichtlich, dass Maria an [Diabetes mellitus Typ 2](https://pjolo.github.io/emr/Condition-UC1-Condition-Diabetes.html) leidet, der seit 2015 mit [Metformin](https://pjolo.github.io/emr/MedicationStatement-UC1-MedicationStatement-Metformin.html) behandelt wird. Der [letzte HbA1c-Wert betrug 6.8%](https://pjolo.github.io/emr/Observation-UC1-Observation-HbA1c.html).
+Bei Ankunft des [Notarztes](https://pjolo.github.io/emr/Practitioner-UC1-Practitioner-NotarztBecker.html) ist die Patientin ansprechbar, aber verwirrt. Die klinische Untersuchung zeigt Symptome einer schweren Hypoglykämie mit kaltem Schweiss, Zittern und Verwirrtheit. Aus dem eNotfallpass ist ersichtlich, dass Maria an [Diabetes mellitus Typ 2](https://pjolo.github.io/emr/Condition-UC1-Condition-Diabetes.html) leidet, der seit 2015 mit [Metformin](https://pjolo.github.io/emr/MedicationStatement-UC1-MedicationStatement-Metformin.html) behandelt wird.
 
 Kritisch ist die dokumentierte [Penicillin-Allergie](https://pjolo.github.io/emr/AllergyIntolerance-UC1-AllergyIntolerance-Penicillin.html) mit anaphylaktischer Reaktion in der Kindheit. Diese Information verhindert die versehentliche Gabe von Beta-Lactam-Antibiotika bei einer möglichen Sekundärinfektion.
 
@@ -18,9 +18,9 @@ Das vollständige [eNotfallpass Bundle](https://pjolo.github.io/emr/Bundle-UC1-B
 
 [Hans Meier](https://pjolo.github.io/emr/Patient-UC2-Patient-HansMeier.html), 72 Jahre alt, stürzt beim Wandern und wird mit Verdacht auf eine Schenkelhalsfraktur ins Spital eingeliefert. Eine MRT-Untersuchung zur genauen Diagnosestellung ist indiziert.
 
-Aus dem eNotfallpass geht hervor, dass dem Patienten 2020 ein [Herzschrittmacher](https://pjolo.github.io/emr/Device-UC2-Device-Herzschrittmacher.html) implantiert wurde und
+Aus dem eNotfallpass geht hervor, dass dem Patienten 2020 ein [Herzschrittmacher](https://pjolo.github.io/emr/Device-UC2-Device-Herzschrittmacher.html) implantiert wurde.
 
-Diese Information ermöglicht es dem Radiologen, die MRT-Untersuchung nach entsprechenden Sicherheitsprotokollen durchzuführen, ohne den Schrittmacher zuvor deaktivieren zu müssen. Die letzte Schrittmacher-Kontrolle fand am 01.09.2025 statt.
+Diese Information ermöglicht es dem Radiologen, die MRT-Untersuchung nach entsprechenden Sicherheitsprotokollen durchzuführen, ohne den Schrittmacher zuvor deaktivieren zu müssen.
 
 Zusätzlich ist dokumentiert, dass der Patient [Marcumar zur Antikoagulation](https://pjolo.github.io/emr/MedicationStatement-UC2-MedicationStatement-Marcumar.html) einnimmt, was bei einer möglichen Operation berücksichtigt werden muss. 
 
