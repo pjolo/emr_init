@@ -39,10 +39,6 @@ Description: "Vollständiges eNotfallpass Bundle für Maria Schmidt"
 * entry[7].fullUrl = "http://fhir.ch/ig/emr/AllergyIntolerance/UC1-AllergyIntolerance-Penicillin"
 * entry[7].resource = UC1-AllergyIntolerance-Penicillin
 
-// HbA1c Observation
-* entry[8].fullUrl = "http://fhir.ch/ig/emr/Observation/UC1-Observation-HbA1c"
-* entry[8].resource = UC1-Observation-HbA1c
-
 // RelatedPersons
 * entry[9].fullUrl = "http://fhir.ch/ig/emr/RelatedPerson/UC1-RelatedPerson-PeterSchmidt"
 * entry[9].resource = UC1-RelatedPerson-PeterSchmidt
