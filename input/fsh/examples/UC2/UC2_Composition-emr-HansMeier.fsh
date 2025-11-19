@@ -35,61 +35,57 @@ Description: "Composition für den eNotfallpass von Hans Meier"
 * section[1].entry = Reference(UC2-RelatedPerson-ElisabethMeier)
 
 //Care Team Section
-* section[2].title = "Behandelnde Gesundheitsfachperson"
-* section[2].code = $loinc#85847-2 "Patient Care team information"
+
+
+//Resuscitation status
+* section[2].title = "Reanimationsstatus"
+* section[2].code = $loinc#100822-6 "Cardiopulmonary resuscitation orders"
 * section[2].text.status = #generated
 * section[2].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Behandelnde Ärzte:</p><ul><li>Dr. med. Andrea Zimmermann - Kardiologin (GLN: 7601000456789)</li></ul></div>"
 * section[2].entry = Reference(UC2-Practitioner-DrKardiologe)
 
-//Resuscitation status
-* section[3].title = "Reanimationsstatus"
-* section[3].code = $loinc#100822-6 "Cardiopulmonary resuscitation orders"
-* section[3].text.status = #generated
-* section[3].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Behandelnde Ärzte:</p><ul><li>Dr. med. Andrea Zimmermann - Kardiologin (GLN: 7601000456789)</li></ul></div>"
-* section[3].entry = Reference(UC2-Practitioner-DrKardiologe)
-
 //Medication Section
-* section[4].title = "Medikation"
-* section[4].code = $loinc#10160-0 "History of Medication use Narrative"
-* section[4].text.status = #generated
-* section[4].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktuelle Medikation:</p><ul><li><strong>WICHTIG:</strong> Marcumar 3mg täglich abends zur Antikoagulation</li></ul><p><strong>Bei Operationen:</strong> Bridging mit Heparin erforderlich!</p></div>"
-* section[4].entry = Reference(UC2-MedicationStatement-Marcumar)
+* section[3].title = "Medikation"
+* section[3].code = $loinc#10160-0 "History of Medication use Narrative"
+* section[3].text.status = #generated
+* section[3].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktuelle Medikation:</p><ul><li><strong>WICHTIG:</strong> Marcumar 3mg täglich abends zur Antikoagulation</li></ul><p><strong>Bei Operationen:</strong> Bridging mit Heparin erforderlich!</p></div>"
+* section[3].entry = Reference(UC2-MedicationStatement-Marcumar)
 
 //Immunization
-* section[5].title = "Impfungen"
-* section[5].code = $loinc#11369-6 "History of Immunization note"
-* section[5].text.status = #generated
-* section[5].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Aktueller Impfschutz:</strong></p><ul><li>Influenza: 15.10.2024</li><li>COVID-19: 12.09.2024</li><li>Tetanus: 18.03.2022</li></ul></div>"
-* section[5].entry[0] = Reference(Immunization/UC2-Immunization-Influenza)
-* section[5].entry[1] = Reference(Immunization/UC2-Immunization-COVID19)
-* section[5].entry[2] = Reference(Immunization/UC2-Immunization-Tetanus)
+* section[4].title = "Impfungen"
+* section[4].code = $loinc#11369-6 "History of Immunization note"
+* section[4].text.status = #generated
+* section[4].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Aktueller Impfschutz:</strong></p><ul><li>Influenza: 15.10.2024</li><li>COVID-19: 12.09.2024</li><li>Tetanus: 18.03.2022</li></ul></div>"
+* section[4].entry[0] = Reference(Immunization/UC2-Immunization-Influenza)
+* section[4].entry[1] = Reference(Immunization/UC2-Immunization-COVID19)
+* section[4].entry[2] = Reference(Immunization/UC2-Immunization-Tetanus)
 
 //Allergies Section
-* section[6].title = "Allergien oder Unverträglichkeiten"
-* section[6].code = $loinc#48765-2 "Allergies and adverse reactions Document"
-* section[6].text.status = #generated
-* section[6].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keine bekannten Allergien</p></div>"
-* section[6].emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#nilknown "Nil Known"
+* section[5].title = "Allergien oder Unverträglichkeiten"
+* section[5].code = $loinc#48765-2 "Allergies and adverse reactions Document"
+* section[5].text.status = #generated
+* section[5].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keine bekannten Allergien</p></div>"
+* section[5].emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#nilknown "Nil Known"
 
 //Riskfactor
 
 // Problem List Section
-* section[7].title = "Probleme und Diagnosen"
-* section[7].code = $loinc#11450-4 "Problem list - Reported"
-* section[7].text.status = #generated
-* section[7].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktive Probleme:</p><ul><li>Persistierendes Vorhofflimmern (seit 2020-01-15)</li></ul></div>"
-* section[7].entry = Reference(UC2-Condition-Vorhofflimmern)
+* section[6].title = "Probleme und Diagnosen"
+* section[6].code = $loinc#11450-4 "Problem list - Reported"
+* section[6].text.status = #generated
+* section[6].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktive Probleme:</p><ul><li>Persistierendes Vorhofflimmern (seit 2020-01-15)</li></ul></div>"
+* section[6].entry = Reference(UC2-Condition-Vorhofflimmern)
 
 //Living will and emergency medical directive section
 
 //DocumentReferences section
 
 // Medical Devices Section
-* section[8].title = "Implantate"
-* section[8].code = $loinc#46264-8 "History of medical device use"
-* section[8].text.status = #generated
-* section[8].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Implantate:</p><ul><li><strong>MRT-SICHER:</strong> Herzschrittmacher Boston Scientific Accolade MRI (Modell L331)</li><li>Seriennummer: PM987654321</li><li>Implantiert: 15.03.2020</li><li>Letzte Kontrolle: 01.09.2025</li></ul></div>"
-* section[8].entry = Reference(UC2-Device-Herzschrittmacher)
+* section[7].title = "Implantate"
+* section[7].code = $loinc#46264-8 "History of medical device use"
+* section[7].text.status = #generated
+* section[7].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Implantate:</p><ul><li><strong>MRT-SICHER:</strong> Herzschrittmacher Boston Scientific Accolade MRI (Modell L331)</li><li>Seriennummer: PM987654321</li><li>Implantiert: 15.03.2020</li><li>Letzte Kontrolle: 01.09.2025</li></ul></div>"
+* section[7].entry = Reference(UC2-Device-Herzschrittmacher)
 
 //Pregnancy section
 

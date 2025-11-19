@@ -47,22 +47,18 @@ Description: "Vollständiges eNotfallpass Bundle für Rudolf Zimmermann"
 * entry[10].fullUrl = "http://fhir.ch/ig/emr/MedicationStatement/UC4-MedicationStatement-MetforminRudolf"
 * entry[10].resource = UC4-MedicationStatement-MetforminRudolf
 
-// Laboratory
-* entry[11].fullUrl = "http://fhir.ch/ig/emr/Observation/UC4-Observation-CreatinineLevel"
-* entry[11].resource = UC4-Observation-CreatinineLevel
-
 // Device
-* entry[12].fullUrl = "http://fhir.ch/ig/emr/Device/UC4-Device-HipProsthesis"
-* entry[12].resource = UC4-Device-HipProsthesis
+* entry[11].fullUrl = "http://fhir.ch/ig/emr/Device/UC4-Device-HipProsthesis"
+* entry[11].resource = UC4-Device-HipProsthesis
 
 // RelatedPerson
-* entry[13].fullUrl = "http://fhir.ch/ig/emr/RelatedPerson/UC4-RelatedPerson-ElisabethZimmermann"
-* entry[13].resource = UC4-RelatedPerson-ElisabethZimmermann
+* entry[12].fullUrl = "http://fhir.ch/ig/emr/RelatedPerson/UC4-RelatedPerson-ElisabethZimmermann"
+* entry[12].resource = UC4-RelatedPerson-ElisabethZimmermann
 
 // Consent
-* entry[14].fullUrl = "http://fhir.ch/ig/emr/Consent/UC4-Consent-MedicalPowerOfAttorney"
-* entry[14].resource = UC4-Consent-MedicalPowerOfAttorney
+* entry[13].fullUrl = "http://fhir.ch/ig/emr/Consent/UC4-Consent-MedicalPowerOfAttorney"
+* entry[13].resource = UC4-Consent-MedicalPowerOfAttorney
 
 // Organization
-* entry[15].fullUrl = "http://fhir.ch/ig/emr/Organization/UC4-Organization-Hausarztpraxis-DrWeber"
-* entry[15].resource = UC4-Organization-Hausarztpraxis-DrWeber
+* entry[14].fullUrl = "http://fhir.ch/ig/emr/Organization/UC4-Organization-Hausarztpraxis-DrWeber"
+* entry[14].resource = UC4-Organization-Hausarztpraxis-DrWeber

@@ -89,13 +89,6 @@ Description: "Composition für den eNotfallpass von Rudolf Zimmermann"
 
 //Disability section
 
-// Laboratory Results Section Löschen
-* section[7].title = "Kritische Laborwerte"
-* section[7].code = $loinc#30954-2 "Relevant diagnostic tests/laboratory data note"
-* section[7].text.status = #generated
-* section[7].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>KRITISCH:</strong></p><ul><li>Kreatinin: 2.8 mg/dl (10.09.2025) - STARK ERHÖHT!</li><li>eGFR: ca. 20 ml/min/1.73m² - Stadium 4 Niereninsuffizienz</li></ul><p><strong>Sofortmaßnahmen:</strong> Metformin stoppen, Diuretika-Dosis reduzieren</p></div>"
-* section[7].entry = Reference(UC4-Observation-CreatinineLevel)
-
 
 
 
