@@ -5,6 +5,8 @@ Title: "eNotfallpass Composition - Rudolf Zimmermann"
 Description: "Composition für den eNotfallpass von Rudolf Zimmermann"
 
 * language = #de-CH
+* confidentiality.extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode"
+* confidentiality.extension.valueCodeableConcept = $sct#17621005 "Normal (qualifier value)"
 * confidentiality = #N
 
 * identifier.system = "urn:ietf:rfc:3986"
@@ -20,7 +22,7 @@ Description: "Composition für den eNotfallpass von Rudolf Zimmermann"
 * author = Reference(UC4-Practitioner-DrWeber)
 * title = "Elektronischer Notfallpass - Rudolf Zimmermann (Multimorbidität)"
 
-* confidentiality = #N
+
 * custodian = Reference(UC4-Organization-Hausarztpraxis-DrWeber)
 
 //Patient Summary Section

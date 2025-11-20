@@ -4,7 +4,8 @@ Usage: #example
 Title: "eNotfallpass Composition - Laura Weber"
 Description: "Composition für den eNotfallpass von Laura Weber"
 
-* language = #de-CH
+* confidentiality.extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode"
+* confidentiality.extension.valueCodeableConcept = $sct#17621005 "Normal (qualifier value)"
 * confidentiality = #N
 
 * identifier.system = "urn:ietf:rfc:3986"
@@ -20,7 +21,6 @@ Description: "Composition für den eNotfallpass von Laura Weber"
 * author = Reference(UC3-Practitioner-DrGynaekologin)
 * title = "Elektronischer Notfallpass - Laura Weber (Schwangerschaft)"
 
-* confidentiality = #N
 * custodian = Reference(UC3-Organization-Gynpraxis-Basel)
 
 //Patient Summary Section

@@ -5,6 +5,8 @@ Title: "eNotfallpass Composition - Maria Schmidt"
 Description: "Composition für den eNotfallpass von Maria Schmidt"
 
 * language = #de-CH
+* confidentiality.extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode"
+* confidentiality.extension.valueCodeableConcept = $sct#17621005 "Normal (qualifier value)"
 * confidentiality = #N
 
 * identifier.system = "urn:ietf:rfc:3986"
@@ -20,7 +22,6 @@ Description: "Composition für den eNotfallpass von Maria Schmidt"
 * author = Reference(UC1-Practitioner-DrMueller)
 * title = "Elektronischer Notfallpass - Maria Schmidt"
 
-* confidentiality = #N
 * custodian = Reference(UC1-Organization-Hausarztpraxis-DrMueller)
 
 // Patient Summary Section
