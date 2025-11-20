@@ -13,11 +13,12 @@ Alias: $sct =                           http://snomed.info/sct
 Alias: $sct-ch =                        http://snomed.info/sct|http://snomed.info/sct/2011000195101
 Alias: $edqm =                          http://standardterms.edqm.eu
 // Profiles
-//Alias: $ChCorePractitioner =            http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner
-//Alias: $ChCorePatient =                 http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient
+//Alias: $ChCorePractitioner =          http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner
+//Alias: $ChCorePatient =               http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient
 Alias: $ChCoreAI =                      http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-allergyintolerance
 Alias: $ChCoreMedicationStatement =     http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-medicationstatement
 Alias: $ChCoreImmunization =            http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-immunization
+Alias: $ChCoreCompositionEPR =          http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr
 
 // Swiss specific OIDs  
 Alias: $oid-ahvn13 = urn:oid:2.16.756.5.32

@@ -24,7 +24,7 @@ Diese Information ermöglicht es dem Radiologen, die MRT-Untersuchung nach entsp
 
 Zusätzlich ist dokumentiert, dass der Patient [Marcumar zur Antikoagulation](https://pjolo.github.io/emr/MedicationStatement-UC2-MedicationStatement-Marcumar.html) einnimmt, was bei einer möglichen Operation berücksichtigt werden muss. 
 
-Da Herr Meier als Herzpatient zu den Risikopersonen gehört, zeigt der eNotfallpass seinen aktuellen Immunisierungsstatus: [Grippeimpfung]() vom 15.10.2024 und [COVID-19]()Auffrischung vom 12.09.2024. Bei dem Sturz relevant ist auch die [Tetanus-Auffrischung]() vom 18.03.2022, die noch 8 Jahre gültig ist - wichtige Information für die Wundversorgung.
+Da Herr Meier als Herzpatient zu den Risikopersonen gehört, zeigt der eNotfallpass seinen aktuellen Immunisierungsstatus: [Grippeimpfung](https://pjolo.github.io/emr/UC2_Immunization-Influenza.html) vom 15.10.2024 und [COVID-19](https://pjolo.github.io/emr/UC2_Immunization-COVID19.html)Auffrischung vom 12.09.2024. Bei dem Sturz relevant ist auch die [Tetanus-Auffrischung](https://pjolo.github.io/emr/UC2_Immunization.Tetanus.html) vom 18.03.2022, die noch 8 Jahre gültig ist - wichtige Information für die Wundversorgung.
 
 Der behandelnde Unfallchirurg kann die MRT-Untersuchung sicher durchführen und bei Bedarf die Kardiologin Dr. Zimmermann für die perioperative Antikoagulations-Planung konsultieren. Als Notfallkontakt wird [Ehefrau Elisabeth](https://pjolo.github.io/emr/RelatedPerson-UC2-RelatedPerson-ElisabethMeier.html) unter +41 31 456 78 90 informiert.
 

@@ -60,13 +60,6 @@ Description: "Composition für den eNotfallpass von Maria Schmidt"
 * section[4].entry = Reference(UC1-MedicationStatement-Metformin)
 
 //Immunization
-* section[5].title = "Impfungen"
-* section[5].code = $loinc#11369-6 "History of Immunization note"
-* section[5].text.status = #generated
-* section[5].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Aktueller Impfschutz:</strong></p><ul><li>Influenza: 15.10.2024</li><li>COVID-19: 12.09.2024</li><li>Tetanus: 18.03.2022</li></ul></div>"
-* section[5].entry[0] = Reference(Immunization/UC2-Immunization-Influenza)
-* section[5].entry[1] = Reference(Immunization/UC2-Immunization-COVID19)
-* section[5].entry[2] = Reference(Immunization/UC2-Immunization-Tetanus)
 
 // Allergies Section
 * section[6].title = "Allergien und Unverträglichkeiten"
@@ -88,18 +81,4 @@ Description: "Composition für den eNotfallpass von Maria Schmidt"
 //Pregnancy section
 
 //Disability section
-
-// Laboratory Results Section Löschen
-* section[7].title = "Laborwerte"
-* section[7].code = $loinc#30954-2 "Relevant diagnostic tests/laboratory data note"
-* section[7].text.status = #generated
-* section[7].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktuelle Laborwerte:</p><ul><li>HbA1c: 6.8% (15.08.2025) - Zielwert erreicht</li></ul></div>"
-* section[7].entry = Reference(UC1-Observation-HbA1c)
-
-// Social History Section Löschen
-* section[8].title = "Sozialanamnese"
-* section[8].code = $loinc#29762-2 "Social history note"
-* section[8].text.status = #generated
-* section[8].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Soziale Situation:</p><ul><li>Verheiratet mit Peter Schmidt</li><li>Wohnt in Zürich</li><li>Kommunikation: Deutsch</li></ul></div>"
-
 

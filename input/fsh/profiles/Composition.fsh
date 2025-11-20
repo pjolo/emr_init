@@ -1,5 +1,5 @@
 Profile: ChEmrComposition
-Parent: Composition
+Parent: $ChCoreCompositionEPR
 Id: notfallpass-composition
-Title: "Notfallpass Composition"
-Description: "Composition für den Schweizer Notfallpass."
+Title: "Emergency Record Composition"
+Description: "Composition for the Swiss emergency record."
