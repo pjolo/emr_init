@@ -4,6 +4,9 @@ Usage: #example
 Title: "eNotfallpass Composition - Rudolf Zimmermann"
 Description: "Composition für den eNotfallpass von Rudolf Zimmermann"
 
+* language = #de-CH
+* confidentiality = #N
+
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:7afc1e97-67f8-49a8-91f5-46af596d0609"
 
