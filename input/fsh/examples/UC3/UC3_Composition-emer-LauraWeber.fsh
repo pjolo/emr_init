@@ -4,6 +4,7 @@ Usage: #example
 Title: "eNotfallpass Composition - Laura Weber"
 Description: "Composition für den eNotfallpass von Laura Weber"
 
+* language = #de-CH
 * confidentiality.extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode"
 * confidentiality.extension.valueCodeableConcept = $sct#17621005 "Normal (qualifier value)"
 * confidentiality = #N
