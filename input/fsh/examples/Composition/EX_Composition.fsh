@@ -61,7 +61,7 @@ Description: "Composition für den eNotfallpass von Maria Schmidt"
 * section[5].code = $loinc#11369-6 "History of Immunization note"
 * section[5].text.status = #generated
 * section[5].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Aktueller Impfschutz:</strong></p><ul><li>Influenza: 15.10.2024</li><li>COVID-19: 12.09.2024</li><li>Tetanus: 18.03.2022</li></ul></div>"
-* section[5].entry = Reference(EX-Immunisation)
+* section[5].entry = Reference(EX-Immunization)
 
 // Allergies Section
 * section[6].title = "Allergien und Unverträglichkeiten"
@@ -89,7 +89,7 @@ Description: "Composition für den eNotfallpass von Maria Schmidt"
 * section[1].code = $loinc#11450-4 "Problem list - Reported"
 * section[1].text.status = #generated
 * section[1].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktive Probleme:</p><ul><li>Diabetes mellitus Typ 2 (seit 2015-06-15) - gut kontrolliert</li></ul></div>"
-* section[1].entry = Reference(EX-AdvanceDirective)
+* section[1].entry = Reference(EX_AdvanceDirective)
 
 //DocumentReferences section
 * section[1].title = "Andere Dokumente"
