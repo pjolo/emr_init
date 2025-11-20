@@ -17,7 +17,7 @@ Description: "Composition für den eNotfallpass von Hans Meier"
 * subject = Reference(UC2-Patient-HansMeier)
 * date = "2025-09-10T11:00:00+02:00"
 
-* author = Reference(UC2-Practitioner-DrKardiologe)
+* author = Reference(UC1-Practitioner-DrMueller) //Hausarzt erstellen
 * title = "Elektronischer Notfallpass - Hans Meier"
 
 * confidentiality = #N
@@ -45,7 +45,7 @@ Description: "Composition für den eNotfallpass von Hans Meier"
 * section[2].code = $loinc#100822-6 "Cardiopulmonary resuscitation orders"
 * section[2].text.status = #generated
 * section[2].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Behandelnde Ärzte:</p><ul><li>Dr. med. Andrea Zimmermann - Kardiologin (GLN: 7601000456789)</li></ul></div>"
-* section[2].entry = Reference(UC2-Practitioner-DrKardiologe)
+* section[2].entry = Reference(UC1-Practitioner-DrMueller)
 
 //Medication Section
 * section[3].title = "Medikation"
