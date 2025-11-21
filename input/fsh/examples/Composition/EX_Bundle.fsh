@@ -32,7 +32,15 @@ Description: "Vollständiges eNotfallpass Bundle für Maria Schmidt"
 * entry[5].fullUrl = "http://fhir.ch/ig/emr/MedicationStatement/EX-MediationStatement"
 * entry[5].resource = EX-MedicationStatement
 
+//Immunization
+* entry[6].fullUrl = "http://fhir.ch/ig/emr/Immunization/EX-Immunization"
+* entry[6].resource = EX-Immunization
+
 // Penicillin Allergie
+* entry[6].fullUrl = "http://fhir.ch/ig/emr/Bservation/EX-Riskfactor"
+* entry[6].resource = EX-Riskfactor
+
+//Riskfactor
 * entry[6].fullUrl = "http://fhir.ch/ig/emr/AllergyIntolerance/EX-AllergyIntolerance"
 * entry[6].resource = EX-AllergyIntolerance
 
@@ -40,4 +48,15 @@ Description: "Vollständiges eNotfallpass Bundle für Maria Schmidt"
 * entry[7].fullUrl = "http://fhir.ch/ig/emr/Condition/EX-Condition"
 * entry[7].resource = EX-Condition
 
+//Medical Devices
+* entry[7].fullUrl = "http://fhir.ch/ig/emr/Device/EX-MedicalDevice"
+* entry[7].resource = EX-MedicalDevice
+
+//Pregnancy
+* entry[7].fullUrl = "http://fhir.ch/ig/emr/Observation/EX-Pregnancy"
+* entry[7].resource = EX-Pregnancy
+
+//Disability
+* entry[7].fullUrl = "http://fhir.ch/ig/emr/Observation/EX-Diabetes"
+* entry[7].resource = EX-Disability
 
