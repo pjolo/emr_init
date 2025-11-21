@@ -41,12 +41,12 @@ Description: "Vollständiges eNotfallpass Bundle für Maria Schmidt"
 * entry[7].resource = EX-Immunization
 
 //Allergie
-* entry[8].fullUrl = "http://fhir.ch/ig/emr/Bservation/EX-Riskfactor"
-* entry[8].resource = EX-Riskfactor
+* entry[8].fullUrl = "http://fhir.ch/ig/emr/AllergyIntolerance/EX-AllergyIntolerance"
+* entry[8].resource = EX-AllergyIntolerance
 
 //Riskfactor
-* entry[9].fullUrl = "http://fhir.ch/ig/emr/AllergyIntolerance/EX-AllergyIntolerance"
-* entry[9].resource = EX-AllergyIntolerance
+* entry[9].fullUrl = "http://fhir.ch/ig/emr/Observation/EX-RiskFactor"
+* entry[9].resource = EX-RiskFactor
 
 // Problem List
 * entry[10].fullUrl = "http://fhir.ch/ig/emr/Condition/EX-Condition"
