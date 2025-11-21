@@ -17,20 +17,22 @@ Description: "Vollständiges eNotfallpass Bundle für Laura Weber"
 * entry[1].fullUrl = "http://fhir.ch/ig/emr/Patient/UC3-Patient-LauraWeber"
 * entry[1].resource = UC3-Patient-LauraWeber
 
+* entry[2].fullUrl = "http://fhir.ch/ig/emr/Practitioner/UC3-Practitioner"
+* entry[2].resource = UC3-Patient-Practitioner
 
 // Schwangerschaft Observation
-* entry[2].fullUrl = "http://fhir.ch/ig/emr/Observation/UC3-Observation-Pregnancy"
-* entry[2].resource = UC3-Observation-Pregnancy
+* entry[3].fullUrl = "http://fhir.ch/ig/emr/Observation/UC3-Observation-Pregnancy"
+* entry[3].resource = UC3-Observation-Pregnancy
 
 // Patientenverfügung
-* entry[3].fullUrl = "http://fhir.ch/ig/emr/Consent/UC3-Consent-Resuscitation"
-* entry[3].resource = UC3-Consent-Resuscitation
+* entry[4].fullUrl = "http://fhir.ch/ig/emr/Consent/UC3-Consent-Resuscitation"
+* entry[4].resource = UC3-Consent-Resuscitation
 
 // Kontrastmittel-Allergie
-* entry[4].fullUrl = "http://fhir.ch/ig/emr/AllergyIntolerance/UC3-AllergyIntolerance-Contrast"
-* entry[4].resource = UC3-AllergyIntolerance-Contrast
+* entry[5].fullUrl = "http://fhir.ch/ig/emr/AllergyIntolerance/UC3-AllergyIntolerance-Contrast"
+* entry[5].resource = UC3-AllergyIntolerance-Contrast
 
 // RelatedPerson (Partner)
-* entry[5].fullUrl = "http://fhir.ch/ig/emr/RelatedPerson/UC3-RelatedPerson-MichaelWeber"
-* entry[5].resource = UC3-RelatedPerson-MichaelWeber
+* entry[6].fullUrl = "http://fhir.ch/ig/emr/RelatedPerson/UC3-RelatedPerson-MichaelWeber"
+* entry[6].resource = UC3-RelatedPerson-MichaelWeber
 

@@ -16,10 +16,10 @@ Description: "Composition für den eNotfallpass von Maria Schmidt"
 * type = $loinc#60591-5 "Patient summary Document"
 * category = $loinc#LP173421-1 "Report"
 
-* subject = Reference(EX_Patient)
+* subject = Reference(EX-Patient)
 * date = "2025-09-10T08:00:00+02:00"
 
-* author = Reference(EX_Practitioner)
+* author = Reference(EX-Practitioner)
 * title = "Elektronischer Notfallpass - Maria Schmidt"
 
 // Patient Summary Section
@@ -49,14 +49,14 @@ Description: "Composition für den eNotfallpass von Maria Schmidt"
 * section[3].code = $loinc#95540-2 "Resuscitation status"
 * section[3].text.status = #generated
 * section[3].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Reanimationsstatus: Ja</p></div>"
-* section[3].entry = Reference(EX-EX_Resurectation)
+* section[3].entry = Reference(EX-Resurectation)
 
 // Medication Section
 * section[4].title = "Medikation"
 * section[4].code = $loinc#10160-0 "History of Medication use Narrative"
 * section[4].text.status = #generated
 * section[4].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktuelle Medikation:</p><ul><li>Metformin 1000 mg zweimal täglich zu den Mahlzeiten (seit 2015-06-15)</li></ul></div>"
-* section[4].entry = Reference(EX-MediationStatement)
+* section[4].entry = Reference(EX-MedicationStatement)
 
 //Immunization
 * section[5].title = "Impfungen"
@@ -91,7 +91,7 @@ Description: "Composition für den eNotfallpass von Maria Schmidt"
 * section[9].code = $loinc#11450-4 "Problem list - Reported"
 * section[9].text.status = #generated
 * section[9].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktive Probleme:</p><ul><li>Diabetes mellitus Typ 2 (seit 2015-06-15) - gut kontrolliert</li></ul></div>"
-* section[9].entry = Reference(EX_AdvanceDirective)
+* section[9].entry = Reference(EX-AdvanceDirective)
 
 //DocumentReferences section
 * section[10].title = "Andere Dokumente"

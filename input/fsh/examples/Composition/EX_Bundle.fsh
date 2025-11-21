@@ -69,6 +69,6 @@ Description: "Vollständiges eNotfallpass Bundle für Maria Schmidt"
 * entry[14].resource = EX-Pregnancy
 
 //Disability
-* entry[15].fullUrl = "http://fhir.ch/ig/emr/Observation/EX-Diabetes"
+* entry[15].fullUrl = "http://fhir.ch/ig/emr/Observation/EX-Disability"
 * entry[15].resource = EX-Disability
 
