@@ -25,8 +25,8 @@ Description: "Vollständiges eNotfallpass Bundle für Maria Schmidt"
 * entry[3].fullUrl = "http://fhir.ch/ig/emr/Practitioner/EX-Practitioner"
 * entry[3].resource = EX-Practitioner
 
-//Resuscitation
-* entry[4].fullUrl = "http://fhir.ch/ig/emr/Observation/EX-Resuscitation"
+//Resurectation
+* entry[4].fullUrl = "http://fhir.ch/ig/emr/Observation/EX-Resurectation"
 * entry[4].resource = EX-Resurectation
 
 //Medication
