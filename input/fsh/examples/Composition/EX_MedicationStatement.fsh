@@ -1,4 +1,4 @@
-Instance: EX-MediationStatement
+Instance: EX-MedicationStatement
 InstanceOf: ChEmrMedicationStatement
 Usage: #example
 Title: "Metformin Therapie"
