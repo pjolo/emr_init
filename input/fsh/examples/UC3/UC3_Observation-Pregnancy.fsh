@@ -9,7 +9,7 @@ Description: "Aktuelle Schwangerschaft in der 32. Woche"
 * code = $loinc#82810-3 "Pregnancy status"
 * subject = Reference(UC3-Patient-LauraWeber)
 * effectiveDateTime = "2025-09-10T10:00:00+02:00"
-* performer = Reference(UC3-Practitioner-DrGynaekologin)
+* performer = Reference(UC3-Practitioner)
 
 * valueCodeableConcept = $sct#77386006 "Pregnant"
 
