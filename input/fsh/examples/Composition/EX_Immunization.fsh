@@ -9,11 +9,11 @@ Description: "Aktuelle COVID-19 XBB.1.5 Auffrischung mit Spikevax"
 * patient = Reference(Patient/EX-Patient)
 * occurrenceDateTime = "2024-09-12T14:15:00+02:00"
 
-* performer.actor = Reference(Practitioner/UC2-Practitioner-DrKardiologe)
+* performer.actor = Reference(Practitioner/EX-Practitioner)
 
 * lotNumber = "SPX24XBB002"
 
-* reasonReference = Reference(Condition/UC2-Condition-Vorhofflimmern)
+//* reasonReference = Reference(Condition/EX-Condition)
 
 * protocolApplied.targetDisease = $sct#840539006 "Disease caused by severe acute respiratory syndrome coronavirus 2"
 * protocolApplied.doseNumberPositiveInt = 6

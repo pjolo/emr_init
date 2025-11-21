@@ -33,7 +33,7 @@ Description: "Vollständiges eNotfallpass Bundle für Maria Schmidt"
 * entry[5].fullUrl = "http://fhir.ch/ig/emr/Medication/EX-Metformin"
 * entry[5].resource = EX-Metformin
 
-* entry[6].fullUrl = "http://fhir.ch/ig/emr/MedicationStatement/EX-MediationStatement"
+* entry[6].fullUrl = "http://fhir.ch/ig/emr/MedicationStatement/EX-MedicationStatement"
 * entry[6].resource = EX-MedicationStatement
 
 //Immunization
