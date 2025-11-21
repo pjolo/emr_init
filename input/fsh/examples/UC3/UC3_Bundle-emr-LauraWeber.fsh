@@ -18,7 +18,7 @@ Description: "Vollständiges eNotfallpass Bundle für Laura Weber"
 * entry[1].resource = UC3-Patient-LauraWeber
 
 * entry[2].fullUrl = "http://fhir.ch/ig/emr/Practitioner/UC3-Practitioner"
-* entry[2].resource = UC3-Patient-Practitioner
+* entry[2].resource = UC3-Practitioner
 
 // Schwangerschaft Observation
 * entry[3].fullUrl = "http://fhir.ch/ig/emr/Observation/UC3-Observation-Pregnancy"
