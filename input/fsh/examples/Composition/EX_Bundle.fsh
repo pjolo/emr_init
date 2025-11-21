@@ -17,46 +17,58 @@ Description: "Vollständiges eNotfallpass Bundle für Maria Schmidt"
 * entry[1].fullUrl = "http://fhir.ch/ig/emr/Patient/EX-Patient"
 * entry[1].resource = EX-Patient
 
-// RelatedPersons
+// Related Person
 * entry[2].fullUrl = "http://fhir.ch/ig/emr/RelatedPerson/EX-RelatedPerson"
 * entry[2].resource = EX-RelatedPerson
 
-// Practitioner
+// Care Team
 * entry[3].fullUrl = "http://fhir.ch/ig/emr/Practitioner/EX-Practitioner"
 * entry[3].resource = EX-Practitioner
 
-// Metformin Medication
-* entry[4].fullUrl = "http://fhir.ch/ig/emr/Medication/EX-Metformin"
-* entry[4].resource = EX-Metformin
+//Resuscitation
+* entry[4].fullUrl = "http://fhir.ch/ig/emr/Observation/EX-Resuscitation"
+* entry[4].resource = EX-Resurectation
 
-* entry[5].fullUrl = "http://fhir.ch/ig/emr/MedicationStatement/EX-MediationStatement"
-* entry[5].resource = EX-MedicationStatement
+//Medication
+* entry[5].fullUrl = "http://fhir.ch/ig/emr/Medication/EX-Metformin"
+* entry[5].resource = EX-Metformin
+
+* entry[6].fullUrl = "http://fhir.ch/ig/emr/MedicationStatement/EX-MediationStatement"
+* entry[6].resource = EX-MedicationStatement
 
 //Immunization
-* entry[6].fullUrl = "http://fhir.ch/ig/emr/Immunization/EX-Immunization"
-* entry[6].resource = EX-Immunization
+* entry[7].fullUrl = "http://fhir.ch/ig/emr/Immunization/EX-Immunization"
+* entry[7].resource = EX-Immunization
 
-// Penicillin Allergie
-* entry[6].fullUrl = "http://fhir.ch/ig/emr/Bservation/EX-Riskfactor"
-* entry[6].resource = EX-Riskfactor
+//Allergie
+* entry[8].fullUrl = "http://fhir.ch/ig/emr/Bservation/EX-Riskfactor"
+* entry[8].resource = EX-Riskfactor
 
 //Riskfactor
-* entry[6].fullUrl = "http://fhir.ch/ig/emr/AllergyIntolerance/EX-AllergyIntolerance"
-* entry[6].resource = EX-AllergyIntolerance
+* entry[9].fullUrl = "http://fhir.ch/ig/emr/AllergyIntolerance/EX-AllergyIntolerance"
+* entry[9].resource = EX-AllergyIntolerance
 
-// Diabetes Condition
-* entry[7].fullUrl = "http://fhir.ch/ig/emr/Condition/EX-Condition"
-* entry[7].resource = EX-Condition
+// Problem List
+* entry[10].fullUrl = "http://fhir.ch/ig/emr/Condition/EX-Condition"
+* entry[10].resource = EX-Condition
+
+//Living Will
+* entry[11].fullUrl = "http://fhir.ch/ig/emr/DocumentReference/EX-AdvanceDirective"
+* entry[11].resource = EX-AdvanceDirective
+
+//Document References
+* entry[12].fullUrl = "http://fhir.ch/ig/emr/DocumentReference/EX-DocumentReferences"
+* entry[12].resource = EX-DocumentReferences
 
 //Medical Devices
-* entry[7].fullUrl = "http://fhir.ch/ig/emr/Device/EX-MedicalDevice"
-* entry[7].resource = EX-MedicalDevice
+* entry[13].fullUrl = "http://fhir.ch/ig/emr/Device/EX-MedicalDevice"
+* entry[13].resource = EX-MedicalDevice
 
 //Pregnancy
-* entry[7].fullUrl = "http://fhir.ch/ig/emr/Observation/EX-Pregnancy"
-* entry[7].resource = EX-Pregnancy
+* entry[14].fullUrl = "http://fhir.ch/ig/emr/Observation/EX-Pregnancy"
+* entry[14].resource = EX-Pregnancy
 
 //Disability
-* entry[7].fullUrl = "http://fhir.ch/ig/emr/Observation/EX-Diabetes"
-* entry[7].resource = EX-Disability
+* entry[15].fullUrl = "http://fhir.ch/ig/emr/Observation/EX-Diabetes"
+* entry[15].resource = EX-Disability
 

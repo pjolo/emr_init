@@ -1,4 +1,4 @@
-Instance: EX-Resuscitation
+Instance: EX-EX_Resuscitation
 InstanceOf: ChEmrObservation
 Usage: #example
 * status = #final
