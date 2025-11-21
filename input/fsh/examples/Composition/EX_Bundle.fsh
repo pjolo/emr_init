@@ -12,36 +12,32 @@ Description: "Vollständiges eNotfallpass Bundle für Maria Schmidt"
 // Composition als erstes Entry
 * entry[0].fullUrl = "http://fhir.ch/ig/emr/Composition/EX-Composition"
 * entry[0].resource = EX-Composition
+
 // Patient
 * entry[1].fullUrl = "http://fhir.ch/ig/emr/Patient/EX-Patient"
 * entry[1].resource = EX-Patient
 
-// Practitioner (Hausarzt)
-* entry[2].fullUrl = "http://fhir.ch/ig/emr/Practitioner/EX-Practitioner"
-* entry[2].resource = EX-Practitioner
+// RelatedPersons
+* entry[2].fullUrl = "http://fhir.ch/ig/emr/RelatedPerson/EX-RelatedPerson"
+* entry[2].resource = EX-RelatedPerson
 
-* entry[3].fullUrl = "http://fhir.ch/ig/emr/Organization/UC1-Organization-Hausarztpraxis-DrMueller"
-* entry[3].resource = UC1-Organization-Hausarztpraxis-DrMueller
-
-// Diabetes Condition
-* entry[4].fullUrl = "http://fhir.ch/ig/emr/Condition/EX-Condition"
-* entry[4].resource = EX-Condition
+// Practitioner
+* entry[3].fullUrl = "http://fhir.ch/ig/emr/Practitioner/EX-Practitioner"
+* entry[3].resource = EX-Practitioner
 
 // Metformin Medication
-* entry[5].fullUrl = "http://fhir.ch/ig/emr/Medication/EX-Metformin"
-* entry[5].resource = EX-Metformin
+* entry[4].fullUrl = "http://fhir.ch/ig/emr/Medication/EX-Metformin"
+* entry[4].resource = EX-Metformin
 
-* entry[6].fullUrl = "http://fhir.ch/ig/emr/MedicationStatement/EX-MediationStatement"
-* entry[6].resource = EX-MediationStatement
+* entry[5].fullUrl = "http://fhir.ch/ig/emr/MedicationStatement/EX-MediationStatement"
+* entry[5].resource = EX-MedicationStatement
 
 // Penicillin Allergie
-* entry[7].fullUrl = "http://fhir.ch/ig/emr/AllergyIntolerance/EX-AllergyIntolerance"
-* entry[7].resource = EX-AllergyIntolerance
+* entry[6].fullUrl = "http://fhir.ch/ig/emr/AllergyIntolerance/EX-AllergyIntolerance"
+* entry[6].resource = EX-AllergyIntolerance
 
-// HbA1c Observation
-* entry[8].fullUrl = "http://fhir.ch/ig/emr/EX-Condition"
-* entry[8].resource = EX-Condition
+// Diabetes Condition
+* entry[7].fullUrl = "http://fhir.ch/ig/emr/Condition/EX-Condition"
+* entry[7].resource = EX-Condition
 
-// RelatedPersons
-* entry[9].fullUrl = "http://fhir.ch/ig/emr/RelatedPerson/EX-RelatedPerson"
-* entry[9].resource = EX-RelatedPerson
+

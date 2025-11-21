@@ -16,13 +16,11 @@ Description: "Composition für den eNotfallpass von Maria Schmidt"
 * type = $loinc#60591-5 "Patient summary Document"
 * category = $loinc#LP173421-1 "Report"
 
-* subject = Reference(UC1-Patient-MariaSchmidt)
+* subject = Reference(EX_Patient)
 * date = "2025-09-10T08:00:00+02:00"
 
-* author = Reference(UC1-Practitioner-DrMueller)
+* author = Reference(EX_Practitioner)
 * title = "Elektronischer Notfallpass - Maria Schmidt"
-
-* custodian = Reference(UC1-Organization-Hausarztpraxis-DrMueller)
 
 // Patient Summary Section
 * section[0].title = "Patientendaten"
@@ -32,26 +30,26 @@ Description: "Composition für den eNotfallpass von Maria Schmidt"
 * section[0].entry[0] = Reference(EX-Patient)
 
 //RelatedPerson Section
-* section[2].title = "Notfallkontakte"
-* section[2].code = $loinc#56864-2 "Emergency contact Relationship to patient"
-* section[2].text.status = #generated
-* section[2].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Notfallkontakt: Elisabeth Meier (Ehefrau) +41 31 456 78 90</p></div>"
-* section[2].entry = Reference(UC2-RelatedPerson-ElisabethMeier)
-* section[2].entry = Reference(EX-RelatedPerson)
+* section[1].title = "Notfallkontakte"
+* section[1].code = $loinc#56864-2 "Emergency contact Relationship to patient"
+* section[1].text.status = #generated
+* section[1].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Notfallkontakt: Elisabeth Meier (Ehefrau) +41 31 456 78 90</p></div>"
+* section[1].entry = Reference(UC2-RelatedPerson-ElisabethMeier)
+* section[1].entry = Reference(EX-RelatedPerson)
 
 // Care Team Section
-* section[3].title = "Behandelnde Gesundheitsfachperson"
-* section[3].code = $loinc#85847-2 "Patient Care team information"
-* section[3].text.status = #generated
-* section[3].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Behandelnde Ärzte:</p><ul><li>Dr. med. Hans Müller - Hausarzt (GLN: 7601000234567)</li></ul></div>"
-* section[3].entry = Reference(EX-Practitioner)
+* section[2].title = "Behandelnde Gesundheitsfachperson"
+* section[2].code = $loinc#85847-2 "Patient Care team information"
+* section[2].text.status = #generated
+* section[2].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Behandelnde Ärzte:</p><ul><li>Dr. med. Hans Müller - Hausarzt (GLN: 7601000234567)</li></ul></div>"
+* section[2].entry = Reference(EX-Practitioner)
 
 //Resuscitation status
 * section[3].title = "Reanimationsstatus"
-* section[3].code = $loinc#81346-2 "Advance directives"
+* section[3].code = $loinc#95540-2 "Resuscitation status"
 * section[3].text.status = #generated
 * section[3].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Reanimationsstatus: Ja</p></div>"
-* section[3].entry = Reference(EX-Practitioner)
+* section[3].entry = Reference(EX-EX_Resurectation)
 
 // Medication Section
 * section[4].title = "Medikation"
@@ -75,50 +73,50 @@ Description: "Composition für den eNotfallpass von Maria Schmidt"
 * section[6].entry = Reference(EX-AllergyIntolerance)
 
 //Riskfactor
-* section[6].title = "Risikofaktoren für Behandelnde"
-* section[6].code = $loinc#80943-0 "Risk factors"
-* section[6].text.status = #generated
-* section[6].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Bekannte Allergien:</p><ul><li><strong>KRITISCH:</strong> Penicillin-Allergie mit anaphylaktischer Reaktion (seit Kindheit)</li></ul><p><strong>Wichtig:</strong> Keine Beta-Lactam-Antibiotika verwenden!</p></div>"
-* section[6].entry = Reference(EX-RiskFactor)
+* section[7].title = "Risikofaktoren für Behandelnde"
+* section[7].code = $loinc#75186-7 "Risk factor"
+* section[7].text.status = #generated
+* section[7].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Bekannte Allergien:</p><ul><li><strong>KRITISCH:</strong> Penicillin-Allergie mit anaphylaktischer Reaktion (seit Kindheit)</li></ul><p><strong>Wichtig:</strong> Keine Beta-Lactam-Antibiotika verwenden!</p></div>"
+* section[7].entry = Reference(EX-RiskFactor)
 
 // Problem List Section
-* section[1].title = "Probleme und Diagnosen"
-* section[1].code = $loinc#11450-4 "Problem list - Reported"
-* section[1].text.status = #generated
-* section[1].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktive Probleme:</p><ul><li>Diabetes mellitus Typ 2 (seit 2015-06-15) - gut kontrolliert</li></ul></div>"
-* section[1].entry = Reference(EX-Condition)
+* section[8].title = "Probleme und Diagnosen"
+* section[8].code = $loinc#11450-4 "Problem list - Reported"
+* section[8].text.status = #generated
+* section[8].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktive Probleme:</p><ul><li>Diabetes mellitus Typ 2 (seit 2015-06-15) - gut kontrolliert</li></ul></div>"
+* section[8].entry = Reference(EX-Condition)
 
 //Living will and emergency medical directive section
-* section[1].title = "Patientenvefügungen und Ärztliche Notfallanordnungen"
-* section[1].code = $loinc#11450-4 "Problem list - Reported"
-* section[1].text.status = #generated
-* section[1].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktive Probleme:</p><ul><li>Diabetes mellitus Typ 2 (seit 2015-06-15) - gut kontrolliert</li></ul></div>"
-* section[1].entry = Reference(EX_AdvanceDirective)
+* section[9].title = "Patientenvefügungen und Ärztliche Notfallanordnungen"
+* section[9].code = $loinc#11450-4 "Problem list - Reported"
+* section[9].text.status = #generated
+* section[9].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktive Probleme:</p><ul><li>Diabetes mellitus Typ 2 (seit 2015-06-15) - gut kontrolliert</li></ul></div>"
+* section[9].entry = Reference(EX_AdvanceDirective)
 
 //DocumentReferences section
-* section[1].title = "Andere Dokumente"
-* section[1].code = $loinc#11450-4 "Problem list - Reported"
-* section[1].text.status = #generated
-* section[1].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktive Probleme:</p><ul><li>Diabetes mellitus Typ 2 (seit 2015-06-15) - gut kontrolliert</li></ul></div>"
-* section[1].entry = Reference(EX-DocumentReferences)
+* section[10].title = "Andere Dokumente"
+* section[10].code = $loinc#11450-4 "Problem list - Reported"
+* section[10].text.status = #generated
+* section[10].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktive Probleme:</p><ul><li>Diabetes mellitus Typ 2 (seit 2015-06-15) - gut kontrolliert</li></ul></div>"
+* section[10].entry = Reference(EX-DocumentReferences)
 
 //Medical Devices Section
-* section[1].title = "Implentate"
-* section[1].code = $loinc#11450-4 "Problem list - Reported"
-* section[1].text.status = #generated
-* section[1].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktive Probleme:</p><ul><li>Diabetes mellitus Typ 2 (seit 2015-06-15) - gut kontrolliert</li></ul></div>"
-* section[1].entry = Reference(EX-MedicalDivice)
+* section[11].title = "Implentate"
+* section[11].code = $loinc#11450-4 "Problem list - Reported"
+* section[11].text.status = #generated
+* section[11].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktive Probleme:</p><ul><li>Diabetes mellitus Typ 2 (seit 2015-06-15) - gut kontrolliert</li></ul></div>"
+* section[11].entry = Reference(EX-MedicalDevice)
 
 //Pregnancy section
-* section[8].title = "Schwangerschaft"
-* section[8].code = $loinc#46264-8 "History of medical device use"
-* section[8].text.status = #generated
-* section[8].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Implantate:</p><ul><li><strong>MRT-SICHER:</strong> Herzschrittmacher Boston Scientific Accolade MRI (Modell L331)</li><li>Seriennummer: PM987654321</li><li>Implantiert: 15.03.2020</li><li>Letzte Kontrolle: 01.09.2025</li></ul></div>"
-* section[8].entry = Reference(EX-Pregnancy)
+* section[12].title = "Schwangerschaft"
+* section[12].code = $loinc#46264-8 "History of medical device use"
+* section[12].text.status = #generated
+* section[12].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Implantate:</p><ul><li><strong>MRT-SICHER:</strong> Herzschrittmacher Boston Scientific Accolade MRI (Modell L331)</li><li>Seriennummer: PM987654321</li><li>Implantiert: 15.03.2020</li><li>Letzte Kontrolle: 01.09.2025</li></ul></div>"
+* section[12].entry = Reference(EX-Pregnancy)
 
 //Disability section
-* section[8].title = "Beeinträchtigungen"
-* section[8].code = $loinc#46264-8 "History of medical device use"
-* section[8].text.status = #generated
-* section[8].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Implantate:</p><ul><li><strong>MRT-SICHER:</strong> Herzschrittmacher Boston Scientific Accolade MRI (Modell L331)</li><li>Seriennummer: PM987654321</li><li>Implantiert: 15.03.2020</li><li>Letzte Kontrolle: 01.09.2025</li></ul></div>"
-* section[8].entry = Reference(EX-Disability)
+* section[13].title = "Beeinträchtigungen"
+* section[13].code = $loinc#46264-8 "History of medical device use"
+* section[13].text.status = #generated
+* section[13].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Implantate:</p><ul><li><strong>MRT-SICHER:</strong> Herzschrittmacher Boston Scientific Accolade MRI (Modell L331)</li><li>Seriennummer: PM987654321</li><li>Implantiert: 15.03.2020</li><li>Letzte Kontrolle: 01.09.2025</li></ul></div>"
+* section[13].entry = Reference(EX-Disability)

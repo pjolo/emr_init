@@ -1,4 +1,4 @@
-Instance: EX-MedicalDivice
+Instance: EX-MedicalDevice
 InstanceOf: ChEmrDevice
 Usage: #example
 Title: "Herzschrittmacher"
