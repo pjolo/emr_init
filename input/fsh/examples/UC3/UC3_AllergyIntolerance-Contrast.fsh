@@ -13,7 +13,7 @@ Description: "Allergie gegen jodhaltige Kontrastmittel"
 * patient = Reference(UC3-Patient-LauraWeber)
 * onsetDateTime = "2018-05-20"
 * recordedDate = "2025-01-15"
-* recorder = Reference(UC3-Practitioner-DrGynaekologin)
+* recorder = Reference(UC3-Practitioner)
 * asserter = Reference(UC3-Patient-LauraWeber)
 
 * note.text = "Allergie gegen jodhaltige Kontrastmittel seit 2018. Aufgetreten bei CT-Untersuchung nach Unfall. WICHTIG: Keine jodhaltigen Kontrastmittel verwenden!"
