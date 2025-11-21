@@ -1,4 +1,4 @@
-Instance: Ex-AdvanceDirective
+Instance: EX-AdvanceDirective
 InstanceOf: ChEmrDocumentReference
 Usage: #example
 * status = #current
