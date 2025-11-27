@@ -9,7 +9,7 @@ Description: "Aktuelle COVID-19 XBB.1.5 Auffrischung mit Spikevax"
 * patient = Reference(Patient/UC2-Patient-HansMeier)
 * occurrenceDateTime = "2024-09-12T14:15:00+02:00"
 
-* performer.actor = Reference(Practitioner/UC2-Practitioner-DrKardiologe)
+* performer.actor = Reference(Practitioner/UC2-Practitioner-DrMueller)
 
 * lotNumber = "SPX24XBB002"
 

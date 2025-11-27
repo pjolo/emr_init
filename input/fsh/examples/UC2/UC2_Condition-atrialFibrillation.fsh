@@ -12,6 +12,6 @@ Description: "Beispiel einer Vorhofflimmern-Diagnose"
 * subject = Reference(UC2-Patient-HansMeier)
 * onsetDateTime = "2020-01-15"
 * recordedDate = "2020-01-15"
-* recorder = Reference(UC2-Practitioner-DrKardiologe)
-* asserter = Reference(UC2-Practitioner-DrKardiologe)
+* recorder = Reference(UC2-Practitioner-DrSchmidt)
+* asserter = Reference(UC2-Practitioner-DrSchmidt)
 * note.text = "Persistierendes Vorhofflimmern seit 2020. Elektrische Kardioversion erfolglos. Antikoagulation mit Marcumar, Herzschrittmacher-Implantation März 2020."

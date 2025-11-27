@@ -9,7 +9,7 @@ Description: "Jährliche Influenza-Schutzimpfung für Herzrisikopatient"
 * patient = Reference(Patient/UC2-Patient-HansMeier)
 * occurrenceDateTime = "2024-10-15T09:30:00+02:00"
 
-* performer.actor = Reference(Practitioner/UC2-Practitioner-DrKardiologe)
+* performer.actor = Reference(Practitioner/UC2-Practitioner-DrMueller)
 
 * lotNumber = "FLU2024-CH-001"
 

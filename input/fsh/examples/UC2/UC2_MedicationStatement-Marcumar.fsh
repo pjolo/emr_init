@@ -9,7 +9,7 @@ Description: "Beispiel einer Marcumar-Therapie zur Antikoagulation"
 * subject = Reference(UC2-Patient-HansMeier)
 * effectiveDateTime = "2020-03-20"
 * dateAsserted = "2025-09-01"
-* informationSource = Reference(UC2-Practitioner-DrKardiologe)
+* informationSource = Reference(UC2-Practitioner-DrSchmidt)
 
 * dosage.text = "Individuell angepasste Dosis nach INR-Werten, aktuell 3mg täglich abends"
 * dosage.timing.repeat.frequency = 1

@@ -10,7 +10,7 @@ Description: "Tetanus-Diphtherie-Pertussis Auffrischung für Sturz-Prophylaxe"
 * occurrenceDateTime = "2022-03-18T10:45:00+01:00"
 * primarySource = true
 
-* performer.actor = Reference(Practitioner/UC2-Practitioner-DrKardiologe)
+* performer.actor = Reference(Practitioner/UC2-Practitioner-DrMueller)
 
 * lotNumber = "ADC22CH005"
 

@@ -66,11 +66,11 @@ Description: "Composition für den eNotfallpass von Maria Schmidt"
 //Immunization
 
 // Allergies Section
-* section[6].title = "Allergien und Unverträglichkeiten"
-* section[6].code = $loinc#48765-2 "Allergies and adverse reactions Document"
-* section[6].text.status = #generated
-* section[6].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Bekannte Allergien:</p><ul><li><strong>KRITISCH:</strong> Penicillin-Allergie mit anaphylaktischer Reaktion (seit Kindheit)</li></ul><p><strong>Wichtig:</strong> Keine Beta-Lactam-Antibiotika verwenden!</p></div>"
-* section[6].entry = Reference(UC1-AllergyIntolerance-Penicillin)
+* section[5].title = "Allergien und Unverträglichkeiten"
+* section[5].code = $loinc#48765-2 "Allergies and adverse reactions Document"
+* section[5].text.status = #generated
+* section[5].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Bekannte Allergien:</p><ul><li><strong>KRITISCH:</strong> Penicillin-Allergie mit anaphylaktischer Reaktion (seit Kindheit)</li></ul><p><strong>Wichtig:</strong> Keine Beta-Lactam-Antibiotika verwenden!</p></div>"
+* section[5].entry = Reference(UC1-AllergyIntolerance-Penicillin)
 
 //Riskfactor
 
