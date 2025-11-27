@@ -2,8 +2,7 @@ Instance: EX-Disability
 InstanceOf: ChEmrObservation
 Usage: #example
 * status = #final
-* code = $loinc#69861-9 "Disability status"
+* code = $sct#228158008 "Walking disability (finding)"
 * subject = Reference(EX-Patient)
 * effectiveDateTime = "2025-10-08"
-* valueCodeableConcept = $sct#21134002 "Disability (finding)"
 * note.text = "Gehbehinderung, Rollstuhlnutzung"

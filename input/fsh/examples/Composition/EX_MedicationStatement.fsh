@@ -4,8 +4,8 @@ Usage: #example
 Title: "Metformin Therapie"
 Description: "Beispiel einer Metformin-Therapie"
 * status = #active
-* medicationReference = Reference(Metformin)
-* subject = Reference(UC1-Patient-MariaSchmidt)
+* medicationReference = Reference(EX-Metformin)
+* subject = Reference(EX-Patient)
 * effectivePeriod.start = "2020-03-03"
 * reasonCode.text = "Diabetes"
 * dosage[0].patientInstruction = "Unzerkaut während oder nach den Mahlzeiten mit ausreichend Flüssigkeit einnehmen"
