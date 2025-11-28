@@ -6,3 +6,4 @@ Usage: #example
 * subject = Reference(EX-Patient)
 * effectiveDateTime = "2025-10-08"
 * note.text = "Gehbehinderung, Rollstuhlnutzung"
+* performer = Reference(EX-Practitioner)
