@@ -35,23 +35,19 @@ Description: "Vollständiges eNotfallpass Bundle für Hans Meier"
 * entry[6].fullUrl = "http://fhir.ch/ig/emr/Device/UC2-Device-Herzschrittmacher"
 * entry[6].resource = UC2-Device-Herzschrittmacher
 
-// INR Observation
-//* entry[7].fullUrl = "http://fhir.ch/ig/enotfallpass/Observation/Observation-INR"
-//* entry[7].resource = Observation-INR
-
 // RelatedPerson (Ehefrau)
-* entry[8].fullUrl = "http://fhir.ch/ig/emr/RelatedPerson/UC2-RelatedPerson-ElisabethMeier"
-* entry[8].resource = UC2-RelatedPerson-ElisabethMeier
+* entry[7].fullUrl = "http://fhir.ch/ig/emr/RelatedPerson/UC2-RelatedPerson-ElisabethMeier"
+* entry[7].resource = UC2-RelatedPerson-ElisabethMeier
 
 // Organization
-* entry[9].fullUrl = "http://fhir.ch/ig/emr/Organization/UC2-Organization-Kardiologie-Bern"
-* entry[9].resource = UC2-Organization-Kardiologie-Bern
+* entry[8].fullUrl = "http://fhir.ch/ig/emr/Organization/UC2-Organization-Kardiologie-Bern"
+* entry[8].resource = UC2-Organization-Kardiologie-Bern
 
-* entry[10].fullUrl = "http://fhir.ch/ig/emr/Immunization/UC2-Immunization-Tetanus"
-* entry[10].resource = UC2-Immunization-Tetanus
+* entry[9].fullUrl = "http://fhir.ch/ig/emr/Immunization/UC2-Immunization-Tetanus"
+* entry[9].resource = UC2-Immunization-Tetanus
 
-* entry[11].fullUrl = "http://fhir.ch/ig/emr/Immunization/UC2-Immunization-Influenza"
-* entry[11].resource = UC2-Immunization-Influenza
+* entry[10].fullUrl = "http://fhir.ch/ig/emr/Immunization/UC2-Immunization-Influenza"
+* entry[10].resource = UC2-Immunization-Influenza
 
-* entry[12].fullUrl = "http://fhir.ch/ig/emr/Immunization/UC2-Immunization-COVID19"  
-* entry[12].resource = UC2-Immunization-COVID19
+* entry[11].fullUrl = "http://fhir.ch/ig/emr/Immunization/UC2-Immunization-COVID19"  
+* entry[11].resource = UC2-Immunization-COVID19
