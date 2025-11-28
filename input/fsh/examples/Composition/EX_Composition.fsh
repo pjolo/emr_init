@@ -33,8 +33,7 @@ Description: "Composition für den eNotfallpass von Maria Schmidt"
 * section[1].code = $loinc#56864-2 "Emergency contact Relationship to patient"
 * section[1].text.status = #generated
 * section[1].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Notfallkontakt: Elisabeth Meier (Ehefrau) +41 31 456 78 90</p></div>"
-* section[1].entry[+] = Reference(UC2-RelatedPerson-ElisabethMeier)
-* section[1].entry[+] = Reference(EX-RelatedPerson)
+* section[1].entry = Reference(EX-RelatedPerson)
 
 // Care Team Section
 * section[2].title = "Behandelnde Gesundheitsfachperson"
