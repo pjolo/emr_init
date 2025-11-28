@@ -43,6 +43,12 @@ Description: "Composition für den eNotfallpass von Laura Weber"
 * section[2].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Behandelnde Ärzte:</p><ul><li>Dr. med. Hans Müller - Hausarzt (GLN: 7601000234567)</li></ul></div>"
 * section[2].entry = Reference(UC3-Practitioner)
 
+* section[3].title = "Behandlungsteam"
+* section[3].code = $loinc#85847-2 "Patient Care team information"
+* section[3].text.status = #generated
+* section[3].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Behandelnde Ärzte:</p><ul><li>Dr. med. Hans Müller - Hausarzt (GLN: 7601000234567)</li></ul></div>"
+* section[3].entry = Reference(UC3-Practitioner-DrSemmelbruch)
+
 //Resuscitation status
 
 //Medication section
@@ -50,33 +56,33 @@ Description: "Composition für den eNotfallpass von Laura Weber"
 //Immunization
 
 //Allergies Section
-* section[3].title = "Allergien und Unverträglichkeiten"
-* section[3].code = $loinc#48765-2 "Allergies and adverse reactions Document"
-* section[3].text.status = #generated
-* section[3].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Bekannte Allergien:</p><ul><li><strong>WICHTIG:</strong> Allergie gegen jodhaltige Kontrastmittel</li><li>Reaktion: Hautausschlag, Juckreiz, leichte Atembeschwerden</li></ul><p><strong>Keine jodhaltigen Kontrastmittel verwenden!</strong></p></div>"
-* section[3].entry = Reference(UC3-AllergyIntolerance-Contrast)
+* section[4].title = "Allergien und Unverträglichkeiten"
+* section[4].code = $loinc#48765-2 "Allergies and adverse reactions Document"
+* section[4].text.status = #generated
+* section[4].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Bekannte Allergien:</p><ul><li><strong>WICHTIG:</strong> Allergie gegen jodhaltige Kontrastmittel</li><li>Reaktion: Hautausschlag, Juckreiz, leichte Atembeschwerden</li></ul><p><strong>Keine jodhaltigen Kontrastmittel verwenden!</strong></p></div>"
+* section[4].entry = Reference(UC3-AllergyIntolerance-Contrast)
 
 //Riskfactor
 
 //Problem List Section
 
 //Living will and emergency medical directive section
-* section[4].title = "Patientenverfügung"
-* section[4].code = $loinc#42348-3 "Advance healthcare directives"
-* section[4].text.status = #generated
-* section[4].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>WICHTIGE PATIENTENVERFÜGUNG:</strong></p><p>Bei lebensbedrohlichen Komplikationen während der Schwangerschaft soll eine Reanimation nur dann durchgeführt werden, wenn dadurch das ungeborene Kind gerettet werden kann.</p><p>Das Wohl des Kindes ist prioritär zu berücksichtigen.</p></div>"
-* section[4].entry = Reference(UC3-Consent-Resuscitation)
+* section[5].title = "Patientenverfügung"
+* section[5].code = $loinc#42348-3 "Advance healthcare directives"
+* section[5].text.status = #generated
+* section[5].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>WICHTIGE PATIENTENVERFÜGUNG:</strong></p><p>Bei lebensbedrohlichen Komplikationen während der Schwangerschaft soll eine Reanimation nur dann durchgeführt werden, wenn dadurch das ungeborene Kind gerettet werden kann.</p><p>Das Wohl des Kindes ist prioritär zu berücksichtigen.</p></div>"
+* section[5].entry = Reference(UC3-Consent-Resuscitation)
 
 //DocumentReferences section
 
 //Medical Devices Section
 
 //Pregnancy Status Section
-* section[5].title = "Schwangerschaftsstatus"
-* section[5].code = $loinc#90767-5 "Pregnancy summary Document"
-* section[5].text.status = #generated
-* section[5].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>AKTUELLE SCHWANGERSCHAFT:</strong></p><ul><li>32. Schwangerschaftswoche</li><li>Erwarteter Geburtstermin: 15. November 2025</li><li>Normale Entwicklung, alle Kontrollen unauffällig</li></ul></div>"
-* section[5].entry = Reference(UC3-Observation-Pregnancy)
+* section[6].title = "Schwangerschaftsstatus"
+* section[6].code = $loinc#90767-5 "Pregnancy summary Document"
+* section[6].text.status = #generated
+* section[6].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>AKTUELLE SCHWANGERSCHAFT:</strong></p><ul><li>32. Schwangerschaftswoche</li><li>Erwarteter Geburtstermin: 15. November 2025</li><li>Normale Entwicklung, alle Kontrollen unauffällig</li></ul></div>"
+* section[6].entry = Reference(UC3-Observation-Pregnancy)
 
 
 //Disability section
