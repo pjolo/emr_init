@@ -87,7 +87,7 @@ Description: "Composition für den eNotfallpass von Maria Schmidt"
 
 //Living will and emergency medical directive section
 * section[9].title = "Patientenvefügungen und Ärztliche Notfallanordnungen"
-* section[9].code = $loinc#	75320-2 "Advance directive"
+* section[9].code = $loinc#75320-2 "Advance directive"
 * section[9].text.status = #generated
 * section[9].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktive Probleme:</p><ul><li>Diabetes mellitus Typ 2 (seit 2015-06-15) - gut kontrolliert</li></ul></div>"
 * section[9].entry = Reference(EX-AdvanceDirective)
