@@ -19,10 +19,8 @@ Description: "Composition für den eNotfallpass von Laura Weber"
 * subject = Reference(UC3-Patient-LauraWeber)
 * date = "2025-09-10T15:00:00+02:00"
 
-* author = Reference(UC3-Practitioner-DrGynaekologin)
+* author = Reference(UC3-Practitioner)
 * title = "Elektronischer Notfallpass - Laura Weber (Schwangerschaft)"
-
-* custodian = Reference(UC3-Organization-Gynpraxis-Basel)
 
 //Patient Summary Section
 * section[0].title = "Patientendaten"
@@ -78,8 +76,8 @@ Description: "Composition für den eNotfallpass von Laura Weber"
 * section[5].code = $loinc#90767-5 "Pregnancy summary Document"
 * section[5].text.status = #generated
 * section[5].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>AKTUELLE SCHWANGERSCHAFT:</strong></p><ul><li>32. Schwangerschaftswoche</li><li>Erwarteter Geburtstermin: 15. November 2025</li><li>Normale Entwicklung, alle Kontrollen unauffällig</li></ul></div>"
-* section[5].entry[0] = Reference(UC3-Observation-Pregnancy)
-* section[5].entry[1] = Reference(UC3-Observation-FetalHeartRate)
+* section[5].entry = Reference(UC3-Observation-Pregnancy)
+
 
 //Disability section
 

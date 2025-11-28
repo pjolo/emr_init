@@ -19,7 +19,7 @@ Description: "Composition für den eNotfallpass von Hans Meier"
 * subject = Reference(UC2-Patient-HansMeier)
 * date = "2025-09-10T11:00:00+02:00"
 
-* author = Reference(UC1-Practitioner-DrMueller) //Hausarzt erstellen
+* author = Reference(UC2-Practitioner-DrSchmidt)
 * title = "Elektronischer Notfallpass - Hans Meier"
 
 * custodian = Reference(UC2-Organization-Kardiologie-Bern)
