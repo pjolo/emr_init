@@ -7,7 +7,7 @@ Description: "Gynäkologin und Geburtshelferin"
 // Identifier
 * language = #de-CH
 * identifier[GLN].system = "urn:oid:2.51.1.3"
-* identifier[GLN].value = "7677777777771"
+* identifier[GLN].value = "7612345678900"
 
 // Name
 * name.use = #official
