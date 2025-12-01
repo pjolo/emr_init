@@ -1,8 +1,8 @@
 Instance: EX-RelatedPerson
 InstanceOf: ChEmrRelatedPerson
 Usage: #example
-Title: "Peter Schmidt - Ehemann"
-Description: "Ehemann von Maria Schmidt als Notfallkontakt"
+Title: "EX-RelatedPerson"
+Description: "General example of a related person"
 
 * active = true
 * patient = Reference(EX-Patient)

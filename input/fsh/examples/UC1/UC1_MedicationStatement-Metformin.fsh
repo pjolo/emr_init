@@ -1,8 +1,8 @@
 Instance: UC1-MedicationStatement-Metformin
 InstanceOf: ChEmrMedicationStatement
 Usage: #example
-Title: "Metformin Therapie"
-Description: "Beispiel einer Metformin-Therapie bei Maria Schmidt"
+Title: "UC1-MedicationStatement-Metformin"
+Description: "Example of metformin therapy for Maria Schmid"
 * status = #active
 * medicationReference = Reference(Metformin)
 * subject = Reference(UC1-Patient-MariaSchmidt)

@@ -1,8 +1,8 @@
 Instance: EX-Patient
 InstanceOf: ChEmrPatient
 Usage: #example
-Title: "Patientin Anna Schmidt"
-Description: "Beispiel einer Patientin für den eNotfallpass"
+Title: "EX-Patient"
+Description: "General example of a Patient"
 
 * identifier[insuranceCardNumber].system = "urn:oid:2.16.756.5.30.1.123.100.1.1.1"
 * identifier[insuranceCardNumber].value = "80756015090002647590"

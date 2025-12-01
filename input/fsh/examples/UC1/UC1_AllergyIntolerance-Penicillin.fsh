@@ -1,8 +1,8 @@
 Instance: UC1-AllergyIntolerance-Penicillin
 InstanceOf: ChEmrAllergyIntolerance
 Usage: #example
-Title: "Penicillin-Allergie"
-Description: "Beispiel einer Penicillin-Allergie bei Maria Schmidt"
+Title: "UC1-AllergyIntolerance-Penicillin"
+Description: "Example of penicillin allergy for Maria Schmidt"
 
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active
 * verificationStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#confirmed

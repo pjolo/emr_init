@@ -1,8 +1,8 @@
 Instance: UC3-Consent-Resuscitation
 InstanceOf: Consent
 Usage: #example
-Title: "Patientenverfügung Reanimation"
-Description: "Spezielle Patientenverfügung für Schwangerschaft"
+Title: "Advance directive on resuscitation"
+Description: "Advance directive for Laura Weber"
 
 * status = #active
 * scope = http://terminology.hl7.org/CodeSystem/consentscope#treatment

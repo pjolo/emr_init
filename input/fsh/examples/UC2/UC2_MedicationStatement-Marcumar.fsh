@@ -1,8 +1,8 @@
 Instance: UC2-MedicationStatement-Marcumar
 InstanceOf: ChEmrMedicationStatement
 Usage: #example
-Title: "Marcumar Antikoagulation"
-Description: "Beispiel einer Marcumar-Therapie zur Antikoagulation"
+Title: "UC2-MedicationStatement-Marcumar"
+Description: "Example of Marcumar therapy for Hans Meier"
 
 * status = #active
 * medicationCodeableConcept = $atc#B01AA03 "Warfarin"

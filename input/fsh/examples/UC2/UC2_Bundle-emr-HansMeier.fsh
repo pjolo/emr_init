@@ -1,7 +1,7 @@
 Instance: UC2-Bundle-emr-HansMeier
 InstanceOf: Bundle
 Usage: #example
-Title: "eNotfallpass Bundle - Hans Meier"
+Title: "UC2-Bundle-emr-HansMeier"
 Description: "Vollständiges eNotfallpass Bundle für Hans Meier"
 
 * identifier.system = "urn:ietf:rfc:3986"

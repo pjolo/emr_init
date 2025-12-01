@@ -1,8 +1,8 @@
 Instance: EX-Pregnancy
 InstanceOf: ChEmrObservation
 Usage: #example
-Title: "Schwangerschaftsstatus"
-Description: "Aktuelle Schwangerschaft in der 32. Woche"
+Title: "EX-Pregnancy"
+Description: "General example of a Pregnancy"
 
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#social-history

@@ -1,8 +1,8 @@
 Instance: UC1-RelatedPerson-AnnaMueller
 InstanceOf: ChEmrRelatedPerson
 Usage: #example
-Title: "Anna Müller - Schwester"
-Description: "Schwester von Maria Schmidt als weitere Angehörige"
+Title: "UC1-RelatedPerson-AnnaMueller"
+Description: "Sister of Maria Schmidt as another family member"
 
 * active = true
 * patient = Reference(UC1-Patient-MariaSchmidt)

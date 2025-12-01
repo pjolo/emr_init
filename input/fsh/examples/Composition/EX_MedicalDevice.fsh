@@ -1,8 +1,8 @@
 Instance: EX-MedicalDevice
 InstanceOf: ChEmrDevice
 Usage: #example
-Title: "Herzschrittmacher"
-Description: "Beispiel eines MRT-sicheren Herzschrittmachers"
+Title: "EX-MedicalDevice"
+Description: "General example of a medical device (Cardiac pacemaker)"
 
 * identifier[0].type = $v2-0203#SNO
 * identifier[0].value = "PM987654321"

@@ -1,8 +1,8 @@
 Instance: EX-Condition
 InstanceOf: ChEmrCondition
 Usage: #example
-Title: "Diabetes mellitus Typ 2"
-Description: "Diabetes mellitus Typ 2 mit nephropathischen Komplikationen"
+Title: "EX-Condition (Type 2 diabetes mellitus)"
+Description: "General example of a condition"
 
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed

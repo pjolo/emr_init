@@ -1,8 +1,8 @@
 Instance: UC3-Observation-Pregnancy
 InstanceOf: ChEmrObservation
 Usage: #example
-Title: "Schwangerschaftsstatus"
-Description: "Aktuelle Schwangerschaft in der 32. Woche"
+Title: "UC3-Observation-Pregnancy"
+Description: "Laura Weber's current pregnancy"
 
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#social-history

@@ -1,7 +1,7 @@
 Instance: UC2-Condition-Vorhofflimmern
 InstanceOf: ChEmrCondition
 Usage: #example
-Title: "Vorhofflimmern"
+Title: "UC2-Condition-Vorhofflimmern"
 Description: "Beispiel einer Vorhofflimmern-Diagnose"
 
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active

@@ -1,8 +1,8 @@
 Instance: Example-DocumentReference-Patientenverfuegung
 InstanceOf: ChEmrDocumentReference
 Usage: #example
-Title: "Patientenverfügung - PDF Dokument"
-Description: "Beispiel einer Patientenverfügung als referenziertes Dokument"
+Title: "Advance directive document for Laura Weber"
+Description: "Example of a advance directive as a referenced document"
 
 * status = #current
 

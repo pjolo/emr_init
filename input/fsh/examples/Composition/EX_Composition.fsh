@@ -1,8 +1,8 @@
 Instance: EX-Composition
 InstanceOf: ChEmrComposition
 Usage: #example
-Title: "eNotfallpass Composition - Maria Schmidt"
-Description: "Composition für den eNotfallpass von Maria Schmidt"
+Title: "EX-Composition"
+Description: "General composition for the Emergency Record"
 
 * language = #de-CH
 * confidentiality.extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode"

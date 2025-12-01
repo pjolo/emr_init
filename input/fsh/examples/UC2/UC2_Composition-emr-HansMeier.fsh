@@ -1,7 +1,7 @@
 Instance: UC2-Composition-emr-HansMeier
 InstanceOf: ChEmrComposition
 Usage: #example
-Title: "eNotfallpass Composition - Hans Meier"
+Title: "UC2-Composition-emr-HansMeier"
 Description: "Composition für den eNotfallpass von Hans Meier"
 
 * language = #de-CH

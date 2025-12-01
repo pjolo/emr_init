@@ -1,8 +1,8 @@
 Instance: UC4-Composition-emr-RudolfZimmermann
 InstanceOf: ChEmrComposition
 Usage: #example
-Title: "eNotfallpass Composition - Rudolf Zimmermann"
-Description: "Composition für den eNotfallpass von Rudolf Zimmermann"
+Title: "UC4-Composition-emr-RudolfZimmermann"
+Description: "Composition for Rudolf Zimmermann's emergency record"
 
 * language = #de-CH
 * confidentiality.extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode"

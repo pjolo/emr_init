@@ -1,8 +1,8 @@
 Instance: UC1-Condition-Diabetes
 InstanceOf: ChEmrCondition
 Usage: #example
-Title: "Diabetes mellitus Typ 2"
-Description: "Beispiel einer Diabetes-Diagnose bei Maria Schmidt"
+Title: "UC1-Condition-Diabetes"
+Description: "Example of a diabetes diagnosis for Maria Schmidt"
 
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed

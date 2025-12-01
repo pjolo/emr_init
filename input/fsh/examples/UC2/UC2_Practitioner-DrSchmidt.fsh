@@ -1,8 +1,8 @@
 Instance: UC2-Practitioner-DrSchmidt
 InstanceOf: ChEmrPractitioner
 Usage: #example
-Title: "Dr. med. Sarah Schmidt"
-Description: "Kardiologin"
+Title: "UC2-Practitioner-DrSchmidt"
+Description: "Cardiologist for Hans Meier"
 
 // Identifier
 * language = #de-CH

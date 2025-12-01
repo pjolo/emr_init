@@ -1,8 +1,8 @@
 Instance: EX-DocumentReferences
 InstanceOf: ChEmrDocumentReference
 Usage: #example
-Title: "Organspende"
-Description: "Beispiel einer Organspende"
+Title: "EX-DocumentReferences (organ donation)"
+Description: "General example of a Document References"
 
 * status = #current
 

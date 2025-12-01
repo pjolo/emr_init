@@ -1,8 +1,8 @@
 Instance: UC2-Organization-Kardiologie-Bern
 InstanceOf: Organization
 Usage: #example
-Title: "Kardiologie Zentrum Bern"
-Description: "Organisation der Kardiologie-Praxis"
+Title: "UC2-Organization-Kardiologie-Bern"
+Description: "Organization of the cardiology practice"
 
 * identifier.system = $oid-gln
 * identifier.value = "7601000456780"

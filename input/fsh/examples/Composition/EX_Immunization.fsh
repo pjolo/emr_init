@@ -1,8 +1,8 @@
 Instance: EX-Immunization
 InstanceOf: ChEmrImmunization
 Usage: #example
-Title: "COVID-19 Auffrischungsimpfung 2024"
-Description: "Aktuelle COVID-19 XBB.1.5 Auffrischung mit Spikevax"
+Title: "EX-Immunization"
+Description: "General example of a vaccination (COVID19)"
 
 * status = #completed
 * vaccineCode = $chVac#69465 "Spikevax XBB.1.5 0.10 mg/ml"

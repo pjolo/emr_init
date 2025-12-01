@@ -1,8 +1,8 @@
 Instance: UC3-Patient-LauraWeber
 InstanceOf: ChEmrPatient
 Usage: #example
-Title: "Patientin Laura Weber"
-Description: "Schwangere Patientin für den eNotfallpass"
+Title: "UC3-Patient-LauraWeber"
+Description: "Patient Laura Weber"
 
 * identifier[0].system = $oid-ahvn13
 * identifier[0].value = "7562198765432"

@@ -1,8 +1,8 @@
 Instance: UC4-Bundle-emr-RudolfZimmermann
 InstanceOf: Bundle
 Usage: #example
-Title: "eNotfallpass Bundle - Rudolf Zimmermann"
-Description: "Vollständiges eNotfallpass Bundle für Rudolf Zimmermann"
+Title: "UC4-Bundle-emr-RudolfZimmermann"
+Description: "Complete emergency record bundle for Rudolf Zimmermann"
 
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:7afc1e97-67f8-49a8-91f5-46af596d0609"

@@ -1,8 +1,8 @@
 Instance: UC3-AllergyIntolerance-Contrast
 InstanceOf: ChEmrAllergyIntolerance
 Usage: #example
-Title: "Kontrastmittel-Allergie"
-Description: "Allergie gegen jodhaltige Kontrastmittel"
+Title: "UC3-AllergyIntolerance-Contrast"
+Description: "Allergy to contrast mediums from Laura Weber"
 
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active
 * verificationStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#confirmed

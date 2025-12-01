@@ -1,8 +1,8 @@
 Instance: UC3-RelatedPerson-MichaelWeber
 InstanceOf: ChEmrRelatedPerson
 Usage: #example
-Title: "Michael Weber - Partner"
-Description: "Partner von Laura Weber als Notfallkontakt"
+Title: "UC3-RelatedPerson-MichaelWeber"
+Description: "Laura Weber's husband as emergency contact"
 
 * active = true
 * patient = Reference(UC3-Patient-LauraWeber)

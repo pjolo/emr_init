@@ -1,4 +1,4 @@
-Instance: UC2-Device-Herzschrittmacher
+Instance: UC2-Device-Pacemaker
 InstanceOf: ChEmrDevice
 Usage: #example
 Title: "Herzschrittmacher Boston Scientific"

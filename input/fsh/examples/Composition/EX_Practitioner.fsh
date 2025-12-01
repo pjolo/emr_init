@@ -1,8 +1,8 @@
 Instance: EX-Practitioner
 InstanceOf: ChEmrPractitioner
 Usage: #example
-Title: "Dr. med. Sarah Huber"
-Description: "Gynäkologin von Laura Weber"
+Title: "EX-Practitioner"
+Description: "General example of a Practitioner"
 
 * language = #de-CH
 * identifier[GLN].system = "urn:oid:2.51.1.3"

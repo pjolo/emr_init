@@ -1,8 +1,8 @@
 Instance: UC2-Immunization-Influenza
 InstanceOf: ChEmrImmunization
 Usage: #example
-Title: "Grippeimpfung 2024"
-Description: "Jährliche Influenza-Schutzimpfung für Herzrisikopatient"
+Title: "UC2-Immunization-Influenza"
+Description: "Annual influenza vaccination for Hans Meier"
 
 * status = #completed
 * vaccineCode = $chVac#66427 "VaxigripTetra"

@@ -1,8 +1,9 @@
 Instance: EX-MedicationStatement
 InstanceOf: ChEmrMedicationStatement
 Usage: #example
-Title: "Metformin Therapie"
-Description: "Beispiel einer Metformin-Therapie"
+Title: "EX-MedicationStatement (Metformin)"
+Description: "General example of a medication statement"
+
 * status = #active
 * medicationReference = Reference(EX-Metformin)
 * subject = Reference(EX-Patient)

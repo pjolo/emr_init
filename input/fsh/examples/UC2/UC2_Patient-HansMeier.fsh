@@ -1,8 +1,8 @@
 Instance: UC2-Patient-HansMeier
 InstanceOf: ChEmrPatient
 Usage: #example
-Title: "Patient Hans Meier"
-Description: "Beispiel eines Patienten mit Herzschrittmacher für den eNotfallpass"
+Title: "UC2-Patient-HansMeier"
+Description: "Patient Hans Meier"
 
 * identifier[0].system = $oid-ahvn13
 * identifier[0].value = "7561234567890"

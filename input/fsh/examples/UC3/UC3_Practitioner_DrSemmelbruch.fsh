@@ -1,8 +1,8 @@
 Instance: UC3-Practitioner-DrSemmelbruch
 InstanceOf: ChEmrPractitioner
 Usage: #example
-Title: "Dr. med. Sarah Semmelbruch"
-Description: "Gynäkologin und Geburtshelferin"
+Title: "UC3-Practitioner-DrSemmelbruch"
+Description: "Gynecologist and obstetrician of Laura Weber"
 
 // Identifier
 * language = #de-CH

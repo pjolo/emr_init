@@ -1,8 +1,8 @@
 Instance: UC2-Immunization-Tetanus
 InstanceOf: ChEmrImmunization
 Usage: #example
-Title: "Tetanus-Auffrischungsimpfung 2022"
-Description: "Tetanus-Diphtherie-Pertussis Auffrischung für Sturz-Prophylaxe"
+Title: "UC2-Immunization-Tetanus"
+Description: "Tetanus-diphtheria-pertussis booster shot for fall prevention for Hans Meier"
 
 * status = #completed
 * vaccineCode = $chVac#68317 "Adacel 0.5 ml"

@@ -1,8 +1,8 @@
 Instance: EX-AllergyIntolerance
 InstanceOf: ChEmrAllergyIntolerance
 Usage: #example
-Title: "Kontrastmittel-Allergie"
-Description: "Allergie gegen jodhaltige Kontrastmittel"
+Title: "EX-AllergyIntolerance (Allergy to contrast media)"
+Description: "General example of an allergy"
 
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active
 * verificationStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#confirmed

@@ -1,8 +1,8 @@
 Instance: EX-Bundle
 InstanceOf: Bundle
 Usage: #example
-Title: "eNotfallpass Bundle - Maria Schmidt"
-Description: "Vollständiges eNotfallpass Bundle für Maria Schmidt"
+Title: "EX-Bundle"
+Description: "Complete Emergency Record Bundle"
 
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:7afc1e97-67f8-49a8-91f5-46af596d0609"
