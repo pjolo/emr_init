@@ -7,7 +7,7 @@ Description: "Kardiologin"
 // Identifier
 * language = #de-CH
 * identifier[GLN].system = "urn:oid:2.51.1.3"
-* identifier[GLN].value = "7601002345678"
+* identifier[GLN].value = "7609999999993"
 
 // Name (ohne Slice!)
 * name.use = #official

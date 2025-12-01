@@ -13,7 +13,7 @@ Description: "Composition für den eNotfallpass von Maria Schmidt"
 * identifier.value = "urn:uuid:7afc1e97-67f8-49a8-91f5-46af596d0609"
 
 * status = #final
-* type = $sct#422735006 "Summary clinical document"
+* type = $sct#371535009	"Transfer summary report (record artifact)"
 
 * subject = Reference(EX-Patient)
 * date = "2025-09-10T08:00:00+02:00"
