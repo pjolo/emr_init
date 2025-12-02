@@ -11,5 +11,5 @@ This exchange format is defined as a document type that corresponds to a Bundle 
 
 ### Example bundle
 
-A complete example of an [emergency record Bundle](https://pjolo.github.io/emr/Bundle-UC2-Bundle-emr-HansMeier.html) shows the practical implementation of the document structure.
+A complete example of an [emergency record Bundle](https://pjolo.github.io/emr/Bundle-EX-Bundle.html) shows the practical implementation of the document structure.
 
