@@ -1,8 +1,8 @@
-Instance: Example-DocumentReference-Patientenverfuegung
+Instance: U3-DocumentReference
 InstanceOf: ChEmrDocumentReference
 Usage: #example
-Title: "Advance directive document for Laura Weber"
-Description: "Example of a advance directive as a referenced document"
+Title: "U3-DocumentReference"
+Description: "Advance directive document for Laura Weber"
 
 * status = #current
 

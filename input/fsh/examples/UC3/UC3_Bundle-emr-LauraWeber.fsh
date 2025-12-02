@@ -9,7 +9,7 @@ Description: "Complete Emergency Record bundle for Laura Weber"
 * type = #document
 * timestamp = "2025-09-10T15:00:00+02:00"
 
-// Composition als erstes Entry
+// Composition
 * entry[0].fullUrl = "http://fhir.ch/ig/emr/Composition/UC3-Composition-emr-LauraWeber"
 * entry[0].resource = UC3-Composition-emr-LauraWeber
 
@@ -20,22 +20,45 @@ Description: "Complete Emergency Record bundle for Laura Weber"
 * entry[2].fullUrl = "http://fhir.ch/ig/emr/Practitioner/UC3-Practitioner"
 * entry[2].resource = UC3-Practitioner
 
-* entry[3].fullUrl = "http://fhir.ch/ig/emr/Practitioner/UC3-Practitioner-DrSemmelbruch"
-* entry[3].resource = UC3-Practitioner-DrSemmelbruch
+// Related person
+* entry[3].fullUrl = "http://fhir.ch/ig/emr/RelatedPerson/UC3-RelatedPerson-MichaelWeber"
+* entry[3].resource = UC3-RelatedPerson-MichaelWeber
 
-// Schwangerschaft Observation
-* entry[4].fullUrl = "http://fhir.ch/ig/emr/Observation/UC3-Observation-Pregnancy"
-* entry[4].resource = UC3-Observation-Pregnancy
+// Care Team
+* entry[4].fullUrl = "http://fhir.ch/ig/emr/Practitioner/UC3-Practitioner-DrSemmelbruch"
+* entry[4].resource = UC3-Practitioner-DrSemmelbruch
 
-// Patientenverfügung
-* entry[5].fullUrl = "http://fhir.ch/ig/emr/Consent/UC3-Consent-Resuscitation"
-* entry[5].resource = UC3-Consent-Resuscitation
+// Resuscitation
 
-// Kontrastmittel-Allergie
-* entry[6].fullUrl = "http://fhir.ch/ig/emr/AllergyIntolerance/UC3-AllergyIntolerance-Contrast"
-* entry[6].resource = UC3-AllergyIntolerance-Contrast
+// Medication
 
-// RelatedPerson (Partner)
-* entry[7].fullUrl = "http://fhir.ch/ig/emr/RelatedPerson/UC3-RelatedPerson-MichaelWeber"
-* entry[7].resource = UC3-RelatedPerson-MichaelWeber
+// Immunization
+
+// Allergies
+* entry[5].fullUrl = "http://fhir.ch/ig/emr/AllergyIntolerance/UC3-AllergyIntolerance-Contrast"
+* entry[5].resource = UC3-AllergyIntolerance-Contrast
+
+// Risk factor
+
+// Problem list
+
+// Advance directive
+* entry[6].fullUrl = "http://fhir.ch/ig/emr/Consent/UC3-Consent-Resuscitation"
+* entry[6].resource = UC3-Consent-Resuscitation
+
+// Document references
+
+// Medical device
+
+// Pregnancy
+* entry[7].fullUrl = "http://fhir.ch/ig/emr/Observation/UC3-Observation-Pregnancy"
+* entry[7].resource = UC3-Observation-Pregnancy
+
+// Disability
+
+
+
+
+
+
 

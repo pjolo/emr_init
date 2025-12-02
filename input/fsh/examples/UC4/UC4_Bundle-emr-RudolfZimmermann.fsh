@@ -9,7 +9,7 @@ Description: "Complete emergency record bundle for Rudolf Zimmermann"
 * type = #document
 * timestamp = "2025-09-10T16:00:00+02:00"
 
-// Composition als erstes Entry
+// Composition
 * entry[0].fullUrl = "http://fhir.ch/ig/emr/Composition/UC4-Composition-emr-RudolfZimmermann"
 * entry[0].resource = UC4-Composition-emr-RudolfZimmermann
 
@@ -17,48 +17,61 @@ Description: "Complete emergency record bundle for Rudolf Zimmermann"
 * entry[1].fullUrl = "http://fhir.ch/ig/emr/Patient/UC4-Patient-RudolfZimmermann"
 * entry[1].resource = UC4-Patient-RudolfZimmermann
 
-// Practitioner (Hausarzt)
-* entry[2].fullUrl = "http://fhir.ch/ig/emr/Practitioner/UC4-Practitioner-DrWeber"
-* entry[2].resource = UC4-Practitioner-DrWeber
+// Related persons
+* entry[2].fullUrl = "http://fhir.ch/ig/emr/RelatedPerson/UC4-RelatedPerson-ElisabethZimmermann"
+* entry[2].resource = UC4-RelatedPerson-ElisabethZimmermann
 
-// Conditions
-* entry[3].fullUrl = "http://fhir.ch/ig/emr/Condition/UC4-Condition-HeartFailure"
-* entry[3].resource = UC4-Condition-HeartFailure
+// Care Team
+* entry[3].fullUrl = "http://fhir.ch/ig/emr/Practitioner/UC4-Practitioner-DrWeber"
+* entry[3].resource = UC4-Practitioner-DrWeber
 
-* entry[4].fullUrl = "http://fhir.ch/ig/emr/Condition/UC4-Condition-AtrialFibrillation"
-* entry[4].resource = UC4-Condition-AtrialFibrillation
+* entry[4].fullUrl = "http://fhir.ch/ig/emr/Organization/UC4-Organization-Hausarztpraxis-DrWeber"
+* entry[4].resource = UC4-Organization-Hausarztpraxis-DrWeber
 
-* entry[5].fullUrl = "http://fhir.ch/ig/emr/Condition/UC4-Condition-ChronicKidneyDisease"
-* entry[5].resource = UC4-Condition-ChronicKidneyDisease
+// Resuscitation
 
-* entry[6].fullUrl = "http://fhir.ch/ig/emr/Condition/UC4-Condition-DiabetesRudolf"
-* entry[6].resource = UC4-Condition-DiabetesRudolf
+// Medication
+* entry[5].fullUrl = "http://fhir.ch/ig/emr/MedicationStatement/UC4-MedicationStatement-Ramipril"
+* entry[5].resource = UC4-MedicationStatement-Ramipril
 
-// Medications
-* entry[7].fullUrl = "http://fhir.ch/ig/emr/MedicationStatement/UC4-MedicationStatement-Ramipril"
-* entry[7].resource = UC4-MedicationStatement-Ramipril
+* entry[6].fullUrl = "http://fhir.ch/ig/emr/MedicationStatement/UC4-MedicationStatement-Metoprolol"
+* entry[6].resource = UC4-MedicationStatement-Metoprolol
 
-* entry[8].fullUrl = "http://fhir.ch/ig/emr/MedicationStatement/UC4-MedicationStatement-Metoprolol"
-* entry[8].resource = UC4-MedicationStatement-Metoprolol
+* entry[7].fullUrl = "http://fhir.ch/ig/emr/MedicationStatement/UC4-MedicationStatement-Furosemid"
+* entry[7].resource = UC4-MedicationStatement-Furosemid
 
-* entry[9].fullUrl = "http://fhir.ch/ig/emr/MedicationStatement/UC4-MedicationStatement-Furosemid"
-* entry[9].resource = UC4-MedicationStatement-Furosemid
+* entry[8].fullUrl = "http://fhir.ch/ig/emr/MedicationStatement/UC4-MedicationStatement-MetforminRudolf"
+* entry[8].resource = UC4-MedicationStatement-MetforminRudolf
 
-* entry[10].fullUrl = "http://fhir.ch/ig/emr/MedicationStatement/UC4-MedicationStatement-MetforminRudolf"
-* entry[10].resource = UC4-MedicationStatement-MetforminRudolf
+// Immunization
 
-// Device
-* entry[11].fullUrl = "http://fhir.ch/ig/emr/Device/UC4-Device-HipProsthesis"
-* entry[11].resource = UC4-Device-HipProsthesis
+// Allergies
 
-// RelatedPerson
-* entry[12].fullUrl = "http://fhir.ch/ig/emr/RelatedPerson/UC4-RelatedPerson-ElisabethZimmermann"
-* entry[12].resource = UC4-RelatedPerson-ElisabethZimmermann
+// Risk factor
 
-// Consent
+// Problem list
+* entry[9].fullUrl = "http://fhir.ch/ig/emr/Condition/UC4-Condition-HeartFailure"
+* entry[9].resource = UC4-Condition-HeartFailure
+
+* entry[10].fullUrl = "http://fhir.ch/ig/emr/Condition/UC4-Condition-AtrialFibrillation"
+* entry[10].resource = UC4-Condition-AtrialFibrillation
+
+* entry[11].fullUrl = "http://fhir.ch/ig/emr/Condition/UC4-Condition-ChronicKidneyDisease"
+* entry[11].resource = UC4-Condition-ChronicKidneyDisease
+
+* entry[12].fullUrl = "http://fhir.ch/ig/emr/Condition/UC4-Condition-DiabetesRudolf"
+* entry[12].resource = UC4-Condition-DiabetesRudolf
+
+// Advance directive
 * entry[13].fullUrl = "http://fhir.ch/ig/emr/Consent/UC4-Consent-MedicalPowerOfAttorney"
 * entry[13].resource = UC4-Consent-MedicalPowerOfAttorney
 
-// Organization
-* entry[14].fullUrl = "http://fhir.ch/ig/emr/Organization/UC4-Organization-Hausarztpraxis-DrWeber"
-* entry[14].resource = UC4-Organization-Hausarztpraxis-DrWeber
+// Document references
+
+// Medical device
+* entry[14].fullUrl = "http://fhir.ch/ig/emr/Device/UC4-Device-HipProsthesis"
+* entry[14].resource = UC4-Device-HipProsthesis
+
+// Pregnancy
+
+// Disability

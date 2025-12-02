@@ -24,14 +24,14 @@ Description: "Composition for the Emergency Record by Maria Schmidt"
 
 * custodian = Reference(UC1-Organization-Hausarztpraxis-DrMueller)
 
-// Patient Summary Section
+// Patient summary section
 * section[0].title = "Patientendaten"
 * section[0].code = $loinc#60591-5 "Patient summary Document"
 * section[0].text.status = #generated
 * section[0].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Maria Anna Schmidt, geb. 15.03.1978, weiblich</p><p>Wohnhaft: Musterstrasse 123, 8001 Zürich</p><p>Notfallkontakt: Peter Schmidt (Ehemann) +41 44 321 65 87</p></div>"
 * section[0].entry[0] = Reference(UC1-Patient-MariaSchmidt)
 
-//RelatedPerson Section
+// Related person section
 * section[1].title = "Notfallkontakte"
 * section[1].code = $loinc#56864-2 "Emergency contact Relationship to patient"
 * section[1].text.status = #generated
@@ -40,49 +40,48 @@ Description: "Composition for the Emergency Record by Maria Schmidt"
 * section[1].entry[0] = Reference(UC1-RelatedPerson-PeterSchmidt)
 * section[1].entry[1] = Reference(UC1-RelatedPerson-AnnaMueller)
 
-// Care Team Section
+// Care Team section
 * section[2].title = "Behandlungsteam"
 * section[2].code = $loinc#85847-2 "Patient Care team information"
 * section[2].text.status = #generated
 * section[2].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Behandelnde Ärzte:</p><ul><li>Dr. med. Hans Müller - Hausarzt (GLN: 7601000234567)</li></ul></div>"
 * section[2].entry = Reference(UC1-Practitioner-DrMueller)
 
-// Problem List Section
-* section[3].title = "Probleme und Diagnosen"
-* section[3].code = $loinc#11450-4 "Problem list - Reported"
+// Resuscitation section
+
+
+// Medication section
+* section[3].title = "Aktuelle Medikation"
+* section[3].code = $loinc#10160-0 "History of Medication use Narrative"
 * section[3].text.status = #generated
-* section[3].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktive Probleme:</p><ul><li>Diabetes mellitus Typ 2 (seit 2015-06-15) - gut kontrolliert</li></ul></div>"
-* section[3].entry = Reference(UC1-Condition-Diabetes)
+* section[3].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktuelle Medikation:</p><ul><li>Metformin 1000 mg zweimal täglich zu den Mahlzeiten (seit 2015-06-15)</li></ul></div>"
+* section[3].entry = Reference(UC1-MedicationStatement-Metformin)
 
-//Resuscitation status
+// Immunization section
 
-// Medication Section
-* section[4].title = "Aktuelle Medikation"
-* section[4].code = $loinc#10160-0 "History of Medication use Narrative"
+// Allergies section
+* section[4].title = "Allergien und Unverträglichkeiten"
+* section[4].code = $loinc#48765-2 "Allergies and adverse reactions Document"
 * section[4].text.status = #generated
-* section[4].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktuelle Medikation:</p><ul><li>Metformin 1000 mg zweimal täglich zu den Mahlzeiten (seit 2015-06-15)</li></ul></div>"
-* section[4].entry = Reference(UC1-MedicationStatement-Metformin)
+* section[4].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Bekannte Allergien:</p><ul><li><strong>KRITISCH:</strong> Penicillin-Allergie mit anaphylaktischer Reaktion (seit Kindheit)</li></ul><p><strong>Wichtig:</strong> Keine Beta-Lactam-Antibiotika verwenden!</p></div>"
+* section[4].entry = Reference(UC1-AllergyIntolerance-Penicillin)
 
-//Immunization
+// Risk factor section
 
-// Allergies Section
-* section[5].title = "Allergien und Unverträglichkeiten"
-* section[5].code = $loinc#48765-2 "Allergies and adverse reactions Document"
+// Problem list section
+* section[5].title = "Probleme und Diagnosen"
+* section[5].code = $loinc#11450-4 "Problem list - Reported"
 * section[5].text.status = #generated
-* section[5].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Bekannte Allergien:</p><ul><li><strong>KRITISCH:</strong> Penicillin-Allergie mit anaphylaktischer Reaktion (seit Kindheit)</li></ul><p><strong>Wichtig:</strong> Keine Beta-Lactam-Antibiotika verwenden!</p></div>"
-* section[5].entry = Reference(UC1-AllergyIntolerance-Penicillin)
+* section[5].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktive Probleme:</p><ul><li>Diabetes mellitus Typ 2 (seit 2015-06-15) - gut kontrolliert</li></ul></div>"
+* section[5].entry = Reference(UC1-Condition-Diabetes)
 
-//Riskfactor
+// Advance directive and emergency medical directive section
 
-// Problem List Section
+// DocumentReferences section
 
-//Living will and emergency medical directive section
+// Medical devices section
 
-//DocumentReferences section
+// Pregnancy section
 
-// Medical Devices Section
-
-//Pregnancy section
-
-//Disability section
+// Disability section
 
