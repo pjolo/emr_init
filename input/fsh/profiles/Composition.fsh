@@ -1,5 +1,5 @@
 Profile: ChEmrComposition
-Parent: $ChCoreCompositionEPR
+Parent: $ChIpsCompositionEPR
 Id: ch-emr-composition
 Title: "CH Emergency Record Composition"
 Description: "Swiss Emergency Record based on International Patient Summary"
