@@ -50,8 +50,8 @@ Description: "General composition for the Emergency Record"
 * section[sectionMedications].code = $loinc#10160-0 "History of Medication use Narrative"
 * section[sectionMedications].text.status = #generated
 * section[sectionMedications].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktuelle Medikation:</p><ul><li>Metformin 1000mg 1-0-1</li></ul></div>"
-* section[sectionMedications].entry[medicationStatement][0] = Reference(EX-MedicationStatement)
-* section[sectionMedications].entry[medicationStatement][=].type = "MedicationStatement"
+* section[sectionMedications].entry[medicationStatementOrRequest][0] = Reference(EX-MedicationStatement)
+* section[sectionMedications].entry[medicationStatementOrRequest][=].type = "MedicationStatement"
 
 // Immunization section
 * section[sectionImmunizations].title = "Impfungen"
