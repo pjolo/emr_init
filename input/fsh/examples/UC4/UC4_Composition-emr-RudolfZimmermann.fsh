@@ -25,39 +25,38 @@ Description: "Composition for Rudolf Zimmermann's emergency record"
 
 * custodian = Reference(UC4-Organization-Hausarztpraxis-DrWeber)
 
-// Patient Summary section
-* section[0].title = "Patientendaten"
-* section[0].code = $loinc#60591-5 "Patient summary Document"
-* section[0].text.status = #generated
-* section[0].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Rudolf Ernst Zimmermann, geb. 14.02.1939, männlich, 85 Jahre</p><p><strong>MULTIMORBIDER PATIENT</strong></p><p>Wohnhaft: Altersheim Sonnenhof, 4052 Basel</p><p>Betreuerin: Elisabeth Zimmermann (Tochter) +41 61 789 45 23 - VOLLMACHT</p></div>"
-* section[0].entry = Reference(UC4-Patient-RudolfZimmermann)
-
 // RelatedPerson section
-* section[1].title = "Notfallkontakte"
-* section[1].code = $loinc#56864-2 "Emergency contact Relationship to patient"
-* section[1].text.status = #generated
-* section[1].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Notfallkontakt: Elisabeth Meier (Ehefrau) +41 31 456 78 90</p></div>"
-* section[1].entry = Reference(UC4-RelatedPerson-ElisabethZimmermann)
+* section[sectionEmergencyContacts].title = "Notfallkontakte"
+* section[sectionEmergencyContacts].code = $loinc#56864-2 "Emergency contact Relationship to patient"
+* section[sectionEmergencyContacts].text.status = #generated
+* section[sectionEmergencyContacts].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Notfallkontakt: Elisabeth Meier (Ehefrau) +41 31 456 78 90</p></div>"
+* section[sectionEmergencyContacts].entry[relatedPerson][0] = Reference(UC4-RelatedPerson-ElisabethZimmermann)
+* section[sectionEmergencyContacts].entry[relatedPerson][=].type = "RelatedPerson"
 
 // Care Team section
-* section[2].title = "Behandlungsteam"
-* section[2].code = $loinc#85847-2 "Patient Care team information"
-* section[2].text.status = #generated
-* section[2].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Behandelnde Ärzte:</p><ul><li>Dr. med. Klaus Weber - Hausarzt (GLN: 7601000789012)</li></ul></div>"
-* section[2].entry = Reference(UC4-Practitioner-DrWeber)
+* section[sectionCareTeam].title = "Behandlungsteam"
+* section[sectionCareTeam].code = $loinc#85847-2 "Patient Care team information"
+* section[sectionCareTeam].text.status = #generated
+* section[sectionCareTeam].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Behandelnde Ärzte:</p><ul><li>Dr. med. Klaus Weber - Hausarzt (GLN: 7601000789012)</li></ul></div>"
+* section[sectionCareTeam].entry[careTeam][0] = Reference(UC4-Practitioner-DrWeber)
+* section[sectionCareTeam].entry[careTeam][=].type = "Practitioner"
 
 // Resuscitation section
 
 
 // Medication section
-* section[3].title = "Aktuelle Medikation"
-* section[3].code = $loinc#10160-0 "History of Medication use Narrative"
-* section[3].text.status = #generated
-* section[3].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Aktuelle Medikation:</strong></p><ul><li>Ramipril 5mg morgens (Herzinsuffizienz)</li><li>Metoprolol 50mg 2x täglich (Beta-Blocker)</li><li>Furosemid 40mg morgens (Diuretikum) - DOSISANPASSUNG!</li></ul><p><strong>GESTOPPT:</strong></p><ul><li>Metformin 1000mg 2x täglich - KONTRAINDIZIERT bei Niereninsuffizienz!</li></ul></div>"
-* section[3].entry[0] = Reference(UC4-MedicationStatement-Ramipril)
-* section[3].entry[1] = Reference(UC4-MedicationStatement-Metoprolol)
-* section[3].entry[2] = Reference(UC4-MedicationStatement-Furosemid)
-* section[3].entry[3] = Reference(UC4-MedicationStatement-MetforminRudolf)
+* section[sectionMedications].title = "Aktuelle Medikation"
+* section[sectionMedications].code = $loinc#10160-0 "History of Medication use Narrative"
+* section[sectionMedications].text.status = #generated
+* section[sectionMedications].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Aktuelle Medikation:</strong></p><ul><li>Ramipril 5mg morgens (Herzinsuffizienz)</li><li>Metoprolol 50mg 2x täglich (Beta-Blocker)</li><li>Furosemid 40mg morgens (Diuretikum) - DOSISANPASSUNG!</li></ul><p><strong>GESTOPPT:</strong></p><ul><li>Metformin 1000mg 2x täglich - KONTRAINDIZIERT bei Niereninsuffizienz!</li></ul></div>"
+* section[sectionMedications].entry[medicationStatement][0] = Reference(UC4-MedicationStatement-Ramipril)
+* section[sectionMedications].entry[medicationStatement][=].type = "MedicationStatement"
+* section[sectionMedications].entry[medicationStatement][+] = Reference(UC4-MedicationStatement-Metoprolol)
+* section[sectionMedications].entry[medicationStatement][=].type = "MedicationStatement"
+* section[sectionMedications].entry[medicationStatement][+] = Reference(UC4-MedicationStatement-Furosemid)
+* section[sectionMedications].entry[medicationStatement][=].type = "MedicationStatement"
+* section[sectionMedications].entry[medicationStatement][+] = Reference(UC4-MedicationStatement-MetforminRudolf)
+* section[sectionMedications].entry[medicationStatement][=].type = "MedicationStatement"
 
 // Immunization section
 
@@ -66,30 +65,36 @@ Description: "Composition for Rudolf Zimmermann's emergency record"
 // Risk factor section
 
 // Problem list section
-* section[4].title = "Probleme und Diagnosen"
-* section[4].code = $loinc#11450-4 "Problem list - Reported"
-* section[4].text.status = #generated
-* section[4].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Aktive Probleme (Multimorbidität):</strong></p><ul><li>Chronische Herzinsuffizienz NYHA III (seit 2018)</li><li>Permanentes Vorhofflimmern (seit 2019)</li><li>Chronische Niereninsuffizienz Stadium 3b (seit 2020) - VERSCHLECHTERT!</li><li>Diabetes mellitus Typ 2 mit Nephropathie (seit 2010)</li></ul></div>"
-* section[4].entry[0] = Reference(UC4-Condition-HeartFailure)
-* section[4].entry[1] = Reference(UC4-Condition-AtrialFibrillation)
-* section[4].entry[2] = Reference(UC4-Condition-ChronicKidneyDisease)
-* section[4].entry[3] = Reference(UC4-Condition-DiabetesRudolf)
+* section[sectionProblems].title = "Probleme und Diagnosen"
+* section[sectionProblems].code = $loinc#11450-4 "Problem list - Reported"
+* section[sectionProblems].text.status = #generated
+* section[sectionProblems].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Aktive Probleme (Multimorbidität):</strong></p><ul><li>Chronische Herzinsuffizienz NYHA III (seit 2018)</li><li>Permanentes Vorhofflimmern (seit 2019)</li><li>Chronische Niereninsuffizienz Stadium 3b (seit 2020) - VERSCHLECHTERT!</li><li>Diabetes mellitus Typ 2 mit Nephropathie (seit 2010)</li></ul></div>"
+* section[sectionProblems].entry[problem][0] = Reference(UC4-Condition-HeartFailure)
+* section[sectionProblems].entry[problem][=].type = "Condition"
+* section[sectionProblems].entry[problem][+] = Reference(UC4-Condition-AtrialFibrillation)
+* section[sectionProblems].entry[problem][=].type = "Condition"
+* section[sectionProblems].entry[problem][+] = Reference(UC4-Condition-ChronicKidneyDisease)
+* section[sectionProblems].entry[problem][=].type = "Condition"
+* section[sectionProblems].entry[problem][+] = Reference(UC4-Condition-DiabetesRudolf)
+* section[sectionProblems].entry[problem][=].type = "Condition"
 
 // Advance directive and emergency medical directive section
-* section[5].title = "Verfügungen und Vollmachten"
-* section[5].code = $loinc#42348-3 "Advance healthcare directives"
-* section[5].text.status = #generated
-* section[5].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Medizinische Vollmacht:</strong></p><p>Elisabeth Zimmermann (Tochter) ist bevollmächtigt, alle medizinischen Entscheidungen zu treffen.</p><p>Tel: +41 61 789 45 23</p></div>"
-* section[5].entry = Reference(UC4-Consent-MedicalPowerOfAttorney)
+* section[sectionAdvanceDirectives].title = "Verfügungen und Vollmachten"
+* section[sectionAdvanceDirectives].code = $loinc#42348-3 "Advance healthcare directives"
+* section[sectionAdvanceDirectives].text.status = #generated
+* section[sectionAdvanceDirectives].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Medizinische Vollmacht:</strong></p><p>Elisabeth Zimmermann (Tochter) ist bevollmächtigt, alle medizinischen Entscheidungen zu treffen.</p><p>Tel: +41 61 789 45 23</p></div>"
+* section[sectionAdvanceDirectives].entry[advanceDirective][0] = Reference(UC4-Consent-MedicalPowerOfAttorney)
+* section[sectionAdvanceDirectives].entry[advanceDirective][=].type = "DocumentReference"
 
 // Document references section
 
 // Medical devices section
-* section[6].title = "Medizinische Geräte"
-* section[6].code = $loinc#46264-8 "History of medical device use"
-* section[6].text.status = #generated
-* section[6].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Implantate:</p><ul><li>Hüftgelenk-Totalendoprothese links (2018)</li><li>Hersteller: Zimmer Biomet Taperloc</li><li>MRT: bedingt möglich (Metallartefakte)</li></ul></div>"
-* section[6].entry = Reference(UC4-Device-HipProsthesis)
+* section[sectionMedicalDevices].title = "Medizinische Geräte"
+* section[sectionMedicalDevices].code = $loinc#46264-8 "History of medical device use"
+* section[sectionMedicalDevices].text.status = #generated
+* section[sectionMedicalDevices].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Implantate:</p><ul><li>Hüftgelenk-Totalendoprothese links (2018)</li><li>Hersteller: Zimmer Biomet Taperloc</li><li>MRT: bedingt möglich (Metallartefakte)</li></ul></div>"
+* section[sectionMedicalDevices].entry[deviceUseStatement][0] = Reference(UC4-Device-HipProsthesis)
+* section[sectionMedicalDevices].entry[deviceUseStatement][=].type = "DeviceUseStatement"
 
 // Pregnancy section
 

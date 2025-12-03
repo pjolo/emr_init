@@ -13,7 +13,5 @@ Description: "General example of a vaccination (COVID19)"
 
 * lotNumber = "SPX24XBB002"
 
-//* reasonReference = Reference(Condition/EX-Condition)
-
 * protocolApplied.targetDisease = $sct#840539006 "Disease caused by severe acute respiratory syndrome coronavirus 2"
 * protocolApplied.doseNumberPositiveInt = 6

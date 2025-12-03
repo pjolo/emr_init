@@ -14,34 +14,34 @@ Description: "Complete emergency record bundle for Rudolf Zimmermann"
 * entry[0].resource = UC4-Composition-emr-RudolfZimmermann
 
 // Patient
-* entry[1].fullUrl = "http://fhir.ch/ig/emr/Patient/UC4-Patient-RudolfZimmermann"
-* entry[1].resource = UC4-Patient-RudolfZimmermann
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Patient/UC4-Patient-RudolfZimmermann"
+* entry[=].resource = UC4-Patient-RudolfZimmermann
 
 // Related persons
-* entry[2].fullUrl = "http://fhir.ch/ig/emr/RelatedPerson/UC4-RelatedPerson-ElisabethZimmermann"
-* entry[2].resource = UC4-RelatedPerson-ElisabethZimmermann
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/RelatedPerson/UC4-RelatedPerson-ElisabethZimmermann"
+* entry[=].resource = UC4-RelatedPerson-ElisabethZimmermann
 
 // Care Team
-* entry[3].fullUrl = "http://fhir.ch/ig/emr/Practitioner/UC4-Practitioner-DrWeber"
-* entry[3].resource = UC4-Practitioner-DrWeber
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Practitioner/UC4-Practitioner-DrWeber"
+* entry[=].resource = UC4-Practitioner-DrWeber
 
-* entry[4].fullUrl = "http://fhir.ch/ig/emr/Organization/UC4-Organization-Hausarztpraxis-DrWeber"
-* entry[4].resource = UC4-Organization-Hausarztpraxis-DrWeber
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Organization/UC4-Organization-Hausarztpraxis-DrWeber"
+* entry[=].resource = UC4-Organization-Hausarztpraxis-DrWeber
 
 // Resuscitation
 
 // Medication
-* entry[5].fullUrl = "http://fhir.ch/ig/emr/MedicationStatement/UC4-MedicationStatement-Ramipril"
-* entry[5].resource = UC4-MedicationStatement-Ramipril
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/MedicationStatement/UC4-MedicationStatement-Ramipril"
+* entry[=].resource = UC4-MedicationStatement-Ramipril
 
-* entry[6].fullUrl = "http://fhir.ch/ig/emr/MedicationStatement/UC4-MedicationStatement-Metoprolol"
-* entry[6].resource = UC4-MedicationStatement-Metoprolol
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/MedicationStatement/UC4-MedicationStatement-Metoprolol"
+* entry[=].resource = UC4-MedicationStatement-Metoprolol
 
-* entry[7].fullUrl = "http://fhir.ch/ig/emr/MedicationStatement/UC4-MedicationStatement-Furosemid"
-* entry[7].resource = UC4-MedicationStatement-Furosemid
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/MedicationStatement/UC4-MedicationStatement-Furosemid"
+* entry[=].resource = UC4-MedicationStatement-Furosemid
 
-* entry[8].fullUrl = "http://fhir.ch/ig/emr/MedicationStatement/UC4-MedicationStatement-MetforminRudolf"
-* entry[8].resource = UC4-MedicationStatement-MetforminRudolf
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/MedicationStatement/UC4-MedicationStatement-MetforminRudolf"
+* entry[=].resource = UC4-MedicationStatement-MetforminRudolf
 
 // Immunization
 
@@ -50,27 +50,27 @@ Description: "Complete emergency record bundle for Rudolf Zimmermann"
 // Risk factor
 
 // Problem list
-* entry[9].fullUrl = "http://fhir.ch/ig/emr/Condition/UC4-Condition-HeartFailure"
-* entry[9].resource = UC4-Condition-HeartFailure
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Condition/UC4-Condition-HeartFailure"
+* entry[=].resource = UC4-Condition-HeartFailure
 
-* entry[10].fullUrl = "http://fhir.ch/ig/emr/Condition/UC4-Condition-AtrialFibrillation"
-* entry[10].resource = UC4-Condition-AtrialFibrillation
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Condition/UC4-Condition-AtrialFibrillation"
+* entry[=].resource = UC4-Condition-AtrialFibrillation
 
-* entry[11].fullUrl = "http://fhir.ch/ig/emr/Condition/UC4-Condition-ChronicKidneyDisease"
-* entry[11].resource = UC4-Condition-ChronicKidneyDisease
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Condition/UC4-Condition-ChronicKidneyDisease"
+* entry[=].resource = UC4-Condition-ChronicKidneyDisease
 
-* entry[12].fullUrl = "http://fhir.ch/ig/emr/Condition/UC4-Condition-DiabetesRudolf"
-* entry[12].resource = UC4-Condition-DiabetesRudolf
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Condition/UC4-Condition-DiabetesRudolf"
+* entry[=].resource = UC4-Condition-DiabetesRudolf
 
 // Advance directive
-* entry[13].fullUrl = "http://fhir.ch/ig/emr/Consent/UC4-Consent-MedicalPowerOfAttorney"
-* entry[13].resource = UC4-Consent-MedicalPowerOfAttorney
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Consent/UC4-Consent-MedicalPowerOfAttorney"
+* entry[=].resource = UC4-Consent-MedicalPowerOfAttorney
 
 // Document references
 
 // Medical device
-* entry[14].fullUrl = "http://fhir.ch/ig/emr/Device/UC4-Device-HipProsthesis"
-* entry[14].resource = UC4-Device-HipProsthesis
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Device/UC4-Device-HipProsthesis"
+* entry[=].resource = UC4-Device-HipProsthesis
 
 // Pregnancy
 

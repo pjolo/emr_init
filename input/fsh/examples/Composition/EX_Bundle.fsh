@@ -14,61 +14,61 @@ Description: "Complete Emergency Record Bundle"
 * entry[0].resource = EX-Composition
 
 // Patient
-* entry[1].fullUrl = "http://fhir.ch/ig/emr/Patient/EX-Patient"
-* entry[1].resource = EX-Patient
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Patient/EX-Patient"
+* entry[=].resource = EX-Patient
 
 // Related person
-* entry[2].fullUrl = "http://fhir.ch/ig/emr/RelatedPerson/EX-RelatedPerson"
-* entry[2].resource = EX-RelatedPerson
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/RelatedPerson/EX-RelatedPerson"
+* entry[=].resource = EX-RelatedPerson
 
 // Care Team
-* entry[3].fullUrl = "http://fhir.ch/ig/emr/Practitioner/EX-Practitioner"
-* entry[3].resource = EX-Practitioner
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Practitioner/EX-Practitioner"
+* entry[=].resource = EX-Practitioner
 
 // Resurectation
-* entry[4].fullUrl = "http://fhir.ch/ig/emr/Observation/EX-Resurectation"
-* entry[4].resource = EX-Resurectation
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Observation/EX-Resurectation"
+* entry[=].resource = EX-Resurectation
 
 // Medication
-* entry[5].fullUrl = "http://fhir.ch/ig/emr/Medication/EX-Metformin"
-* entry[5].resource = EX-Metformin
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Medication/EX-Metformin"
+* entry[=].resource = EX-Metformin
 
-* entry[6].fullUrl = "http://fhir.ch/ig/emr/MedicationStatement/EX-MedicationStatement"
-* entry[6].resource = EX-MedicationStatement
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/MedicationStatement/EX-MedicationStatement"
+* entry[=].resource = EX-MedicationStatement
 
 // Immunization
-* entry[7].fullUrl = "http://fhir.ch/ig/emr/Immunization/EX-Immunization"
-* entry[7].resource = EX-Immunization
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Immunization/EX-Immunization"
+* entry[=].resource = EX-Immunization
 
 // Allergies
-* entry[8].fullUrl = "http://fhir.ch/ig/emr/AllergyIntolerance/EX-AllergyIntolerance"
-* entry[8].resource = EX-AllergyIntolerance
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/AllergyIntolerance/EX-AllergyIntolerance"
+* entry[=].resource = EX-AllergyIntolerance
 
 // Risk factor
-* entry[9].fullUrl = "http://fhir.ch/ig/emr/Observation/EX-RiskFactor"
-* entry[9].resource = EX-RiskFactor
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Observation/EX-RiskFactor"
+* entry[=].resource = EX-RiskFactor
 
 // Problem list
-* entry[10].fullUrl = "http://fhir.ch/ig/emr/Condition/EX-Condition"
-* entry[10].resource = EX-Condition
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Condition/EX-Condition"
+* entry[=].resource = EX-Condition
 
 // Advance directive
-* entry[11].fullUrl = "http://fhir.ch/ig/emr/DocumentReference/EX-AdvanceDirective"
-* entry[11].resource = EX-AdvanceDirective
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/DocumentReference/EX-AdvanceDirective"
+* entry[=].resource = EX-AdvanceDirective
 
 // Document references
-* entry[12].fullUrl = "http://fhir.ch/ig/emr/DocumentReference/EX-DocumentReferences"
-* entry[12].resource = EX-DocumentReferences
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/DocumentReference/EX-DocumentReferences"
+* entry[=].resource = EX-DocumentReferences
 
 // Medical devices
-* entry[13].fullUrl = "http://fhir.ch/ig/emr/Device/EX-MedicalDevice"
-* entry[13].resource = EX-MedicalDevice
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Device/EX-MedicalDevice"
+* entry[=].resource = EX-MedicalDevice
 
 // Pregnancy
-* entry[14].fullUrl = "http://fhir.ch/ig/emr/Observation/EX-Pregnancy"
-* entry[14].resource = EX-Pregnancy
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Observation/EX-Pregnancy"
+* entry[=].resource = EX-Pregnancy
 
 // Disability
-* entry[15].fullUrl = "http://fhir.ch/ig/emr/Observation/EX-Disability"
-* entry[15].resource = EX-Disability
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Observation/EX-Disability"
+* entry[=].resource = EX-Disability
 

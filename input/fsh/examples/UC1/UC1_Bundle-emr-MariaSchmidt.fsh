@@ -14,40 +14,40 @@ Description: "Complete Emergency Record bundle for Maria Schmidt"
 * entry[0].resource = UC1-Composition-emr-MariaSchmidt
 
 // Patient
-* entry[1].fullUrl = "http://fhir.ch/ig/emr/Patient/UC1-Patient-MariaSchmidt"
-* entry[1].resource = UC1-Patient-MariaSchmidt
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Patient/UC1-Patient-MariaSchmidt"
+* entry[=].resource = UC1-Patient-MariaSchmidt
 
 // Related persons
-* entry[2].fullUrl = "http://fhir.ch/ig/emr/RelatedPerson/UC1-RelatedPerson-PeterSchmidt"
-* entry[2].resource = UC1-RelatedPerson-PeterSchmidt
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/RelatedPerson/UC1-RelatedPerson-PeterSchmidt"
+* entry[=].resource = UC1-RelatedPerson-PeterSchmidt
 
 // Care Team
-* entry[3].fullUrl = "http://fhir.ch/ig/emr/Practitioner/UC1-Practitioner-DrMueller"
-* entry[3].resource = UC1-Practitioner-DrMueller
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Practitioner/UC1-Practitioner-DrMueller"
+* entry[=].resource = UC1-Practitioner-DrMueller
 
-* entry[4].fullUrl = "http://fhir.ch/ig/emr/Organization/UC1-Organization-Hausarztpraxis-DrMueller"
-* entry[4].resource = UC1-Organization-Hausarztpraxis-DrMueller
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Organization/UC1-Organization-Hausarztpraxis-DrMueller"
+* entry[=].resource = UC1-Organization-Hausarztpraxis-DrMueller
 
 // Resuscitation
 
 // Medication
-* entry[5].fullUrl = "http://fhir.ch/ig/emr/Medication/Metformin"
-* entry[5].resource = Metformin
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Medication/Metformin"
+* entry[=].resource = Metformin
 
-* entry[6].fullUrl = "http://fhir.ch/ig/emr/MedicationStatement/UC1-MedicationStatement-Metformin"
-* entry[6].resource = UC1-MedicationStatement-Metformin
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/MedicationStatement/UC1-MedicationStatement-Metformin"
+* entry[=].resource = UC1-MedicationStatement-Metformin
 
 // Immunization
 
 // Allergies
-* entry[7].fullUrl = "http://fhir.ch/ig/emr/AllergyIntolerance/UC1-AllergyIntolerance-Penicillin"
-* entry[7].resource = UC1-AllergyIntolerance-Penicillin
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/AllergyIntolerance/UC1-AllergyIntolerance-Penicillin"
+* entry[=].resource = UC1-AllergyIntolerance-Penicillin
 
 // Risk factor
 
 // Problem list
-* entry[8].fullUrl = "http://fhir.ch/ig/emr/Condition/UC1-Condition-Diabetes"
-* entry[8].resource = UC1-Condition-Diabetes
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Condition/UC1-Condition-Diabetes"
+* entry[=].resource = UC1-Condition-Diabetes
 
 // Advance directive
 

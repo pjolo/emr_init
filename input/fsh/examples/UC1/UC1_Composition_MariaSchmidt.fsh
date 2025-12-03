@@ -24,56 +24,54 @@ Description: "Composition for the Emergency Record by Maria Schmidt"
 
 * custodian = Reference(UC1-Organization-Hausarztpraxis-DrMueller)
 
-// Patient summary section
-* section[0].title = "Patientendaten"
-* section[0].code = $loinc#60591-5 "Patient summary Document"
-* section[0].text.status = #generated
-* section[0].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Maria Anna Schmidt, geb. 15.03.1978, weiblich</p><p>Wohnhaft: Musterstrasse 123, 8001 Zürich</p><p>Notfallkontakt: Peter Schmidt (Ehemann) +41 44 321 65 87</p></div>"
-* section[0].entry[0] = Reference(UC1-Patient-MariaSchmidt)
-
 // Related person section
-* section[1].title = "Notfallkontakte"
-* section[1].code = $loinc#56864-2 "Emergency contact Relationship to patient"
-* section[1].text.status = #generated
-* section[1].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Notfallkontakt: Elisabeth Meier (Ehefrau) +41 31 456 78 90</p></div>"
-* section[1].entry = Reference(UC2-RelatedPerson-ElisabethMeier)
-* section[1].entry[0] = Reference(UC1-RelatedPerson-PeterSchmidt)
-* section[1].entry[1] = Reference(UC1-RelatedPerson-AnnaMueller)
+* section[sectionEmergencyContacts].title = "Notfallkontakte"
+* section[sectionEmergencyContacts].code = $loinc#56864-2 "Emergency contact Relationship to patient"
+* section[sectionEmergencyContacts].text.status = #generated
+* section[sectionEmergencyContacts].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Notfallkontakte:</p><ul><li>Peter Schmidt (Ehemann): +41 44 321 65 87</li><li>Anna Müller (Schwester): +41 44 234 56 78</li></ul></div>"
+* section[sectionEmergencyContacts].entry[relatedPerson][0] = Reference(UC1-RelatedPerson-PeterSchmidt)
+* section[sectionEmergencyContacts].entry[relatedPerson][=].type = "RelatedPerson"
+* section[sectionEmergencyContacts].entry[relatedPerson][+] = Reference(UC1-RelatedPerson-AnnaMueller)
+* section[sectionEmergencyContacts].entry[relatedPerson][=].type = "RelatedPerson"
 
 // Care Team section
-* section[2].title = "Behandlungsteam"
-* section[2].code = $loinc#85847-2 "Patient Care team information"
-* section[2].text.status = #generated
-* section[2].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Behandelnde Ärzte:</p><ul><li>Dr. med. Hans Müller - Hausarzt (GLN: 7601000234567)</li></ul></div>"
-* section[2].entry = Reference(UC1-Practitioner-DrMueller)
+* section[sectionCareTeam].title = "Behandlungsteam"
+* section[sectionCareTeam].code = $loinc#85847-2 "Patient Care team information"
+* section[sectionCareTeam].text.status = #generated
+* section[sectionCareTeam].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Behandelnde Ärzte:</p><ul><li>Dr. med. Hans Müller - Hausarzt (GLN: 7601000234567)</li></ul></div>"
+* section[sectionCareTeam].entry[careTeam][0] = Reference(UC1-Practitioner-DrMueller)
+* section[sectionCareTeam].entry[careTeam][=].type = "Practitioner"
 
 // Resuscitation section
 
 
 // Medication section
-* section[3].title = "Aktuelle Medikation"
-* section[3].code = $loinc#10160-0 "History of Medication use Narrative"
-* section[3].text.status = #generated
-* section[3].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktuelle Medikation:</p><ul><li>Metformin 1000 mg zweimal täglich zu den Mahlzeiten (seit 2015-06-15)</li></ul></div>"
-* section[3].entry = Reference(UC1-MedicationStatement-Metformin)
+* section[sectionMedications].title = "Aktuelle Medikation"
+* section[sectionMedications].code = $loinc#10160-0 "History of Medication use Narrative"
+* section[sectionMedications].text.status = #generated
+* section[sectionMedications].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktuelle Medikation:</p><ul><li>Metformin 1000 mg zweimal täglich zu den Mahlzeiten (seit 15.06.2015)</li></ul></div>"
+* section[sectionMedications].entry[medicationStatementOrRequest][0]
+* section[sectionMedications].entry[medicationStatementOrRequest][=].type = "MedicationStatement"
 
 // Immunization section
 
 // Allergies section
-* section[4].title = "Allergien und Unverträglichkeiten"
-* section[4].code = $loinc#48765-2 "Allergies and adverse reactions Document"
-* section[4].text.status = #generated
-* section[4].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Bekannte Allergien:</p><ul><li><strong>KRITISCH:</strong> Penicillin-Allergie mit anaphylaktischer Reaktion (seit Kindheit)</li></ul><p><strong>Wichtig:</strong> Keine Beta-Lactam-Antibiotika verwenden!</p></div>"
-* section[4].entry = Reference(UC1-AllergyIntolerance-Penicillin)
+* section[sectionAllergies].title = "Allergien und Unverträglichkeiten"
+* section[sectionAllergies].code = $loinc#48765-2 "Allergies and adverse reactions Document"
+* section[sectionAllergies].text.status = #generated
+* section[sectionAllergies].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Bekannte Allergien:</p><ul><li><strong>KRITISCH:</strong> Penicillin-Allergie mit anaphylaktischer Reaktion (seit Kindheit)</li></ul><p><strong>Wichtig:</strong> Keine Beta-Lactam-Antibiotika verwenden!</p></div>"
+* section[sectionAllergies].entry[allergyOrIntolerance][0] = Reference(UC1-AllergyIntolerance-Penicillin)
+* section[sectionAllergies].entry[allergyOrIntolerance][=].type = "AllergyIntolerance"
 
 // Risk factor section
 
 // Problem list section
-* section[5].title = "Probleme und Diagnosen"
-* section[5].code = $loinc#11450-4 "Problem list - Reported"
-* section[5].text.status = #generated
-* section[5].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktive Probleme:</p><ul><li>Diabetes mellitus Typ 2 (seit 2015-06-15) - gut kontrolliert</li></ul></div>"
-* section[5].entry = Reference(UC1-Condition-Diabetes)
+* section[sectionProblems].title = "Probleme und Diagnosen"
+* section[sectionProblems].code = $loinc#11450-4 "Problem list - Reported"
+* section[sectionProblems].text.status = #generated
+* section[sectionProblems].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktive Probleme:</p><ul><li>Diabetes mellitus Typ 2 (seit 15.06.2015) - gut kontrolliert</li></ul></div>"
+* section[sectionProblems].entry[problem][0] = Reference(UC1-Condition-Diabetes)
+* section[sectionProblems].entry[problem][=].type = "Condition"
 
 // Advance directive and emergency medical directive section
 

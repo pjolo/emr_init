@@ -22,92 +22,105 @@ Description: "General composition for the Emergency Record"
 * title = "Elektronischer Notfallpass - Maria Schmidt"
 
 // Related person section
-* section[0].title = "Notfallkontakte"
-* section[=].code = $loinc#56864-2 "Emergency contact Relationship to patient"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Notfallkontakt: Elisabeth Meier (Ehefrau) +41 31 456 78 90</p></div>"
-* section[=].entry = Reference(EX-RelatedPerson)
+* section[sectionEmergencyContacts].title = "Notfallkontakte"
+* section[sectionEmergencyContacts].code = $loinc#56864-2 "Emergency contact"
+* section[sectionEmergencyContacts].text.status = #generated
+* section[sectionEmergencyContacts].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Notfallkontakt: Elisabeth Meier (Ehefrau) +41 31 456 78 90</p></div>"
+* section[sectionEmergencyContacts].entry[relatedPerson][0] = Reference(EX-RelatedPerson)
+* section[sectionEmergencyContacts].entry[relatedPerson][=].type = "RelatedPerson"
 
 // Care Team section
-* section[+].title = "Behandelnde Gesundheitsfachperson"
-* section[=].code = $loinc#85847-2 "Patient Care team information"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Behandelnde Ärzte:</p><ul><li>Dr. med. Hans Müller - Hausarzt (GLN: 7601000234567)</li></ul></div>"
-* section[=].entry = Reference(EX-Practitioner)
+* section[sectionCareTeam].title = "Behandelnde Gesundheitsfachperson"
+* section[sectionCareTeam].code = $loinc#85847-2 "Patient Care team information"
+* section[sectionCareTeam].text.status = #generated
+* section[sectionCareTeam].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Behandelnde Ärzte:</p><ul><li>Dr. med. Hans Müller - Hausarzt (GLN: 7601000234567)</li></ul></div>"
+* section[sectionCareTeam].entry[practitioner][0] = Reference(EX-Practitioner)
+* section[sectionCareTeam].entry[practitioner][=].type = "Practitioner"
 
 // Resuscitation section
-* section[+].title = "Reanimationsstatus"
-* section[=].code = $loinc#75792-2 "Advance directive - request for resuscitation that differs from cardiopulmonary resuscitation"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Reanimationsstatus: Ja</p></div>"
-* section[=].entry = Reference(EX-Resurectation)
+* section[sectionResuscitation].title = "Reanimation"
+* section[sectionResuscitation].code = $loinc#75320-2 "Advance directive"
+* section[sectionResuscitation].text.status = #generated
+* section[sectionResuscitation].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Reanimationsstatus:</p><ul><li>Vollumfängliche Reanimation gewünscht</li></ul></div>"
+* section[sectionResuscitation].entry[observation][0] = Reference(EX-Resuscitation)
+* section[sectionResuscitation].entry[observation][=].type = "Observation"
 
 // Medication section
-* section[+].title = "Medikation"
-* section[=].code = $loinc#10160-0 "History of Medication use Narrative"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktuelle Medikation:</p><ul><li>Metformin 1000 mg zweimal täglich zu den Mahlzeiten (seit 2015-06-15)</li></ul></div>"
-* section[=].entry = Reference(EX-MedicationStatement)
+* section[sectionMedications].title = "Medikation"
+* section[sectionMedications].code = $loinc#10160-0 "History of Medication use Narrative"
+* section[sectionMedications].text.status = #generated
+* section[sectionMedications].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktuelle Medikation:</p><ul><li>Metformin 1000mg 1-0-1</li></ul></div>"
+* section[sectionMedications].entry[medicationStatement][0] = Reference(EX-MedicationStatement)
+* section[sectionMedications].entry[medicationStatement][=].type = "MedicationStatement"
 
 // Immunization section
-* section[+].title = "Impfungen"
-* section[=].code = $loinc#11369-6 "History of Immunization note"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Aktueller Impfschutz:</strong></p><ul><li>Influenza: 15.10.2024</li><li>COVID-19: 12.09.2024</li><li>Tetanus: 18.03.2022</li></ul></div>"
-* section[=].entry = Reference(EX-Immunization)
+* section[sectionImmunizations].title = "Impfungen"
+* section[sectionImmunizations].code = $loinc#11369-6 "History of Immunization Narrative"
+* section[sectionImmunizations].text.status = #generated
+* section[sectionImmunizations].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktuelle Impfungen:</p><ul><li>COVID-19: 12.09.2024</li><li>Influenza: 15.10.2024</li><li>Tetanus: 18.03.2022</li></ul></div>"
+* section[sectionImmunizations].entry[immunization][0] = Reference(EX-Immunization)
+* section[sectionImmunizations].entry[immunization][=].type = "Immunization"
 
 // Allergies section
-* section[+].title = "Allergien und Unverträglichkeiten"
-* section[=].code = $loinc#48765-2 "Allergies and adverse reactions Document"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Bekannte Allergien:</p><ul><li><strong>KRITISCH:</strong> Penicillin-Allergie mit anaphylaktischer Reaktion (seit Kindheit)</li></ul><p><strong>Wichtig:</strong> Keine Beta-Lactam-Antibiotika verwenden!</p></div>"
-* section[=].entry = Reference(EX-AllergyIntolerance)
+* section[sectionAllergies].title = "Allergien und Unverträglichkeiten"
+* section[sectionAllergies].code = $loinc#48765-2 "Allergies and adverse reactions Document"
+* section[sectionAllergies].text.status = #generated
+* section[sectionAllergies].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Bekannte Allergien:</p><ul><li>Penicillin - Anaphylaxie</li></ul></div>"
+* section[sectionAllergies].entry[allergyOrIntolerance][0] = Reference(EX-AllergyIntolerance)
+* section[sectionAllergies].entry[allergyOrIntolerance][=].type = "AllergyIntolerance"
 
 // Risk factor section
-* section[+].title = "Risikofaktoren für Behandelnde"
-* section[=].code = $loinc#46467-7 "Risk factors"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Bekannte Allergien:</p><ul><li><strong>KRITISCH:</strong> Penicillin-Allergie mit anaphylaktischer Reaktion (seit Kindheit)</li></ul><p><strong>Wichtig:</strong> Keine Beta-Lactam-Antibiotika verwenden!</p></div>"
-* section[=].entry = Reference(EX-RiskFactor)
+* section[sectionRiskFactors].title = "Risikofaktoren für Behandelnde"
+* section[sectionRiskFactors].code = $loinc#46467-7 "Risk factors"
+* section[sectionRiskFactors].text.status = #generated
+* section[sectionRiskFactors].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Risikofaktoren:</p><ul><li>Diabetes mellitus Typ 2 mit erhöhtem Infektionsrisiko</li><li>Adipositas (BMI 32)</li><li>Chronische Niereninsuffizienz Stadium 3</li></ul></div>"
+* section[sectionRiskFactors].entry[riskFactor][0] = Reference(EX-RiskFactor)
+* section[sectionRiskFactors].entry[riskFactor][=].type = "Observation"
 
 // Problem list section
-* section[+].title = "Probleme und Diagnosen"
-* section[=].code = $loinc#11450-4 "Problem list - Reported"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktive Probleme:</p><ul><li>Diabetes mellitus Typ 2 (seit 2015-06-15) - gut kontrolliert</li></ul></div>"
-* section[=].entry = Reference(EX-Condition)
+* section[sectionProblems].title = "Problemliste"
+* section[sectionProblems].code = $loinc#11450-4 "Problem list - Reported"
+* section[sectionProblems].text.status = #generated
+* section[sectionProblems].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktive Probleme:</p><ul><li>Diabetes mellitus Typ 2</li></ul></div>"
+* section[sectionProblems].entry[problem][0] = Reference(EX-Condition)
+* section[sectionProblems].entry[problem][=].type = "Condition"
 
 // Advance directive and emergency medical directive section
-* section[+].title = "Patientenvefügungen und Ärztliche Notfallanordnungen"
-* section[=].code = $loinc#75320-2 "Advance directive"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktive Probleme:</p><ul><li>Diabetes mellitus Typ 2 (seit 2015-06-15) - gut kontrolliert</li></ul></div>"
-* section[=].entry = Reference(EX-AdvanceDirective)
+* section[sectionAdvanceDirectives].title = "Patientenverfügung"
+* section[sectionAdvanceDirectives].code = $loinc#42348-3 "Advance directives"
+* section[sectionAdvanceDirectives].text.status = #generated
+* section[sectionAdvanceDirectives].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Patientenverfügung:</p><ul><li>Patientenverfügung liegt vor (erstellt am 15.03.2023)</li><li>Keine Reanimation gewünscht</li><li>Bevollmächtigte Person: Elisabeth Meier</li></ul></div>"
+* section[sectionAdvanceDirectives].entry[advanceDirective][0] = Reference(EX-AdvanceDirective)
+* section[sectionAdvanceDirectives].entry[advanceDirective][=].type = "DocumentReference"
 
 // Document references section
-* section[+].title = "Andere Dokumente"
-* section[=].code = $loinc#77599-9	"Additional documentation"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktive Probleme:</p><ul><li>Diabetes mellitus Typ 2 (seit 2015-06-15) - gut kontrolliert</li></ul></div>"
-* section[=].entry = Reference(EX-DocumentReferences)
+* section[sectionOtherDocuments].title = "Weitere Dokumente"
+* section[sectionOtherDocuments].code = $loinc#55108-5 "Clinical presentation Document"
+* section[sectionOtherDocuments].text.status = #generated
+* section[sectionOtherDocuments].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Weitere wichtige Dokumente:</p><ul><li>Patientenverfügung vom 15.03.2024</li></ul></div>"
+* section[sectionOtherDocuments].entry[document][0] = Reference(EX-DocumentReference)
+* section[sectionOtherDocuments].entry[document][=].type = "DocumentReference"
 
 // Medical devices section
-* section[+].title = "Implentate"
-* section[=].code = $loinc#46264-8 "History of medical device use"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktive Probleme:</p><ul><li>Diabetes mellitus Typ 2 (seit 2015-06-15) - gut kontrolliert</li></ul></div>"
-* section[=].entry = Reference(EX-MedicalDevice)
+* section[sectionMedicalDevices].title = "Medizinprodukte"
+* section[sectionMedicalDevices].code = $loinc#46264-8 "History of medical device use"
+* section[sectionMedicalDevices].text.status = #generated
+* section[sectionMedicalDevices].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Medizinprodukte:</p><ul><li>Herzschrittmacher seit 2020</li></ul></div>"
+* section[sectionMedicalDevices].entry[deviceUseStatement][0] = Reference(EX-MedicalDevice)
+* section[sectionMedicalDevices].entry[deviceUseStatement][=].type = "DeviceUseStatement"
 
 // Pregnancy section
-* section[+].title = "Schwangerschaft"
-* section[=].code = $loinc#82810-3 "Pregnancy status"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Implantate:</p><ul><li><strong>MRT-SICHER:</strong> Herzschrittmacher Boston Scientific Accolade MRI (Modell L331)</li><li>Seriennummer: PM987654321</li><li>Implantiert: 15.03.2020</li><li>Letzte Kontrolle: 01.09.2025</li></ul></div>"
-* section[=].entry = Reference(EX-Pregnancy)
+* section[sectionPregnancyHx].title = "Schwangerschaftsstatus"
+* section[sectionPregnancyHx].code = $loinc#10162-6 "Pregnancies Hx"
+* section[sectionPregnancyHx].text.status = #generated
+* section[sectionPregnancyHx].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Schwangerschaftsstatus:</p><ul><li>Nicht schwanger</li></ul></div>"
+* section[sectionPregnancyHx].entry[pregnancyStatus][0] = Reference(EX-Pregnancy)
+* section[sectionPregnancyHx].entry[pregnancyStatus][=].type = "Observation"
 
 // Disability section
-* section[+].title = "Beeinträchtigungen"
-* section[=].code = $loinc#101720-1 "Disability status"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Implantate:</p><ul><li><strong>MRT-SICHER:</strong> Herzschrittmacher Boston Scientific Accolade MRI (Modell L331)</li><li>Seriennummer: PM987654321</li><li>Implantiert: 15.03.2020</li><li>Letzte Kontrolle: 01.09.2025</li></ul></div>"
-* section[=].entry = Reference(EX-Disability)
+* section[sectionDisability].title = "Behinderung"
+* section[sectionDisability].code = $loinc#101720-1 "Disability status"
+* section[sectionDisability].text.status = #generated
+* section[sectionDisability].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Behinderungsstatus:</p><ul><li>Keine bekannte Behinderung</li></ul></div>"
+* section[sectionDisability].entry[observation][0] = Reference(EX-Disability)
+* section[sectionDisability].entry[observation][=].type = "Observation"

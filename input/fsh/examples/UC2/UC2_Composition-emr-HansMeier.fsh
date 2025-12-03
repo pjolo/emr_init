@@ -24,82 +24,82 @@ Description: "Composition für den eNotfallpass von Hans Meier"
 
 * custodian = Reference(UC2-Organization-Kardiologie-Bern)
 
-// Patient Summary section
-* section[0].title = "Patientendaten"
-* section[0].code = $loinc#60591-5 "Patient summary Document"
-* section[0].text.status = #generated
-* section[0].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Hans Rudolf Meier, geb. 08.11.1952, männlich, 72 Jahre</p><p>Wohnhaft: Bergstrasse 45, 3012 Bern</p></div>"
-* section[0].entry = Reference(UC2-Patient-HansMeier)
-
 // Related person section
-* section[1].title = "Notfallkontakte"
-* section[1].code = $loinc#56864-2 "Emergency contact Relationship to patient"
-* section[1].text.status = #generated
-* section[1].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Notfallkontakt: Elisabeth Meier (Ehefrau) +41 31 456 78 90</p></div>"
-* section[1].entry = Reference(UC2-RelatedPerson-ElisabethMeier)
+* section[sectionEmergencyContacts].title = "Notfallkontakte"
+* section[sectionEmergencyContacts].code = $loinc#56864-2 "Emergency contact Relationship to patient"
+* section[sectionEmergencyContacts].text.status = #generated
+* section[sectionEmergencyContacts].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Notfallkontakt:</strong></p><ul><li>Elisabeth Meier (Ehefrau)</li><li>Telefon: +41 31 456 78 90</li><li>Mobil: +41 79 456 78 90</li></ul></div>"
+* section[sectionEmergencyContacts].entry[relatedPerson][0] = Reference(UC2-RelatedPerson-ElisabethMeier)
+* section[sectionEmergencyContacts].entry[relatedPerson][=].type = "RelatedPerson"
 
 // Care Team section
-* section[2].title = "Behandlungsteam"
-* section[2].code = $loinc#85847-2 "Patient Care team information"
-* section[2].text.status = #generated
-* section[2].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Behandelnde Ärzte:</p><ul><li>Dr. med. Hans Müller - Hausarzt (GLN: 7601000234567)</li></ul></div>"
-* section[2].entry = Reference(UC2-Practitioner-DrMueller)
+* section[sectionCareTeam].title = "Behandlungsteam"
+* section[sectionCareTeam].code = $loinc#85847-2 "Patient Care team information"
+* section[sectionCareTeam].text.status = #generated
+* section[sectionCareTeam].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Behandelnde Ärzte:</strong></p><ul><li>Dr. med. Hans Müller - Hausarzt<br/>GLN: 7601000234567<br/>Telefon: +41 31 123 45 67</li><li>Dr. med. Andrea Schmidt - Kardiologin<br/>GLN: 7601000456789<br/>Telefon: +41 31 234 56 78</li></ul></div>"
+* section[sectionCareTeam].entry[careTeam][0] = Reference(UC2-Practitioner-DrMueller)
+* section[sectionCareTeam].entry[careTeam][=].type = "Practitioner"
 
-* section[3].title = "Behandlungsteam"
-* section[3].code = $loinc#85847-2 "Patient Care team information"
-* section[3].text.status = #generated
-* section[3].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Behandelnde Ärzte:</p><ul><li>Dr. med. Hans Müller - Hausarzt (GLN: 7601000234567)</li></ul></div>"
-* section[3].entry = Reference(UC2-Practitioner-DrSchmidt)
+* section[sectionCareTeam].entry[careTeam][+] = Reference(UC2-Practitioner-DrSchmidt)
+* section[sectionCareTeam].entry[careTeam][=].type = "Practitioner"
 
-// Resuscitation section
-* section[4].title = "Reanimationsstatus"
-* section[4].code = $loinc#100822-6 "Cardiopulmonary resuscitation orders"
-* section[4].text.status = #generated
-* section[4].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Behandelnde Ärzte:</p><ul><li>Dr. med. Andrea Zimmermann - Kardiologin (GLN: 7601000456789)</li></ul></div>"
-* section[4].entry = Reference(UC2-Practitioner-DrMueller)
+// Resuscitation section KONTROLLIEREN
+* section[sectionResuscitation].title = "Reanimationsstatus"
+* section[sectionResuscitation].code = $loinc#100822-6 "Cardiopulmonary resuscitation orders"
+* section[sectionResuscitation].text.status = #generated
+* section[sectionResuscitation].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Reanimationsstatus:</strong></p><ul><li>Vollständige Reanimation gewünscht (CPR: JA)</li><li>Intubation und Beatmung: JA</li><li>Herzmassage: JA</li><li>Defibrillation: JA</li></ul><p><strong>Hinweis:</strong> Bei Herzschrittmacher MRT-sicher, externe Defibrillation möglich</p><p>Patientenverfügung vom 01.01.2024</p></div>"
+* section[sectionResuscitation].entry[consent][0] = Reference(UC2-Practitioner-DrMueller)
 
 // Medication section
-* section[5].title = "Medikation"
-* section[5].code = $loinc#10160-0 "History of Medication use Narrative"
-* section[5].text.status = #generated
-* section[5].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktuelle Medikation:</p><ul><li><strong>WICHTIG:</strong> Marcumar 3mg täglich abends zur Antikoagulation</li></ul><p><strong>Bei Operationen:</strong> Bridging mit Heparin erforderlich!</p></div>"
-* section[5].entry = Reference(UC2-MedicationStatement-Marcumar)
+* section[sectionMedications].title = "Aktuelle Medikation"
+* section[sectionMedications].code = $loinc#10160-0 "History of Medication use Narrative"
+* section[sectionMedications].text.status = #generated
+* section[sectionMedications].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Aktuelle Medikation:</strong></p><ul><li><strong>MARCUMAR 3 mg</strong> - 1x täglich abends (antikoagulativ)</li><li><strong>Wichtig:</strong> INR-Zielbereich 2.0-3.0</li><li><strong>Bei Operationen:</strong> Bridging mit Heparin erforderlich!</li><li>Letzte INR-Kontrolle: 05.09.2025 (INR 2.4)</li></ul></div>"
+* section[sectionMedications].entry[medicationStatementOrRequest][0] = Reference(UC2-MedicationStatement-Marcumar)
+* section[sectionMedications].entry[medicationStatementOrRequest][=].type = "MedicationStatement"
 
 // Immunization section
-* section[6].title = "Impfungen"
-* section[6].code = $loinc#11369-6 "History of Immunization note"
-* section[6].text.status = #generated
-* section[6].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Aktueller Impfschutz:</strong></p><ul><li>Influenza: 15.10.2024</li><li>COVID-19: 12.09.2024</li><li>Tetanus: 18.03.2022</li></ul></div>"
-* section[6].entry[0] = Reference(Immunization/UC2-Immunization-Influenza)
-* section[6].entry[1] = Reference(Immunization/UC2-Immunization-COVID19)
-* section[6].entry[2] = Reference(Immunization/UC2-Immunization-Tetanus)
+* section[sectionImmunizations].title = "Impfungen"
+* section[sectionImmunizations].code = $loinc#11369-6 "History of Immunization Narrative"
+* section[sectionImmunizations].text.status = #generated
+* section[sectionImmunizations].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Aktueller Impfschutz:</strong></p><ul><li>Influenza: 15.10.2024</li><li>COVID-19: 12.09.2024 (Auffrischung)</li><li>Tetanus: 18.03.2022</li></ul></div>"
+* section[sectionImmunizations].entry[immunization][0] = Reference(Immunization/UC2-Immunization-Influenza)
+* section[sectionImmunizations].entry[immunization][=].type = "Immunization"
+
+* section[sectionImmunizations].entry[immunization][+] = Reference(Immunization/UC2-Immunization-COVID19)
+* section[sectionImmunizations].entry[immunization][=].type = "Immunization"
+
+* section[sectionImmunizations].entry[immunization][+] = Reference(Immunization/UC2-Immunization-Tetanus)
+* section[sectionImmunizations].entry[immunization][=].type = "Immunization"
 
 // Allergies section
-* section[7].title = "Allergien oder Unverträglichkeiten"
-* section[7].code = $loinc#48765-2 "Allergies and adverse reactions Document"
-* section[7].text.status = #generated
-* section[7].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keine bekannten Allergien</p></div>"
-* section[7].emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#nilknown "Nil Known"
+* section[sectionAllergies].title = "Allergien und Unverträglichkeiten"
+* section[sectionAllergies].code = $loinc#48765-2 "Allergies and adverse reactions Document"
+* section[sectionAllergies].text.status = #generated
+* section[sectionAllergies].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keine bekannten Allergien oder Unverträglichkeiten</p></div>"
+* section[sectionAllergies].emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#nilknown "Nil Known"
 
 // Risk factor section
 
 // Problem list section
-* section[8].title = "Probleme und Diagnosen"
-* section[8].code = $loinc#11450-4 "Problem list - Reported"
-* section[8].text.status = #generated
-* section[8].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktive Probleme:</p><ul><li>Persistierendes Vorhofflimmern (seit 2020-01-15)</li></ul></div>"
-* section[8].entry = Reference(UC2-Condition-Vorhofflimmern)
+* section[sectionProblems].title = "Probleme und Diagnosen"
+* section[sectionProblems].code = $loinc#11450-4 "Problem list - Reported"
+* section[sectionProblems].text.status = #generated
+* section[sectionProblems].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Aktive Diagnosen:</strong></p><ul><li><strong>Persistierendes Vorhofflimmern</strong> (seit 15.01.2020)</li><li>Antikoagulation mit Marcumar</li><li>Herzschrittmacher-Implantation 15.03.2020</li><li>Stabile Herzinsuffizienz NYHA II</li></ul></div>"
+* section[sectionProblems].entry[problem][0] = Reference(UC2-Condition-Vorhofflimmern)
+* section[sectionProblems].entry[problem][=].type = "Condition"
 
 // Advance directive and emergency medical directive section
 
 // Document references section
 
 // Medical Devices Section
-* section[9].title = "Implantate"
-* section[9].code = $loinc#46264-8 "History of medical device use"
-* section[9].text.status = #generated
-* section[9].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Implantate:</p><ul><li><strong>MRT-SICHER:</strong> Herzschrittmacher Boston Scientific Accolade MRI (Modell L331)</li><li>Seriennummer: PM987654321</li><li>Implantiert: 15.03.2020</li><li>Letzte Kontrolle: 01.09.2025</li></ul></div>"
-* section[9].entry = Reference(UC2-Device-Pacemaker)
+* section[sectionMedicalDevices].title = "Implantate"
+* section[sectionMedicalDevices].code = $loinc#46264-8 "History of medical device use"
+* section[sectionMedicalDevices].text.status = #generated
+* section[sectionMedicalDevices].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Implantate:</p><ul><li><strong>MRT-SICHER:</strong> Herzschrittmacher Boston Scientific Accolade MRI (Modell L331)</li><li>Seriennummer: PM987654321</li><li>Implantiert: 15.03.2020</li><li>Letzte Kontrolle: 01.09.2025</li></ul></div>"
+* section[sectionMedicalDevices].entry[deviceUseStatement][0] = Reference(UC2-Device-Pacemaker)
+* section[sectionMedicalDevices].entry[deviceUseStatement][=].type = "DeviceUseStatement"
 
 // Pregnancy section
 

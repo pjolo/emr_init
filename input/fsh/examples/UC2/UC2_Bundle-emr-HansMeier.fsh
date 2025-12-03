@@ -14,54 +14,54 @@ Description: "Vollständiges eNotfallpass Bundle für Hans Meier"
 * entry[0].resource = UC2-Composition-emr-HansMeier
 
 // Patient
-* entry[1].fullUrl = "http://fhir.ch/ig/emr/Patient/UC2-Patient-HansMeier"
-* entry[1].resource = UC2-Patient-HansMeier
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Patient/UC2-Patient-HansMeier"
+* entry[=].resource = UC2-Patient-HansMeier
 
 // Related person
-* entry[2].fullUrl = "http://fhir.ch/ig/emr/RelatedPerson/UC2-RelatedPerson-ElisabethMeier"
-* entry[2].resource = UC2-RelatedPerson-ElisabethMeier
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/RelatedPerson/UC2-RelatedPerson-ElisabethMeier"
+* entry[=].resource = UC2-RelatedPerson-ElisabethMeier
 
 // Care Team
-* entry[3].fullUrl = "http://fhir.ch/ig/emr/Practitioner/UC2-Practitioner-DrSchmidt"
-* entry[3].resource = UC2-Practitioner-DrSchmidt
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Practitioner/UC2-Practitioner-DrSchmidt"
+* entry[=].resource = UC2-Practitioner-DrSchmidt
 
-* entry[4].fullUrl = "http://fhir.ch/ig/emr/Practitioner/UC2-Practitioner-DrMueller"
-* entry[4].resource = UC2-Practitioner-DrMueller
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Practitioner/UC2-Practitioner-DrMueller"
+* entry[=].resource = UC2-Practitioner-DrMueller
 
-* entry[5].fullUrl = "http://fhir.ch/ig/emr/Organization/UC2-Organization-Kardiologie-Bern"
-* entry[5].resource = UC2-Organization-Kardiologie-Bern
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Organization/UC2-Organization-Kardiologie-Bern"
+* entry[=].resource = UC2-Organization-Kardiologie-Bern
 
 // Resuscitation
 
 // Medication
-* entry[6].fullUrl = "http://fhir.ch/ig/emr/MedicationStatement/UC2-MedicationStatement-Marcumar"
-* entry[6].resource = UC2-MedicationStatement-Marcumar
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/MedicationStatement/UC2-MedicationStatement-Marcumar"
+* entry[=].resource = UC2-MedicationStatement-Marcumar
 
 // Immunization
-* entry[7].fullUrl = "http://fhir.ch/ig/emr/Immunization/UC2-Immunization-Tetanus"
-* entry[7].resource = UC2-Immunization-Tetanus
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Immunization/UC2-Immunization-Tetanus"
+* entry[=].resource = UC2-Immunization-Tetanus
 
-* entry[8].fullUrl = "http://fhir.ch/ig/emr/Immunization/UC2-Immunization-Influenza"
-* entry[8].resource = UC2-Immunization-Influenza
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Immunization/UC2-Immunization-Influenza"
+* entry[=].resource = UC2-Immunization-Influenza
 
-* entry[9].fullUrl = "http://fhir.ch/ig/emr/Immunization/UC2-Immunization-COVID19"  
-* entry[9].resource = UC2-Immunization-COVID19
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Immunization/UC2-Immunization-COVID19"  
+* entry[=].resource = UC2-Immunization-COVID19
 
 // Allergies
 
 // Risk factor
 
 // Problem list
-* entry[10].fullUrl = "http://fhir.ch/ig/emr/Condition/UC2-Condition-Vorhofflimmern"
-* entry[10].resource = UC2-Condition-Vorhofflimmern
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Condition/UC2-Condition-Vorhofflimmern"
+* entry[=].resource = UC2-Condition-Vorhofflimmern
 
 // Advance directive
 
 // Document references
 
 // Medical device
-* entry[11].fullUrl = "http://fhir.ch/ig/emr/Device/UC2-Device-Pacemaker"
-* entry[11].resource = UC2-Device-Pacemaker
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Device/UC2-Device-Pacemaker"
+* entry[=].resource = UC2-Device-Pacemaker
 
 // Pregnancy
 
