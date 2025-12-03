@@ -11,7 +11,16 @@ Description: "Swiss Emergency Record based on International Patient Summary"
     sectionRiskFactors 0..1 and
     sectionAdvanceDirectives 0..1 and                
     sectionOtherDocuments 0..1 and          
-    sectionDisability 0..1            
+    sectionDisability 0..1 
+
+* section[sectionMedications] 0..1
+* section[sectionAllergies] 0..1
+* section[sectionProblems] 0..1
+* section[sectionImmunizations] 0..1
+* section[sectionMedicalDevices] 0..1
+* section[sectionPregnancyHx] 0..1
+* section[sectionAdvanceDirectives] 0..1
+* section[sectionRiskFactors] 0..1           
              
 //Related person
 * section[sectionEmergencyContacts].code = $loinc#56864-2 "Emergency contact"
