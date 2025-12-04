@@ -98,7 +98,7 @@ Description: "General composition for the Emergency Record"
 * section[sectionOtherDocuments].code = $loinc#55108-5 "Clinical presentation Document"
 * section[sectionOtherDocuments].text.status = #generated
 * section[sectionOtherDocuments].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Weitere wichtige Dokumente:</p><ul><li>Patientenverfügung vom 15.03.2024</li></ul></div>"
-* section[sectionOtherDocuments].entry[document][0] = Reference(EX-DocumentReference)
+* section[sectionOtherDocuments].entry[document][0] = Reference(EX-DocumentReferences)
 //* section[sectionOtherDocuments].entry[document][=].type = "DocumentReference"
 
 // Medical devices section
