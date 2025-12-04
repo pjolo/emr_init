@@ -13,7 +13,7 @@ Description: "Swiss Emergency Record based on International Patient Summary"
     sectionOtherDocuments 0..1 and          
     sectionDisability 0..1 
 
-* section[sectionMedications] 0..*
+* section[sectionMedications] 1..1
 //* section[sectionAllergies] 0..1
 //* section[sectionProblems] 0..1
 //* section[sectionImmunizations] 0..1
