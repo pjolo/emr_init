@@ -1,0 +1,17 @@
+Instance: UC4-DeviceUseStatement-HipProsthesis
+InstanceOf: http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUseStatement-uv-ips
+Usage: #example
+Title: "UC4 Device Use Statement - Hüftgelenk-Prothese"
+Description: "Rudolf Zimmermann trägt eine Hüftgelenk-Prothese links"
+
+* status = #active
+* subject = Reference(UC4-Patient-RudolfZimmermann)
+* device = Reference(UC4-Device-HipProsthesis)
+* recordedOn = "2018-04-15"
+* timingDateTime = "2018-04-15"
+
+* bodySite = $sct#287579007 "Left hip region structure (body structure)"
+
+* reasonReference = Reference(UC4-Condition-Coxarthrosis)
+
+* note.text = "Totalendoprothese Hüfte links, implantiert am 15.04.2018 im Kantonsspital Basel. Komplikationsloser Verlauf. Bei Bildgebung zu beachten: Metallartefakte möglich."
