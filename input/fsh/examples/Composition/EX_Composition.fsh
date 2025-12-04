@@ -42,7 +42,7 @@ Description: "General composition for the Emergency Record"
 * section[sectionResuscitation].code = $loinc#75320-2 "Advance directive"
 * section[sectionResuscitation].text.status = #generated
 * section[sectionResuscitation].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Reanimationsstatus:</p><ul><li>Vollumfängliche Reanimation gewünscht</li></ul></div>"
-* section[sectionResuscitation].entry[observation][0] = Reference(EX-Resuscitation)
+* section[sectionResuscitation].entry[observation][0] = Reference(EX-Resurectation)
 //* section[sectionResuscitation].entry[observation][=].type = "Observation"
 
 // Medication section
