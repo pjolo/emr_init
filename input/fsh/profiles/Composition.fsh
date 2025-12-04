@@ -20,7 +20,24 @@ Description: "Swiss Emergency Record based on International Patient Summary"
 //* section[sectionMedicalDevices] 0..1
 //* section[sectionPregnancyHx] 0..1
 //* section[sectionRiskFactors] 0..1           
-             
+
+
+// ===== MEDICATIONS SECTION (GEERBT) =====
+* section[sectionMedications] 1..1
+* section[sectionMedications].entry ^slicing.discriminator.type = #profile
+* section[sectionMedications].entry ^slicing.discriminator.path = "resolve()"
+* section[sectionMedications].entry ^slicing.rules = #open
+* section[sectionMedications].entry contains medicationStatement 0..*
+* section[sectionMedications].entry[medicationStatement] only Reference(MedicationStatement)
+
+// ===== ALLERGIES SECTION (Optional - wenn du sie brauchst) =====
+// * section[sectionAllergies] 0..1
+// * section[sectionAllergies].entry ^slicing.discriminator.type = #profile
+// * section[sectionAllergies].entry ^slicing.discriminator.path = "resolve()"
+// * section[sectionAllergies].entry ^slicing.rules = #open
+// * section[sectionAllergies].entry contains allergyIntolerance 0..*
+// * section[sectionAllergies].entry[allergyIntolerance] only Reference(AllergyIntolerance)
+
 //Related person
 * section[sectionEmergencyContacts].code = $loinc#56864-2 "Emergency contact"
 * section[sectionEmergencyContacts].entry ^slicing.discriminator.type = #profile
