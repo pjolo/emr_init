@@ -7,6 +7,7 @@ Description: "Hans Meier trägt einen Herzschrittmacher"
 * status = #active
 * subject = Reference(UC2-Patient-HansMeier)
 * device = Reference(UC2-Device-Pacemaker)  // ← Referenz auf das Device
+* timingDateTime = "2023-05-15"
 * recordedOn = "2023-05-15"
 
 * note.text = "Herzschrittmacher implantiert am 15.05.2023 wegen Herzinsuffizienz"
