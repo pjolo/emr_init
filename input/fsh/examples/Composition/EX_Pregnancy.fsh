@@ -1,5 +1,5 @@
 Instance: EX-Pregnancy
-InstanceOf: ChEmrObservation
+InstanceOf: ObservationPregnancyStatusUvIps
 Usage: #example
 Title: "EX-Pregnancy"
 Description: "General example of a Pregnancy"

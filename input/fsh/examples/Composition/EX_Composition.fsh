@@ -27,7 +27,7 @@ Description: "General composition for the Emergency Record"
 * section[sectionEmergencyContacts].text.status = #generated
 * section[sectionEmergencyContacts].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Notfallkontakt: Elisabeth Meier (Ehefrau) +41 31 456 78 90</p></div>"
 * section[sectionEmergencyContacts].entry[relatedPerson][0] = Reference(EX-RelatedPerson)
-* section[sectionEmergencyContacts].entry[relatedPerson][=].type = "RelatedPerson"
+//* section[sectionEmergencyContacts].entry[relatedPerson][=].type = "RelatedPerson"
 
 // Care Team section
 * section[sectionCareTeam].title = "Behandelnde Gesundheitsfachperson"
@@ -35,7 +35,7 @@ Description: "General composition for the Emergency Record"
 * section[sectionCareTeam].text.status = #generated
 * section[sectionCareTeam].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Behandelnde Ärzte:</p><ul><li>Dr. med. Hans Müller - Hausarzt (GLN: 7601000234567)</li></ul></div>"
 * section[sectionCareTeam].entry[practitioner][0] = Reference(EX-Practitioner)
-* section[sectionCareTeam].entry[practitioner][=].type = "Practitioner"
+//* section[sectionCareTeam].entry[practitioner][=].type = "Practitioner"
 
 // Resuscitation section
 * section[sectionResuscitation].title = "Reanimation"
@@ -43,15 +43,15 @@ Description: "General composition for the Emergency Record"
 * section[sectionResuscitation].text.status = #generated
 * section[sectionResuscitation].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Reanimationsstatus:</p><ul><li>Vollumfängliche Reanimation gewünscht</li></ul></div>"
 * section[sectionResuscitation].entry[observation][0] = Reference(EX-Resuscitation)
-* section[sectionResuscitation].entry[observation][=].type = "Observation"
+//* section[sectionResuscitation].entry[observation][=].type = "Observation"
 
 // Medication section
 * section[sectionMedications].title = "Medikation"
 * section[sectionMedications].code = $loinc#10160-0 "History of Medication use Narrative"
 * section[sectionMedications].text.status = #generated
 * section[sectionMedications].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktuelle Medikation:</p><ul><li>Metformin 1000mg 1-0-1</li></ul></div>"
-* section[sectionMedications].entry[medicationStatementOrRequest][0] = Reference(EX-MedicationStatement)
-* section[sectionMedications].entry[medicationStatementOrRequest][=].type = "MedicationStatement"
+* section[sectionMedications].entry[medicationStatement][0] = Reference(EX-MedicationStatement)
+//* section[sectionMedications].entry[medicationStatement][=].type = "MedicationStatement"
 
 // Immunization section
 * section[sectionImmunizations].title = "Impfungen"
@@ -59,7 +59,7 @@ Description: "General composition for the Emergency Record"
 * section[sectionImmunizations].text.status = #generated
 * section[sectionImmunizations].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktuelle Impfungen:</p><ul><li>COVID-19: 12.09.2024</li><li>Influenza: 15.10.2024</li><li>Tetanus: 18.03.2022</li></ul></div>"
 * section[sectionImmunizations].entry[immunization][0] = Reference(EX-Immunization)
-* section[sectionImmunizations].entry[immunization][=].type = "Immunization"
+//* section[sectionImmunizations].entry[immunization][=].type = "Immunization"
 
 // Allergies section
 * section[sectionAllergies].title = "Allergien und Unverträglichkeiten"
@@ -67,7 +67,7 @@ Description: "General composition for the Emergency Record"
 * section[sectionAllergies].text.status = #generated
 * section[sectionAllergies].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Bekannte Allergien:</p><ul><li>Penicillin - Anaphylaxie</li></ul></div>"
 * section[sectionAllergies].entry[allergyOrIntolerance][0] = Reference(EX-AllergyIntolerance)
-* section[sectionAllergies].entry[allergyOrIntolerance][=].type = "AllergyIntolerance"
+//* section[sectionAllergies].entry[allergyOrIntolerance][=].type = "AllergyIntolerance"
 
 // Risk factor section
 * section[sectionRiskFactors].title = "Risikofaktoren für Behandelnde"
@@ -75,7 +75,7 @@ Description: "General composition for the Emergency Record"
 * section[sectionRiskFactors].text.status = #generated
 * section[sectionRiskFactors].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Risikofaktoren:</p><ul><li>Diabetes mellitus Typ 2 mit erhöhtem Infektionsrisiko</li><li>Adipositas (BMI 32)</li><li>Chronische Niereninsuffizienz Stadium 3</li></ul></div>"
 * section[sectionRiskFactors].entry[riskFactor][0] = Reference(EX-RiskFactor)
-* section[sectionRiskFactors].entry[riskFactor][=].type = "Observation"
+//* section[sectionRiskFactors].entry[riskFactor][=].type = "Observation"
 
 // Problem list section
 * section[sectionProblems].title = "Problemliste"
@@ -83,7 +83,7 @@ Description: "General composition for the Emergency Record"
 * section[sectionProblems].text.status = #generated
 * section[sectionProblems].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktive Probleme:</p><ul><li>Diabetes mellitus Typ 2</li></ul></div>"
 * section[sectionProblems].entry[problem][0] = Reference(EX-Condition)
-* section[sectionProblems].entry[problem][=].type = "Condition"
+//* section[sectionProblems].entry[problem][=].type = "Condition"
 
 // Advance directive and emergency medical directive section
 * section[sectionAdvanceDirectives].title = "Patientenverfügung"
@@ -91,7 +91,7 @@ Description: "General composition for the Emergency Record"
 * section[sectionAdvanceDirectives].text.status = #generated
 * section[sectionAdvanceDirectives].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Patientenverfügung:</p><ul><li>Patientenverfügung liegt vor (erstellt am 15.03.2023)</li><li>Keine Reanimation gewünscht</li><li>Bevollmächtigte Person: Elisabeth Meier</li></ul></div>"
 * section[sectionAdvanceDirectives].entry[advanceDirective][0] = Reference(EX-AdvanceDirective)
-* section[sectionAdvanceDirectives].entry[advanceDirective][=].type = "DocumentReference"
+//* section[sectionAdvanceDirectives].entry[advanceDirective][=].type = "DocumentReference"
 
 // Document references section
 * section[sectionOtherDocuments].title = "Weitere Dokumente"
@@ -99,15 +99,15 @@ Description: "General composition for the Emergency Record"
 * section[sectionOtherDocuments].text.status = #generated
 * section[sectionOtherDocuments].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Weitere wichtige Dokumente:</p><ul><li>Patientenverfügung vom 15.03.2024</li></ul></div>"
 * section[sectionOtherDocuments].entry[document][0] = Reference(EX-DocumentReference)
-* section[sectionOtherDocuments].entry[document][=].type = "DocumentReference"
+//* section[sectionOtherDocuments].entry[document][=].type = "DocumentReference"
 
 // Medical devices section
 * section[sectionMedicalDevices].title = "Medizinprodukte"
 * section[sectionMedicalDevices].code = $loinc#46264-8 "History of medical device use"
 * section[sectionMedicalDevices].text.status = #generated
 * section[sectionMedicalDevices].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Medizinprodukte:</p><ul><li>Herzschrittmacher seit 2020</li></ul></div>"
-* section[sectionMedicalDevices].entry[deviceUseStatement][0] = Reference(EX-MedicalDevice)
-* section[sectionMedicalDevices].entry[deviceUseStatement][=].type = "DeviceUseStatement"
+* section[sectionMedicalDevices].entry[medicalDevice][0] = Reference(EX-MedicalDevice)
+//* section[sectionMedicalDevices].entry[medicalDevice][=].type = "DeviceUseStatement"
 
 // Pregnancy section
 * section[sectionPregnancyHx].title = "Schwangerschaftsstatus"
@@ -115,7 +115,7 @@ Description: "General composition for the Emergency Record"
 * section[sectionPregnancyHx].text.status = #generated
 * section[sectionPregnancyHx].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Schwangerschaftsstatus:</p><ul><li>Nicht schwanger</li></ul></div>"
 * section[sectionPregnancyHx].entry[pregnancyStatus][0] = Reference(EX-Pregnancy)
-* section[sectionPregnancyHx].entry[pregnancyStatus][=].type = "Observation"
+//* section[sectionPregnancyHx].entry[pregnancyStatus][=].type = "Observation"
 
 // Disability section
 * section[sectionDisability].title = "Behinderung"
@@ -123,4 +123,4 @@ Description: "General composition for the Emergency Record"
 * section[sectionDisability].text.status = #generated
 * section[sectionDisability].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Behinderungsstatus:</p><ul><li>Keine bekannte Behinderung</li></ul></div>"
 * section[sectionDisability].entry[observation][0] = Reference(EX-Disability)
-* section[sectionDisability].entry[observation][=].type = "Observation"
+//* section[sectionDisability].entry[observation][=].type = "Observation"

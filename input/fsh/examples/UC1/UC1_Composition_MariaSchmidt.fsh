@@ -26,21 +26,21 @@ Description: "Composition for the Emergency Record by Maria Schmidt"
 
 // Related person section
 * section[sectionEmergencyContacts].title = "Notfallkontakte"
-* section[sectionEmergencyContacts].code = $loinc#56864-2 "Emergency contact Relationship to patient"
+//* section[sectionEmergencyContacts].code = $loinc#56864-2 "Emergency contact Relationship to patient"
 * section[sectionEmergencyContacts].text.status = #generated
 * section[sectionEmergencyContacts].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Notfallkontakte:</p><ul><li>Peter Schmidt (Ehemann): +41 44 321 65 87</li><li>Anna Müller (Schwester): +41 44 234 56 78</li></ul></div>"
 * section[sectionEmergencyContacts].entry[relatedPerson][0] = Reference(UC1-RelatedPerson-PeterSchmidt)
 * section[sectionEmergencyContacts].entry[relatedPerson][=].type = "RelatedPerson"
 * section[sectionEmergencyContacts].entry[relatedPerson][+] = Reference(UC1-RelatedPerson-AnnaMueller)
-* section[sectionEmergencyContacts].entry[relatedPerson][=].type = "RelatedPerson"
+//* section[sectionEmergencyContacts].entry[relatedPerson][=].type = "RelatedPerson"
 
 // Care Team section
 * section[sectionCareTeam].title = "Behandlungsteam"
 * section[sectionCareTeam].code = $loinc#85847-2 "Patient Care team information"
 * section[sectionCareTeam].text.status = #generated
 * section[sectionCareTeam].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Behandelnde Ärzte:</p><ul><li>Dr. med. Hans Müller - Hausarzt (GLN: 7601000234567)</li></ul></div>"
-* section[sectionCareTeam].entry[careTeam][0] = Reference(UC1-Practitioner-DrMueller)
-* section[sectionCareTeam].entry[careTeam][=].type = "Practitioner"
+* section[sectionCareTeam].entry[practitioner][0] = Reference(UC1-Practitioner-DrMueller)
+//* section[sectionCareTeam].entry[practitioner][=].type = "Practitioner"
 
 // Resuscitation section
 
@@ -50,8 +50,8 @@ Description: "Composition for the Emergency Record by Maria Schmidt"
 * section[sectionMedications].code = $loinc#10160-0 "History of Medication use Narrative"
 * section[sectionMedications].text.status = #generated
 * section[sectionMedications].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktuelle Medikation:</p><ul><li>Metformin 1000 mg zweimal täglich zu den Mahlzeiten (seit 15.06.2015)</li></ul></div>"
-* section[sectionMedications].entry[medicationStatementOrRequest][0]
-* section[sectionMedications].entry[medicationStatementOrRequest][=].type = "MedicationStatement"
+* section[sectionMedications].entry[medicationStatement][0]
+//* section[sectionMedications].entry[medicationStatement][=].type = "MedicationStatement"
 
 // Immunization section
 
@@ -61,7 +61,7 @@ Description: "Composition for the Emergency Record by Maria Schmidt"
 * section[sectionAllergies].text.status = #generated
 * section[sectionAllergies].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Bekannte Allergien:</p><ul><li><strong>KRITISCH:</strong> Penicillin-Allergie mit anaphylaktischer Reaktion (seit Kindheit)</li></ul><p><strong>Wichtig:</strong> Keine Beta-Lactam-Antibiotika verwenden!</p></div>"
 * section[sectionAllergies].entry[allergyOrIntolerance][0] = Reference(UC1-AllergyIntolerance-Penicillin)
-* section[sectionAllergies].entry[allergyOrIntolerance][=].type = "AllergyIntolerance"
+//* section[sectionAllergies].entry[allergyOrIntolerance][=].type = "AllergyIntolerance"
 
 // Risk factor section
 
@@ -71,7 +71,7 @@ Description: "Composition for the Emergency Record by Maria Schmidt"
 * section[sectionProblems].text.status = #generated
 * section[sectionProblems].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktive Probleme:</p><ul><li>Diabetes mellitus Typ 2 (seit 15.06.2015) - gut kontrolliert</li></ul></div>"
 * section[sectionProblems].entry[problem][0] = Reference(UC1-Condition-Diabetes)
-* section[sectionProblems].entry[problem][=].type = "Condition"
+//* section[sectionProblems].entry[problem][=].type = "Condition"
 
 // Advance directive and emergency medical directive section
 
