@@ -27,6 +27,7 @@ dependencies:
   ch.fhir.ig.ch-core: current
   ch.fhir.ig.ch-ips: current
   hl7.fhir.extensions.r5: current
+  hl7.fhir.uv.ips: 1.1.0 
 
 pages:
   index.md:
