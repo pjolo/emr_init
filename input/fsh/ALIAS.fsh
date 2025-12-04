@@ -14,13 +14,14 @@ Alias: $loinc =                         http://loinc.org
 Alias: $sct =                           http://snomed.info/sct
 Alias: $sct-ch =                        http://snomed.info/sct|http://snomed.info/sct/2011000195101
 Alias: $edqm =                          http://standardterms.edqm.eu
+
 // Profiles
 //Alias: $ChCorePractitioner =          http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner
 //Alias: $ChCorePatient =               http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient
-Alias: $ChCoreAI =                      http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-allergyintolerance
-Alias: $ChCoreMedicationStatement =     http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-medicationstatement
-Alias: $ChCoreImmunization =            http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-immunization
-Alias: $ChCoreCompositionEPR =          http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr
+//Alias: $ChCoreAI =                      http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-allergyintolerance
+//Alias: $ChCoreMedicationStatement =     http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-medicationstatement
+//Alias: $ChCoreImmunization =            http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-immunization
+//Alias: $ChCoreCompositionEPR =          http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr
 
 // Swiss specific OIDs  
 Alias: $oid-ahvn13 = urn:oid:2.16.756.5.32
@@ -36,6 +37,7 @@ Alias: $CHIPSMedicationStatement = http://fhir.ch/ig/ch-ips/StructureDefinition/
 Alias: $CHIPSAllergyIntolerance = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-allergyintolerance
 Alias: $CHIPSImmunization = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-immunization
 Alias: $CHIPSDevice = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-device
+Alias: $ChIpsCompositionEPR  = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-composition
 
 // XML CH IG Code System
 Alias: $CSChIgExampleTranslation =      http://fhir.ch/ig/ch-ig/CodeSystem/ch-ig-example-translation

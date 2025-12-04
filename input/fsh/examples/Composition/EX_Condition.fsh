@@ -11,7 +11,7 @@ Description: "General example of a condition"
 
 * severity = $sct#24484000 "Severe (severity modifier) (qualifier value)"
 
-* code = $icd-10-who#E11.2 "Type 2 diabetes mellitus with renal complications"
+* code = $icd-10#E11.2 "Type 2 diabetes mellitus with renal complications"
 
 * subject = Reference(EX-Patient)
 
