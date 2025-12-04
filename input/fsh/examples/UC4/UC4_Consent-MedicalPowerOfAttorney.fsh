@@ -1,28 +1,22 @@
 Instance: UC4-Consent-MedicalPowerOfAttorney
-InstanceOf: Consent
+InstanceOf: ChEmrDocumentReference
 Usage: #example
 Title: "Medizinische Vollmacht"
 Description: "Vollmacht für medizinische Entscheidungen an Tochter"
 
-* status = #active
-* scope = http://terminology.hl7.org/CodeSystem/consentscope#treatment
-* category = http://terminology.hl7.org/CodeSystem/consentcategorycodes#acd "Advance Directive"
+* status = #current
 
-* policyRule = http://terminology.hl7.org/CodeSystem/consentpolicycodes#cric
+* subject = Reference(Patient/UC3-Patient-LauraWeber)
+* date = "2025-07-15T14:30:00+02:00"
+* author = Reference(Patient/UC3-Patient-LauraWeber)
 
-* patient = Reference(UC4-Patient-RudolfZimmermann)
-* dateTime = "2023-11-15T10:00:00+01:00"
-* performer = Reference(UC4-Patient-RudolfZimmermann)
+* description = "Patientenverfügung bezüglich Reanimationsmaßnahmen während der Schwangerschaft"
 
-* sourceAttachment.title = "Medizinische Vollmacht"
-* sourceAttachment.contentType = #application/pdf
-* sourceAttachment.creation = "2023-11-15"
+* content.attachment.contentType = #application/pdf
+* content.attachment.language = #de
+* content.attachment.url = "https://fhir.ch/ig/emr/Binary/patientenverfuegung-laura-weber.pdf"
+* content.attachment.title = "Patientenverfügung Laura Weber"
+* content.attachment.creation = "2025-07-15"
 
-* provision.type = #permit
-* provision.actor.role = $v3-RoleCode#HPOWATT "healthcare power of attorney"
-* provision.actor.reference = Reference(UC4-RelatedPerson-ElisabethZimmermann)
 
-* provision.action = http://terminology.hl7.org/CodeSystem/consentaction#access
-* provision.action.text = "Medizinische Entscheidungen treffen"
-
-//DocumentReference
+//PROFILNAME ÄNDERN

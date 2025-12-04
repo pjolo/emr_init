@@ -25,7 +25,7 @@ dependencies:
     uri: http://terminology.hl7.org/ImplementationGuide/hl7.terminology
     version: 6.5.0 
   ch.fhir.ig.ch-core: current
-  ch.fhir.ig.ch-ips: 1.0.0
+  ch.fhir.ig.ch-ips: current
   hl7.fhir.extensions.r5: current
 
 pages:

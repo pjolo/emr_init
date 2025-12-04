@@ -65,7 +65,7 @@ Description: "Composition for the emergency record for Laura Weber"
 //* section[sectionAdvanceDirectives].code = $loinc#42348-3 "Advance healthcare directives"
 * section[sectionAdvanceDirectives].text.status = #generated
 * section[sectionAdvanceDirectives].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>WICHTIGE PATIENTENVERFÜGUNG:</strong></p><p>Bei lebensbedrohlichen Komplikationen während der Schwangerschaft soll eine Reanimation nur dann durchgeführt werden, wenn dadurch das ungeborene Kind gerettet werden kann.</p><p>Das Wohl des Kindes ist prioritär zu berücksichtigen.</p></div>"
-* section[sectionAdvanceDirectives].entry[advanceDirective][0] = Reference(UC3-Consent-Resuscitation)
+* section[sectionAdvanceDirectives].entry[advanceDirective][0] = Reference(U3-DocumentReference)
 //* section[sectionAdvanceDirectives].entry[advanceDirective][=].type = "DocumentReference"
 
 // Document references section
@@ -73,8 +73,8 @@ Description: "Composition for the emergency record for Laura Weber"
 //* section[sectionOtherDocuments].code = $loinc#42348-3 "Advance healthcare directives"
 * section[sectionOtherDocuments].text.status = #generated
 * section[sectionOtherDocuments].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>WICHTIGE PATIENTENVERFÜGUNG:</strong></p><p>Bei lebensbedrohlichen Komplikationen während der Schwangerschaft soll eine Reanimation nur dann durchgeführt werden, wenn dadurch das ungeborene Kind gerettet werden kann.</p><p>Das Wohl des Kindes ist prioritär zu berücksichtigen.</p></div>"
-* section[sectionOtherDocuments].entry[documentReference][0] = Reference(U3-DocumentReference)
-//* section[sectionOtherDocuments].entry[documentReference][=].type = "DocumentReference"
+* section[sectionOtherDocuments].entry[document][0] = Reference(U3-DocumentReference)
+//* section[sectionOtherDocuments].entry[document][=].type = "DocumentReference"
 
 // Medical devices section
 
@@ -83,8 +83,8 @@ Description: "Composition for the emergency record for Laura Weber"
 //* section[sectionPregnancyHx].code = $loinc#90767-5 "Pregnancy summary Document"
 * section[sectionPregnancyHx].text.status = #generated
 * section[sectionPregnancyHx].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>AKTUELLE SCHWANGERSCHAFT:</strong></p><ul><li>32. Schwangerschaftswoche</li><li>Erwarteter Geburtstermin: 15. November 2025</li><li>Normale Entwicklung, alle Kontrollen unauffällig</li></ul></div>"
-* section[sectionPregnancyHx].entry[pregnancyOutcome][0] = Reference(UC3-Observation-Pregnancy)
-//* section[sectionPregnancyHx].entry[pregnancyOutcome][=].type = "Observation"
+* section[sectionPregnancyHx].entry[pregnancyStatus][0] = Reference(UC3-Observation-Pregnancy)
+//* section[sectionPregnancyHx].entry[pregnancyStatus][=].type = "Observation"
 
 // Disability section
 

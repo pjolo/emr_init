@@ -44,11 +44,11 @@ Description: "Composition für den eNotfallpass von Hans Meier"
 //* section[sectionCareTeam].entry[practitioner][=].type = "Practitioner"
 
 // Resuscitation section KONTROLLIEREN
-* section[sectionResuscitation].title = "Reanimationsstatus"
+//* section[sectionResuscitation].title = "Reanimationsstatus"
 //* section[sectionResuscitation].code = $loinc#100822-6 "Cardiopulmonary resuscitation orders"
-* section[sectionResuscitation].text.status = #generated
-* section[sectionResuscitation].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Reanimationsstatus:</strong></p><ul><li>Vollständige Reanimation gewünscht (CPR: JA)</li><li>Intubation und Beatmung: JA</li><li>Herzmassage: JA</li><li>Defibrillation: JA</li></ul><p><strong>Hinweis:</strong> Bei Herzschrittmacher MRT-sicher, externe Defibrillation möglich</p><p>Patientenverfügung vom 01.01.2024</p></div>"
-* section[sectionResuscitation].entry[observation][0] = Reference(UC2-Practitioner-DrMueller)
+//* section[sectionResuscitation].text.status = #generated
+//* section[sectionResuscitation].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Reanimationsstatus:</strong></p><ul><li>Vollständige Reanimation gewünscht (CPR: JA)</li><li>Intubation und Beatmung: JA</li><li>Herzmassage: JA</li><li>Defibrillation: JA</li></ul><p><strong>Hinweis:</strong> Bei Herzschrittmacher MRT-sicher, externe Defibrillation möglich</p><p>Patientenverfügung vom 01.01.2024</p></div>"
+//* section[sectionResuscitation].entry[observation][0] = Reference(UC2-Practitioner-DrMueller)
 
 // Medication section
 * section[sectionMedications].title = "Aktuelle Medikation"
@@ -98,8 +98,8 @@ Description: "Composition für den eNotfallpass von Hans Meier"
 * section[sectionMedicalDevices].code = $loinc#46264-8 "History of medical device use"
 * section[sectionMedicalDevices].text.status = #generated
 * section[sectionMedicalDevices].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Implantate:</p><ul><li><strong>MRT-SICHER:</strong> Herzschrittmacher Boston Scientific Accolade MRI (Modell L331)</li><li>Seriennummer: PM987654321</li><li>Implantiert: 15.03.2020</li><li>Letzte Kontrolle: 01.09.2025</li></ul></div>"
-* section[sectionMedicalDevices].entry[medicalDevice][0] = Reference(UC2-Device-Pacemaker)
-//* section[sectionMedicalDevices].entry[medicalDevice][=].type = "DeviceUseStatement"
+* section[sectionMedicalDevices].entry[deviceStatement][0] = Reference(UC2-Device-Pacemaker)
+//* section[sectionMedicalDevices].entry[deviceStatement][=].type = "DeviceUseStatement"
 
 // Pregnancy section
 

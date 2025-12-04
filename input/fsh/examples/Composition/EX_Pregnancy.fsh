@@ -1,5 +1,5 @@
 Instance: EX-Pregnancy
-InstanceOf: ObservationPregnancyStatusUvIps
+InstanceOf: $ObservationPregnancyStatusUvIps
 Usage: #example
 Title: "EX-Pregnancy"
 Description: "General example of a Pregnancy"
@@ -11,7 +11,7 @@ Description: "General example of a Pregnancy"
 * effectiveDateTime = "2025-09-10T10:00:00+02:00"
 * performer = Reference(EX-Practitioner)
 
-* valueBoolean = false 
+* valueCodeableConcept = $sct#77386006 "Pregnant (finding)"
 
 * component[0].code = $loinc#18185-9 "Gestational age"
 * component[0].valueQuantity.value = 32
