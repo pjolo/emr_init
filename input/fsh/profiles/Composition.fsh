@@ -9,7 +9,7 @@ Description: "Swiss Emergency Record based on International Patient Summary"
     sectionCareTeam 0..1 and          
     sectionResuscitation 0..1 and
     sectionRiskFactors 0..1 and
-    sectionAdvanceDirectives 0..1 and                
+  //  sectionAdvanceDirectives 0..1 and                
     sectionOtherDocuments 0..1 and          
     sectionDisability 0..1 
 
