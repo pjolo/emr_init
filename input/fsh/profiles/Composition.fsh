@@ -38,6 +38,14 @@ Description: "Swiss Emergency Record based on International Patient Summary"
 // * section[sectionAllergies].entry contains allergyIntolerance 0..*
 // * section[sectionAllergies].entry[allergyIntolerance] only Reference(AllergyIntolerance)
 
+// ===== MEDICAL DEVICES SECTION (GEERBT) =====
+* section[sectionMedicalDevices] 0..1
+* section[sectionMedicalDevices].entry ^slicing.discriminator.type = #profile
+* section[sectionMedicalDevices].entry ^slicing.discriminator.path = "resolve()"
+* section[sectionMedicalDevices].entry ^slicing.rules = #open
+* section[sectionMedicalDevices].entry contains deviceUseStatement 0..*
+* section[sectionMedicalDevices].entry[deviceUseStatement] only Reference(DeviceUseStatement)
+
 //Related person
 * section[sectionEmergencyContacts].code = $loinc#56864-2 "Emergency contact"
 * section[sectionEmergencyContacts].entry ^slicing.discriminator.type = #profile
