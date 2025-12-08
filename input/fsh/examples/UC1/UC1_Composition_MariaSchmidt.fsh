@@ -54,7 +54,7 @@ Description: "Composition for the Emergency Record by Maria Schmidt"
 * section[sectionMedications].code = $loinc#10160-0 "History of Medication use Narrative"
 * section[sectionMedications].text.status = #generated
 * section[sectionMedications].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktuelle Medikation:</p><ul><li>Metformin 1000 mg zweimal täglich zu den Mahlzeiten (seit 15.06.2015)</li></ul></div>"
-* section[sectionMedications].entry[medicationStatementOrRequest][0]
+* section[sectionMedications].entry[medicationStatementOrRequest][0] = Reference(UC1-MedicationStatement-Metformin)
 //* section[sectionMedications].entry[medicationStatementOrRequest ][=].type = "MedicationStatement"
 
 // Immunization section
@@ -77,7 +77,7 @@ Description: "Composition for the Emergency Record by Maria Schmidt"
 * section[sectionRiskFactors].code = $loinc#11348-0 "History of Past illness Narrative"
 * section[sectionRiskFactors].text.status = #generated
 * section[sectionRiskFactors].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keine besonderen Risikofaktoren dokumentiert.</p></div>"
-* section[sectionRiskFactors].emptyReason = $list-empty-reason#unavailable "Information not availabl
+* section[sectionRiskFactors].emptyReason = $list-empty-reason#unavailable "Information not available"
 
 // Problem list section
 * section[sectionProblems].title = "Probleme und Diagnosen"
