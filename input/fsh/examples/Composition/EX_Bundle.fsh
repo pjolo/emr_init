@@ -61,8 +61,8 @@ Description: "Complete Emergency Record Bundle"
 * entry[=].resource = EX-DocumentReferences
 
 // Medical devices
-* entry[+].fullUrl = "http://fhir.ch/ig/emr/Device/EX-MedicalDevice"
-* entry[=].resource = EX-MedicalDevice
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Device/EX-DeviceUseStatement"
+* entry[=].resource = EX-DeviceUseStatement
 
 // Pregnancy
 * entry[+].fullUrl = "http://fhir.ch/ig/emr/Observation/EX-Pregnancy"
