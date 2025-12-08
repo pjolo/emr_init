@@ -109,11 +109,11 @@ Description: "Composition for the Emergency Record by Maria Schmidt"
 * section[sectionMedicalDevices].emptyReason = $list-empty-reason#unavailable "Information not available"
 
 // Pregnancy section
-* section[sectionPregnancy].title = "Schwangerschaft"
-* section[sectionPregnancy].code = $loinc#90767-5 "Pregnancy summary Document"
-* section[sectionPregnancy].text.status = #generated
-* section[sectionPregnancy].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keine Schwangerschaftsinformationen dokumentiert.</p></div>"
-* section[sectionPregnancy].emptyReason = $list-empty-reason#unavailable "Information not available"
+* section[sectionPregnancyHx].title = "Schwangerschaft"
+* section[sectionPregnancyHx].code = $loinc#90767-5 "Pregnancy summary Document"
+* section[sectionPregnancyHx].text.status = #generated
+* section[sectionPregnancyHx].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keine Schwangerschaftsinformationen dokumentiert.</p></div>"
+* section[sectionPregnancyHx].emptyReason = $list-empty-reason#unavailable "Information not available"
 
 // Disability section
 * section[sectionDisability].title = "Behinderung"
