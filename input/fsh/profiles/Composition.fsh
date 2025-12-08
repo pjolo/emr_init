@@ -24,11 +24,11 @@ Description: "Swiss Emergency Record based on International Patient Summary"
 
 // ===== MEDICATIONS SECTION (GEERBT) =====
 * section[sectionMedications] 1..1
-* section[sectionMedications].entry ^slicing.discriminator.type = #profile
-* section[sectionMedications].entry ^slicing.discriminator.path = "resolve()"
-* section[sectionMedications].entry ^slicing.rules = #open
-* section[sectionMedications].entry contains medicationStatement 0..*
-* section[sectionMedications].entry[medicationStatement] only Reference(MedicationStatement)
+//* section[sectionMedications].entry ^slicing.discriminator.type = #profile
+//* section[sectionMedications].entry ^slicing.discriminator.path = "resolve()"
+//* section[sectionMedications].entry ^slicing.rules = #open
+//* section[sectionMedications].entry contains medicationStatement 0..*
+//* section[sectionMedications].entry[medicationStatement] only Reference(MedicationStatement)
 
 // ===== ALLERGIES SECTION (Optional - wenn du sie brauchst) =====
 // * section[sectionAllergies] 0..1
