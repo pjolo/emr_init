@@ -6,6 +6,6 @@ Description: "Beispiel für die Verwendung eines Herzschrittmachers beim Patient
 
 * status = #active
 * subject = Reference(EX-Patient)
-* device = Reference(EX-MedicalDevice)
+* device = Reference(EX-DeviceUseStatement)
 * timingDateTime = "2023-01-15"
 * recordedOn = "2023-01-15"
