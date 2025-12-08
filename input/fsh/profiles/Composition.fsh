@@ -17,7 +17,7 @@ Description: "Swiss Emergency Record based on International Patient Summary"
 //* section[sectionAllergies] 0..1
 //* section[sectionProblems] 0..1
 //* section[sectionImmunizations] 0..1
-//* section[sectionMedicalDevices] 0..1
+* section[sectionMedicalDevices] 0..1
 //* section[sectionPregnancyHx] 0..1
 //* section[sectionRiskFactors] 0..1           
 
@@ -39,7 +39,7 @@ Description: "Swiss Emergency Record based on International Patient Summary"
 // * section[sectionAllergies].entry[allergyIntolerance] only Reference(AllergyIntolerance)
 
 // ===== MEDICAL DEVICES SECTION (GEERBT) =====
-* section[sectionMedicalDevices] 0..1
+//* section[sectionMedicalDevices] 0..1
 //* section[sectionMedicalDevices].entry ^slicing.discriminator.type = #profile
 //* section[sectionMedicalDevices].entry ^slicing.discriminator.path = "resolve()"
 //* section[sectionMedicalDevices].entry ^slicing.rules = #open
