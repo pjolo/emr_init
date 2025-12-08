@@ -55,7 +55,7 @@ Description: "Composition für den eNotfallpass von Hans Meier"
 * section[sectionMedications].code = $loinc#10160-0 "History of Medication use Narrative"
 * section[sectionMedications].text.status = #generated
 * section[sectionMedications].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Aktuelle Medikation:</strong></p><ul><li><strong>MARCUMAR 3 mg</strong> - 1x täglich abends (antikoagulativ)</li><li><strong>Wichtig:</strong> INR-Zielbereich 2.0-3.0</li><li><strong>Bei Operationen:</strong> Bridging mit Heparin erforderlich!</li><li>Letzte INR-Kontrolle: 05.09.2025 (INR 2.4)</li></ul></div>"
-* section[sectionMedications].entry[medicationStatement][0] = Reference(UC2-MedicationStatement-Marcumar)
+* section[sectionMedications].entry[medicationStatementOrRequest ][0] = Reference(UC2-MedicationStatement-Marcumar)
 //* section[sectionMedications].entry[medicationStatementOrRequest][=].type = "MedicationStatement"
 
 // Immunization section
