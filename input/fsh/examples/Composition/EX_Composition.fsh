@@ -106,7 +106,7 @@ Description: "General composition for the Emergency Record"
 * section[sectionMedicalDevices].code = $loinc#46264-8 "History of medical device use"
 * section[sectionMedicalDevices].text.status = #generated
 * section[sectionMedicalDevices].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Medizinprodukte:</p><ul><li>Herzschrittmacher seit 2020</li></ul></div>"
-* section[sectionMedicalDevices].entry[deviceUseStatement][0] = Reference(EX-DeviceUseStatement)
+* section[sectionMedicalDevices].entry[deviceStatement][0] = Reference(EX-DeviceUseStatement)
 //* section[sectionMedicalDevices].entry[deviceUseStatement][=].type = "DeviceUseStatement"
 
 // Pregnancy section
