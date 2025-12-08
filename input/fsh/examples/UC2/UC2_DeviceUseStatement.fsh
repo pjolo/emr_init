@@ -1,4 +1,4 @@
-Instance: UC2-DeviceUseStatement-Pacemaker
+Instance: UC2-DeviceUseStatement
 InstanceOf: http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUseStatement-uv-ips
 Usage: #example
 Title: "UC2 Device Use Statement - Herzschrittmacher"

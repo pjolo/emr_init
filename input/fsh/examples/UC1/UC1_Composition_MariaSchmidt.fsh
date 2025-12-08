@@ -74,7 +74,7 @@ Description: "Composition for the Emergency Record by Maria Schmidt"
 
 // Risk factor section
 * section[sectionRiskFactors].title = "Risikofaktoren"
-* section[sectionRiskFactors].code = $loinc#11348-0 "History of Past illness Narrative"
+* section[sectionRiskFactors].code = $loinc#46467-7 "Risk factors"
 * section[sectionRiskFactors].text.status = #generated
 * section[sectionRiskFactors].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keine besonderen Risikofaktoren dokumentiert.</p></div>"
 * section[sectionRiskFactors].emptyReason = $list-empty-reason#unavailable "Information not available"
@@ -95,11 +95,11 @@ Description: "Composition for the Emergency Record by Maria Schmidt"
 * section[sectionAdvanceDirectives].emptyReason = $list-empty-reason#unavailable "Information not available"
 
 // DocumentReferences section
-* section[sectionDocumentReferences].title = "Dokumente"
-* section[sectionDocumentReferences].code = $loinc#55108-5 "Clinical presentation Document"
-* section[sectionDocumentReferences].text.status = #generated
-* section[sectionDocumentReferences].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keine zusätzlichen Dokumente verfügbar.</p></div>"
-* section[sectionDocumentReferences].emptyReason = $list-empty-reason#unavailable "Information not available"
+* section[sectionOtherDocuments].title = "Dokumente"
+* section[sectionOtherDocuments].code = $loinc#55108-5 "Clinical presentation Document"
+* section[sectionOtherDocuments].text.status = #generated
+* section[sectionOtherDocuments].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keine zusätzlichen Dokumente verfügbar.</p></div>"
+* section[sectionOtherDocuments].emptyReason = $list-empty-reason#unavailable "Information not available"
 
 // Medical devices section
 * section[sectionMedicalDevices].title = "Medizinische Geräte"
@@ -112,8 +112,8 @@ Description: "Composition for the Emergency Record by Maria Schmidt"
 * section[sectionPregnancy].title = "Schwangerschaft"
 * section[sectionPregnancy].code = $loinc#90767-5 "Pregnancy summary Document"
 * section[sectionPregnancy].text.status = #generated
-* section[sectionPregnancy].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>WICHTIG:</strong> Patientin ist schwanger!</p><ul><li>Gestationsalter: 28 Wochen</li><li>Voraussichtlicher Geburtstermin: 15.11.2025</li><li>Schwangerschaft verläuft unauffällig</li></ul></div>"
-* section[sectionPregnancy].entry[observation][0] = Reference(UC1-Observation-Pregnancy)
+* section[sectionPregnancy].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keine Schwangerschaftsinformationen dokumentiert.</p></div>"
+* section[sectionPregnancy].emptyReason = $list-empty-reason#unavailable "Information not available"
 
 // Disability section
 * section[sectionDisability].title = "Behinderung"
