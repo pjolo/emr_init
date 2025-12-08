@@ -110,7 +110,7 @@ Description: "Composition for the Emergency Record by Maria Schmidt"
 
 // Pregnancy section
 * section[sectionPregnancyHx].title = "Schwangerschaft"
-* section[sectionPregnancyHx].code = $loinc#90767-5 "Pregnancy summary Document"
+//* section[sectionPregnancyHx].code = $loinc#90767-5 "Pregnancy summary Document"
 * section[sectionPregnancyHx].text.status = #generated
 * section[sectionPregnancyHx].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keine Schwangerschaftsinformationen dokumentiert.</p></div>"
 * section[sectionPregnancyHx].emptyReason = $list-empty-reason#unavailable "Information not available"
