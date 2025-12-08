@@ -63,6 +63,9 @@ Description: "Vollständiges eNotfallpass Bundle für Hans Meier"
 * entry[+].fullUrl = "http://fhir.ch/ig/emr/Device/UC2-Device-Pacemaker"
 * entry[=].resource = UC2-Device-Pacemaker
 
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/DeviceUseStatement/UC2-DeviceUseStatement"
+* entry[=].resource = UC2-DeviceUseStatement
+
 // Pregnancy
 
 // Disability
