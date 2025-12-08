@@ -30,7 +30,7 @@ Description: "Composition for the Emergency Record by Maria Schmidt"
 * section[sectionEmergencyContacts].text.status = #generated
 * section[sectionEmergencyContacts].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Notfallkontakte:</p><ul><li>Peter Schmidt (Ehemann): +41 44 321 65 87</li><li>Anna Müller (Schwester): +41 44 234 56 78</li></ul></div>"
 * section[sectionEmergencyContacts].entry[relatedPerson][0] = Reference(UC1-RelatedPerson-PeterSchmidt)
-* section[sectionEmergencyContacts].entry[relatedPerson][=].type = "RelatedPerson"
+//* section[sectionEmergencyContacts].entry[relatedPerson][=].type = "RelatedPerson"
 * section[sectionEmergencyContacts].entry[relatedPerson][+] = Reference(UC1-RelatedPerson-AnnaMueller)
 //* section[sectionEmergencyContacts].entry[relatedPerson][=].type = "RelatedPerson"
 
