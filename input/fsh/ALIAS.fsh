@@ -39,6 +39,7 @@ Alias: $CHIPSImmunization = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-
 Alias: $CHIPSDevice = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-device
 Alias: $ChIpsCompositionEPR  = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-composition
 Alias: $ObservationPregnancyStatusUvIps = http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips
+Alias: $list-empty-reason = http://terminology.hl7.org/CodeSystem/list-empty-reason
 
 // XML CH IG Code System
 Alias: $CSChIgExampleTranslation =      http://fhir.ch/ig/ch-ig/CodeSystem/ch-ig-example-translation
