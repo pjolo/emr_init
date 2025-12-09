@@ -4,6 +4,10 @@ Usage: #example
 Title: "UC4-Bundle-emr-RudolfZimmermann"
 Description: "Complete emergency record bundle for Rudolf Zimmermann"
 
+* meta.language = "de-CH"
+* meta.profile = "CH EMR Composition"
+* meta.lastUpdated = "2024-09-10T10:00:00+02:00"
+
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:7afc1e97-67f8-49a8-91f5-46af596d0609"
 * type = #document

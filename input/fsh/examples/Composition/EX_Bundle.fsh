@@ -4,8 +4,8 @@ Usage: #example
 Title: "EX-Bundle"
 Description: "Complete Emergency Record Bundle"
 
-* meta.profile = "http://fhir.ch/ig/ch-emr/StructureDefinition/ch-emr-composition"
-* meta.versionId = "1"
+* meta.language = "de-CH"
+* meta.profile = "CH EMR Composition"
 * meta.lastUpdated = "2024-09-10T10:00:00+02:00"
 
 * identifier.system = "urn:ietf:rfc:3986"
