@@ -4,9 +4,8 @@ Usage: #example
 Title: "UC2-Patient-HansMeier"
 Description: "Patient Hans Meier"
 
-* identifier[0].type = http://fhir.ch/ig/ch-core/CodeSystem/ech-46-emailcategory#insurance
-* identifier[0].system = "http://www.sanitas.ch/patientennummer"
-* identifier[0].value = "80756000000000001234"
+* identifier[0].system = $oid-ahvn13
+* identifier[0].value = "7561234567890"
 
 
 * name.family = "Meier"
