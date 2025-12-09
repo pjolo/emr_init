@@ -61,6 +61,12 @@ Description: "Composition for Rudolf Zimmermann's emergency record"
 // Immunization section
 
 // Allergies section
+* section[sectionAllergies].title = "Allergien und Unverträglichkeiten"
+//* section[sectionAllergies].code = $loinc#48765-2 "Allergies and adverse reactions Document"
+* section[sectionAllergies].text.status = #generated
+* section[sectionAllergies].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>⚠️ WICHTIGE ALLERGIE:</strong></p><ul><li><strong>Jodhaltige Kontrastmittel</strong></li><li><strong>Reaktion:</strong> Hautausschlag, Juckreiz, leichte Atembeschwerden</li><li><strong>Schweregrad:</strong> Moderat</li><li><strong>Erstmals aufgetreten:</strong> 2022</li></ul><p><strong>⚠️ KEINE JODHALTIGEN KONTRASTMITTEL VERWENDEN!</strong></p><p><strong>Alternative:</strong> MRT ohne Kontrastmittel oder nicht-jodhaltige Kontrastmittel verwenden</p></div>"
+* section[sectionAllergies].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keine Allergien bekannt.</p></div>"
+* section[sectionAllergies].emptyReason = $list-empty-reason#unavailable "Information not available"
 
 // Risk factor section
 

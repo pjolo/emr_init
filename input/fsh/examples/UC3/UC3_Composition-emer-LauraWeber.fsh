@@ -45,6 +45,12 @@ Description: "Composition for the emergency record for Laura Weber"
 // Resuscitation section
 
 // Medication section
+* section[sectionMedications].title = "Aktuelle Medikation"
+* section[sectionMedications].code = $loinc#10160-0 "History of Medication use Narrative"
+* section[sectionMedications].text.status = #generated
+* section[sectionMedications].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktuelle Medikation:</p><ul><li>Metformin 1000 mg zweimal täglich zu den Mahlzeiten (seit 15.06.2015)</li></ul></div>"
+* section[sectionMedications].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keine Medikationsinformationen verfügbar.</p></div>"
+* section[sectionMedications].emptyReason = $list-empty-reason#unavailable "Information not available"
 
 // Immunization section
 
@@ -59,6 +65,12 @@ Description: "Composition for the emergency record for Laura Weber"
 // Risk factor section
 
 // Problem list section
+* section[sectionProblems].title = "Probleme und Diagnosen"
+* section[sectionProblems].code = $loinc#11450-4 "Problem list - Reported"
+* section[sectionProblems].text.status = #generated
+* section[sectionProblems].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktive Probleme:</p><ul><li>Diabetes mellitus Typ 2 (seit 15.06.2015) - gut kontrolliert</li></ul></div>"
+* section[sectionProblems].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keine Diagnosen bekannt.</p></div>"
+* section[sectionProblems].emptyReason = $list-empty-reason#unavailable "Information not available"
 
 // Advance directive and emergency medical directive section
 * section[sectionAdvanceDirectives].title = "Patientenverfügung"
@@ -69,11 +81,11 @@ Description: "Composition for the emergency record for Laura Weber"
 //* section[sectionAdvanceDirectives].entry[advanceDirective][=].type = "DocumentReference"
 
 // Document references section
-* section[sectionOtherDocuments].title = "Weitere Dokumente"
+//* section[sectionOtherDocuments].title = "Weitere Dokumente"
 //* section[sectionOtherDocuments].code = $loinc#42348-3 "Advance healthcare directives"
-* section[sectionOtherDocuments].text.status = #generated
-* section[sectionOtherDocuments].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>WICHTIGE PATIENTENVERFÜGUNG:</strong></p><p>Bei lebensbedrohlichen Komplikationen während der Schwangerschaft soll eine Reanimation nur dann durchgeführt werden, wenn dadurch das ungeborene Kind gerettet werden kann.</p><p>Das Wohl des Kindes ist prioritär zu berücksichtigen.</p></div>"
-* section[sectionOtherDocuments].entry[document][0] = Reference(U3-DocumentReference)
+//* section[sectionOtherDocuments].text.status = #generated
+//* section[sectionOtherDocuments].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>WICHTIGE PATIENTENVERFÜGUNG:</strong></p><p>Bei lebensbedrohlichen Komplikationen während der Schwangerschaft soll eine Reanimation nur dann durchgeführt werden, wenn dadurch das ungeborene Kind gerettet werden kann.</p><p>Das Wohl des Kindes ist prioritär zu berücksichtigen.</p></div>"
+//* section[sectionOtherDocuments].entry[document][0] = Reference(U3-DocumentReference)
 //* section[sectionOtherDocuments].entry[document][=].type = "DocumentReference"
 
 // Medical devices section

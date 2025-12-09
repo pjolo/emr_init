@@ -63,14 +63,18 @@ Description: "Complete emergency record bundle for Rudolf Zimmermann"
 * entry[=].resource = UC4-Condition-DiabetesRudolf
 
 // Advance directive
-* entry[+].fullUrl = "http://fhir.ch/ig/emr/Consent/UC4-Consent-MedicalPowerOfAttorney"
-* entry[=].resource = UC4-Consent-MedicalPowerOfAttorney
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/DocumentReference/UC4-DocumentReference"
+* entry[=].resource = UC4-DocumentReference
 
 // Document references
+
 
 // Medical device
 * entry[+].fullUrl = "http://fhir.ch/ig/emr/Device/UC4-Device-HipProsthesis"
 * entry[=].resource = UC4-Device-HipProsthesis
+
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/DeviceUseStatement/UC4-DeviceUseStatement"
+* entry[=].resource = UC4-DeviceUseStatement
 
 // Pregnancy
 
