@@ -83,7 +83,7 @@ Description: "Composition for the emergency record for Laura Weber"
 //* section[sectionAdvanceDirectives].code = $loinc#42348-3 "Advance healthcare directives"
 * section[sectionAdvanceDirectives].text.status = #generated
 * section[sectionAdvanceDirectives].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>WICHTIGE PATIENTENVERFÜGUNG:</strong></p><p>Bei lebensbedrohlichen Komplikationen während der Schwangerschaft soll eine Reanimation nur dann durchgeführt werden, wenn dadurch das ungeborene Kind gerettet werden kann.</p><p>Das Wohl des Kindes ist prioritär zu berücksichtigen.</p></div>"
-* section[sectionAdvanceDirectives].entry[advanceDirective][0] = Reference(U3-DocumentReference)
+* section[sectionAdvanceDirectives].entry[advanceDirective][0] = Reference(UC3-DocumentReference)
 //* section[sectionAdvanceDirectives].entry[advanceDirective][=].type = "DocumentReference"
 
 // Document references section
@@ -91,7 +91,7 @@ Description: "Composition for the emergency record for Laura Weber"
 //* section[sectionOtherDocuments].code = $loinc#42348-3 "Advance healthcare directives"
 //* section[sectionOtherDocuments].text.status = #generated
 //* section[sectionOtherDocuments].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>WICHTIGE PATIENTENVERFÜGUNG:</strong></p><p>Bei lebensbedrohlichen Komplikationen während der Schwangerschaft soll eine Reanimation nur dann durchgeführt werden, wenn dadurch das ungeborene Kind gerettet werden kann.</p><p>Das Wohl des Kindes ist prioritär zu berücksichtigen.</p></div>"
-//* section[sectionOtherDocuments].entry[document][0] = Reference(U3-DocumentReference)
+//* section[sectionOtherDocuments].entry[document][0] = Reference(UC3-DocumentReference)
 //* section[sectionOtherDocuments].entry[document][=].type = "DocumentReference"
 
 // Medical devices section
