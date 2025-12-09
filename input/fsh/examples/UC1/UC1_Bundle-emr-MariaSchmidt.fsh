@@ -5,8 +5,8 @@ Title: "UC1-Bundle-emr-MariaSchmidt"
 Description: "Complete Emergency Record bundle for Maria Schmidt"
 
 
-* meta.language = "de-CH"
-* meta.profile = "CH EMR Composition"
+* language = #de-CH
+* meta.profile = "/ch-emr-composihttp://fhir.ch/ig/ch-emr/StructureDefinitiontion"
 * meta.lastUpdated = "2024-09-10T10:00:00+02:00"
 
 * identifier.system = "urn:ietf:rfc:3986"
