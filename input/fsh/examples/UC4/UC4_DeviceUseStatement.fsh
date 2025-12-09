@@ -1,4 +1,4 @@
-Instance: UC4-DeviceUseStatement-HipProsthesis
+Instance: UC4-DeviceUseStatement
 InstanceOf: http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUseStatement-uv-ips
 Usage: #example
 Title: "UC4 Device Use Statement - Hüftgelenk-Prothese"
