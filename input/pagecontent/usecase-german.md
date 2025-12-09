@@ -18,15 +18,15 @@ Das vollständige [eNotfallpass Bundle](https://pjolo.github.io/emr/Bundle-UC1-B
 
 [Hans Meier](https://pjolo.github.io/emr/Patient-UC2-Patient-HansMeier.html), 72 Jahre alt, stürzt beim Wandern und wird mit Verdacht auf eine Schenkelhalsfraktur ins Spital eingeliefert. Eine MRT-Untersuchung zur genauen Diagnosestellung ist indiziert.
 
-Aus dem eNotfallpass geht hervor, dass dem Patienten 2020 ein [Herzschrittmacher](https://pjolo.github.io/emr/Device-UC2-Device-Herzschrittmacher.html) implantiert wurde.
+Aus dem eNotfallpass geht hervor, dass dem Patienten 2020 ein [Herzschrittmacher](https://pjolo.github.io/emr/UC2-Device-Pacemaker.html) implantiert wurde.
 
 Diese Information ermöglicht es dem Radiologen, die MRT-Untersuchung nach entsprechenden Sicherheitsprotokollen durchzuführen, ohne den Schrittmacher zuvor deaktivieren zu müssen.
 
-Zusätzlich ist dokumentiert, dass der Patient [Marcumar zur Antikoagulation](https://pjolo.github.io/emr/MedicationStatement-UC2-MedicationStatement-Marcumar.html) einnimmt, was bei einer möglichen Operation berücksichtigt werden muss. 
+Zusätzlich ist dokumentiert, dass der Patient [Marcumar zur Antikoagulation](https://pjolo.github.io/emr/MedicationStatement-UC2-MedicationStatement-Marcumar.html) einnimmt, was bei einer möglichen Operation berücksichtigt werden muss. Die Medikation wurde von seinem behandelnden Kardiologen Dr. med. Thomas Weber verordnet.
 
-Da Herr Meier als Herzpatient zu den Risikopersonen gehört, zeigt der eNotfallpass seinen aktuellen Immunisierungsstatus: [Grippeimpfung](https://pjolo.github.io/emr/UC2_Immunization-Influenza.html) vom 15.10.2024 und [COVID-19](https://pjolo.github.io/emr/UC2_Immunization-COVID19.html)Auffrischung vom 12.09.2024. Bei dem Sturz relevant ist auch die [Tetanus-Auffrischung](https://pjolo.github.io/emr/UC2_Immunization.Tetanus.html) vom 18.03.2022, die noch 8 Jahre gültig ist - wichtige Information für die Wundversorgung.
+Da Herr Meier als Herzpatient zu den Risikopersonen gehört, zeigt der eNotfallpass seinen aktuellen Immunisierungsstatus: [Grippeimpfung](https://pjolo.github.io/emr/UC2-Immunization-Influenza.html) vom 15.10.2024 und [COVID-19](https://pjolo.github.io/emr/UC2-Immunization-COVID19.html)Auffrischung vom 12.09.2024. Bei dem Sturz relevant ist auch die [Tetanus-Auffrischung](https://pjolo.github.io/emr/UC2-Immunization-Tetanus.html) vom 18.03.2022, die noch 8 Jahre gültig ist - wichtige Information für die Wundversorgung.
 
-Der behandelnde Unfallchirurg kann die MRT-Untersuchung sicher durchführen und bei Bedarf die Kardiologin Dr. Zimmermann für die perioperative Antikoagulations-Planung konsultieren. Als Notfallkontakt wird [Ehefrau Elisabeth](https://pjolo.github.io/emr/RelatedPerson-UC2-RelatedPerson-ElisabethMeier.html) unter +41 31 456 78 90 informiert.
+Der behandelnde Unfallchirurg kann die MRT-Untersuchung sicher durchführen und bei Bedarf die Kardiologin [Dr. Schmidt](https://pjolo.github.io/emr/UC2-Practitioner-DrSchmidt.html) für die perioperative Antikoagulations-Planung konsultieren. Als Notfallkontakt wird [Ehefrau Elisabeth](https://pjolo.github.io/emr/RelatedPerson-UC2-RelatedPerson-ElisabethMeier.html) unter +41 31 456 78 90 informiert, sowie sein Hausarzt [Dr. Müller](https://pjolo.github.io/emr/UC2-Practitioner-DrMueller.html).
 
 Das vollständige [eNotfallpass Bundle für Hans Meier](https://pjolo.github.io/emr/Bundle-UC2-Bundle-emr-HansMeier.html) enthält alle relevanten Informationen für die sichere Behandlung.
 

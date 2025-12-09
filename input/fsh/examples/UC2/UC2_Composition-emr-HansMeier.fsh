@@ -39,7 +39,6 @@ Description: "Composition für den eNotfallpass von Hans Meier"
 * section[sectionCareTeam].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Behandelnde Ärzte:</strong></p><ul><li>Dr. med. Hans Müller - Hausarzt<br/>GLN: 7601000234567<br/>Telefon: +41 31 123 45 67</li><li>Dr. med. Andrea Schmidt - Kardiologin<br/>GLN: 7601000456789<br/>Telefon: +41 31 234 56 78</li></ul></div>"
 * section[sectionCareTeam].entry[practitioner][0] = Reference(UC2-Practitioner-DrMueller)
 //* section[sectionCareTeam].entry[practitioner][=].type = "Practitioner"
-
 * section[sectionCareTeam].entry[practitioner][+] = Reference(UC2-Practitioner-DrSchmidt)
 //* section[sectionCareTeam].entry[practitioner][=].type = "Practitioner"
 
