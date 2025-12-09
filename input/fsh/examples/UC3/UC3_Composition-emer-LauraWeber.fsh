@@ -43,6 +43,12 @@ Description: "Composition for the emergency record for Laura Weber"
 //* section[sectionCareTeam].entry[practitioner][=].type = "Practitioner"
 
 // Resuscitation section
+* section[sectionResuscitation].title = "Reanimation"
+* section[sectionResuscitation].code = $loinc#75320-2 "Advance directive"
+* section[sectionResuscitation].text.status = #generated
+* section[sectionResuscitation].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Reanimationsstatus:</p><ul><li>Vollumfängliche Reanimation gewünscht</li></ul></div>"
+* section[sectionResuscitation].entry[observation][0] = Reference(UC3-Resuscitation)
+//* section[sectionResuscitation].entry[observation][=].type = "Observation"
 
 // Medication section
 * section[sectionMedications].title = "Aktuelle Medikation"

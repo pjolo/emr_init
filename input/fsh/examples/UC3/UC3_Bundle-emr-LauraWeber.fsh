@@ -29,6 +29,8 @@ Description: "Complete Emergency Record bundle for Laura Weber"
 * entry[=].resource = UC3-Practitioner-DrSemmelbruch
 
 // Resuscitation
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Observation/UC3-Resuscitation"
+* entry[=].resource = U3-Resuscitation
 
 // Medication
 
