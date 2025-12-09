@@ -47,6 +47,8 @@ Description: "Complete Emergency Record bundle for Laura Weber"
 * entry[=].resource = UC3-Consent-Resuscitation
 
 // Document references
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Consent/U3-DocumentReference"
+* entry[=].resource = U3-DocumentReference
 
 // Medical device
 

@@ -85,11 +85,11 @@ Description: "Composition for Rudolf Zimmermann's emergency record"
 //* section[sectionProblems].entry[problem][=].type = "Condition"
 
 // Advance directive and emergency medical directive section
-* section[sectionAdvanceDirectives].title = "Verfügungen und Vollmachten"
+* section[sectionAdvanceDirectives].title = "Patientenverfügung"
 //* section[sectionAdvanceDirectives].code = $loinc#42348-3 "Advance healthcare directives"
 * section[sectionAdvanceDirectives].text.status = #generated
-* section[sectionAdvanceDirectives].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Medizinische Vollmacht:</strong></p><p>Elisabeth Zimmermann (Tochter) ist bevollmächtigt, alle medizinischen Entscheidungen zu treffen.</p><p>Tel: +41 61 789 45 23</p></div>"
-* section[sectionAdvanceDirectives].entry[advanceDirective][0] = Reference(UC4-Consent-MedicalPowerOfAttorney)
+* section[sectionAdvanceDirectives].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Patientenverfügung</strong></p><p>Rudolf Zimmermann</p></div>"
+* section[sectionAdvanceDirectives].entry[advanceDirective][0] = Reference(UC4-DocumentReference)
 //* section[sectionAdvanceDirectives].entry[advanceDirective][=].type = "DocumentReference"
 
 // Document references section
