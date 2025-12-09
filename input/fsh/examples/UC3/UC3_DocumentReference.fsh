@@ -1,4 +1,4 @@
-Instance: U3-DocumentReference
+Instance: UC3-DocumentReference
 InstanceOf: ChEmrDocumentReference
 Usage: #example
 Title: "U3-DocumentReference"
