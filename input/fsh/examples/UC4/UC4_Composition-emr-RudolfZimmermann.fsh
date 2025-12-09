@@ -99,7 +99,7 @@ Description: "Composition for Rudolf Zimmermann's emergency record"
 * section[sectionMedicalDevices].code = $loinc#46264-8 "History of medical device use"
 * section[sectionMedicalDevices].text.status = #generated
 * section[sectionMedicalDevices].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Implantate:</p><ul><li>Hüftgelenk-Totalendoprothese links (2018)</li><li>Hersteller: Zimmer Biomet Taperloc</li><li>MRT: bedingt möglich (Metallartefakte)</li></ul></div>"
-* section[sectionMedicalDevices].entry[deviceStatement][0] = Reference(UC4-DeviceUseStatement-HipProsthesis)
+* section[sectionMedicalDevices].entry[deviceStatement][0] = Reference(UC4-DeviceUseStatement)
 //* section[sectionMedicalDevices].entry[deviceStatement][=].type = "DeviceUseStatement"
 
 // Pregnancy section
