@@ -30,7 +30,7 @@ Description: "Complete Emergency Record bundle for Laura Weber"
 
 // Resuscitation
 * entry[+].fullUrl = "http://fhir.ch/ig/emr/Observation/UC3-Resuscitation"
-* entry[=].resource = U3-Resuscitation
+* entry[=].resource = UC3-Resuscitation
 
 // Medication
 
@@ -45,12 +45,10 @@ Description: "Complete Emergency Record bundle for Laura Weber"
 // Problem list
 
 // Advance directive
-* entry[+].fullUrl = "http://fhir.ch/ig/emr/Consent/UC3-Consent-Resuscitation"
-* entry[=].resource = UC3-Consent-Resuscitation
 
 // Document references
-* entry[+].fullUrl = "http://fhir.ch/ig/emr/DocumentReference/U3-DocumentReference"
-* entry[=].resource = U3-DocumentReference
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/DocumentReference/UC3-DocumentReference"
+* entry[=].resource = UC3-DocumentReference
 
 // Medical device
 
