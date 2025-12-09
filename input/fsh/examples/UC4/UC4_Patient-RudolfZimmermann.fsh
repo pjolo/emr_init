@@ -4,8 +4,8 @@ Usage: #example
 Title: "Patient Rudolf Zimmermann"
 Description: "Multimorbider 85-jähriger Patient für den eNotfallpass"
 
-* identifier[0].system = $oid-ahvn13
-* identifier[0].value = "7563456789123"
+* identifier[insuranceCardNumber].system = "urn:oid:2.16.756.5.30.1.123.100.1.1.1"
+* identifier[insuranceCardNumber].value = "80756015090202647590"
 
 * name.family = "Zimmermann"
 * name.given[0] = "Rudolf"

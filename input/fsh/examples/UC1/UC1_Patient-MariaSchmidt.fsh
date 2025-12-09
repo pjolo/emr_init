@@ -5,7 +5,7 @@ Title: "UC1-Patient-MariaSchmidt"
 Description: "Example of a patient for the UC1"
 
 * identifier[insuranceCardNumber].system = "urn:oid:2.16.756.5.30.1.123.100.1.1.1"
-* identifier[insuranceCardNumber].value = "80756015090002647590"
+* identifier[insuranceCardNumber].value = "80756015091232647590"
 
 * name.family = "Schmidt"
 * name.given[0] = "Maria"

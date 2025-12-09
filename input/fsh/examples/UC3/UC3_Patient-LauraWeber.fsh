@@ -4,8 +4,8 @@ Usage: #example
 Title: "UC3-Patient-LauraWeber"
 Description: "Patient Laura Weber"
 
-* identifier[0].system = $oid-ahvn13
-* identifier[0].value = "7562198765432"
+* identifier[insuranceCardNumber].system = "urn:oid:2.16.756.5.30.1.123.100.1.1.1"
+* identifier[insuranceCardNumber].value = "80756015090122647590"
 
 * name.family = "Weber"
 * name.given[0] = "Laura"
