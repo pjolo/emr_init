@@ -59,13 +59,6 @@ The Implementation Guide defines the following main profiles:
 | [ChEmrDocumentReference](https://pjolo.github.io/emr/StructureDefinition-ch-emr-documentreference.html) | Reference to documents | CH Core DocumentReference |
 | [ChEmrDevice](https://pjolo.github.io/emr/StructureDefinition-ch-emr-device.html) | Implants | CH IPS Device |
 
-
-
-
-
-
-
-ChEmrRelatedPerson
 ### IP Statements
 This document is licensed under Creative Commons "No Rights Reserved" ([CC0](https://creativecommons.org/publicdomain/zero/1.0/)).
 
