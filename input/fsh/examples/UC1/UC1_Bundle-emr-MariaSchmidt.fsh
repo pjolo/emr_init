@@ -64,13 +64,3 @@ Description: "Complete Emergency Record bundle for Maria Schmidt"
 
 // Disability
 
-
-
-
-
-
-
-
-
-* entry[9].fullUrl = "http://fhir.ch/ig/emr/RelatedPerson/UC1-RelatedPerson-AnnaMueller"
-* entry[9].resource = UC1-RelatedPerson-AnnaMueller

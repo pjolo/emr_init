@@ -1,7 +1,7 @@
 Instance: UC4-Condition-AtrialFibrillation
 InstanceOf: ChEmrCondition
 Usage: #example
-Title: "Vorhofflimmern"
+Title: "UC4-Condition-AtrialFibrillation"
 Description: "Permanentes Vorhofflimmern"
 
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active

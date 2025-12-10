@@ -1,7 +1,7 @@
 Instance: UC4-Patient-RudolfZimmermann
 InstanceOf: ChEmrPatient
 Usage: #example
-Title: "Patient Rudolf Zimmermann"
+Title: "UC4-Patient-RudolfZimmermann"
 Description: "Multimorbider 85-jähriger Patient für den eNotfallpass"
 
 * identifier[insuranceCardNumber].system = "urn:oid:2.16.756.5.30.1.123.100.1.1.1"

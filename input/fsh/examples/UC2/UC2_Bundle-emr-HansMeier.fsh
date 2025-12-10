@@ -56,8 +56,8 @@ Description: "Vollständiges eNotfallpass Bundle für Hans Meier"
 // Risk factor
 
 // Problem list
-* entry[+].fullUrl = "http://fhir.ch/ig/emr/Condition/UC2-Condition-Vorhofflimmern"
-* entry[=].resource = UC2-Condition-Vorhofflimmern
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Condition/UC2-Condition-AtrialFibrillation"
+* entry[=].resource = UC2-Condition-AtrialFibrillation
 
 // Advance directive
 

@@ -1,7 +1,7 @@
 Instance: UC2-DeviceUseStatement
 InstanceOf: http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUseStatement-uv-ips
 Usage: #example
-Title: "UC2 Device Use Statement - Herzschrittmacher"
+Title: "UC2-DeviceUseStatement"
 Description: "Hans Meier trägt einen Herzschrittmacher"
 
 * status = #active

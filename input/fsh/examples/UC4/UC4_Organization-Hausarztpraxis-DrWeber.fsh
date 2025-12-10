@@ -1,7 +1,7 @@
 Instance: UC4-Organization-Hausarztpraxis-DrWeber
 InstanceOf: Organization
 Usage: #example
-Title: "Hausarztpraxis Dr. Weber"
+Title: "UC4-Organization-Hausarztpraxis-DrWeber"
 Description: "Organisation der Hausarztpraxis"
 
 * identifier.system = $oid-gln

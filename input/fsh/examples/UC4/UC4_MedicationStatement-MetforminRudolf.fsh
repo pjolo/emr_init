@@ -1,7 +1,7 @@
 Instance: UC4-MedicationStatement-MetforminRudolf
 InstanceOf: ChEmrMedicationStatement
 Usage: #example
-Title: "Metformin 1000mg - Rudolf"
+Title: "UC4-MedicationStatement-MetforminRudolf"
 Description: "Metformin Therapie bei Diabetes - KONTRAINDIZIERT bei Niereninsuffizienz"
 
 * status = #stopped

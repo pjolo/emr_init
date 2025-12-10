@@ -1,7 +1,7 @@
 Instance: UC2-Device-Pacemaker
 InstanceOf: ChEmrDevice
 Usage: #example
-Title: "Herzschrittmacher Boston Scientific"
+Title: "UC2-Device-Pacemaker"
 Description: "Beispiel eines MRT-sicheren Herzschrittmachers"
 
 * identifier[0].type = $v2-0203#SNO

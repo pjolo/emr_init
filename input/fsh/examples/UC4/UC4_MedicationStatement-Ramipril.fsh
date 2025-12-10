@@ -1,7 +1,7 @@
 Instance: UC4-MedicationStatement-Ramipril
 InstanceOf: ChEmrMedicationStatement
 Usage: #example
-Title: "Ramipril 5mg"
+Title: "UC4-MedicationStatement-Ramipril"
 Description: "ACE-Hemmer Therapie"
 
 * status = #active

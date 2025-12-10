@@ -1,7 +1,7 @@
 Instance: UC4-Condition-HeartFailure
 InstanceOf: ChEmrCondition
 Usage: #example
-Title: "Chronische Herzinsuffizienz"
+Title: "UC4-Condition-HeartFailure"
 Description: "Chronische Herzinsuffizienz NYHA III"
 
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active

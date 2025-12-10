@@ -1,7 +1,7 @@
 Instance: UC4-Condition-DiabetesRudolf
 InstanceOf: ChEmrCondition
 Usage: #example
-Title: "Diabetes mellitus Typ 2 - Rudolf"
+Title: "UC4-Condition-DiabetesRudolf"
 Description: "Diabetes mellitus Typ 2 mit nephropathischen Komplikationen"
 
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active

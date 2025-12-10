@@ -10,7 +10,7 @@ Kritisch ist die dokumentierte [Penicillin-Allergie](https://pjolo.github.io/emr
 
 Der Notarzt kann sofort eine Glukose-Infusion verabreichen. Als Notfallkontakt wird der [Ehemann](https://pjolo.github.io/emr/RelatedPerson-UC1-RelatedPerson-PeterSchmidt.html) unter der Nummer +41 44 321 65 87 kontaktiert. Als weitere Angehörige ist [Anna Müller](https://pjolo.github.io/emr/RelatedPerson-UC1-RelatedPerson-AnnaMueller.html) unter +41 31 456 78 90 hinterlegt.
 
-Die Patientin erholt sich schnell und kann nach Stabilisierung zu Hause bleiben. Die Hypoglykämie war vermutlich durch eine vergessene Mahlzeit bei normaler Metformin-Dosis entstanden. Der behandelnde [Hausarzt Dr. Müller](https://pjolo.github.io/emr/Practitioner-UC1-Practitioner-DrMueller.html) wird über den Vorfall informiert.
+Die Patientin erholt sich schnell und kann nach Stabilisierung zu Hause bleiben. Die Hypoglykämie war vermutlich durch eine vergessene Mahlzeit bei normaler Metformin-Dosis entstanden. Der behandelnde [Hausarzt Dr. med. Müller](https://pjolo.github.io/emr/Practitioner-UC1-Practitioner-DrMueller.html) wird über den Vorfall informiert.
 
 Den vollständigen [eNotfallpass für Maria Schmidt](https://pjolo.github.io/emr/Bundle-UC1-Bundle-emr-MariaSchmidt.html) zeigt alle relevanten medizinischen Informationen strukturiert und referenzierbar.
 
@@ -26,7 +26,7 @@ Zusätzlich ist dokumentiert, dass der Patient [Marcumar zur Antikoagulation](ht
 
 Da Herr Meier als Herzpatient zu den Risikopersonen gehört, zeigt der eNotfallpass seinen aktuellen Immunisierungsstatus: [Grippeimpfung](https://pjolo.github.io/emr/Immunization-UC2-Immunization-Influenza.html) vom 15.10.2024 und [COVID-19](https://pjolo.github.io/emr/Immunization-UC2-Immunization-COVID19.html)Auffrischung vom 12.09.2024. Bei dem Sturz relevant ist auch die [Tetanus-Auffrischung](https://pjolo.github.io/emr/Immunization-UC2-Immunization-Tetanus.html) vom 18.03.2022, die noch 8 Jahre gültig ist - wichtige Information für die Wundversorgung.
 
-Der behandelnde Unfallchirurg kann die MRT-Untersuchung sicher durchführen und bei Bedarf die Kardiologin [Dr. Schmidt](https://pjolo.github.io/emr/Practitioner-UC2-Practitioner-DrSchmidt.html) für die perioperative Antikoagulations-Planung konsultieren. Als Notfallkontakt wird [Ehefrau Elisabeth](https://pjolo.github.io/emr/RelatedPerson-UC2-RelatedPerson-ElisabethMeier.html) unter +41 31 456 78 90 informiert, sowie sein Hausarzt [Dr. Müller](https://pjolo.github.io/emr/Practitioner-UC2-Practitioner-DrMueller.html).
+Der behandelnde Unfallchirurg kann die MRT-Untersuchung sicher durchführen und bei Bedarf die Kardiologin [Dr. med. Schmidt](https://pjolo.github.io/emr/Practitioner-UC2-Practitioner-DrSchmidt.html) für die perioperative Antikoagulations-Planung konsultieren. Als Notfallkontakt wird Ehefrau [Elisabeth Meier](https://pjolo.github.io/emr/RelatedPerson-UC2-RelatedPerson-ElisabethMeier.html) unter +41 31 456 78 90 informiert, sowie sein Hausarzt [Dr. med. Müller](https://pjolo.github.io/emr/Practitioner-UC2-Practitioner-DrMueller.html).
 
 Den vollständigen [eNotfallpass für Hans Meier](https://pjolo.github.io/emr/Bundle-UC2-Bundle-emr-HansMeier.html) enthält alle relevanten Informationen für die sichere Behandlung.
 
@@ -53,7 +53,7 @@ Die aktuelle Medikation beinhaltet [Ramipril 5mg](https://pjolo.github.io/emr/Me
 
 Der Patient trägt zudem ein [Implantat eines künstlichen Hüftgelenks](https://pjolo.github.io/emr/Device-UC4-Device-HipProsthesis.html) von 2018, was bei bildgebenden Verfahren zu berücksichtigen ist.
 
-Als Betreuerin ist seine [Tochter Elisabeth Zimmermann](https://pjolo.github.io/emr/RelatedPerson-UC4-RelatedPerson-ElisabethZimmermann.html) unter +41 61 789 45 23 eingetragen. Der behandelnde [Hausarzt Dr. Weber](https://pjolo.github.io/emr/Practitioner-UC4-Practitioner-DrWeber.html) wird über die komplexe Situation informiert.
+Als Betreuerin ist seine Tochter [Elisabeth Zimmermann](https://pjolo.github.io/emr/RelatedPerson-UC4-RelatedPerson-ElisabethZimmermann.html) unter +41 61 789 45 23 eingetragen. Der behandelnde [Hausarzt Dr. med. Weber](https://pjolo.github.io/emr/Practitioner-UC4-Practitioner-DrWeber.html) wird über die komplexe Situation informiert.
 
 Den vollständigen [eNotfallpass für Rudolf Zimmermann](https://pjolo.github.io/emr/Bundle-UC4-Bundle-emr-RudolfZimmermann.html) zeigt alle medizinischen Zusammenhänge strukturiert auf.
 

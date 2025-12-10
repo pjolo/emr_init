@@ -26,13 +26,10 @@ Description: "Composition for the Emergency Record by Maria Schmidt"
 
 // Related person section
 * section[sectionEmergencyContacts].title = "Notfallkontakte"
-//* section[sectionEmergencyContacts].code = $loinc#56864-2 "Emergency contact Relationship to patient"
 * section[sectionEmergencyContacts].text.status = #generated
 * section[sectionEmergencyContacts].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Notfallkontakte:</p><ul><li>Peter Schmidt (Ehemann): +41 44 321 65 87</li><li>Anna Müller (Schwester): +41 44 234 56 78</li></ul></div>"
 * section[sectionEmergencyContacts].entry[relatedPerson][0] = Reference(UC1-RelatedPerson-PeterSchmidt)
-//* section[sectionEmergencyContacts].entry[relatedPerson][=].type = "RelatedPerson"
 * section[sectionEmergencyContacts].entry[relatedPerson][+] = Reference(UC1-RelatedPerson-AnnaMueller)
-//* section[sectionEmergencyContacts].entry[relatedPerson][=].type = "RelatedPerson"
 
 // Care Team section
 * section[sectionCareTeam].title = "Behandlungsteam"
@@ -40,7 +37,6 @@ Description: "Composition for the Emergency Record by Maria Schmidt"
 * section[sectionCareTeam].text.status = #generated
 * section[sectionCareTeam].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Behandelnde Ärzte:</p><ul><li>Dr. med. Hans Müller - Hausarzt (GLN: 7601000234567)</li></ul></div>"
 * section[sectionCareTeam].entry[practitioner][0] = Reference(UC1-Practitioner-DrMueller)
-//* section[sectionCareTeam].entry[practitioner][=].type = "Practitioner"
 
 // Resuscitation section
 * section[sectionResuscitation].title = "Reanimation"
@@ -55,7 +51,6 @@ Description: "Composition for the Emergency Record by Maria Schmidt"
 * section[sectionMedications].text.status = #generated
 * section[sectionMedications].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktuelle Medikation:</p><ul><li>Metformin 1000 mg zweimal täglich zu den Mahlzeiten (seit 15.06.2015)</li></ul></div>"
 * section[sectionMedications].entry[medicationStatementOrRequest][0] = Reference(UC1-MedicationStatement-Metformin)
-//* section[sectionMedications].entry[medicationStatementOrRequest ][=].type = "MedicationStatement"
 
 // Immunization section
 * section[sectionImmunizations].title = "Impfungen"
@@ -70,7 +65,6 @@ Description: "Composition for the Emergency Record by Maria Schmidt"
 * section[sectionAllergies].text.status = #generated
 * section[sectionAllergies].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Bekannte Allergien:</p><ul><li><strong>KRITISCH:</strong> Penicillin-Allergie mit anaphylaktischer Reaktion (seit Kindheit)</li></ul><p><strong>Wichtig:</strong> Keine Beta-Lactam-Antibiotika verwenden!</p></div>"
 * section[sectionAllergies].entry[allergyOrIntolerance][0] = Reference(UC1-AllergyIntolerance-Penicillin)
-//* section[sectionAllergies].entry[allergyOrIntolerance][=].type = "AllergyIntolerance"
 
 // Risk factor section
 * section[sectionRiskFactors].title = "Risikofaktoren"
@@ -85,7 +79,6 @@ Description: "Composition for the Emergency Record by Maria Schmidt"
 * section[sectionProblems].text.status = #generated
 * section[sectionProblems].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Aktive Probleme:</p><ul><li>Diabetes mellitus Typ 2 (seit 15.06.2015) - gut kontrolliert</li></ul></div>"
 * section[sectionProblems].entry[problem][0] = Reference(UC1-Condition-Diabetes)
-//* section[sectionProblems].entry[problem][=].type = "Condition"
 
 // Advance directive and emergency medical directive section
 * section[sectionAdvanceDirectives].title = "Patientenverfügungen"
@@ -110,7 +103,6 @@ Description: "Composition for the Emergency Record by Maria Schmidt"
 
 // Pregnancy section
 * section[sectionPregnancyHx].title = "Schwangerschaft"
-//* section[sectionPregnancyHx].code = $loinc#90767-5 "Pregnancy summary Document"
 * section[sectionPregnancyHx].text.status = #generated
 * section[sectionPregnancyHx].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keine Schwangerschaftsinformationen dokumentiert.</p></div>"
 * section[sectionPregnancyHx].emptyReason = $list-empty-reason#unavailable "Information not available"

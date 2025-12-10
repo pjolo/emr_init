@@ -1,7 +1,7 @@
 Instance: UC4-DeviceUseStatement
 InstanceOf: http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUseStatement-uv-ips
 Usage: #example
-Title: "UC4 Device Use Statement - Hüftgelenk-Prothese"
+Title: "UC4-DeviceUseStatement"
 Description: "Rudolf Zimmermann trägt eine Hüftgelenk-Prothese links"
 
 * status = #active

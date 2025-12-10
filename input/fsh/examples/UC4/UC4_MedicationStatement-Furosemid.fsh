@@ -1,7 +1,7 @@
 Instance: UC4-MedicationStatement-Furosemid
 InstanceOf: ChEmrMedicationStatement
 Usage: #example
-Title: "Furosemid 40mg"
+Title: "UC4-MedicationStatement-Furosemid"
 Description: "Diuretikum Therapie"
 
 * status = #active

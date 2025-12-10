@@ -1,7 +1,7 @@
 Instance: UC4-Practitioner-DrWeber
 InstanceOf: ChEmrPractitioner
 Usage: #example
-Title: "Dr. med. Klaus Weber"
+Title: "UC4-Practitioner-DrWeber"
 Description: "Hausarzt von Rudolf Zimmermann"
 
 * language = #de-CH

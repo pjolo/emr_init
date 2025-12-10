@@ -1,7 +1,7 @@
 Instance: UC4-Device-HipProsthesis
 InstanceOf: ChEmrDevice
 Usage: #example
-Title: "Hüftgelenk-Prothese"
+Title: "UC4-Device-HipProsthesis"
 Description: "Künstliches Hüftgelenk links"
 
 * identifier[0].type = $v2-0203#SNO

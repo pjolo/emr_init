@@ -27,11 +27,9 @@ Description: "Composition for Rudolf Zimmermann's emergency record"
 
 // RelatedPerson section
 * section[sectionEmergencyContacts].title = "Notfallkontakte"
-//* section[sectionEmergencyContacts].code = $loinc#56864-2 "Emergency contact Relationship to patient"
 * section[sectionEmergencyContacts].text.status = #generated
 * section[sectionEmergencyContacts].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Notfallkontakt: Elisabeth Meier (Ehefrau) +41 31 456 78 90</p></div>"
 * section[sectionEmergencyContacts].entry[relatedPerson][0] = Reference(UC4-RelatedPerson-ElisabethZimmermann)
-//* section[sectionEmergencyContacts].entry[relatedPerson][=].type = "RelatedPerson"
 
 // Care Team section
 * section[sectionCareTeam].title = "Behandlungsteam"
@@ -39,7 +37,6 @@ Description: "Composition for Rudolf Zimmermann's emergency record"
 * section[sectionCareTeam].text.status = #generated
 * section[sectionCareTeam].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Behandelnde Ärzte:</p><ul><li>Dr. med. Klaus Weber - Hausarzt (GLN: 7601000789012)</li></ul></div>"
 * section[sectionCareTeam].entry[practitioner][0] = Reference(UC4-Practitioner-DrWeber)
-//* section[sectionCareTeam].entry[practitioner][=].type = "Practitioner"
 
 // Resuscitation section
 
@@ -50,19 +47,14 @@ Description: "Composition for Rudolf Zimmermann's emergency record"
 * section[sectionMedications].text.status = #generated
 * section[sectionMedications].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Aktuelle Medikation:</strong></p><ul><li>Ramipril 5mg morgens (Herzinsuffizienz)</li><li>Metoprolol 50mg 2x täglich (Beta-Blocker)</li><li>Furosemid 40mg morgens (Diuretikum) - DOSISANPASSUNG!</li></ul><p><strong>GESTOPPT:</strong></p><ul><li>Metformin 1000mg 2x täglich - KONTRAINDIZIERT bei Niereninsuffizienz!</li></ul></div>"
 * section[sectionMedications].entry[medicationStatementOrRequest][0] = Reference(UC4-MedicationStatement-Ramipril)
-//* section[sectionMedications].entry[medicationStatementOrRequest][=].type = "MedicationStatement"
 * section[sectionMedications].entry[medicationStatementOrRequest][+] = Reference(UC4-MedicationStatement-Metoprolol)
-//* section[sectionMedications].entry[medicationStatementOrRequest][=].type = "MedicationStatement"
 * section[sectionMedications].entry[medicationStatementOrRequest][+] = Reference(UC4-MedicationStatement-Furosemid)
-//* section[sectionMedications].entry[medicationStatementOrRequest][=].type = "MedicationStatement"
 * section[sectionMedications].entry[medicationStatementOrRequest][+] = Reference(UC4-MedicationStatement-MetforminRudolf)
-//* section[sectionMedications].entry[medicationStatementOrRequest][=].type = "MedicationStatement"
 
 // Immunization section
 
 // Allergies section
 * section[sectionAllergies].title = "Allergien und Unverträglichkeiten"
-//* section[sectionAllergies].code = $loinc#48765-2 "Allergies and adverse reactions Document"
 * section[sectionAllergies].text.status = #generated
 * section[sectionAllergies].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>⚠️ WICHTIGE ALLERGIE:</strong></p><ul><li><strong>Jodhaltige Kontrastmittel</strong></li><li><strong>Reaktion:</strong> Hautausschlag, Juckreiz, leichte Atembeschwerden</li><li><strong>Schweregrad:</strong> Moderat</li><li><strong>Erstmals aufgetreten:</strong> 2022</li></ul><p><strong>⚠️ KEINE JODHALTIGEN KONTRASTMITTEL VERWENDEN!</strong></p><p><strong>Alternative:</strong> MRT ohne Kontrastmittel oder nicht-jodhaltige Kontrastmittel verwenden</p></div>"
 * section[sectionAllergies].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keine Allergien bekannt.</p></div>"
@@ -76,21 +68,15 @@ Description: "Composition for Rudolf Zimmermann's emergency record"
 * section[sectionProblems].text.status = #generated
 * section[sectionProblems].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Aktive Probleme (Multimorbidität):</strong></p><ul><li>Chronische Herzinsuffizienz NYHA III (seit 2018)</li><li>Permanentes Vorhofflimmern (seit 2019)</li><li>Chronische Niereninsuffizienz Stadium 3b (seit 2020) - VERSCHLECHTERT!</li><li>Diabetes mellitus Typ 2 mit Nephropathie (seit 2010)</li></ul></div>"
 * section[sectionProblems].entry[problem][0] = Reference(UC4-Condition-HeartFailure)
-//* section[sectionProblems].entry[problem][=].type = "Condition"
 * section[sectionProblems].entry[problem][+] = Reference(UC4-Condition-AtrialFibrillation)
-//* section[sectionProblems].entry[problem][=].type = "Condition"
 * section[sectionProblems].entry[problem][+] = Reference(UC4-Condition-ChronicKidneyDisease)
-//* section[sectionProblems].entry[problem][=].type = "Condition"
 * section[sectionProblems].entry[problem][+] = Reference(UC4-Condition-DiabetesRudolf)
-//* section[sectionProblems].entry[problem][=].type = "Condition"
 
 // Advance directive and emergency medical directive section
 * section[sectionAdvanceDirectives].title = "Patientenverfügung"
-//* section[sectionAdvanceDirectives].code = $loinc#42348-3 "Advance healthcare directives"
 * section[sectionAdvanceDirectives].text.status = #generated
 * section[sectionAdvanceDirectives].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Patientenverfügung</strong></p><p>Rudolf Zimmermann</p></div>"
 * section[sectionAdvanceDirectives].entry[advanceDirective][0] = Reference(UC4-DocumentReference)
-//* section[sectionAdvanceDirectives].entry[advanceDirective][=].type = "DocumentReference"
 
 // Document references section
 
@@ -100,7 +86,6 @@ Description: "Composition for Rudolf Zimmermann's emergency record"
 * section[sectionMedicalDevices].text.status = #generated
 * section[sectionMedicalDevices].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Implantate:</p><ul><li>Hüftgelenk-Totalendoprothese links (2018)</li><li>Hersteller: Zimmer Biomet Taperloc</li><li>MRT: bedingt möglich (Metallartefakte)</li></ul></div>"
 * section[sectionMedicalDevices].entry[deviceStatement][0] = Reference(UC4-DeviceUseStatement)
-//* section[sectionMedicalDevices].entry[deviceStatement][=].type = "DeviceUseStatement"
 
 // Pregnancy section
 

@@ -1,7 +1,7 @@
 Instance: UC4-RelatedPerson-ElisabethZimmermann
 InstanceOf: ChEmrRelatedPerson
 Usage: #example
-Title: "Elisabeth Zimmermann - Tochter"
+Title: "UC4-RelatedPerson-ElisabethZimmermann"
 Description: "Tochter von Rudolf Zimmermann als Betreuerin"
 
 * active = true

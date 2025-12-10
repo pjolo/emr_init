@@ -26,11 +26,9 @@ Description: "Composition für den eNotfallpass von Hans Meier"
 
 // Related person section
 * section[sectionEmergencyContacts].title = "Notfallkontakte"
-//* section[sectionEmergencyContacts].code = $loinc#56864-2 "Emergency contact Relationship to patient"
 * section[sectionEmergencyContacts].text.status = #generated
 * section[sectionEmergencyContacts].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Notfallkontakt:</strong></p><ul><li>Elisabeth Meier (Ehefrau)</li><li>Telefon: +41 31 456 78 90</li><li>Mobil: +41 79 456 78 90</li></ul></div>"
 * section[sectionEmergencyContacts].entry[relatedPerson][0] = Reference(UC2-RelatedPerson-ElisabethMeier)
-//* section[sectionEmergencyContacts].entry[relatedPerson][=].type = "RelatedPerson"
 
 // Care Team section
 * section[sectionCareTeam].title = "Behandlungsteam"
@@ -38,9 +36,7 @@ Description: "Composition für den eNotfallpass von Hans Meier"
 * section[sectionCareTeam].text.status = #generated
 * section[sectionCareTeam].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Behandelnde Ärzte:</strong></p><ul><li>Dr. med. Hans Müller - Hausarzt<br/>GLN: 7601000234567<br/>Telefon: +41 31 123 45 67</li><li>Dr. med. Andrea Schmidt - Kardiologin<br/>GLN: 7601000456789<br/>Telefon: +41 31 234 56 78</li></ul></div>"
 * section[sectionCareTeam].entry[practitioner][0] = Reference(UC2-Practitioner-DrMueller)
-//* section[sectionCareTeam].entry[practitioner][=].type = "Practitioner"
 * section[sectionCareTeam].entry[practitioner][+] = Reference(UC2-Practitioner-DrSchmidt)
-//* section[sectionCareTeam].entry[practitioner][=].type = "Practitioner"
 
 // Resuscitation section KONTROLLIEREN
 //* section[sectionResuscitation].title = "Reanimationsstatus"
@@ -55,7 +51,6 @@ Description: "Composition für den eNotfallpass von Hans Meier"
 * section[sectionMedications].text.status = #generated
 * section[sectionMedications].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Aktuelle Medikation:</strong></p><ul><li><strong>MARCUMAR 3 mg</strong> - 1x täglich abends (antikoagulativ)</li><li><strong>Wichtig:</strong> INR-Zielbereich 2.0-3.0</li><li><strong>Bei Operationen:</strong> Bridging mit Heparin erforderlich!</li><li>Letzte INR-Kontrolle: 05.09.2025 (INR 2.4)</li></ul></div>"
 * section[sectionMedications].entry[medicationStatementOrRequest][0] = Reference(UC2-MedicationStatement-Marcumar)
-//* section[sectionMedications].entry[medicationStatementOrRequest][=].type = "MedicationStatement"
 
 // Immunization section
 * section[sectionImmunizations].title = "Impfungen"
@@ -63,13 +58,11 @@ Description: "Composition für den eNotfallpass von Hans Meier"
 * section[sectionImmunizations].text.status = #generated
 * section[sectionImmunizations].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Aktueller Impfschutz:</strong></p><ul><li>Influenza: 15.10.2024</li><li>COVID-19: 12.09.2024 (Auffrischung)</li><li>Tetanus: 18.03.2022</li></ul></div>"
 * section[sectionImmunizations].entry[immunization][0] = Reference(Immunization/UC2-Immunization-Influenza)
-//* section[sectionImmunizations].entry[immunization][=].type = "Immunization"
 
 * section[sectionImmunizations].entry[immunization][+] = Reference(Immunization/UC2-Immunization-COVID19)
 //* section[sectionImmunizations].entry[immunization][=].type = "Immunization"
 
 * section[sectionImmunizations].entry[immunization][+] = Reference(Immunization/UC2-Immunization-Tetanus)
-//* section[sectionImmunizations].entry[immunization][=].type = "Immunization"
 
 // Allergies section
 * section[sectionAllergies].title = "Allergien und Unverträglichkeiten"
@@ -85,8 +78,7 @@ Description: "Composition für den eNotfallpass von Hans Meier"
 * section[sectionProblems].code = $loinc#11450-4 "Problem list - Reported"
 * section[sectionProblems].text.status = #generated
 * section[sectionProblems].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Aktive Diagnosen:</strong></p><ul><li><strong>Persistierendes Vorhofflimmern</strong> (seit 15.01.2020)</li><li>Antikoagulation mit Marcumar</li><li>Herzschrittmacher-Implantation 15.03.2020</li><li>Stabile Herzinsuffizienz NYHA II</li></ul></div>"
-* section[sectionProblems].entry[problem][0] = Reference(UC2-Condition-Vorhofflimmern)
-//* section[sectionProblems].entry[problem][=].type = "Condition"
+* section[sectionProblems].entry[problem][0] = Reference(UC2-Condition-AtrialFibrillation)
 
 // Advance directive and emergency medical directive section
 
@@ -98,7 +90,6 @@ Description: "Composition für den eNotfallpass von Hans Meier"
 * section[sectionMedicalDevices].text.status = #generated
 * section[sectionMedicalDevices].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Implantate:</p><ul><li><strong>MRT-SICHER:</strong> Herzschrittmacher Boston Scientific Accolade MRI (Modell L331)</li><li>Seriennummer: PM987654321</li><li>Implantiert: 15.03.2020</li><li>Letzte Kontrolle: 01.09.2025</li></ul></div>"
 * section[sectionMedicalDevices].entry[deviceStatement][0] = Reference(UC2-DeviceUseStatement)
-//* section[sectionMedicalDevices].entry[deviceStatement][=].type = "DeviceUseStatement"
 
 // Pregnancy section
 

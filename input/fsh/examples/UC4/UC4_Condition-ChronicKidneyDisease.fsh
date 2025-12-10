@@ -1,7 +1,7 @@
 Instance: UC4-Condition-ChronicKidneyDisease
 InstanceOf: ChEmrCondition
 Usage: #example
-Title: "Chronische Niereninsuffizienz Stadium 3"
+Title: "UC4-Condition-ChronicKidneyDisease"
 Description: "Chronische Nierenerkrankung Stadium 3b"
 
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
