@@ -5,7 +5,7 @@ Title: "EX-Bundle"
 Description: "Complete Emergency Record Bundle"
 
 * language = #de-CH
-* meta.profile = "/ch-emr-composihttp://fhir.ch/ig/ch-emr/StructureDefinitiontion"
+* meta.profile = "http://fhir.ch/ig/ch-emr/StructureDefinition/ch-emr-bundle"
 * meta.lastUpdated = "2024-09-10T10:00:00+02:00"
 
 * identifier.system = "urn:ietf:rfc:3986"

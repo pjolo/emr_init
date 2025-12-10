@@ -1,4 +1,4 @@
-Profile: ChEmrBundle
+Profile: ChEmrAllergyIntolerance
 Parent: $CHIPSAllergyIntolerance
 Id: ch-emr-allergyintolerance
 Title: "CH Emergency Record AllergyIntolerance"
