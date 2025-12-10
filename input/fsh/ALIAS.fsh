@@ -22,6 +22,8 @@ Alias: $edqm =                          http://standardterms.edqm.eu
 //Alias: $ChCoreMedicationStatement =     http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-medicationstatement
 //Alias: $ChCoreImmunization =            http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-immunization
 //Alias: $ChCoreCompositionEPR =          http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr
+Alias: $ChCoreDocumentReference =         http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-documentreference
+Alias: $ChCoreDocument =                  http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-document
 
 // Swiss specific OIDs  
 Alias: $oid-ahvn13 = urn:oid:2.16.756.5.32

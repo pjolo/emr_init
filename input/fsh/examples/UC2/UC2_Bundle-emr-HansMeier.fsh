@@ -1,5 +1,5 @@
 Instance: UC2-Bundle-emr-HansMeier
-InstanceOf: Bundle
+InstanceOf: ChEmrBundle
 Usage: #example
 Title: "UC2-Bundle-emr-HansMeier"
 Description: "Vollständiges eNotfallpass Bundle für Hans Meier"

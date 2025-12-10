@@ -1,5 +1,5 @@
 Instance: UC1-Bundle-emr-MariaSchmidt
-InstanceOf: Bundle
+InstanceOf: ChEmrBundle
 Usage: #example
 Title: "UC1-Bundle-emr-MariaSchmidt"
 Description: "Complete Emergency Record bundle for Maria Schmidt"

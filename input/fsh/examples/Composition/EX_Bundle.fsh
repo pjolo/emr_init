@@ -1,5 +1,5 @@
 Instance: EX-Bundle
-InstanceOf: Bundle
+InstanceOf: ChEmrBundle
 Usage: #example
 Title: "EX-Bundle"
 Description: "Complete Emergency Record Bundle"

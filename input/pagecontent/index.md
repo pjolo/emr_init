@@ -26,14 +26,18 @@ The emergency report is designed to give medical professionals quick and structu
 
 * **Patient information**: Demographic data and contact information
 * **Emergency contacts**: Family and trusted persons
-* **Medical history**: Diagnoses and problems
-* **Current medication**: Information and dosage of medications
-* **Allergies and intolerances**: Known allergic reactions and intolerances
-* **Implants**: Medical devices
-* **Resuscitation status**: Resuscitation status of the person
-* **Pregnancy**: Current pregnancy information
-* **Risk factors**: Risks relevant to treatment
+* **Care Team**: Treating Health care professional
+* **Resuscitation status**: Patient's wishes regarding resuscitation measures in emergency situations
+* **Current medication**: Information and dosage of medications 
 * **Vaccinations**: Current vaccinations
+* **Allergies and intolerances**: Known allergic reactions and intolerances
+* **Risk factors**: Risks relevant to treatment
+* **Problem list**: Diagnoses and problems
+* **Advance directive**: Information on advance directives or medical directives
+* **Other documents**: Other documents like organ donor cards
+* **Implants**: Medical devices
+* **Pregnancy**: Current pregnancy information
+* **Disability**: Information about disabilities
 
 #### Profiles
 
@@ -41,13 +45,27 @@ The Implementation Guide defines the following main profiles:
 
 | Profil | Beschreibung | Parent |
 |--------|--------------|---------|
+| [ChEmrComposition](https://pjolo.github.io/emr/StructureDefinition-ch-emr-composition.html) | Document composition | CH IPS Composition |
+| [ChEmrBundle](https://pjolo.github.io/emr/StructureDefinition-ch-emr-bundle.html) | Document bundle| CH Core Document |
 | [ChEmrPatient](https://pjolo.github.io/emr/StructureDefinition-ch-emr-patient.html) | Demographic data and contact information | CH IPS Patient |
-| [ChEmrCondition](https://pjolo.github.io/emr/StructureDefinition-ch-emr-condition.html) | Problems and diagnoses | CH IPS Condition |
-| [ChEmrMedicationStatement](https://pjolo.github.io/emr/StructureDefinition-ch-emer-medicationstatement.html) | Current medication | CH IPS MedicationStatement |
-| [ChEmrAllergyIntolerance](https://pjolo.github.io/emr/StructureDefinition-ch-emr-allergyintolerance.html) | Allergies and intolerances | CH IPS AllergyIntolerance |
-| [ChEmrDevice](https://pjolo.github.io/emr/StructureDefinition-ch-emr-device.html) | Implants  | CH IPS Device |
+| [ChEmrRelatedPerson](https://pjolo.github.io/emr/StructureDefinition-ch-emr-relatedperson.html) | Family and trusted persons | CH IPS Patient |
+| [ChEmrPractitioner](https://pjolo.github.io/emr/StructureDefinition-ch-emr-practitioner.html) | Healthcare practitioner information | CH Core Practitioner |
 | [ChEmrObservation](https://pjolo.github.io/emr/StructureDefinition-ch-emr-observation.html) | Various observations | CH Core Observation |
+| [ChEmrMedication](https://pjolo.github.io/emr/StructureDefinition-ch-emr-medication.html) | Medication details | CH IPS Medication |
+| [ChEmrMedicationStatement](https://pjolo.github.io/emr/StructureDefinition-ch-emr-medicationstatement.html) | Current medication | CH IPS MedicationStatement |
+| [ChEmrImmunization](https://pjolo.github.io/emr/StructureDefinition-ch-emr-immunization.html) | Immunization records | CH IPS Immunization |
+| [ChEmrAllergyIntolerance](https://pjolo.github.io/emr/StructureDefinition-ch-emr-allergyintolerance.html) | Allergies and intolerances | CH IPS AllergyIntolerance |
+| [ChEmrCondition](https://pjolo.github.io/emr/StructureDefinition-ch-emr-condition.html) | Problems and diagnoses | CH IPS Condition |
+| [ChEmrDocumentReference](https://pjolo.github.io/emr/StructureDefinition-ch-emr-documentreference.html) | Reference to documents | CH Core DocumentReference |
+| [ChEmrDevice](https://pjolo.github.io/emr/StructureDefinition-ch-emr-device.html) | Implants | CH IPS Device |
 
+
+
+
+
+
+
+ChEmrRelatedPerson
 ### IP Statements
 This document is licensed under Creative Commons "No Rights Reserved" ([CC0](https://creativecommons.org/publicdomain/zero/1.0/)).
 

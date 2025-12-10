@@ -1,5 +1,5 @@
 Profile: ChEmrDevice
 Parent: Device
 Id: ch-emr-device
-Title: "Emergency Record Device"
+Title: "CH Emergency Record Device"
 Description: "Device Profil for implants in the Emergency Record."

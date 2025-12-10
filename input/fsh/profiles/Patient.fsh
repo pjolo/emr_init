@@ -1,5 +1,5 @@
 Profile: ChEmrPatient
 Parent: $CHIPSPatient
 Id: ch-emr-patient
-Title: "Emergency Record Patient"
+Title: "CH Emergency Record Patient"
 Description: "Patient profile for the Emergency Record based on CH IPS Patient."
