@@ -14,13 +14,13 @@ Description: "Gynecologist Dr. Sarah Huber"
 * name.prefix.extension[0].url = "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"
 * name.prefix.extension[0].valueCode = #AC
 
-* telecom.system = #phone
-* telecom.value = "+41 61 265 25 25"
-* telecom.use = #work
+* telecom[phone].system = #phone
+* telecom[phone].value = "+41 61 265 25 25"
+* telecom[phone].use = #work
 
-* telecom[+].system = #email
-* telecom[+].value = "s.huber@gynpraxis-basel.ch"
-* telecom[+].use = #work
+* telecom[email]].system = #email
+* telecom[email].value = "s.huber@gynpraxis-basel.ch"
+* telecom[email].use = #work
 
 * address.line[0] = "Petersgraben 4"
 * address.city = "Basel"
