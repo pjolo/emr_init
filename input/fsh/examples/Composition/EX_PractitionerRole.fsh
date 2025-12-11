@@ -23,13 +23,13 @@ Description: "Dr. Sarah Huber working as gynecologist at Gynäkologie Praxis Bas
 * specialty.text = "Gynäkologie und Geburtshilfe"
 
 // Kontaktdaten (der Praxis)
-* telecom.system = #phone
-* telecom.value = "+41 61 265 25 25"
-* telecom.use = #work
+* telecom[phone].system = #phone
+* telecom[phone].value = "+41 61 265 25 25"
+* telecom[phone].use = #work
 
-* telecom[+].system = #email
-* telecom[+].value = "s.huber@gynpraxis-basel.ch"
-* telecom[+].use = #work
+* telecom[email].system = #email
+* telecom[email].value = "s.huber@gynpraxis-basel.ch"
+* telecom[email].use = #work
 
 // Verfügbarkeit (optional)
 * availableTime[0].daysOfWeek[0] = #mon
