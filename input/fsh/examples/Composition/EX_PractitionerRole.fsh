@@ -11,7 +11,7 @@ Description: "Dr. Sarah Huber working as gynecologist at Gynäkologie Praxis Bas
 * practitioner.display = "Dr. med. Sarah Huber"
 
 // Verbindung zur Organisation
-* organization = Reference(Organization/EX-Organization-GynPraxis-Basel)
+* organization = Reference(Organization/EX-Organization-GynPraxis)
 * organization.display = "Gynäkologie Praxis Basel"
 
 // Rolle
