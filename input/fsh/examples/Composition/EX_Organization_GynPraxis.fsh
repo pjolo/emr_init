@@ -9,9 +9,9 @@ Description: "Gynecology practice in Basel"
 
 * name = "Gynäkologie Praxis Basel"
 
-* telecom[0].system = #phone
-* telecom[0].value = "+41 61 265 25 25"
-* telecom[0].use = #work
+* telecom.system = #phone
+* telecom.value = "+41 61 265 25 25"
+* telecom.use = #work
 
 * telecom[+].system = #email
 * telecom[+].value = "info@gynpraxis-basel.ch"
