@@ -10,32 +10,26 @@ Description: "Dr. Müller's family practice"
 
 * active = true
 
-* name = "Hausarztpraxis Dr. med. Hans Müller"
-* alias = "Praxis Dr. Müller"
+* name = "Hausarztpraxis Zürich"
 
 * telecom[0].system = #phone
-* telecom[0].value = "+41 44 555 12 34"
-* telecom[0].use = #work
+* telecom[=].value = "+41 44 555 12 34"
+* telecom[=].use = #work
 
-* telecom[1].system = #fax
-* telecom[1].value = "+41 44 555 12 35"
-* telecom[1].use = #work
+* telecom[+].system = #email
+* telecom[=].value = "info@praxis-zuerich.ch"
+* telecom[=].use = #work
 
-* telecom[2].system = #email
-* telecom[2].value = "info@praxis-zuerich.ch"
-* telecom[2].use = #work
+* telecom[+].system = #url
+* telecom[=].value = "https://www.praxis-zuerich.ch"
+* telecom[=].use = #work
 
-* telecom[3].system = #url
-* telecom[3].value = "https://www.praxis-zuerich.ch"
-* telecom[3].use = #work
-
-* address.use = #work
-* address.type = #both
-* address.line = "Bahnhofstrasse 15"
+* address.line[0] = "Hausarztpraxis Zürich"
+* address.line[+] = "Bahnhofstrasse 15"
 * address.city = "Zürich"
-* address.state = "ZH"
 * address.postalCode = "8001"
 * address.country = "CH"
 
-
+* type = $sct#394802001 "General medicine"
+* type.text = "Allgemeine Innere Medizin"
 

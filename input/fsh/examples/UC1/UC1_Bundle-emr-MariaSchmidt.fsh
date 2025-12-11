@@ -36,6 +36,9 @@ Description: "Complete Emergency Record bundle for Maria Schmidt"
 * entry[+].fullUrl = "http://fhir.ch/ig/emr/Organization/UC1-Organization-Hausarztpraxis-DrMueller"
 * entry[=].resource = UC1-Organization-Hausarztpraxis-DrMueller
 
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Practitioner/UC1-PractitionerRole"
+* entry[=].resource = UC1-PractitionerRole
+
 // Resuscitation
 
 // Medication

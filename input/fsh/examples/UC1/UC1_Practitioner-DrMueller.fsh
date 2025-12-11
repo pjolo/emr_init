@@ -16,13 +16,13 @@ Description: "Family doctor of Maria Schmidt"
 * name.prefix = "Dr. med."
 
 // Telecom
-* telecom[0].system = #phone
-* telecom[0].value = "+41 44 555 12 34"
-* telecom[0].use = #work
+* telecom[phone].system = #phone
+* telecom[phone].value = "+41 44 555 12 34"
+* telecom[phone].use = #work
 
-* telecom[1].system = #email
-* telecom[1].value = "h.mueller@praxis-zuerich.ch"
-* telecom[1].use = #work
+* telecom[email].system = #email
+* telecom[email].value = "h.mueller@praxis-zuerich.ch"
+* telecom[email].use = #work
 
 // Address
 * address.line = "Bahnhofstrasse 15"
