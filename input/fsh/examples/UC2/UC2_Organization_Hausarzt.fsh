@@ -1,7 +1,7 @@
-Instance: UC2-Organization-Hausarztpraxis
+Instance: UC2-Organization-Hausarzt
 InstanceOf: ChEmrOrganisation
 Usage: #example
-Title: "UC2-Organization-Hausarztpraxis
+Title: "UC2-Organization-Hausarzt
 Description: "Family practice Dr. Müller"
 
 * identifier[BER].system = "urn:oid:2.16.756.5.45"
