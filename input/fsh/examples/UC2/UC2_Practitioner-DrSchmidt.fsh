@@ -16,13 +16,13 @@ Description: "Cardiologist for Hans Meier"
 * name.prefix = "Dr. med."
 
 // Telecom
-* telecom.system = #phone
-* telecom.value = "+41 44 555 67 89"
-* telecom.use = #work
+* telecom[phone].system = #phone
+* telecom[phone].value = "+41 44 555 67 89"
+* telecom[phone].use = #work
 
-* telecom[1].system = #email
-* telecom[1].value = "s.schmidt@kardiologie-zuerich.ch"
-* telecom[1].use = #work
+* telecom[email].system = #email
+* telecom[email].value = "s.schmidt@kardiologie-zuerich.ch"
+* telecom[email].use = #work
 
 // Address
 * address.line = "Universitätsspital Zürich, Kardiologie"

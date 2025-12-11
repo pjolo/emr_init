@@ -1,28 +1,23 @@
-Instance: UC1-PractitionerRole
-InstanceOf: $CHIPSPractitionerRole
+Instance: UC2-PractitionerRole-Hausarzt
+InstanceOf: ChEmrPractitionerRole
 Usage: #example
-Title: "UC1-PractitionerRole"
-Description: "Dr. Hans Müller working as family doctor at Hausarztpraxis Zürich"
+Title: "UC2-PractitionerRole-Hausarzt"
+Description: "Dr. Hans Müller working as family doctor at his practice in Bern"
 
 * active = true
 
-// Verbindung zur Person
-* practitioner = Reference(Practitioner/UC1-Practitioner-DrMueller)
+* practitioner = Reference(Practitioner/UC2-Practitioner-DrMueller)
 * practitioner.display = "Dr. med. Hans Müller"
 
-// Verbindung zur Organisation
-* organization = Reference(Organization/UC1-Organization-HausarztpraxisZuerich)
-* organization.display = "Hausarztpraxis Zürich"
+* organization = Reference(Organization/UC2-Organization-Hausarzt)
+* organization.display = "Hausarztpraxis Dr. Müller, Zürich"
 
-// Rolle
 * code = $sct#309343006 "Physician"
 * code.text = "Arzt"
 
-// Fachrichtung
 * specialty = $sct#419772000 "Family practice"
 * specialty.text = "Allgemeine Innere Medizin"
 
-// Kontaktdaten (der Praxis)
 * telecom[0].system = #phone
 * telecom[=].value = "+41 44 555 12 34"
 * telecom[=].use = #work
@@ -31,7 +26,6 @@ Description: "Dr. Hans Müller working as family doctor at Hausarztpraxis Züric
 * telecom[=].value = "h.mueller@praxis-zuerich.ch"
 * telecom[=].use = #work
 
-// Verfügbarkeit
 * availableTime[0].daysOfWeek[0] = #mon
 * availableTime[=].daysOfWeek[+] = #tue
 * availableTime[=].daysOfWeek[+] = #wed
@@ -44,8 +38,8 @@ Description: "Dr. Hans Müller working as family doctor at Hausarztpraxis Züric
 * availableTime[=].daysOfWeek[+] = #tue
 * availableTime[=].daysOfWeek[+] = #wed
 * availableTime[=].daysOfWeek[+] = #thu
+* availableTime[=].availableStartTime = "13:30:00"
 * availableTime[=].availableEndTime = "17:00:00"
 
-// Notizen
 * extension[0].url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole-note"
 * extension[0].valueString = "Hausarzt mit langjähriger Erfahrung in Allgemeinmedizin und Präventivmedizin"
