@@ -1,10 +1,9 @@
 Instance: EX-Practitioner
-InstanceOf: ChEmrPractitioner
+InstanceOf: $CHIPSPractitioner
 Usage: #example
-Title: "EX-Practitioner"
-Description: "General example of a Practitioner"
+Title: "EX - Practitioner Dr. Sarah Huber"
+Description: "Gynecologist Dr. Sarah Huber"
 
-* language = #de-CH
 * identifier[GLN].system = "urn:oid:2.51.1.3"
 * identifier[GLN].value = "7601007922000"
 
@@ -12,21 +11,25 @@ Description: "General example of a Practitioner"
 * name.family = "Huber"
 * name.given = "Sarah"
 * name.prefix = "Dr. med."
+* name.prefix.extension[0].url = "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"
+* name.prefix.extension[0].valueCode = #AC
 
 * telecom[0].system = #phone
 * telecom[0].value = "+41 61 265 25 25"
 * telecom[0].use = #work
 
-* telecom[1].system = #email
-* telecom[1].value = "s.huber@gynpraxis-basel.ch"
-* telecom[1].use = #work
+* telecom[+].system = #email
+* telecom[+].value = "s.huber@gynpraxis-basel.ch"
+* telecom[+].use = #work
 
-* address.line = "Gynäkologie Praxis Basel"
-* address.line[1] = "Petersgraben 4"
+* address.line[0] = "Petersgraben 4"
 * address.city = "Basel"
 * address.postalCode = "4051"
 * address.country = "CH"
 
+* gender = #female
+
 * qualification[0].code = $sct#394586005 "Gynecology"
+* qualification[0].code.text = "Gynäkologie und Geburtshilfe"
 * qualification[0].period.start = "2005-01-01"
-* qualification[0].issuer.display = "Schweizerische Gesellschaft für Gynäkologie und Geburtshilfe"
+* qualification[0].issuer.display = "Schweizerische Gesellschaft für Gynäkologie und Geburtshilfe (SGGG)"

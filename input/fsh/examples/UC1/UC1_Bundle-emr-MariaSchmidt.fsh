@@ -26,6 +26,9 @@ Description: "Complete Emergency Record bundle for Maria Schmidt"
 * entry[+].fullUrl = "http://fhir.ch/ig/emr/RelatedPerson/UC1-RelatedPerson-PeterSchmidt"
 * entry[=].resource = UC1-RelatedPerson-PeterSchmidt
 
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/RelatedPerson/UC1-RelatedPerson-AnnaMueller"
+* entry[=].resource = UC1-RelatedPerson-AnnaMueller
+
 // Care Team
 * entry[+].fullUrl = "http://fhir.ch/ig/emr/Practitioner/UC1-Practitioner-DrMueller"
 * entry[=].resource = UC1-Practitioner-DrMueller

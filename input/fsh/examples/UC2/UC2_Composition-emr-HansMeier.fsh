@@ -38,7 +38,7 @@ Description: "Composition für den eNotfallpass von Hans Meier"
 * section[sectionCareTeam].entry[practitioner][0] = Reference(UC2-Practitioner-DrMueller)
 * section[sectionCareTeam].entry[practitioner][+] = Reference(UC2-Practitioner-DrSchmidt)
 
-// Resuscitation section KONTROLLIEREN
+// Resuscitation section
 //* section[sectionResuscitation].title = "Reanimationsstatus"
 //* section[sectionResuscitation].code = $loinc#100822-6 "Cardiopulmonary resuscitation orders"
 //* section[sectionResuscitation].text.status = #generated

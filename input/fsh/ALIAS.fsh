@@ -33,6 +33,8 @@ Alias: $oid-gln = urn:oid:2.51.1.3
 // CH IPS Profiles
 Alias: $CHIPSPatient = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-patient
 Alias: $CHIPSPractitioner = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-practitioner
+Alias: $CHIPSPractitionerRole = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-practitionerrole
+Alias: $CHIPSOrganization = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-organization
 Alias: $CHIPSCondition = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-condition
 Alias: $CHIPSMedication = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-medication
 Alias: $CHIPSMedicationStatement = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-medicationstatement

@@ -14,7 +14,6 @@ Description: "Annual influenza vaccination for Hans Meier"
 * lotNumber = "FLU2024-CH-001"
 
 * reasonCode = $sct#195967001 "Asthma"
-* reasonReference = Reference(Condition/UC2-Condition-Vorhofflimmern)
 
 * protocolApplied.targetDisease = $sct#6142004 "Influenza"
 * protocolApplied.doseNumberPositiveInt = 1
