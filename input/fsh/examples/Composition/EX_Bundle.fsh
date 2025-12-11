@@ -25,6 +25,7 @@ Description: "Complete Emergency Record Bundle"
 * entry[+].fullUrl = "http://fhir.ch/ig/emr/RelatedPerson/EX-RelatedPerson"
 * entry[=].resource = EX-RelatedPerson
 
+
 // Care Team
 * entry[+].fullUrl = "http://fhir.ch/ig/emr/Practitioner/EX-Practitioner"
 * entry[=].resource = EX-Practitioner
