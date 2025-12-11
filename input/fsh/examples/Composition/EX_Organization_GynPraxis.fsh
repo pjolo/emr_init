@@ -10,16 +10,16 @@ Description: "Gynecology practice in Basel"
 * name = "Gynäkologie Praxis Basel"
 
 * telecom[0].system = #phone
-* telecom[0].value = "+41 61 265 25 25"
-* telecom[0].use = #work
+* telecom[=].value = "+41 61 265 25 25"
+* telecom[=].use = #work
 
 * telecom[+].system = #email
-* telecom[+].value = "info@gynpraxis-basel.ch"
-* telecom[+].use = #work
+* telecom[=].value = "info@gynpraxis-basel.ch"
+* telecom[=].use = #work
 
 * telecom[+].system = #url
-* telecom[+].value = "https://www.gynpraxis-basel.ch"
-* telecom[+].use = #work
+* telecom[=].value = "https://www.gynpraxis-basel.ch"
+* telecom[=].use = #work
 
 * address.line[0] = "Gynäkologie Praxis Basel"
 * address.line[+] = "Petersgraben 4"
