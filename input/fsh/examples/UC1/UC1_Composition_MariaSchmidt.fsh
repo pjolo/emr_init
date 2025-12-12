@@ -35,7 +35,7 @@ Description: "Composition for the Emergency Record by Maria Schmidt"
 * section[sectionCareTeam].code = $loinc#85847-2 "Patient Care team information"
 * section[sectionCareTeam].text.status = #generated
 * section[sectionCareTeam].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Behandelnde Ärzte:</p><ul><li>Dr. med. Hans Müller - Hausarzt (GLN: 7601000234567)</li></ul></div>"
-* section[sectionCareTeam].entry[practitioner][0] = Reference(UC1-Practitioner)
+* section[sectionCareTeam].entry[practitionerRole][0] = Reference(UC1-PractitionerRole)
 
 // Resuscitation section
 * section[sectionResuscitation].title = "Reanimation"
