@@ -19,7 +19,7 @@ Description: "Composition for the emergency record for Laura Weber"
 * subject = Reference(UC3-Patient-LauraWeber)
 * date = "2025-09-10T15:00:00+02:00"
 
-* author = Reference(UC3-Practitioner)
+* author = Reference(UC3-PractitionerRole-Hausarzt)
 * title = "Elektronischer Notfallpass - Laura Weber (Schwangerschaft)"
 
 // Related person section
@@ -32,7 +32,7 @@ Description: "Composition for the emergency record for Laura Weber"
 * section[sectionCareTeam].title = "Behandlungsteam"
 * section[sectionCareTeam].text.status = #generated
 * section[sectionCareTeam].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Behandelnde Ärzte:</strong></p><ul><li><strong>Dr. med. Maria Semmelbruch</strong> - Gynäkologin<br/>Frauenklinik Kantonsspital<br/>GLN: 7601000789012<br/>Telefon: +41 44 345 67 89</li><li><strong>Dr. med. Hans Müller</strong> - Hausarzt<br/>Hausarztpraxis<br/>GLN: 7601000234567<br/>Telefon: +41 44 234 56 78</li></ul><p><strong>Hebamme:</strong> Anna Keller, Telefon: +41 79 234 56 78</p></div>"
-* section[sectionCareTeam].entry[practitioner][0] = Reference(UC3-Practitioner)
+* section[sectionCareTeam].entry[practitioner][0] = Reference(UC3-Practitioner-Hausarzt)
 
 
 * section[sectionCareTeam].entry[practitioner][+] = Reference(UC3-Practitioner-DrSemmelbruch)

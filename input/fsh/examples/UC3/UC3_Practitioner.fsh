@@ -1,7 +1,7 @@
-Instance: UC3-Practitioner
+Instance: UC3-Practitioner-Hausarzt
 InstanceOf: ChEmrPractitioner
 Usage: #example
-Title: "UC3-Practitioner"
+Title: "UC3-Practitioner-Hausarzt"
 Description: "Laura Weber's family doctor"
 
 // Identifier
