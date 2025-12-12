@@ -1,7 +1,7 @@
-Instance: UC1-Organization-Hausarztpraxis-DrMueller
+Instance: UC1-Organization-Hausarztpraxis
 InstanceOf: Organization
 Usage: #example
-Title: "UC1-Organization-Hausarztpraxis-DrMueller"
+Title: "UC1-Organization-Hausarztpraxis"
 Description: "Dr. Müller's family practice"
 
 * identifier.system = $oid-gln

@@ -11,7 +11,7 @@ Description: "Dr. Hans Müller working as family doctor at Hausarztpraxis Züric
 * practitioner.display = "Dr. med. Hans Müller"
 
 // Verbindung zur Organisation
-* organization = Reference(Organization/UC1-Organization-HausarztpraxisZuerich)
+* organization = Reference(Organization/UC1-Organization-Hausarztpraxis)
 * organization.display = "Hausarztpraxis Zürich"
 
 // Rolle
@@ -31,21 +31,3 @@ Description: "Dr. Hans Müller working as family doctor at Hausarztpraxis Züric
 * telecom[=].value = "h.mueller@praxis-zuerich.ch"
 * telecom[=].use = #work
 
-// Verfügbarkeit
-* availableTime[0].daysOfWeek[0] = #mon
-* availableTime[=].daysOfWeek[+] = #tue
-* availableTime[=].daysOfWeek[+] = #wed
-* availableTime[=].daysOfWeek[+] = #thu
-* availableTime[=].daysOfWeek[+] = #fri
-* availableTime[=].availableStartTime = "08:00:00"
-* availableTime[=].availableEndTime = "12:00:00"
-
-* availableTime[+].daysOfWeek[0] = #mon
-* availableTime[=].daysOfWeek[+] = #tue
-* availableTime[=].daysOfWeek[+] = #wed
-* availableTime[=].daysOfWeek[+] = #thu
-* availableTime[=].availableEndTime = "17:00:00"
-
-// Notizen
-* extension[0].url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole-note"
-* extension[0].valueString = "Hausarzt mit langjähriger Erfahrung in Allgemeinmedizin und Präventivmedizin"
