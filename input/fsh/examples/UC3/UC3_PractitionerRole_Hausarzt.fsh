@@ -5,7 +5,7 @@ Title: "UC3-PractitionerRole-Hausarzt"
 Description: "Dr. Müller's role as family doctor at Hausarztpraxis Basel"
 
 * practitioner = Reference(UC3-Practitioner-Hausarzt)
-* organization = Reference(UC3-Organization-Hausarzt)
+* organization = Reference(Organization/UC3-Organization-Hausarzt)
 
 * code = $sct#59058001 "General physician"
 
