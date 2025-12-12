@@ -9,5 +9,5 @@ Description: "Advance directive for Laura Weber"
 * subject = Reference(UC3-Patient-LauraWeber)
 * effectiveDateTime = "2025-10-08"
 * valueBoolean = true
-* performer = Reference(UC3-Practitioner)
+* performer = Reference(UC3-PractitionerRole-Hausarzt)
 
