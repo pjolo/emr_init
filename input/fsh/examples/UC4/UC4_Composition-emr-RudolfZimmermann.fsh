@@ -19,11 +19,8 @@ Description: "Composition for Rudolf Zimmermann's emergency record"
 * subject = Reference(UC4-Patient-RudolfZimmermann)
 * date = "2025-09-10T16:00:00+02:00"
 
-* author = Reference(UC4-Practitioner-DrWeber)
+* author = Reference(UC4-PractitionerRole-Hausarzt)
 * title = "Elektronischer Notfallpass - Rudolf Zimmermann (Multimorbidität)"
-
-
-* custodian = Reference(UC4-Organization-Hausarztpraxis-DrWeber)
 
 // RelatedPerson section
 * section[sectionEmergencyContacts].title = "Notfallkontakte"
