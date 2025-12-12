@@ -57,7 +57,7 @@ Description: "Composition for the emergency record for Laura Weber"
 // Allergies section
 * section[sectionAllergies].title = "Allergien und Unverträglichkeiten"
 * section[sectionAllergies].text.status = #generated
-* section[sectionAllergies].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>WICHTIGE ALLERGIE:<ul><li><strong>Jodhaltige Kontrastmittel</strong></li><li><strong>Reaktion:</strong> Hautausschlag, Juckreiz, leichte Atembeschwerden</li><li><strong>Schweregrad:</strong> Moderat</li><li><strong>Erstmals aufgetreten:</strong> 2022</li></ul></div>"
+* section[sectionAllergies].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>WICHTIGE ALLERGIE:</p><ul><li><strong>Jodhaltige Kontrastmittel</strong></li><li><strong>Reaktion:</strong> Hautausschlag, Juckreiz, leichte Atembeschwerden</li><li><strong>Schweregrad:</strong> Moderat</li><li><strong>Erstmals aufgetreten:</strong> 2022</li></ul></div>"
 * section[sectionAllergies].entry[allergyOrIntolerance][0] = Reference(UC3-AllergyIntolerance-Contrast)
 
 // Risk factor section
