@@ -32,7 +32,7 @@ Description: "Complete emergency record bundle for Rudolf Zimmermann"
 * entry[+].fullUrl = "http://fhir.ch/ig/emr/Organization/UC4-Organization-Hausarzt"
 * entry[=].resource = UC4-Organization-Hausarzt
 
-* entry[+].fullUrl = "http://fhir.ch/ig/emr/Organization/UC4-PractitionerRole-Hausarzt"
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/PractitionerRole/UC4-PractitionerRole-Hausarzt"
 * entry[=].resource = UC4-PractitionerRole-Hausarzt
 
 // Resuscitation
