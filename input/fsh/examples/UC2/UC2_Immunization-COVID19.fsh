@@ -13,7 +13,5 @@ Description: "Current COVID-19 XBB.1.5 booster with Spikevax"
 
 * lotNumber = "SPX24XBB002"
 
-* reasonReference = Reference(Condition/UC2-Condition-Vorhofflimmern)
-
 * protocolApplied.targetDisease = $sct#840539006 "Disease caused by severe acute respiratory syndrome coronavirus 2"
 * protocolApplied.doseNumberPositiveInt = 6

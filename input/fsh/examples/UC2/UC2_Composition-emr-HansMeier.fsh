@@ -22,8 +22,6 @@ Description: "Composition für den eNotfallpass von Hans Meier"
 * author = Reference(UC2-PractitionerRole-Hausarzt)
 * title = "Elektronischer Notfallpass - Hans Meier"
 
-* custodian = Reference(UC2-Organization-Kardiologie-Bern)
-
 // Related person section
 * section[sectionEmergencyContacts].title = "Notfallkontakte"
 * section[sectionEmergencyContacts].text.status = #generated
