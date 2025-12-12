@@ -1,4 +1,4 @@
-Profile: ChEmrOrganisation
+Profile: ChEmrOrganization
 Parent: $CHIPSOrganization
 Id: ch-emr-organization
 Title: "CH Emergency Record Organization"
