@@ -25,14 +25,14 @@ Description: "General composition for the Emergency Record"
 * section[sectionEmergencyContacts].title = "Notfallkontakte"
 * section[sectionEmergencyContacts].code = $loinc#56864-2 "Emergency contact"
 * section[sectionEmergencyContacts].text.status = #generated
-* section[sectionEmergencyContacts].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Notfallkontakt: Elisabeth Meier (Ehefrau) +41 31 456 78 90</p></div>"
+* section[sectionEmergencyContacts].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Notfallkontakt: Peter Schmidt (Ehemann) +41 44 321 65 87</p></div>"
 * section[sectionEmergencyContacts].entry[relatedPerson][0] = Reference(EX-RelatedPerson)
 
 // Care Team section
 * section[sectionCareTeam].title = "Behandelnde Gesundheitsfachperson"
 * section[sectionCareTeam].code = $loinc#85847-2 "Patient Care team information"
 * section[sectionCareTeam].text.status = #generated
-* section[sectionCareTeam].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Behandelnde Ärzte:</p><ul><li>Dr. med. Hans Müller - Hausarzt (GLN: 7601000234567)</li></ul></div>"
+* section[sectionCareTeam].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Behandelnde Ärzte:</p><ul><li>Dr. med. SarahHuber - Gynecologist (GLN: 7601007922000)</li></ul></div>"
 * section[sectionCareTeam].entry[practitioner][0] = Reference(EX-Practitioner)
 
 // Resuscitation section

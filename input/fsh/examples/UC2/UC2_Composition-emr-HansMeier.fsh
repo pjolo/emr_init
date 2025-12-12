@@ -47,7 +47,7 @@ Description: "Composition für den eNotfallpass von Hans Meier"
 * section[sectionMedications].title = "Aktuelle Medikation"
 * section[sectionMedications].code = $loinc#10160-0 "History of Medication use Narrative"
 * section[sectionMedications].text.status = #generated
-* section[sectionMedications].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Aktuelle Medikation:</strong></p><ul><li><strong>MARCUMAR 3 mg</strong> - 1x täglich abends (antikoagulativ)</li><li><strong>Wichtig:</strong> INR-Zielbereich 2.0-3.0</li><li><strong>Bei Operationen:</strong> Bridging mit Heparin erforderlich!</li><li>Letzte INR-Kontrolle: 05.09.2025 (INR 2.4)</li></ul></div>"
+* section[sectionMedications].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Aktuelle Medikation:</strong></p><ul><li><strong>MARCUMAR 3 mg</strong> - 1x täglich abends (antikoagulativ)</li></ul></div>"
 * section[sectionMedications].entry[medicationStatementOrRequest][0] = Reference(UC2-MedicationStatement-Marcumar)
 
 // Immunization section
@@ -75,7 +75,7 @@ Description: "Composition für den eNotfallpass von Hans Meier"
 * section[sectionProblems].title = "Probleme und Diagnosen"
 * section[sectionProblems].code = $loinc#11450-4 "Problem list - Reported"
 * section[sectionProblems].text.status = #generated
-* section[sectionProblems].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Aktive Diagnosen:</strong></p><ul><li><strong>Persistierendes Vorhofflimmern</strong> (seit 15.01.2020)</li><li>Antikoagulation mit Marcumar</li><li>Herzschrittmacher-Implantation 15.03.2020</li><li>Stabile Herzinsuffizienz NYHA II</li></ul></div>"
+* section[sectionProblems].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Aktive Diagnosen:</strong></p><ul><li>Persistierendes Vorhofflimmern (seit 15.01.2020)</li><li>Antikoagulation mit Marcumar</li><li>Herzschrittmacher-Implantation 15.03.2020</li><li>Stabile Herzinsuffizienz NYHA II</li></ul></div>"
 * section[sectionProblems].entry[problem][0] = Reference(UC2-Condition-AtrialFibrillation)
 
 // Advance directive and emergency medical directive section
@@ -86,7 +86,7 @@ Description: "Composition für den eNotfallpass von Hans Meier"
 * section[sectionMedicalDevices].title = "Implantate"
 * section[sectionMedicalDevices].code = $loinc#46264-8 "History of medical device use"
 * section[sectionMedicalDevices].text.status = #generated
-* section[sectionMedicalDevices].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Implantate:</p><ul><li><strong>MRT-SICHER:</strong> Herzschrittmacher Boston Scientific Accolade MRI (Modell L331)</li><li>Seriennummer: PM987654321</li><li>Implantiert: 15.03.2020</li><li>Letzte Kontrolle: 01.09.2025</li></ul></div>"
+* section[sectionMedicalDevices].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Implantate:</p><ul><li>Herzschrittmacher Boston Scientific Accolade MRI (Modell L331)</li><li>Seriennummer: PM987654321</li><li>Implantiert: 15.03.2020</li></ul></div>"
 * section[sectionMedicalDevices].entry[deviceStatement][0] = Reference(UC2-DeviceUseStatement)
 
 // Pregnancy section

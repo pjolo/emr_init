@@ -4,10 +4,10 @@ This exchange format is defined as a document type that corresponds to a Bundle 
 
 ### Bundle structure
 
-[eNotfallpass Bundle](https://pjolo.github.io/emr/StructureDefinition-notfallpass-composition.html) definition for the FHIR representation of the emergency record in Switzerland.
+[Emergency Record Bundle](https://pjolo.github.io/emr/StructureDefinition-ch-emr-bundle.html) definition for the FHIR representation of the emergency record in Switzerland.
 
 ### Composition 
-[Composition](https://pjolo.github.io/emr/StructureDefinition-notfallpass-composition.html) 
+[Composition](https://pjolo.github.io/emr/StructureDefinition-ch-emr-composition.html) 
 
 ### Example bundle
 

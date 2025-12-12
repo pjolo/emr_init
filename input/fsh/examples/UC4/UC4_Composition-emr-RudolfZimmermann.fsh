@@ -25,7 +25,7 @@ Description: "Composition for Rudolf Zimmermann's emergency record"
 // RelatedPerson section
 * section[sectionEmergencyContacts].title = "Notfallkontakte"
 * section[sectionEmergencyContacts].text.status = #generated
-* section[sectionEmergencyContacts].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Notfallkontakt: Elisabeth Meier (Ehefrau) +41 31 456 78 90</p></div>"
+* section[sectionEmergencyContacts].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Notfallkontakt: Elisabeth Zimmermann (Tochter) +41 31 456 78 90</p></div>"
 * section[sectionEmergencyContacts].entry[relatedPerson][0] = Reference(UC4-RelatedPerson-ElisabethZimmermann)
 
 // Care Team section
@@ -42,7 +42,7 @@ Description: "Composition for Rudolf Zimmermann's emergency record"
 * section[sectionMedications].title = "Aktuelle Medikation"
 * section[sectionMedications].code = $loinc#10160-0 "History of Medication use Narrative"
 * section[sectionMedications].text.status = #generated
-* section[sectionMedications].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Aktuelle Medikation:</strong></p><ul><li>Ramipril 5mg morgens (Herzinsuffizienz)</li><li>Metoprolol 50mg 2x täglich (Beta-Blocker)</li><li>Furosemid 40mg morgens (Diuretikum) - DOSISANPASSUNG!</li></ul><p><strong>GESTOPPT:</strong></p><ul><li>Metformin 1000mg 2x täglich - KONTRAINDIZIERT bei Niereninsuffizienz!</li></ul></div>"
+* section[sectionMedications].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Aktuelle Medikation:</strong></p><ul><li>Ramipril 5mg morgens (Herzinsuffizienz)</li><li>Metoprolol 50mg 2x täglich (Beta-Blocker)</li><li>Furosemid 40mg morgens (Diuretikum)</li></ul></div>"
 * section[sectionMedications].entry[medicationStatementOrRequest][0] = Reference(UC4-MedicationStatement-Ramipril)
 * section[sectionMedications].entry[medicationStatementOrRequest][+] = Reference(UC4-MedicationStatement-Metoprolol)
 * section[sectionMedications].entry[medicationStatementOrRequest][+] = Reference(UC4-MedicationStatement-Furosemid)
@@ -63,7 +63,7 @@ Description: "Composition for Rudolf Zimmermann's emergency record"
 * section[sectionProblems].title = "Probleme und Diagnosen"
 * section[sectionProblems].code = $loinc#11450-4 "Problem list - Reported"
 * section[sectionProblems].text.status = #generated
-* section[sectionProblems].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Aktive Probleme (Multimorbidität):</strong></p><ul><li>Chronische Herzinsuffizienz NYHA III (seit 2018)</li><li>Permanentes Vorhofflimmern (seit 2019)</li><li>Chronische Niereninsuffizienz Stadium 3b (seit 2020) - VERSCHLECHTERT!</li><li>Diabetes mellitus Typ 2 mit Nephropathie (seit 2010)</li></ul></div>"
+* section[sectionProblems].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Aktive Probleme (Multimorbidität):</strong></p><ul><li>Chronische Herzinsuffizienz NYHA III (seit 2018)</li><li>Permanentes Vorhofflimmern (seit 2019)</li><li>Chronische Niereninsuffizienz Stadium 3b (seit 2020)</li><li>Diabetes mellitus Typ 2 mit Nephropathie (seit 2010)</li></ul></div>"
 * section[sectionProblems].entry[problem][0] = Reference(UC4-Condition-HeartFailure)
 * section[sectionProblems].entry[problem][+] = Reference(UC4-Condition-AtrialFibrillation)
 * section[sectionProblems].entry[problem][+] = Reference(UC4-Condition-ChronicKidneyDisease)
@@ -72,7 +72,7 @@ Description: "Composition for Rudolf Zimmermann's emergency record"
 // Advance directive and emergency medical directive section
 * section[sectionAdvanceDirectives].title = "Patientenverfügung"
 * section[sectionAdvanceDirectives].text.status = #generated
-* section[sectionAdvanceDirectives].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Patientenverfügung</strong></p><p>Rudolf Zimmermann</p></div>"
+* section[sectionAdvanceDirectives].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Patientenverfügung vorhanden</p></div>"
 * section[sectionAdvanceDirectives].entry[advanceDirective][0] = Reference(UC4-DocumentReference)
 
 // Document references section
@@ -81,7 +81,7 @@ Description: "Composition for Rudolf Zimmermann's emergency record"
 * section[sectionMedicalDevices].title = "Medizinische Geräte"
 * section[sectionMedicalDevices].code = $loinc#46264-8 "History of medical device use"
 * section[sectionMedicalDevices].text.status = #generated
-* section[sectionMedicalDevices].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Implantate:</p><ul><li>Hüftgelenk-Totalendoprothese links (2018)</li><li>Hersteller: Zimmer Biomet Taperloc</li><li>MRT: bedingt möglich (Metallartefakte)</li></ul></div>"
+* section[sectionMedicalDevices].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Implantate:</p><ul><li>Hüftgelenk-Totalendoprothese links (2018)</li><li>Hersteller: Zimmer Biomet Taperloc</li></ul></div>"
 * section[sectionMedicalDevices].entry[deviceStatement][0] = Reference(UC4-DeviceUseStatement)
 
 // Pregnancy section
