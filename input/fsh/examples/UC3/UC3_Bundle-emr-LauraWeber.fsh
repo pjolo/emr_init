@@ -21,10 +21,10 @@ Description: "Complete Emergency Record bundle for Laura Weber"
 * entry[+].fullUrl = "http://fhir.ch/ig/emr/Patient/UC3-Patient-LauraWeber"
 * entry[=].resource = UC3-Patient-LauraWeber
 
-* entry[+].fullUrl = "http://fhir.ch/ig/emr/Practitioner/UC3-Practitioner"
-* entry[=].resource = UC3-Practitioner
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Practitioner/UC3-Practitioner-Hausarzt"
+* entry[=].resource = UC3-Practitioner-Hausarzt
 
-* entry[+].fullUrl = "http://fhir.ch/ig/emr/Organization/UC3-UC3-Organization-Hausarzt"
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Organization/UC3-Organization-Hausarzt"
 * entry[=].resource = UC3-Organization-Hausarzt
 
 * entry[+].fullUrl = "http://fhir.ch/ig/emr/PractitionerRole/UC3-PractitionerRole-Hausarzt"
