@@ -1,5 +1,5 @@
 Instance: UC3-Organization-Hausarzt
-InstanceOf: ChEmrOrganization
+InstanceOf: ChEmrOrganisation
 Usage: #example
 Title: "UC3-Organization-Hausarzt"
 Description: "Family practice in Basel where Dr. Müller works"
