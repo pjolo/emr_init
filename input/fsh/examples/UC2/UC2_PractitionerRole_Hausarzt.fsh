@@ -26,20 +26,3 @@ Description: "Dr. Hans Müller working as family doctor at his practice in Bern"
 * telecom[=].value = "h.mueller@praxis-zuerich.ch"
 * telecom[=].use = #work
 
-* availableTime[0].daysOfWeek[0] = #mon
-* availableTime[=].daysOfWeek[+] = #tue
-* availableTime[=].daysOfWeek[+] = #wed
-* availableTime[=].daysOfWeek[+] = #thu
-* availableTime[=].daysOfWeek[+] = #fri
-* availableTime[=].availableStartTime = "08:00:00"
-* availableTime[=].availableEndTime = "12:00:00"
-
-* availableTime[+].daysOfWeek[0] = #mon
-* availableTime[=].daysOfWeek[+] = #tue
-* availableTime[=].daysOfWeek[+] = #wed
-* availableTime[=].daysOfWeek[+] = #thu
-* availableTime[=].availableStartTime = "13:30:00"
-* availableTime[=].availableEndTime = "17:00:00"
-
-* extension[0].url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole-note"
-* extension[0].valueString = "Hausarzt mit langjähriger Erfahrung in Allgemeinmedizin und Präventivmedizin"

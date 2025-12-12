@@ -35,7 +35,7 @@ Description: "Vollständiges eNotfallpass Bundle für Hans Meier"
 * entry[+].fullUrl = "http://fhir.ch/ig/emr/Organization/UC2-Organization-Hausarzt"
 * entry[=].resource = UC2-Organization-Hausarzt
 
-* entry[+].fullUrl = "http://fhir.ch/ig/emr/Organization/UC2-PractitionerRole-Hausarzt"
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/PractitionerRole/UC2-PractitionerRole-Hausarzt"
 * entry[=].resource = UC2-PractitionerRole-Hausarzt
 
 // Resuscitation
