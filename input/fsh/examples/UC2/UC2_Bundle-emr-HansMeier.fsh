@@ -5,7 +5,6 @@ Title: "UC2-Bundle-emr-HansMeier"
 Description: "Vollständiges eNotfallpass Bundle für Hans Meier"
 
 * language = #de-CH
-* meta.profile = "http://fhir.ch/ig/ch-emr/StructureDefinition/ch-emr-bundle"
 * meta.lastUpdated = "2024-09-10T10:00:00+02:00"
 
 * identifier.system = "urn:ietf:rfc:3986"
