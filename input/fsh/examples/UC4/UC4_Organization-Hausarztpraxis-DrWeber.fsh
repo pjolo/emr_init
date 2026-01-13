@@ -4,8 +4,8 @@ Usage: #example
 Title: "UC4-Organization-Hausarzt"
 Description: "Family practice in Basel"
 
-* identifier.system = $oid-gln
-* identifier.value = "7601000789013"
+* identifier[GLN].system = "urn:oid:2.51.1.3"
+* identifier[GLN].value = "7601009110849"
 
 * active = true
 * name = "Hausarztpraxis Dr. med. Klaus Weber"

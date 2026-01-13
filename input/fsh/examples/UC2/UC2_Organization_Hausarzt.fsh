@@ -4,8 +4,8 @@ Usage: #example
 Title: "UC2-Organization-Hausarzt"
 Description: "Family practice Dr. Müller"
 
-* identifier[BER].system = "urn:oid:2.16.756.5.45"
-* identifier[BER].value = "A12345678"
+* identifier[GLN].system = "urn:oid:2.51.1.3"
+* identifier[GLN].value = "7601009110849"
 
 * name = "Hausarztpraxis Dr. Müller"
 

@@ -4,8 +4,8 @@ Usage: #example
 Title: "EX-Organization-GynPraxis"
 Description: "Gynecology practice in Basel"
 
-* identifier[BER].system = "urn:oid:2.16.756.5.45"
-* identifier[BER].value = "A98765432"
+* identifier[GLN].system = "urn:oid:2.51.1.3"
+* identifier[GLN].value = "7601009110849"
 
 * name = "Gynäkologie Praxis Basel"
 
