@@ -27,5 +27,6 @@ Description: "Gynecology practice in Basel"
 * address.postalCode = "4051"
 * address.country = "CH"
 
+
 * type = $sct#394579002 "Gynecology service"
 * type.text = "Gynäkologische Praxis"
