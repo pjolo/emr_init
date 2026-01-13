@@ -1,5 +1,5 @@
 Instance: EX-Organization-GynPraxis
-InstanceOf: ChEmrOrganization
+InstanceOf: $CHIPSOrganization
 Usage: #example
 Title: "EX-Organization-GynPraxis"
 Description: "Gynecology practice in Basel"
@@ -26,7 +26,6 @@ Description: "Gynecology practice in Basel"
 * address.city = "Basel"
 * address.postalCode = "4051"
 * address.country = "CH"
-
 
 * type = $sct#394579002 "Gynecology service"
 * type.text = "Gynäkologische Praxis"
