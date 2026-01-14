@@ -11,6 +11,3 @@ Description: "Advance directive for general example"
 * description = "Patientenverfügung im Schlafzimmer"
 
 * content.attachment.contentType = #application/pdf
-* content.attachment.url = "https://patientendokumente.ch/documents/pv-meier-anna-2024.pdf"
-* content.attachment.title = "Patientenverfügung Anna Meier"
-* content.attachment.creation = "2024-01-15"
