@@ -1,5 +1,5 @@
 Instance: UC1-Organization-Hausarztpraxis
-InstanceOf: $CHIPSOrganization
+InstanceOf: ChEmrOrganization
 Usage: #example
 Title: "UC1-Organization-Hausarztpraxis"
 Description: "Dr. Müller's family practice"
