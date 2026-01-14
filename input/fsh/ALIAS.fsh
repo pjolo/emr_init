@@ -16,12 +16,6 @@ Alias: $sct-ch =                        http://snomed.info/sct|http://snomed.inf
 Alias: $edqm =                          http://standardterms.edqm.eu
 
 // Profiles
-//Alias: $ChCorePractitioner =          http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner
-//Alias: $ChCorePatient =               http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient
-//Alias: $ChCoreAI =                      http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-allergyintolerance
-//Alias: $ChCoreMedicationStatement =     http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-medicationstatement
-//Alias: $ChCoreImmunization =            http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-immunization
-//Alias: $ChCoreCompositionEPR =          http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr
 Alias: $ChCoreDocumentReference =         http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-documentreference
 Alias: $ChCoreDocument =                  http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-document
 
@@ -45,5 +39,3 @@ Alias: $ChIpsCompositionEPR  = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-i
 Alias: $ObservationPregnancyStatusUvIps = http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips|2.0.0
 Alias: $list-empty-reason = http://terminology.hl7.org/CodeSystem/list-empty-reason
 
-// XML CH IG Code System
-Alias: $CSChIgExampleTranslation =      http://fhir.ch/ig/ch-ig/CodeSystem/ch-ig-example-translation
