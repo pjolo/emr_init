@@ -13,8 +13,4 @@ Description: "Advance directive document for Laura Weber"
 * description = "Patientenverfügung bezüglich Reanimationsmaßnahmen während der Schwangerschaft"
 
 * content.attachment.contentType = #application/pdf
-* content.attachment.language = #de
-* content.attachment.url = "https://fhir.ch/ig/emr/Binary/patientenverfuegung-laura-weber.pdf"
-* content.attachment.title = "Patientenverfügung Laura Weber"
-* content.attachment.creation = "2025-07-15"
 

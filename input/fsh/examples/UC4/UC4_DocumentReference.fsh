@@ -13,9 +13,4 @@ Description: "Patientenverfügung von Rudolf Zimmermann"
 * description = "Patientenverfügung von Rudolf Zimmermann"
 
 * content.attachment.contentType = #application/pdf
-* content.attachment.language = #de
-* content.attachment.url = "https://fhir.ch/ig/emr/Binary/patientenverfuegung-laura-weber.pdf"
-* content.attachment.title = "Patientenverfügung Rudolf Zimmermann"
-* content.attachment.creation = "2025-07-15"
-
 
