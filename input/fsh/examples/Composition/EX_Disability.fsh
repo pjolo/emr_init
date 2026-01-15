@@ -1,5 +1,5 @@
 Instance: EX-Disability
-InstanceOf: ChEmrCondition
+InstanceOf: ChEmrObservation
 Usage: #example
 Title: "EX-Disability"
 Description: "General example of a disability"
