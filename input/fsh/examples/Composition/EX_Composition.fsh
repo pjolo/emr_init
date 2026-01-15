@@ -110,4 +110,4 @@ Description: "General composition for the Emergency Record"
 * section[sectionDisability].code = $loinc#101720-1 "Disability status"
 * section[sectionDisability].text.status = #generated
 * section[sectionDisability].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Behinderungsstatus:</p><ul><li>Keine bekannte Behinderung</li></ul></div>"
-* section[sectionDisability].entry[observation][0] = Reference(EX-Disability)
+* section[sectionDisability].entry[condition][0] = Reference(EX-Disability)
