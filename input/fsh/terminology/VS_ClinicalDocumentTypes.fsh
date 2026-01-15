@@ -5,7 +5,7 @@ Description: "Value Set for clinical document types including advance directives
 * ^status = #active
 * ^experimental = true
 * ^version = "1.0.0"
-* ^date = "2025-15-01"
+* ^date = "2025-01-15"
 
 * $sct#371538006 "Advance directive report (record artifact)"
 * $sct#734163000 "Care plan (record artifact)"
