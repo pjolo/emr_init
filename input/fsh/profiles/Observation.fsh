@@ -5,6 +5,7 @@ Title: "CH Emergency Record Observation"
 Description: "Observation profile for various observations in the Emergency Record."
 
 
+* code MS
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
@@ -16,3 +17,5 @@ Description: "Observation profile for various observations in the Emergency Reco
 * code.coding[disability] ^short = "Disability type"
 * code.coding[infectiousRisk] from infectious-risk-factors (extensible)
 * code.coding[infectiousRisk] ^short = "Infectious risk factor"
+
+* effectiveDateTime MS 
