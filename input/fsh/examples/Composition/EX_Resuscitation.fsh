@@ -1,5 +1,5 @@
 Instance: EX-Resuscitation
-InstanceOf: ChEmrObservation
+InstanceOf: ChEmrObservationResuscitationStatus
 Usage: #example
 Title: "EX-Resuscitation"
 Description: "General example of a resuscitation"

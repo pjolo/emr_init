@@ -1,5 +1,5 @@
 Instance: UC3-Resuscitation
-InstanceOf: ChEmrObservation
+InstanceOf: ChEmrObservationResuscitationStatus
 Usage: #example
 Title: "Advance directive on resuscitation"
 Description: "Advance directive for Laura Weber"
