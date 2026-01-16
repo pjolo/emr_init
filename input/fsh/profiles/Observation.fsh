@@ -13,4 +13,6 @@ Description: "Observation profile for various observations in the Emergency Reco
     infectiousRisk 0..*
 
 * code.coding[disability] from disability-types (extensible)
+* code.coding[disability] ^short = "Disability type"
 * code.coding[infectiousRisk] from infectious-risk-factors (extensible)
+* code.coding[infectiousRisk] ^short = "Infectious risk factor"
