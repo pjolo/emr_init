@@ -18,6 +18,7 @@ Alias: $edqm =                          http://standardterms.edqm.eu
 // Profiles
 Alias: $ChCoreDocumentReference =         http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-documentreference
 Alias: $ChCoreDocument =                  http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-document
+Alias: $ChCoreRelatedPerson =             http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-relatedperson  
 
 // Swiss specific OIDs  
 Alias: $oid-ahvn13 = urn:oid:2.16.756.5.32
