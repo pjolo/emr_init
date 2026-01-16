@@ -5,8 +5,12 @@ Title: "CH Emergency Record Observation"
 Description: "Observation profile for various observations in the Emergency Record."
 
 
-* code from http://hl7.org/fhir/ValueSet/observation-codes (example)
-* code ^binding.additional[+].valueSet = "http://fhir.ch/ig/ch-ig/ValueSet/infectious-risk-factors"
-* code ^binding.additional[=].purpose = #extensible
-* code ^binding.additional[+].valueSet = "http://fhir.ch/ig/ch-ig/ValueSet/disability-types"
-* code ^binding.additional[=].purpose = #extensible
+* code.coding ^slicing.discriminator.type = #pattern
+* code.coding ^slicing.discriminator.path = "$this"
+* code.coding ^slicing.rules = #open
+* code.coding contains 
+    disability 0..* and
+    infectiousRisk 0..*
+
+* code.coding[disability] from disability-types (extensible)
+* code.coding[infectiousRisk] from infectious-risk-factors (extensible)
