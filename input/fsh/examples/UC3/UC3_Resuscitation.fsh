@@ -5,7 +5,7 @@ Title: "Advance directive on resuscitation"
 Description: "Advance directive for Laura Weber"
 
 * status = #final
-* code = $loinc#75792-2 "Advance directive - request for resuscitation that differs from cardiopulmonary resuscitation"
+* code = $sct#304251008 "Resuscitation status"
 * subject = Reference(UC3-Patient-LauraWeber)
 * effectiveDateTime = "2025-10-08"
 * valueBoolean = true
