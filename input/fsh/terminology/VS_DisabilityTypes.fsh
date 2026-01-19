@@ -12,3 +12,4 @@ Description: "Value Set for clinical document types including advance directives
 * $sct#719232003 "Difficulty walking"
 * $sct#128188000 "Cerebral palsy"
 * $sct#257277002 "Neuromuscular disorder"
+* $sct#228158008 "Walking disability (finding)"
