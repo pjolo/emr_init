@@ -11,3 +11,4 @@ Description: "Value Set for clinical document types including advance directives
 * $sct#734163000 "Care plan (record artifact)"
 * $sct#4191000179101  "Emergency nursing report (record artifact)"
 * $sct#422735006 "Summary clinical document (record artifact)"
+* $sct#772790007 "Organ donor card"
