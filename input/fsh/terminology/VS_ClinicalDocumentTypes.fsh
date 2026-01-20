@@ -9,7 +9,7 @@ Description: "Value Set for clinical document types"
 
 * $sct#371538006 "Advance directive report"
 * $sct#734163000 "Care plan"
-* $sct#4191000179101  "Emergency nursing report"
+* $sct#4191000179101 "Emergency nursing report"
 * $sct#422735006 "Summary clinical document"
 * $sct#772790007 "Organ donor card"
 * $sct#1264561001 "Living will"
