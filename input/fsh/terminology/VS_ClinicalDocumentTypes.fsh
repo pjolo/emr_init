@@ -1,7 +1,7 @@
 ValueSet: ClinicalDocumentTypes
 Id: clinical-document-types
 Title: "Clinical Document Types"
-Description: "Value Set for clinical document types including advance directives, treatment plans, emergency medical orders and pediatric emergency certificates"
+Description: "Value Set for clinical document types"
 * ^status = #active
 * ^experimental = true
 * ^version = "1.0.0"

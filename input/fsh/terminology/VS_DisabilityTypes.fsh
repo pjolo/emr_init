@@ -1,7 +1,7 @@
 ValueSet: DisabilityTypes
 Id: disability-types
-Title: "Clinical Document Types"
-Description: "Value Set for clinical document types including advance directives, treatment plans, emergency medical orders and pediatric emergency certificates"
+Title: "Disability Types"
+Description: "Value sets for the types of disabilities"
 * ^status = #active
 * ^experimental = true
 * ^version = "1.0.0"

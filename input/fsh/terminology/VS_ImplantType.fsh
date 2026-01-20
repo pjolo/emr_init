@@ -1,7 +1,7 @@
 ValueSet: ImplantType
 Id: implant-type
 Title: "Implant Type"
-Description: "Codes für Implantattypen (SNOMED CT)"
+Description: "Codes for implant types"
 * ^status = #active
 * ^experimental = true
 * ^version = "1.0.0"

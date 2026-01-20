@@ -1,7 +1,7 @@
 ValueSet: InfectiousRiskFactors
 Id: infectious-risk-factors
 Title: "Infectious Disease Risk Factors"
-Description: "ValueSet containing SNOMED CT codes for infectious disease risk factors"
+Description: "ValueSet containing codes for infectious disease risk factors"
 * ^status = #active
 * ^experimental = true
 * ^version = "1.0.0"
