@@ -47,7 +47,7 @@ Description: "Composition für den eNotfallpass von Hans Meier"
 * section[sectionMedications].title = "Aktuelle Medikation"
 * section[sectionMedications].code = $loinc#10160-0 "History of Medication use Narrative"
 * section[sectionMedications].text.status = #generated
-* section[sectionMedications].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Aktuelle Medikation:</strong></p><ul><li><strong>MARCUMAR 3 mg</strong> - 1x täglich abends (antikoagulativ)</li></ul></div>"
+* section[sectionMedications].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Aktuelle Medikation:</strong></p><ul><li>MARCOUMAR Tabl 3 mg</li></ul></div>"
 * section[sectionMedications].entry[medicationStatementOrRequest][0] = Reference(UC2-MedicationStatement-Marcumar)
 
 // Immunization section
@@ -75,7 +75,7 @@ Description: "Composition für den eNotfallpass von Hans Meier"
 * section[sectionProblems].title = "Probleme und Diagnosen"
 * section[sectionProblems].code = $loinc#11450-4 "Problem list - Reported"
 * section[sectionProblems].text.status = #generated
-* section[sectionProblems].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Aktive Diagnosen:</strong></p><ul><li>Persistierendes Vorhofflimmern (seit 15.01.2020)</li><li>Antikoagulation mit Marcumar</li><li>Herzschrittmacher-Implantation 15.03.2020</li><li>Stabile Herzinsuffizienz NYHA II</li></ul></div>"
+* section[sectionProblems].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Aktive Diagnosen:</strong></p><ul><li>Persistierendes Vorhofflimmern (seit 15.01.2020)</li></ul></div>"
 * section[sectionProblems].entry[problem][0] = Reference(UC2-Condition-AtrialFibrillation)
 
 // Advance directive and emergency medical directive section

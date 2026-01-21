@@ -12,7 +12,6 @@ Description: "Metformin Therapie bei Diabetes - KONTRAINDIZIERT bei Niereninsuff
 * effectiveDateTime = "2025-09-10"
 * informationSource = Reference(UC4-Practitioner-DrWeber)
 
-* dosage.text = "1000mg zweimal täglich zu den Mahlzeiten - GESTOPPT wegen Niereninsuffizienz"
 * dosage.timing.repeat.frequency = 2
 * dosage.timing.repeat.period = 1
 * dosage.timing.repeat.periodUnit = #d

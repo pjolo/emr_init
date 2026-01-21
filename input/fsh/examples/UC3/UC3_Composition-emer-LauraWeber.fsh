@@ -25,13 +25,13 @@ Description: "Composition for the emergency record for Laura Weber"
 // Related person section
 * section[sectionEmergencyContacts].title = "Notfallkontakte"
 * section[sectionEmergencyContacts].text.status = #generated
-* section[sectionEmergencyContacts].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Notfallkontakt:</strong></p><ul><li><strong>Michael Weber (Ehemann)</strong></li><li>Telefon: +41 44 567 89 01</li><li>Mobil: +41 79 567 89 01</li></ul></div>"
+* section[sectionEmergencyContacts].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Notfallkontakt:</strong></p><ul><li>Michael Weber (Ehemann)</li><li>Telefon: +41 44 567 89 01</li><li>Mobil: +41 79 567 89 01</li></ul></div>"
 * section[sectionEmergencyContacts].entry[relatedPerson][0] = Reference(UC3-RelatedPerson-MichaelWeber)
 
 // Care Team section
 * section[sectionCareTeam].title = "Behandlungsteam"
 * section[sectionCareTeam].text.status = #generated
-* section[sectionCareTeam].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Behandelnde Ärzte:</strong></p><ul><li><strong>Dr. med. Maria Semmelbruch</strong> - Gynäkologin<br/>Frauenklinik Kantonsspital<br/>GLN: 7601000789012<br/>Telefon: +41 44 345 67 89</li><li><strong>Dr. med. Hans Müller</strong> - Hausarzt<br/>Hausarztpraxis<br/>GLN: 7601000234567<br/>Telefon: +41 44 234 56 78</li></ul></div>"
+* section[sectionCareTeam].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Behandelnde Ärzte:</strong></p><ul><li>Dr. med. Maria Semmelbruch - Gynäkologin<br/>Frauenklinik Kantonsspital<br/>GLN: 7601000789012<br/>Telefon: +41 44 345 67 89</li><li>Dr. med. Hans Müller - Hausarzt<br/>Hausarztpraxis<br/>GLN: 7601000234567<br/>Telefon: +41 44 234 56 78</li></ul></div>"
 * section[sectionCareTeam].entry[practitioner][0] = Reference(UC3-Practitioner-Hausarzt)
 
 
@@ -41,7 +41,7 @@ Description: "Composition for the emergency record for Laura Weber"
 * section[sectionResuscitation].title = "Reanimation"
 * section[sectionResuscitation].code = $loinc#75320-2 "Advance directive"
 * section[sectionResuscitation].text.status = #generated
-* section[sectionResuscitation].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Reanimationsstatus:</p><ul><li>Vollumfängliche Reanimation gewünscht</li></ul></div>"
+* section[sectionResuscitation].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Reanimationsstatus:</strong></p><ul><li>Ja</li></ul></div>"
 * section[sectionResuscitation].entry[observation][0] = Reference(UC3-Resuscitation)
 
 // Medication section
@@ -57,7 +57,7 @@ Description: "Composition for the emergency record for Laura Weber"
 // Allergies section
 * section[sectionAllergies].title = "Allergien und Unverträglichkeiten"
 * section[sectionAllergies].text.status = #generated
-* section[sectionAllergies].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>WICHTIGE ALLERGIE:</p><ul><li><strong>Jodhaltige Kontrastmittel</strong></li><li><strong>Reaktion:</strong> Hautausschlag, Juckreiz, leichte Atembeschwerden</li><li><strong>Schweregrad:</strong> Moderat</li><li><strong>Erstmals aufgetreten:</strong> 2022</li></ul></div>"
+* section[sectionAllergies].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>WICHTIGE ALLERGIE:</strong></p><ul><li>Jodhaltige Kontrastmittel</li><li>Reaktion: Hautausschlag, Juckreiz, leichte Atembeschwerden</li><li>Schweregrad:Moderat</li><li>Erstmals aufgetreten: 2022</li></ul></div>"
 * section[sectionAllergies].entry[allergyOrIntolerance][0] = Reference(UC3-AllergyIntolerance-Contrast)
 
 // Risk factor section

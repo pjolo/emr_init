@@ -50,7 +50,7 @@ The Implementation Guide defines the following main profiles:
 | [ChEmrPatient](https://pjolo.github.io/emr/StructureDefinition-ch-emr-patient.html) | Demographic data and contact information | CH IPS Patient |
 | [ChEmrRelatedPerson](https://pjolo.github.io/emr/StructureDefinition-ch-emr-relatedperson.html) | Family and trusted persons | CH IPS Patient |
 | [ChEmrPractitioner](https://pjolo.github.io/emr/StructureDefinition-ch-emr-practitioner.html) | Healthcare practitioner information | CH Core Practitioner |
-| [ChEmrObservation](https://pjolo.github.io/emr/StructureDefinition-ch-emr-observation.html) | Various observations | CH Core Observation |
+| [ChEmrObservation](https://pjolo.github.io/emr/StructureDefinition-ch-emr-observation.html) | Various observations | Observation |
 | [ChEmrMedication](https://pjolo.github.io/emr/StructureDefinition-ch-emr-medication.html) | Medication details | CH IPS Medication |
 | [ChEmrMedicationStatement](https://pjolo.github.io/emr/StructureDefinition-ch-emr-medicationstatement.html) | Current medication | CH IPS MedicationStatement |
 | [ChEmrImmunization](https://pjolo.github.io/emr/StructureDefinition-ch-emr-immunization.html) | Immunization records | CH IPS Immunization |
