@@ -34,7 +34,7 @@ Den vollständigen [eNotfallpass für Hans Meier](https://pjolo.github.io/emr/Bu
 
 [Laura Weber](https://pjolo.github.io/emr/Patient-UC3-Patient-LauraWeber.html), 28 Jahre alt, wird in der 32. Schwangerschaftswoche nach einem Verkehrsunfall bewusstlos in die Notaufnahme eingeliefert. Der eNotfallpass zeigt eine [aktuelle Schwangerschaft](https://pjolo.github.io/emr/Observation-UC3-Observation-Pregnancy.html) mit einem erwarteten Geburtstermin am 15. November 2025.
 
-Besonders relevant ist die dokumentierte [Patientenverfügung](https://pjolo.github.io/emr/Consent-UC3-DocumentReference.html), in der die Patientin für den Fall schwerer Komplikationen eine Reanimation nur dann wünscht, wenn das ungeborene Kind gerettet werden kann. Diese Information ist entscheidend für die Behandlungsstrategie des Notfallteams.
+Besonders relevant ist die dokumentierte [Patientenverfügung](https://pjolo.github.io/emr/UC3-DocumentReference.html), in der die Patientin für den Fall schwerer Komplikationen eine Reanimation nur dann wünscht, wenn das ungeborene Kind gerettet werden kann. Diese Information ist entscheidend für die Behandlungsstrategie des Notfallteams.
 
 Die Patientin hat eine bekannte [Allergie gegen Kontrastmittel](https://pjolo.github.io/emr/AllergyIntolerance-UC3-AllergyIntolerance-Contrast.html) mit Hautreaktionen dokumentiert. Als Notfallkontakt ist ihr Partner [Michael Weber](RelatedPerson-UC3-RelatedPerson-MichaelWeber.html) unter +41 79 555 12 34 hinterlegt. Im eNotfallpass sind zudem ihre behandelnde Gynäkologin [Dr. med. Sarah Semmelbruch](https://pjolo.github.io/emr/Practitioner-UC3-Practitioner-DrSemmelbruch.html) sowie ihr Hausarzt [Dr. med. Hans Müller](https://pjolo.github.io/emr/Practitioner-UC3-PractitionerRole-Hausarzt.html) dokumentiert.
 
