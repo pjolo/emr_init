@@ -42,7 +42,7 @@ Description: "Complete Emergency Record bundle for Maria Schmidt"
 
 // Medication
 * entry[+].fullUrl = "http://fhir.ch/ig/emr/Medication/EX-Metformin"
-* entry[=].resource = Metformin
+* entry[=].resource = EX-Metformin
 
 * entry[+].fullUrl = "http://fhir.ch/ig/emr/MedicationStatement/UC1-MedicationStatement-Metformin"
 * entry[=].resource = UC1-MedicationStatement-Metformin
