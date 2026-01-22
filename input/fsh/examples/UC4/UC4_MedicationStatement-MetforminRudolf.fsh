@@ -2,7 +2,7 @@ Instance: UC4-MedicationStatement-MetforminRudolf
 InstanceOf: ChEmrMedicationStatement
 Usage: #example
 Title: "UC4-MedicationStatement-MetforminRudolf"
-Description: "Metformin Therapie bei Diabetes - KONTRAINDIZIERT bei Niereninsuffizienz"
+Description: "Metformin Therapie bei Diabetes"
 
 * status = #active
 * medicationReference = Reference(EX-Metformin)
@@ -15,4 +15,4 @@ Description: "Metformin Therapie bei Diabetes - KONTRAINDIZIERT bei Niereninsuff
 * dosage.timing.repeat.when[+] = #EVE
 * dosage.route = urn:oid:0.4.0.127.0.16.1.1.2.1#20053000 "Oral use"
 * dosage.route.text = "zum Einnehmen"
-* dosage.doseAndRate.doseQuantity = 1 http://snomed.info/sct#732936001 "Tablet (unit of presentation)""
+* dosage.doseAndRate.doseQuantity = 1 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
