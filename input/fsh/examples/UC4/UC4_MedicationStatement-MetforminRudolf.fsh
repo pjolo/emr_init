@@ -8,6 +8,7 @@ Description: "Metformin Therapie bei Diabetes"
 * medicationReference = Reference(EX-Metformin)
 * subject = Reference(UC4-Patient-RudolfZimmermann)
 * effectivePeriod.start = "2020-03-03"
+
 * reasonCode.text = "Diabetes"
 * dosage.patientInstruction = "Unzerkaut während oder nach den Mahlzeiten mit ausreichend Flüssigkeit einnehmen"
 * dosage.timing.repeat.boundsPeriod.start = "2020-03-03"
