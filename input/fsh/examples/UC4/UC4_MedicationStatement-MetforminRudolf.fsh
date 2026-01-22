@@ -4,23 +4,15 @@ Usage: #example
 Title: "UC4-MedicationStatement-MetforminRudolf"
 Description: "Metformin Therapie bei Diabetes - KONTRAINDIZIERT bei Niereninsuffizienz"
 
-* status = #stopped
-* statusReason = $sct#182840001 "Drug treatment stopped - medical advice"
-* medicationCodeableConcept = $atc#A10BA02 "Metformin"
+* status = #active
+* medicationReference = Reference(EX-Metformin)
 * subject = Reference(UC4-Patient-RudolfZimmermann)
-* dateAsserted = "2025-09-10"
-* effectiveDateTime = "2025-09-10"
-* informationSource = Reference(UC4-Practitioner-DrWeber)
-
-* dosage.timing.repeat.frequency = 2
-* dosage.timing.repeat.period = 1
-* dosage.timing.repeat.periodUnit = #d
-* dosage.timing.repeat.when[0] = #CM
-* dosage.timing.repeat.when[1] = #CV
-* dosage.route = $sct#26643006 "Oral route"
-* dosage.doseAndRate.doseQuantity.value = 1000
-* dosage.doseAndRate.doseQuantity.unit = "mg"
-* dosage.doseAndRate.doseQuantity.system = $ucum
-* dosage.doseAndRate.doseQuantity.code = #mg
-
-* note.text = "SOFORT GESTOPPT: Metformin bei eGFR <30 ml/min/1.73m² kontraindiziert. Laktatazidose-Risiko! Umstellung auf Insulin oder andere Antidiabetika erforderlich."
+* effectivePeriod.start = "2020-03-03"
+* reasonCode.text = "Diabetes"
+* dosage.patientInstruction = "Unzerkaut während oder nach den Mahlzeiten mit ausreichend Flüssigkeit einnehmen"
+* dosage.timing.repeat.boundsPeriod.start = "2020-03-03"
+* dosage.timing.repeat.when[0] = #MORN
+* dosage.timing.repeat.when[+] = #EVE
+* dosage.route = urn:oid:0.4.0.127.0.16.1.1.2.1#20053000 "Oral use"
+* dosage.route.text = "zum Einnehmen"
+* dosage.doseAndRate.doseQuantity = 1 http://snomed.info/sct#732936001 "Tablet (unit of presentation)""
