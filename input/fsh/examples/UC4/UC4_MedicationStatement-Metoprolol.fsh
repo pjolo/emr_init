@@ -2,7 +2,7 @@ Instance: UC4-MedicationStatement-Metoprolol
 InstanceOf: ChEmrMedicationStatement
 Usage: #example
 Title: "UC4-MedicationStatement-Metoprolol"
-Description: "Beta-Blocker Therapie"
+Description: "Beta-blocker therapy"
 
 * status = #active
 * medicationReference = Reference(EX-Metoprolol)

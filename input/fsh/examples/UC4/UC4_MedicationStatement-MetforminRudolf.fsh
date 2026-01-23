@@ -2,7 +2,7 @@ Instance: UC4-MedicationStatement-MetforminRudolf
 InstanceOf: ChEmrMedicationStatement
 Usage: #example
 Title: "UC4-MedicationStatement-MetforminRudolf"
-Description: "Metformin Therapie bei Diabetes"
+Description: "Metformin therapy for diabetes"
 
 * status = #active
 * medicationReference = Reference(EX-Metformin)

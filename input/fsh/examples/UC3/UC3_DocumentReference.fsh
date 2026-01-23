@@ -1,7 +1,7 @@
 Instance: UC3-DocumentReference
 InstanceOf: ChEmrDocumentReference
 Usage: #example
-Title: "U3-DocumentReference"
+Title: "UC3-DocumentReference"
 Description: "Advance directive document for Laura Weber"
 
 * status = #current
