@@ -37,11 +37,11 @@ Description: "Composition für den eNotfallpass von Hans Meier"
 * section[sectionCareTeam].entry[practitioner][+] = Reference(UC2-Practitioner-DrSchmidt)
 
 // Resuscitation section
-//* section[sectionResuscitation].title = "Reanimationsstatus"
-//* section[sectionResuscitation].code = $loinc#100822-6 "Cardiopulmonary resuscitation orders"
-//* section[sectionResuscitation].text.status = #generated
-//* section[sectionResuscitation].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><ul><li>Keinen Reanimationsstatus bekannt.</li></ul></div>"
-//* section[sectionResuscitation].entry[observation][0] = Reference(UC2-Practitioner-DrMueller)
+* section[sectionResuscitation].title = "Reanimationsstatus"
+* section[sectionResuscitation].code = $loinc#75320-2 "Advance directive"
+* section[sectionResuscitation].text.status = #generated
+* section[sectionResuscitation].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keinen Reanimationsstatus bekannt.</p></div>"
+* section[sectionResuscitation].emptyReason = $list-empty-reason#unavailable "Information not available"
 
 // Medication section
 * section[sectionMedications].title = "Medikation"
@@ -77,7 +77,7 @@ Description: "Composition für den eNotfallpass von Hans Meier"
 * section[sectionProblems].title = "Probleme und Diagnosen"
 * section[sectionProblems].code = $loinc#11450-4 "Problem list - Reported"
 * section[sectionProblems].text.status = #generated
-* section[sectionProblems].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><li>Persistierendes Vorhofflimmern</li></ul></div>"
+* section[sectionProblems].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><ul><li>Persistierendes Vorhofflimmern</li></ul></div>"
 * section[sectionProblems].entry[problem][0] = Reference(UC2-Condition-AtrialFibrillation)
 
 // Advance directive and emergency medical directive section
