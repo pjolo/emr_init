@@ -74,7 +74,7 @@ Description: "General composition for the Emergency Record"
 * section[sectionProblems].title = "Problemliste"
 * section[sectionProblems].code = $loinc#11450-4 "Problem list - Reported"
 * section[sectionProblems].text.status = #generated
-* section[sectionProblems].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><ul><li>Diabetes mellitus Typ 2</p></li></ul></div>"
+* section[sectionProblems].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><ul><li>Diabetes mellitus Typ 2</li></ul></div>"
 * section[sectionProblems].entry[problem][0] = Reference(EX-Condition)
 
 // Advance directive and emergency medical directive section

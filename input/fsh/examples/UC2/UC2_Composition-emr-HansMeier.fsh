@@ -98,7 +98,7 @@ Description: "Composition für den eNotfallpass von Hans Meier"
 * section[sectionMedicalDevices].title = "Implantate"
 * section[sectionMedicalDevices].code = $loinc#46264-8 "History of medical device use"
 * section[sectionMedicalDevices].text.status = #generated
-* section[sectionMedicalDevices].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><li>Herzschrittmacher Boston Scientific Accolade MRI (Modell L331)</li></ul></div>"
+* section[sectionMedicalDevices].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><ul><li>Herzschrittmacher Boston Scientific Accolade MRI (Modell L331)</li></ul></div>"
 * section[sectionMedicalDevices].entry[deviceStatement][0] = Reference(UC2-DeviceUseStatement)
 
 // Pregnancy section
