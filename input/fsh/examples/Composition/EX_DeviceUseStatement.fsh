@@ -2,7 +2,7 @@ Instance: EX-DeviceUseStatement
 InstanceOf: DeviceUseStatement
 Usage: #example
 Title: "EX-DeviceUseStatement"
-Description: "Beispiel für die Verwendung eines Herzschrittmachers beim Patienten"
+Description: "General example for a device"
 
 * status = #active
 * subject = Reference(EX-Patient)

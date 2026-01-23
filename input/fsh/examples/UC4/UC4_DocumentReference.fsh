@@ -1,7 +1,7 @@
-Instance: UC4-DocumentReference
+Instance: UC4-AdvanceDirective
 InstanceOf: ChEmrDocumentReference
 Usage: #example
-Title: "UC4-DocumentReference"
+Title: "UC4-AdvanceDirective"
 Description: "Patientenverfügung von Rudolf Zimmermann"
 
 * status = #current

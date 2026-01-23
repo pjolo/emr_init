@@ -25,69 +25,95 @@ Description: "Composition for Rudolf Zimmermann's emergency record"
 // RelatedPerson section
 * section[sectionEmergencyContacts].title = "Notfallkontakte"
 * section[sectionEmergencyContacts].text.status = #generated
-* section[sectionEmergencyContacts].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Notfallkontakt: Elisabeth Zimmermann (Tochter) +41 31 456 78 90</p></div>"
+* section[sectionEmergencyContacts].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Elisabeth Zimmermann (Tochter) +41 31 456 78 90</p></div>"
 * section[sectionEmergencyContacts].entry[relatedPerson][0] = Reference(UC4-RelatedPerson-ElisabethZimmermann)
 
 // Care Team section
-* section[sectionCareTeam].title = "Behandlungsteam"
+* section[sectionCareTeam].title = "Behandelnde Gesundheitsfachpersonen"
 * section[sectionCareTeam].code = $loinc#85847-2 "Patient Care team information"
 * section[sectionCareTeam].text.status = #generated
-* section[sectionCareTeam].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Behandelnde Ärzte:</p><ul><li>Dr. med. Klaus Weber - Hausarzt (GLN: 7601000789012)</li></ul></div>"
+* section[sectionCareTeam].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><ul><li>Dr. med. Klaus Weber - Hausarzt (GLN: 7601000789012)</li></ul></div>"
 * section[sectionCareTeam].entry[practitioner][0] = Reference(UC4-Practitioner-DrWeber)
 
 // Resuscitation section
-
+* section[sectionResuscitation].title = "Reanimationsstatus"
+* section[sectionResuscitation].code = $loinc#75320-2 "Advance directive"
+* section[sectionResuscitation].text.status = #generated
+* section[sectionResuscitation].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keinen Reanimationsstatus bekannt.</p></div>"
+* section[sectionResuscitation].emptyReason = $list-empty-reason#unavailable "Information not available"
 
 // Medication section
-* section[sectionMedications].title = "Aktuelle Medikation"
+* section[sectionMedications].title = "Medikation"
 * section[sectionMedications].code = $loinc#10160-0 "History of Medication use Narrative"
 * section[sectionMedications].text.status = #generated
-* section[sectionMedications].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Aktuelle Medikation:</strong></p><ul><li>Ramipril 5mg morgens (Herzinsuffizienz)</li><li>Metoprolol 50mg 2x täglich (Beta-Blocker)</li><li>Furosemid 40mg morgens (Diuretikum)</li></ul></div>"
+* section[sectionMedications].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><ul><li>Ramipril 5mg morgens (Herzinsuffizienz)</li><li>Metoprolol 50mg 2x täglich</li><li>Furosemid 40mg morgens</li></ul></div>"
 * section[sectionMedications].entry[medicationStatementOrRequest][0] = Reference(UC4-MedicationStatement-Ramipril)
 * section[sectionMedications].entry[medicationStatementOrRequest][+] = Reference(UC4-MedicationStatement-Metoprolol)
 * section[sectionMedications].entry[medicationStatementOrRequest][+] = Reference(UC4-MedicationStatement-Furosemid)
 * section[sectionMedications].entry[medicationStatementOrRequest][+] = Reference(UC4-MedicationStatement-MetforminRudolf)
 
 // Immunization section
+* section[sectionImmunizations].title = "Impfungen"
+* section[sectionImmunizations].code = $loinc#11369-6 "History of Immunization Narrative"
+* section[sectionImmunizations].text.status = #generated
+* section[sectionImmunizations].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keine Immunisierung bekannt.</p></div>"
+* section[sectionImmunizations].emptyReason = $list-empty-reason#unavailable "Information not available"
 
 // Allergies section
-* section[sectionAllergies].title = "Allergien und Unverträglichkeiten"
+* section[sectionAllergies].title = "Allergien oder Unverträglichkeiten"
 * section[sectionAllergies].text.status = #generated
-* section[sectionAllergies].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>⚠️ WICHTIGE ALLERGIE:</strong></p><ul><li><strong>Jodhaltige Kontrastmittel</strong></li><li><strong>Reaktion:</strong> Hautausschlag, Juckreiz, leichte Atembeschwerden</li><li><strong>Schweregrad:</strong> Moderat</li><li><strong>Erstmals aufgetreten:</strong> 2022</li></ul><p><strong>⚠️ KEINE JODHALTIGEN KONTRASTMITTEL VERWENDEN!</strong></p><p><strong>Alternative:</strong> MRT ohne Kontrastmittel oder nicht-jodhaltige Kontrastmittel verwenden</p></div>"
 * section[sectionAllergies].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keine Allergien bekannt.</p></div>"
 * section[sectionAllergies].emptyReason = $list-empty-reason#unavailable "Information not available"
 
 // Risk factor section
+* section[sectionRiskFactors].title = "Risikofaktoren für Behandelnde"
+* section[sectionRiskFactors].code = $loinc#46467-7 "Risk factors"
+* section[sectionRiskFactors].text.status = #generated
+* section[sectionRiskFactors].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keine Risikofaktoren bekannt.</p></div>"
+* section[sectionRiskFactors].emptyReason = $list-empty-reason#unavailable "Information not available"
 
 // Problem list section
 * section[sectionProblems].title = "Probleme und Diagnosen"
 * section[sectionProblems].code = $loinc#11450-4 "Problem list - Reported"
 * section[sectionProblems].text.status = #generated
-* section[sectionProblems].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><strong>Aktive Probleme (Multimorbidität):</strong></p><ul><li>Chronische Herzinsuffizienz NYHA III (seit 2018)</li><li>Permanentes Vorhofflimmern (seit 2019)</li><li>Chronische Niereninsuffizienz Stadium 3b (seit 2020)</li><li>Diabetes mellitus Typ 2 mit Nephropathie (seit 2010)</li></ul></div>"
+* section[sectionProblems].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><ul><li>Chronische Herzinsuffizienz</li><li>Chronische Niereninsuffizienz</li><li>Diabetes mellitus Typ 2</li></ul></div>"
 * section[sectionProblems].entry[problem][0] = Reference(UC4-Condition-HeartFailure)
 * section[sectionProblems].entry[problem][+] = Reference(UC4-Condition-AtrialFibrillation)
 * section[sectionProblems].entry[problem][+] = Reference(UC4-Condition-ChronicKidneyDisease)
 * section[sectionProblems].entry[problem][+] = Reference(UC4-Condition-DiabetesRudolf)
 
 // Advance directive and emergency medical directive section
-* section[sectionAdvanceDirectives].title = "Patientenverfügung"
+* section[sectionAdvanceDirectives].title = "Patientenverfügungen und Notfallanordnungen"
 * section[sectionAdvanceDirectives].text.status = #generated
 * section[sectionAdvanceDirectives].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Patientenverfügung vorhanden</p></div>"
-* section[sectionAdvanceDirectives].entry[advanceDirective][0] = Reference(UC4-DocumentReference)
+* section[sectionAdvanceDirectives].entry[advanceDirective][0] = Reference(UC4-AdvanceDirective)
 
 // Document references section
+* section[sectionOtherDocuments].title = "Andere Dokumente"
+* section[sectionOtherDocuments].code = $loinc#55108-5 "Clinical presentation Document"
+* section[sectionOtherDocuments].text.status = #generated
+* section[sectionOtherDocuments].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keine zusätzlichen Dokumente hinterlegt.</p></div>"
+* section[sectionOtherDocuments].emptyReason = $list-empty-reason#unavailable "Information not available"
 
 // Medical devices section
-* section[sectionMedicalDevices].title = "Medizinische Geräte"
+* section[sectionMedicalDevices].title = "Implantate"
 * section[sectionMedicalDevices].code = $loinc#46264-8 "History of medical device use"
 * section[sectionMedicalDevices].text.status = #generated
-* section[sectionMedicalDevices].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Implantate:</p><ul><li>Hüftgelenk-Totalendoprothese links (2018)</li><li>Hersteller: Zimmer Biomet Taperloc</li></ul></div>"
+* section[sectionMedicalDevices].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><ul><li>Hüftgelenk-Totalendoprothese links (2018)</li></ul></div>"
 * section[sectionMedicalDevices].entry[deviceStatement][0] = Reference(UC4-DeviceUseStatement)
 
 // Pregnancy section
+* section[sectionPregnancyHx].title = "Schwangerschaft"
+* section[sectionPregnancyHx].text.status = #generated
+* section[sectionPregnancyHx].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keine Schwangerschaft bekannt.</p></div>"
+* section[sectionPregnancyHx].emptyReason = $list-empty-reason#unavailable "Information not available"
 
 // Disability section
-
+* section[sectionDisability].title = "Beeinträchtigungen"
+* section[sectionDisability].code = $loinc#101720-1 "Disability status"
+* section[sectionDisability].text.status = #generated
+* section[sectionDisability].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keine Beeinträchtigung bekannt.</p></div>"
+* section[sectionDisability].emptyReason = $list-empty-reason#nilknown "None Known"
 
 
 

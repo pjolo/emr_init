@@ -2,7 +2,7 @@ Instance: EX-Practitioner
 InstanceOf: $CHIPSPractitioner
 Usage: #example
 Title: "EX - Practitioner Dr. Sarah Huber"
-Description: "Gynecologist Dr. Sarah Huber"
+Description: "General example of a practitioner"
 
 * identifier[GLN].system = "urn:oid:2.51.1.3"
 * identifier[GLN].value = "7601007922000"

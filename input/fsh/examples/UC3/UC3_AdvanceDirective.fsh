@@ -1,7 +1,7 @@
-Instance: UC3-DocumentReference
+Instance: UC3-AdvanceDirective
 InstanceOf: ChEmrDocumentReference
 Usage: #example
-Title: "UC3-DocumentReference"
+Title: "UC3-AdvanceDirective"
 Description: "Advance directive document for Laura Weber"
 
 * status = #current
@@ -10,7 +10,7 @@ Description: "Advance directive document for Laura Weber"
 * date = "2025-07-15T14:30:00+02:00"
 * author = Reference(Patient/UC3-Patient-LauraWeber)
 * type = $sct#1264561001 "Living will"
-* description = "Patientenverfügung bezüglich Reanimationsmaßnahmen während der Schwangerschaft"
+* description = "Patientenverfügung zuhause"
 
 * content.attachment.contentType = #application/pdf
 

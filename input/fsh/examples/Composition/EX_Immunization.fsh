@@ -2,7 +2,7 @@ Instance: EX-Immunization
 InstanceOf: ChEmrImmunization
 Usage: #example
 Title: "EX-Immunization"
-Description: "General example of a vaccination (COVID19)"
+Description: "General example of a vaccination"
 
 * status = #completed
 * vaccineCode = $chVac#69465 "Spikevax XBB.1.5 0.10 mg/ml"

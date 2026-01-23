@@ -69,8 +69,8 @@ Description: "Complete emergency record bundle for Rudolf Zimmermann"
 * entry[=].resource = UC4-Condition-DiabetesRudolf
 
 // Advance directive
-* entry[+].fullUrl = "http://fhir.ch/ig/emr/DocumentReference/UC4-DocumentReference"
-* entry[=].resource = UC4-DocumentReference
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/DocumentReference/UC4-AdvanceDirective"
+* entry[=].resource = UC4-AdvanceDirective
 
 // Document references
 

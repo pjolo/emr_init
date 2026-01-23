@@ -11,6 +11,6 @@ Description: "General example of a Pregnancy"
 * effectiveDateTime = "2025-09-10T10:00:00+02:00"
 * performer = Reference(EX-Practitioner)
 
-* valueCodeableConcept = $sct#77386006 "Patient currently pregnant"
+* valueBoolean = true
 
 * note.text = "Normale Schwangerschaftsentwicklung, alle Vorsorgeuntersuchungen unauffällig. Letzte Kontrolle am 05.09.2025 - Kind zeitgerecht entwickelt."

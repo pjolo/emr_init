@@ -2,7 +2,7 @@ Instance: EX-PractitionerRole
 InstanceOf: $CHIPSPractitionerRole
 Usage: #example
 Title: "EX-PractitionerRole"
-Description: "Dr. Sarah Huber working as gynecologist at Gynäkologie Praxis Basel"
+Description: "General example of a practitioner role"
 
 * active = true
 

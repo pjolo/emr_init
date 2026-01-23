@@ -54,10 +54,11 @@ Description: "Complete Emergency Record bundle for Laura Weber"
 // Problem list
 
 // Advance directive
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/DocumentReference/UC3-AdvanceDirective"
+* entry[=].resource = UC3-AdvanceDirective
 
 // Document references
-* entry[+].fullUrl = "http://fhir.ch/ig/emr/DocumentReference/UC3-DocumentReference"
-* entry[=].resource = UC3-DocumentReference
+
 
 // Medical device
 

@@ -2,13 +2,13 @@ Instance: UC4-Condition-DiabetesRudolf
 InstanceOf: ChEmrCondition
 Usage: #example
 Title: "UC4-Condition-DiabetesRudolf"
-Description: "Diabetes mellitus Typ 2 mit nephropathischen Komplikationen"
+Description: "Type 2 diabetes mellitus"
 
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
 * category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
 * severity = $sct#24484000 "Severe"
-* code = $icd10#E11.2 "Type 2 diabetes mellitus : With renal complications"
+* code = $sct#44054006 "Type 2 diabetes mellitus"
 * subject = Reference(UC4-Patient-RudolfZimmermann)
 * onsetDateTime = "2010-04-15"
 * recordedDate = "2010-04-15"

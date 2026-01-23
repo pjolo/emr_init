@@ -22,7 +22,6 @@ Instance: EX-Marcumar
 InstanceOf: ChEmrMedication
 Usage: #example
 * code = urn:oid:2.51.1.1#7680193950011 "MARCOUMAR Tabl 3 mg"
-//* code.text = "METFORMIN Axapharm Filmtabl 500 mg"
 * form = urn:oid:0.4.0.127.0.16.1.1.2.1#10219000 "Tablet"
 * form.text = "Tablette"
 * amount.numerator = 25 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
