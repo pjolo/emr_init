@@ -1,5 +1,5 @@
 Mapping:  USCorePatientToArgonaut
-Source:   USCorePatient
+Source:   Patient
 Id:       argonaut-dq-dstu2
 Title:    "Argonaut DSTU2"
 * -> "Patient"
