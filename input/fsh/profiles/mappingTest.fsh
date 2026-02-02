@@ -1,5 +1,5 @@
-Mapping: CHCorePatientToCHMED23A
-Source: CHCorePatient
+Mapping: ChEmrPatientToCHMED23A
+Source: ChEmrPatient
 Target: "http://chmed23a.emediplan.ch/fhir/StructureDefinition/chmed23a-patient"
 Id: chmed23a
 Title: "CHMED23A Medication Plan"
