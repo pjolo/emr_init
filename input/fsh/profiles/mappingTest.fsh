@@ -1,8 +1,30 @@
-Mapping:  USCorePatientToArgonaut
-Source:   Patient
-Id:       argonaut-dq-dstu2
-Title:    "Argonaut DSTU2"
+Mapping: CHCorePatientToCHMED23A
+Source: CHCorePatient
+Target: "http://chmed23a.emediplan.ch/fhir/StructureDefinition/chmed23a-patient"
+Id: chmed23a
+Title: "CHMED23A Medication Plan"
+Description: "Mapping von CH Core Patient zu CHMED23A eMediplan Patient Objekt"
 * -> "Patient"
-* identifier -> "Patient.identifier"
-* identifier.system -> "Patient.identifier.system"
-* identifier.value -> "Patient.identifier.value"
+* identifier -> "Patient.Ids"
+* identifier[AHVN13] -> "Patient.Ids[].Type = 'SSN'"
+* identifier[AHVN13].value -> "Patient.Ids[].Value"
+* identifier[LocalPid] -> "Patient.Ids[].Type = 'LocalPid'"
+* identifier[LocalPid].value -> "Patient.Ids[].Value"
+* identifier[insuranceCardNumber] -> "Patient.Ids[].Type = 'InsuranceCardNumber'"
+* identifier[insuranceCardNumber].value -> "Patient.Ids[].Value"
+* name -> "Patient.FName, Patient.LName"
+* name.family -> "Patient.LName"
+* name.given -> "Patient.FName"
+* gender -> "Patient.Gender"
+* birthDate -> "Patient.BDt"
+* address -> "Patient.Street, Patient.Zip, Patient.City, Patient.Cnt"
+* address.line -> "Patient.Street"
+* address.postalCode -> "Patient.Zip"
+* address.city -> "Patient.City"
+* address.country -> "Patient.Cnt"
+* telecom -> "Patient.Phone, Patient.Email"
+* telecom[phone].value -> "Patient.Phone"
+* telecom[email].value -> "Patient.Email"
+* communication.language -> "Patient.Lng"
+* extension[placeOfBirth] -> "Patient.City" "Falls Geburtsort, sonst Wohnort"
+* extension[religion] -> "Patient.Rc" "Religion Code"
