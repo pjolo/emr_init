@@ -1,0 +1,128 @@
+// ============================================================
+// 1) Measles virus IgG Ab [Titer] in Serum
+//    Einheit: Titer – wird als Ratio oder als {titer} dargestellt
+// ============================================================
+Instance: Observation-Measles-IgG-Titer
+InstanceOf: http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-laboratory-serology
+Title: "Measles virus IgG Ab [Titer] in Serum"
+Description: "Beispiel für einen Titer-Wert (1:64). Titer werden in UCUM als {titer} codiert, der numerische Wert repräsentiert den Nenner (z.B. 64 für 1:64)."
+Usage: #example
+
+* meta.profile = "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-laboratory-serology"
+
+* extension[0].url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author"
+* extension[=].valueReference = Reference(PractitionerRole/6-1-PractitionerRole)
+
+* extension[+].url = "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-verification-status"
+* extension[=].valueCoding = http://snomed.info/sct#59156000 "Confirmed"
+
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:aaa11111-1111-1111-1111-111111111111"
+
+* status = #final
+
+* code.coding[0].system = "http://loinc.org"
+* code.coding[0].code = #22502-9
+* code.coding[0].display = "Measles virus IgG Ab [Titer] in Serum"
+
+* subject = Reference(Patient/3-1-Patient)
+* effectiveDateTime = "2024-06-15"
+* performer = Reference(PractitionerRole/6-1-PractitionerRole)
+
+// TITER: Der Wert 64 repräsentiert einen Titer von 1:64
+// UCUM-Code {titer} ist ein "arbitrary unit" für Titer-Angaben
+* valueQuantity.value = 64
+* valueQuantity.unit = "{titer}"
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #{titer}
+* valueQuantity.comparator = #>= // optional: >= 1:64
+
+* interpretation.coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+* interpretation.coding[0].code = #POS
+* interpretation.coding[0].display = "Positive"
+
+
+// ============================================================
+// 2) Hepatitis A virus IgG Ab [Units/volume] in Serum
+//    Einheit: Internationale Einheiten pro Liter [iU]/L
+// ============================================================
+Instance: Observation-HepA-IgG-UnitsPerVolume
+InstanceOf: http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-laboratory-serology
+Title: "Hepatitis A virus IgG Ab [Units/volume] in Serum"
+Description: "Beispiel für einen Units/volume-Wert. Internationale Einheiten (IU) pro Liter – gleiche Struktur wie das Hepatitis-B-Beispiel aus CH VACD."
+Usage: #example
+
+* meta.profile = "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-laboratory-serology"
+
+* extension[0].url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author"
+* extension[=].valueReference = Reference(PractitionerRole/6-1-PractitionerRole)
+
+* extension[+].url = "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-verification-status"
+* extension[=].valueCoding = http://snomed.info/sct#59156000 "Confirmed"
+
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:bbb22222-2222-2222-2222-222222222222"
+
+* status = #final
+
+* code.coding[0].system = "http://loinc.org"
+* code.coding[0].code = #22313-1
+* code.coding[0].display = "Hepatitis A virus IgG Ab [Units/volume] in Serum"
+
+* subject = Reference(Patient/3-1-Patient)
+* effectiveDateTime = "2024-06-15"
+* performer = Reference(PractitionerRole/6-1-PractitionerRole)
+
+// UNITS/VOLUME: Internationale Einheiten pro Liter
+// [iU]/L ist der UCUM-Code für International Units per Liter
+* valueQuantity.value = 45
+* valueQuantity.unit = "[iU]/L"
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #[iU]/L
+
+* interpretation.coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+* interpretation.coding[0].code = #POS
+* interpretation.coding[0].display = "Positive"
+
+
+// ============================================================
+// 3) Haemophilus influenzae B Ab [Mass/volume] in Serum
+//    Einheit: Mikrogramm pro Milliliter (ug/mL)
+// ============================================================
+Instance: Observation-HiB-Ab-MassPerVolume
+InstanceOf: http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-laboratory-serology
+Title: "Haemophilus influenzae B Ab [Mass/volume] in Serum"
+Description: "Beispiel für einen Mass/volume-Wert. Mikrogramm pro Milliliter – eine physikalische Massenkonzentration."
+Usage: #example
+
+* meta.profile = "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-laboratory-serology"
+
+* extension[0].url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author"
+* extension[=].valueReference = Reference(PractitionerRole/6-1-PractitionerRole)
+
+* extension[+].url = "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-verification-status"
+* extension[=].valueCoding = http://snomed.info/sct#59156000 "Confirmed"
+
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:ccc33333-3333-3333-3333-333333333333"
+
+* status = #final
+
+* code.coding[0].system = "http://loinc.org"
+* code.coding[0].code = #22755-3
+* code.coding[0].display = "Haemophilus influenzae B Ab [Mass/volume] in Serum"
+
+* subject = Reference(Patient/3-1-Patient)
+* effectiveDateTime = "2024-06-15"
+* performer = Reference(PractitionerRole/6-1-PractitionerRole)
+
+// MASS/VOLUME: Mikrogramm pro Milliliter
+// ug/mL ist der UCUM-Code (ug = Mikrogramm)
+* valueQuantity.value = 1.5
+* valueQuantity.unit = "ug/mL"
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #ug/mL
+
+* interpretation.coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+* interpretation.coding[0].code = #POS
+* interpretation.coding[0].display = "Positive"
