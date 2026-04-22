@@ -41,3 +41,4 @@ Alias: $ChIpsCompositionEPR  = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-i
 Alias: $ObservationPregnancyStatusUvIps = http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips|2.0.0
 Alias: $list-empty-reason = http://terminology.hl7.org/CodeSystem/list-empty-reason
 
+Alias: $concept-deprecated = http://pjolo/ig/emr/StructureDefinition/concept-deprecated
