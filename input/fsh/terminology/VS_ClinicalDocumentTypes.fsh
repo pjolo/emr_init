@@ -6,69 +6,48 @@ Description: "Value Set for clinical document types"
 * ^experimental = true
 * ^version = "1.0.0"
 * ^date = "2025-01-15"
-* ^compose.include[0].system = "http://snomed.info/sct"
-* ^compose.include[0].concept[0].code = #371538006
-* ^compose.include[0].concept[0].display = "Advance directive report"
-* ^compose.include[0].concept[0].designation[0].language = #en-US
-* ^compose.include[0].concept[0].designation[0].value = "Advance directive report"
-* ^compose.include[0].concept[0].designation[1].language = #de-CH
-* ^compose.include[0].concept[0].designation[1].value = "Patientenverfügung"
-* ^compose.include[0].concept[0].designation[2].language = #fr-CH
-* ^compose.include[0].concept[0].designation[2].value = "Directives anticipées"
-* ^compose.include[0].concept[0].designation[3].language = #it-CH
-* ^compose.include[0].concept[0].designation[3].value = "Direttiva anticipata"
+* ^expansion.identifier = "urn:uuid:a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+* ^expansion.timestamp = "2025-01-15T00:00:00Z"
+* ^expansion.total = 6
 
-* ^compose.include[0].concept[1].code = #734163000
-* ^compose.include[0].concept[1].display = "Care plan"
-* ^compose.include[0].concept[1].designation[0].language = #en-US
-* ^compose.include[0].concept[1].designation[0].value = "Care plan"
-* ^compose.include[0].concept[1].designation[1].language = #de-CH
-* ^compose.include[0].concept[1].designation[1].value = "Behandlungsplan"
-* ^compose.include[0].concept[1].designation[2].language = #fr-CH
-* ^compose.include[0].concept[1].designation[2].value = "Plan de soins"
-* ^compose.include[0].concept[1].designation[3].language = #it-CH
-* ^compose.include[0].concept[1].designation[3].value = "Piano di cura"
+* $sct#371538006 "Advance directive report"
+  * ^designation[0].language = #en-US
+  * ^designation[=].value = "Advance directive report"
+  * ^designation[+].language = #de-CH
+  * ^designation[=].value = "Patientenverfügung"
+  * ^designation[+].language = #fr-CH
+  * ^designation[=].value = "Directives anticipées"
+  * ^designation[+].language = #it-CH
+  * ^designation[=].value = "Direttiva anticipata"
+  * ^expansion.contains[0].system = "http://snomed.info/sct"
+  * ^expansion.contains[0].code = #371538006
+  * ^expansion.contains[0].display = "Advance directive report"
+  * ^expansion.contains[0].inactive = false
 
-* ^compose.include[0].concept[2].code = #4191000179101
-* ^compose.include[0].concept[2].display = "Emergency nursing report"
-* ^compose.include[0].concept[2].designation[0].language = #en-US
-* ^compose.include[0].concept[2].designation[0].value = "Emergency nursing report"
-* ^compose.include[0].concept[2].designation[1].language = #de-CH
-* ^compose.include[0].concept[2].designation[1].value = "Notfallpflegebericht"
-* ^compose.include[0].concept[2].designation[2].language = #fr-CH
-* ^compose.include[0].concept[2].designation[2].value = "Rapport de soins infirmiers d'urgence"
-* ^compose.include[0].concept[2].designation[3].language = #it-CH
-* ^compose.include[0].concept[2].designation[3].value = "Rapporto infermieristico d'emergenza"
+* $sct#734163000 "Care plan"
+  * ^designation[0].language = #en-US
+  * ^designation[=].value = "Care plan"
+  * ^designation[+].language = #de-CH
+  * ^designation[=].value = "Behandlungsplan"
+  * ^designation[+].language = #fr-CH
+  * ^designation[=].value = "Plan de soins"
+  * ^designation[+].language = #it-CH
+  * ^designation[=].value = "Piano di cura"
+  * ^expansion.contains[1].system = "http://snomed.info/sct"
+  * ^expansion.contains[1].code = #734163000
+  * ^expansion.contains[1].display = "Care plan"
+  * ^expansion.contains[1].inactive = false
 
-* ^compose.include[0].concept[3].code = #422735006
-* ^compose.include[0].concept[3].display = "Summary clinical document"
-* ^compose.include[0].concept[3].designation[0].language = #en-US
-* ^compose.include[0].concept[3].designation[0].value = "Summary clinical document"
-* ^compose.include[0].concept[3].designation[1].language = #de-CH
-* ^compose.include[0].concept[3].designation[1].value = "Klinisches Zusammenfassungsdokument"
-* ^compose.include[0].concept[3].designation[2].language = #fr-CH
-* ^compose.include[0].concept[3].designation[2].value = "Document clinique de synthèse"
-* ^compose.include[0].concept[3].designation[3].language = #it-CH
-* ^compose.include[0].concept[3].designation[3].value = "Documento clinico di sintesi"
-
-* ^compose.include[0].concept[4].code = #772790007
-* ^compose.include[0].concept[4].display = "Organ donor card"
-* ^compose.include[0].concept[4].designation[0].language = #en-US
-* ^compose.include[0].concept[4].designation[0].value = "Organ donor card"
-* ^compose.include[0].concept[4].designation[1].language = #de-CH
-* ^compose.include[0].concept[4].designation[1].value = "Organspendeausweis"
-* ^compose.include[0].concept[4].designation[2].language = #fr-CH
-* ^compose.include[0].concept[4].designation[2].value = "Carte de donneur d'organes"
-* ^compose.include[0].concept[4].designation[3].language = #it-CH
-* ^compose.include[0].concept[4].designation[3].value = "Tessera di donatore di organi"
-
-* ^compose.include[0].concept[5].code = #1264561001
-* ^compose.include[0].concept[5].display = "Living will"
-* ^compose.include[0].concept[5].designation[0].language = #en-US
-* ^compose.include[0].concept[5].designation[0].value = "Living will"
-* ^compose.include[0].concept[5].designation[1].language = #de-CH
-* ^compose.include[0].concept[5].designation[1].value = "Patientenverfügung (Letzter Wille)"
-* ^compose.include[0].concept[5].designation[2].language = #fr-CH
-* ^compose.include[0].concept[5].designation[2].value = "Testament de vie"
-* ^compose.include[0].concept[5].designation[3].language = #it-CH
-* ^compose.include[0].concept[5].designation[3].value = "Testamento biologico"
+* $sct#1264561001 "Living will"
+  * ^designation[0].language = #en-US
+  * ^designation[=].value = "Living will"
+  * ^designation[+].language = #de-CH
+  * ^designation[=].value = "Patientenverfügung (Letzter Wille)"
+  * ^designation[+].language = #fr-CH
+  * ^designation[=].value = "Testament de vie"
+  * ^designation[+].language = #it-CH
+  * ^designation[=].value = "Testamento biologico"
+  * ^expansion.contains[2].system = "http://snomed.info/sct"
+  * ^expansion.contains[2].code = #1264561001
+  * ^expansion.contains[2].display = "Living will"
+  * ^expansion.contains[2].inactive = true
